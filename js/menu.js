@@ -16,16 +16,18 @@
 	        toggleSidebar();
 	        if (sidebar.hasClass('show')) {
 	            sidebar.css('left', 0);
+	            $(this).css('background-color','rgba(0, 0, 0, 0.4)');
 	            jQuery('#my-sidebar-toggle span').html('Close');
 	            sidebarToggleButtonIcon
 	                .removeClass('fa-navicon')
 	              	  .addClass('fa-times')
 	            			  .css('transition', 'none');
 	            sidebarToggleButton
-	                .css('left', sidebar.width() + 10)
+	                .css('left', sidebar.width())
 	                // .addClass('foldOut');
 	        } else{
 	            jQuery('#my-sidebar-toggle span').html('Menu');
+	            $(this).css('background-color','');
 	            sidebar.css('left', - (sidebar.width()));
 	            sidebarToggleButtonIcon
 	                .removeClass('fa-times')

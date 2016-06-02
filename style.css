@@ -462,14 +462,14 @@ a img.aligncenter {
     background-image: url(img/logo.png);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 120px 90px;
+    background-size: 187px 90px;
     height: 90px;
 }
 .img-logofe{
     background-image: url(img/logof&e.png);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 187px 90px;
+    background-size: 120px 90px;
     height: 90px;
 }
 .img-aw1{
@@ -691,6 +691,7 @@ a img.aligncenter {
 
 .btn-warning {
 	font-size: 20px;
+	background-color: #e8a84c;
 }
 
 .btn-xs {
