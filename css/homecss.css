@@ -1,0 +1,263 @@
+article{
+	color: #fff;
+}
+
+a{
+	color: #000;
+}
+
+a:hover {
+	color: #000;
+	text-decoration: none;
+}
+
+.background-img{
+    background-image: url(../img/home.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 768px;
+}
+
+.row {
+	margin-right: 0px;
+}
+#div-titulo{
+    margin-top: 200px;
+}
+#div-titulo h1{
+	font-size: 7em;
+	text-align: center;
+}
+
+#div-link-central{
+    margin-top: 20px;
+	text-align: center;
+}
+
+#div-link-central a{
+	font-size: 1.8em;
+    text-align: center;
+    padding: 10px 30px;
+    width: auto;
+    color: #fff;
+    font-weight: bold;
+    z-index: 99999;
+    background-color: #fcc25b;
+}
+
+#div-link-central a:hover{
+    color: #636363;
+    background-color: #e2a310;
+    border-color: #e2a310;
+}
+
+
+#div-titulo-content{
+  color: #fff;
+}
+.clear{
+    clear: both;
+}
+.center{
+    text-align: center;
+}
+#div-ourServices h3, #div-ourServices h5{
+    color: #808080;
+    text-align: center;
+    margin-top: 40px;
+}
+.margin-top-ourServices{
+    margin-top: 30px;
+}
+.margin-top20{
+    margin-top: 20px;
+}
+.img-i{
+    background-image: url(../img/i.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 46px 46px;
+    height: 46px;
+}
+
+.img-aw{
+    background-image: url(../img/aw.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 262px 80px;
+    height: 80px;
+}
+#div-awards .col-md-4{
+    text-align: center;
+}
+/*#div-awards, #div-testimonials{
+    padding-top: 100px;
+}*/
+#div-testimonials .col-md-12{
+    text-align: center;
+}
+.fullscreen-bg-home{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+.img-venues{
+    background-image: url(../img/img_venue.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+}
+.img-catering{
+    background-image: url(../img/img_catering.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+}
+.img-decor{
+    background-image: url(../img/img_decor.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+}
+.img-music{
+    background-image: url(../img/img_music.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+}
+.img-staffing{
+    background-image: url(../img/img_staffing.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+}
+.img-production{
+    background-image: url(../img/img_production.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+     
+}
+#div-ourServices p{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 900;
+    position: absolute;
+    bottom: 0px;
+    text-align: left;
+}
+
+.img-award-purple{
+    background-image: url(../img/aw_content.png);
+    background-repeat: no-repeat;
+    background-position: 0px -321px;
+    background-size: cover;
+    height: 250px;
+    background-attachment: fixed;
+}
+#div-awards h4{
+    color: #fff;
+    font-size: 25px;
+    margin-top: 100px;
+}
+.font-title{
+  font-family: title_font;
+  font-size: 100px;
+}
+.bmwe-menu {
+    position: absolute;
+    text-align: center;
+    left: 0px;
+    right: 0px;
+    top: 400px; 
+}
+
+.bmwe-menu .ul-menu > li{
+  display: inline;
+  padding: 20px 100px 20px 100px;
+}
+.bmwe-menu .ul-menu > li > a{
+  text-decoration: none;  
+  color: #fff;
+  font-size: 22px;
+  font-weight: 900;
+  text-shadow: none;
+  font-family: content_font_black;
+  text-shadow: 1px 1px grey;
+}
+#div-home-image{
+    height: 450px;
+    background-size: 100% 100%;
+}
+#div-ourServices, #div-awards, #div-testimonials{
+    background-color: #fff;
+}
+#div-ourServices p span, #div-ourServices p{
+    float: left;
+    clear: both;
+    font-family: content_font_black;
+}
+#div-awards{
+    white-space: pre;
+}
+#div-awards p span{
+    font-family: content_font_light;
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 3px;
+    line-height: 2;
+}
+.line{
+    height: 2px;
+    background-color: #fff;
+}
+.carnet1{
+    background-image: url(../img/carnet1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 148px;
+    width: 148px;
+    border-radius: 90px;
+    margin-left: 125px;
+}
+.carnet2{
+    background-image: url(../img/carnet2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 148px;
+    width: 148px;
+    border-radius: 90px;
+    margin-left: 125px;
+}
+#div-testimonials{
+    padding-bottom: 150px;
+}
+#div-testimonials p{
+    margin-top: 30px;
+    text-align: left;
+}
+#div-testimonials p span{    
+    font-size: 22px;
+    font-family: content_font_light;
+    letter-spacing: 3px;
+    line-height: 1.5;
+}
+#div-testimonials p span#spanTestimonials{
+    font-size: 25px;
+}
+.borde{
+    border: 1px solid;
+    height: 100px;
+}

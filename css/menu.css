@@ -1,0 +1,205 @@
+#my-sidebar-toggle {
+  position: fixed;
+  left: 15px;
+  top: 10px;
+  z-index: 101;
+  color: #fff;
+  cursor: pointer;
+  font-size: 30px;
+  transition: left .4s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-shadow: 1px 1px grey;
+}
+
+#my-sidebar-toggle.black-menu-icon{
+  color: black;
+}
+#my-sidebar-toggle .fa {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: -webkit-transform 0.4s;
+  -moz-transition: -moz-transform 0.4s;
+  -o-transition: -o-transform 0.4s;
+  transition: -webkit-transform 0.4s,-moz-transform 0.4s,-o-transform 0.4s,transform 0.4s;
+}
+#my-sidebar-toggle.foldOut {
+  -webkit-animation: fold 0.4s linear forwards;
+  -moz-animation: fold 0.4s linear forwards;
+  -o-animation: fold 0.4s linear forwards;
+  animation: fold 0.4s linear forwards;
+}
+#my-sidebar-toggle.foldIn {
+  -webkit-animation: fold 0.6s linear forwards;
+  -moz-animation: fold 0.6s linear forwards;
+  -o-animation: fold 0.6s linear forwards;
+  animation: fold 0.6s linear forwards;
+}
+
+
+#my-sidebar {
+  -webkit-transform: perspective(300px) rotateY(90deg);
+  -moz-transform: perspective(300px) rotateY(90deg);
+  -o-transform: perspective(300px) rotateY(90deg);
+  -ms-transform: perspective(300px) rotateY(90deg);
+  transform: perspective(300px) rotateY(90deg);
+  -webkit-transition: -webkit-transform 0.4s, left 0.4s;
+  -moz-transition: -moz-transform 0.4s, left 0.4s;
+  -o-transition: -o-transform 0.4s, left 0.4s;
+  transition: -webkit-transform 0.4s,-moz-transform 0.4s,-o-transform 0.4s,transform 0.4s, left 0.4s;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #636363;
+  z-index: 102;
+  list-style: none;
+  color: #F0F0F0;
+  height: 100%;
+}
+
+#div-menu-logo {
+  position: relative;
+  margin-right: 3px;
+  padding: 15px;
+  width: 240px;
+  height: 130px;
+  background-color: #111111;
+}
+
+#my-sidebar ul li a {
+  display: block;
+  font-size: 1.2em;
+  padding: 0.5em 1em;
+}
+#my-sidebar ul li a:hover {
+  color: #fff;
+}
+#my-sidebar.show {
+  -webkit-transform: perspective(600px) rotateY(0deg);
+  -moz-transform: perspective(600px) rotateY(0deg);
+  -o-transform: perspective(600px) rotateY(0deg);
+  -ms-transform: perspective(600px) rotateY(0deg);
+  transform: perspective(600px) rotateY(0deg);
+}
+#my-sidebar a {
+  text-decoration: none;
+  color: #ccc;
+}
+#my-sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#my-sidebar ul li {
+  -webkit-transition: background-color 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -moz-transition: background-color 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -o-transition: background-color 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: background-color 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  border-bottom: 1px solid #F0F0F0;
+}
+.menu-item-description{
+  font-size: 0.7em;
+  margin: 0;
+  padding: 0;
+}
+#my-sidebar ul li:first-child {
+  margin-top: 1em;
+}
+#my-sidebar ul li.current-menu-item {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+#my-sidebar ul li a {
+  display: block;
+  font-size: 1.2em;
+  padding: 0.5em 1em;
+}
+#my-sidebar ul li a:hover {
+  color: #fff;
+}
+#my-sidebar .social {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: left;
+  padding-left: 12px;
+}
+#my-sidebar .social .social-icon {
+  display: inline-block;
+  margin: 0px 5px 0px 5px;
+}
+#my-sidebar .social .social-icon:hover {
+}
+#my-sidebar .social .social-icon:hover .fa {
+  color: #fff;
+}
+#my-sidebar .social .social-icon a {
+  display: block;
+}
+#my-sidebar .social .social-icon .fa {
+  font-size: 20px;
+  vertical-align: middle;
+  padding: .4em 0em;
+}
+#my-sidebar .copyright {
+  display: inline-block;
+  color: #F0F0F0;
+  margin: 0;
+  padding: 1em 0em;
+  text-align: left;
+  width: 100%;
+}
+
+#div-menu-button {
+    text-align: center;
+    margin-top: 25px;
+}
+
+
+
+.min-height{
+  min-height: 350px;
+}
+
+@media screen and (min-width: 1025px) {
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    #my-sidebar-toggle{
+      top: 15px;
+      font-size: 20px;
+    }
+    .min-height{
+      min-height: 700px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+  .not-for-phone {
+      display: none;
+  }  
+  #my-sidebar-toggle{
+    font-size: 15px;
+    top: 10px;
+  }
+  .for-phone{
+    display: block;
+  }
+  .scroll{
+    overflow: scroll;
+    height: 60%;
+  }
+} 
+
+@media screen and (min-width: 1024px) and (max-width: 1024px){
+  .min-height{
+      min-height: 450px;
+    }
+}

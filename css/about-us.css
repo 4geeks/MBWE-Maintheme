@@ -1,0 +1,139 @@
+#content-header{
+	position: relative;
+	width: 100%;
+	padding-top: 160px;
+    height: 400px;
+    text-align: center;
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 60%;
+    background-attachment: fixed;
+    color: #ffffff;
+}
+
+.div-schedule {
+	padding-top: 20px;
+	font-size: 17px;
+}
+
+#list-content{
+	position: relative;
+	padding: 0px;
+	height: 500px;
+}
+#div-hits {
+	position: relative;
+    top: 100px;
+    font-size: 18px;
+    z-index: 1;
+
+}
+.hit {
+	text-align: center;
+    background-color: #94D6DB;
+    color: #454545;
+    height: 90px;
+    padding-top: 0px;
+    border-right: 1px solid #ffffff;
+    word-wrap: break-word;
+    font-size: 22px;
+}
+.hit:last-child {
+	border-right: 0px;	
+}
+
+#section-story {
+	position: relative;
+	width: 100%;
+	min-height: 400px;
+	background-color: #EFF6F2;
+}
+
+#div-logo {
+	position: relative;
+	padding-top: 120px;
+}
+
+#div-story {
+	position: relative;
+	top: 30px;
+	font-size: 20px;
+	text-align: center;
+	padding-bottom: 70px;
+}
+
+#our-team {
+	position: relative;
+	width: 100%;
+	min-height: auto;
+	padding-bottom: 0px;
+	background-color: #EFF6F2;
+	margin-right: 0px;
+    margin-left: 0px;
+}
+
+#items-our-team {
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+.item-our-team {
+	position: relative;
+	height: 400px;
+	background-size: cover;
+	background-position: center;
+}
+
+.item-partner {
+	position: relative;
+	height: 140px;
+	background-position: center;
+	opacity: 0.5;
+	background-repeat: no-repeat;
+}
+
+
+#our-partners {
+	position: relative;
+	width: 	100%;
+	min-height: 400px;
+	background-color: #454545;
+	padding-right: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    color: #868686;
+}
+
+@media only screen and (min-device-width: 768px) {
+
+	.hit {
+		font-size: 18px;
+	}
+
+	.w-wrap {
+		position: relative;
+    	top: -10px;
+	}
+	.item-our-team {
+		height: 230px
+	}
+
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) {
+	
+	#div-hits {
+		padding-left: 0px;
+	    padding-right: 0px;		
+	    top: 35px;
+	}    
+
+	.hit {
+		font-size: 14px;
+	}	
+
+	.item-our-team {
+		height: 90px
+	}
+
+}

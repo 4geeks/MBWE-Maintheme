@@ -1,0 +1,38 @@
+/* ---- grid ---- */
+
+.grid {
+  background: #EEE;
+  /* center */
+  margin: 0 auto;
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- grid-item ---- */
+.grid-item, .grid-item--height2 {
+  cursor:pointer;  
+}
+
+.grid-item {
+  width: 320px;
+  height: 280px;
+  float: left;
+}
+
+.grid-item--height2 { height: 550px; }
+
+.mansonry-hover {
+  -webkit-box-shadow: inset 0px 0px 100px 20px rgba(0,0,0,0.5);
+  -moz-box-shadow: inset 0px 0px 100px 20px rgba(0,0,0,0.5);
+  box-shadow: inset 0px 0px 100px 20px rgba(0,0,0,.5);
+  
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}

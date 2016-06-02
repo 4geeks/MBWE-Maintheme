@@ -1,0 +1,36 @@
+.btn-close{
+    position: fixed;
+    z-index: 9999;
+    right: 0px;
+    top: 0px;
+    cursor: pointer;
+    height: 70px;
+    padding: 10px;
+}
+
+.modal-menu {
+    position: fixed;
+    display: none;
+    z-index: 999;
+    background-color: rgba(0,0,0,0.3);
+    height: 58px;
+    text-align: center;
+}
+
+#animatedModal {
+    z-index: 997;
+}
+
+#imgAnimatedModal{
+    z-index: 996
+}
+
+.modal-content{
+    height: 100%;
+    border-radius: 0px;
+    background-color: transparent;
+}
+
+.glyphicon.glyphicon-remove {
+    font-size: 38px;
+}

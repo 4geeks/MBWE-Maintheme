@@ -1,0 +1,82 @@
+#content-header{
+	position: relative;
+	width: 100%;
+	padding-top: 120px;
+    padding-bottom: 60px;
+    height: 400px;
+    text-align: center;
+ 	background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 60%;
+    background-attachment: fixed;
+    color: #ffffff;
+}
+
+#list-content {
+	position: relative;
+	padding: 0px;
+	height: auto;
+}
+
+.div-schedule {
+	text-align: center;
+}
+.div-schedule p {	
+	font-size: 25px;
+	margin-top:10px;
+}
+
+.content-header-description {
+	position: relative;
+	height: auto;
+	width: 100%;
+	text-align: center;
+	background-color: #93D5D9;
+	padding-top: 12px;
+}
+
+.venue-element{
+	padding: 0px;
+	height: 430px;
+	border-right: 1px solid #ffffff;
+}
+
+.div-venue-image{
+	padding: 0px;
+	height: 300px;	
+   -webkit-background-size: cover;
+    background-size: ;
+    background-position: center;
+}
+
+.inner-venue-element{
+	position: relative;
+	background-color: grey;
+	padding: 0px;
+	height: 100%;
+}
+
+.div-description{
+	padding: 0px;
+	color: #ffffff;
+	text-align: center;
+}
+
+.div-description a{
+	margin-top: 20px;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) { 
+	#content-header {
+		padding-top: 58px;
+	}
+
+	.div-schedule p {
+	    font-size: 20px;
+	    margin-top: 10px;
+	}
+
+	.content-header-description {				
+		padding-top: 0px;
+	}
+}
