@@ -42,12 +42,7 @@
 						<div id="div-angle-double" class="col-md-offset-5 col-md-2 fa fa-angle-double-up">
 						</div>
 						<div class="col-md-offset-1 col-md-6">
-							<div class="links">
-								<div id="div-links-title" class="col-md-12">
-									<span><em>Our website in a blink:</em></span>
-								</div>
-								<div id="div-line" class="col-md-12 line2">
-								</div>
+							<div class="links">								
 								<div class="col-md-4">
 									<div id="div-links-content" class="col-md-12">
 										<span><?php echo $footerTitle1; ?></span>
