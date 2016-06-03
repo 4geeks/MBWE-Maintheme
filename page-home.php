@@ -34,8 +34,8 @@ echo $content;
 		<div class="bmwe-menu">
 			<?php wp_nav_menu(array('menu' => 'sub-menu', 'menu_class' => 'ul-menu')); ?>
 		</div>
-		<center>
-			<div id="arrow-down"><span class="glyphicon glyphicon-chevron-down"></span></div>
+		<center class="not-for-mobile">
+			<div id="arrow-down-home"><span class="glyphicon glyphicon-chevron-down"></span></div>
 		</center>
 	</div>
 </div>
@@ -68,9 +68,7 @@ echo $content;
 	</div>
 </div>
 <div id="div-awards" class="row">
-	<div class="img-logo col-md-12">
-		
-	</div>
+	<div class="img-logofe col-md-12"></div>
 	<div class="col-md-12 img-award-purple center margin-top20">	
 		<p><span><?php echo $awardText; ?></span></p>
 		<div class="col-md-4 col-md-offset-4 col-xs-6 col-xs-offset-3 line"></div>
