@@ -32,7 +32,7 @@
 }
 @font-face {
     font-family: content_font_light;
-    src: url("fonts/SaginawLight.otf");
+    src: url("fonts/PRINC.TTF");
 }
 /*------------------------------------*\
     MAIN
@@ -427,7 +427,7 @@ a img.aligncenter {
 	width: 100%;
 	color: #ffffff;	
 	background-image: url('img/why-fetes-events.jpg');
-	height: 340px;
+	height: 343px;
 	background-size: cover;    
     background-position-x: 50%;
     background-position-y: 80%;

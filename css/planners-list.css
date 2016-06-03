@@ -13,8 +13,9 @@
 }
 
 .div-schedule {
-	padding-top: 20px;
+	padding-top: 30px;
 	font-size: 17px;
+	font-weight: bold;
 }
 
 .content-header-description{
@@ -24,6 +25,7 @@
 	text-align: center;
 	/*background-color: #93D5D9;*/
 	padding-top: 12px;
+	padding-bottom: 20px;
 }
 
 
