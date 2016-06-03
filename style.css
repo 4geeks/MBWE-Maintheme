@@ -510,6 +510,7 @@ a img.aligncenter {
 #divFooter2{
     background-color: #474747;
     height: auto;
+    padding-bottom: 50px;
 }
 #divFooter1 .social .social-icon{
     display: inline-block;
