@@ -80,7 +80,7 @@ $venues = new WP_Query( $args );
                 </div>            
                 <div id="div-venue-name">
                     <span class="with-font-sub-title" <?php echo ($isClubOfKnigth? " style='font-size:90px;' ":'') ?>><?php  echo $name;?></span> <br />
-                    <span id="direction" <?php echo ($isClubOfKnigth? " style='top:25px'; ":'') ?> > <?php echo $direction ?></span>
+                    <span id="direction" > <?php echo $direction ?></span>
                 </div>
                 <div id="div-venue-button">
                    <button class="btn btn-warning btn-lg">Request a quote</button>
