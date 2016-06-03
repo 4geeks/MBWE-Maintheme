@@ -2,7 +2,7 @@
 /*
 Template Name: Gallery
 */
-
+header('X-Frame-Options: GOFORIT');
 get_header(); 
 
 $gallery = get_post_gallery($_GET["post_id"],false);

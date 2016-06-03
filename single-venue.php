@@ -4,7 +4,7 @@
  *
  * @package Tesseract
  */
-
+header('X-Frame-Options: GOFORIT');
 get_header(); ?>
 
 <?php
