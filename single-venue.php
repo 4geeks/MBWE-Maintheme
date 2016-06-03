@@ -27,6 +27,9 @@ $longitude = types_render_field("venue-longitude");
 $tour = types_render_field("venue-360-tour");
 $galleryPostId = types_render_field("venue-gallery");
 
+$post = get_post();
+
+$isClubOfKnigth = ($post->post_name == 'club-of-knight');
 
 //Get venue post types to list in dropdown list 
 $args = array('post_type' => 'venue'); 
@@ -76,8 +79,8 @@ $venues = new WP_Query( $args );
                     </video>
                 </div>            
                 <div id="div-venue-name">
-                    <span class="with-font-sub-title"><?php  echo $name;?></span> <br />
-                    <span id="direction" > <?php echo $direction ?></span>
+                    <span class="with-font-sub-title" <?php echo ($isClubOfKnigth? " style='font-size:90px;' ":'') ?>><?php  echo $name;?></span> <br />
+                    <span id="direction" <?php echo ($isClubOfKnigth? " style='top:25px'; ":'') ?> > <?php echo $direction ?></span>
                 </div>
                 <div id="div-venue-button">
                    <button class="btn btn-warning btn-lg">Request a quote</button>
