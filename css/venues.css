@@ -71,8 +71,8 @@ Saved: Apr 17 2016 | 20:42:27 */
     font-weight: bold;
     top: 87%;
     left: 50%;
-    padding-left: 5px;
-    padding-top: 7px;
+    padding-left: 4px;
+    padding-top: 16px;
     color:#777;
     border-radius: 200px 200px 200px 200px;
     -moz-border-radius: 200px 200px 200px 200px;
@@ -83,7 +83,9 @@ Saved: Apr 17 2016 | 20:42:27 */
 }
 
 #direction {
+    position: relative;
     font-size: 15px;
+    top: 15px;
 }
 
 #direction p {
@@ -91,6 +93,7 @@ Saved: Apr 17 2016 | 20:42:27 */
     padding-top: 5px;
     padding-left: 5px;
     padding-right: 5px;
+    padding-bottom: 5px;
 }
 
 #div-venue-button{
@@ -105,6 +108,7 @@ Saved: Apr 17 2016 | 20:42:27 */
 #div-venue-button p{
     font-size: 25px;
     margin-top: 14px;
+    padding-bottom: 5px;
 }
 
 
@@ -213,7 +217,7 @@ Saved: Apr 17 2016 | 20:42:27 */
     position: relative;
     width: 100%;
     margin: 0 auto;
-    padding-top: 35px;
+    padding-top: 5px;
     background-color: #ffffff;
     color: #636363;
 }
@@ -223,14 +227,14 @@ Saved: Apr 17 2016 | 20:42:27 */
 #div-venue-transportation div{
     /*position:relative;
     margin-bottom: 30px;*/
-    height: 250px;
+    height: 170px;
     text-align: center;
     /*padding:5px;*/
 }
 
 #div-acommodations {
     position:relative;
-    height: 180px;
+    height: 110px;
     /*border: 1px solid #000000;*/
 }
 
