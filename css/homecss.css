@@ -27,7 +27,6 @@ a:hover {
     margin-top: 200px;
 }
 #div-titulo h1{
-	font-size: 7em;
 	text-align: center;
 }
 
@@ -215,7 +214,6 @@ a:hover {
 #div-awards p span{
     font-family: content_font_light;
     color: #fff;
-    font-size: 25px;
     letter-spacing: 3px;
     line-height: 2;
 }
@@ -275,9 +273,6 @@ a:hover {
         font-size: 11px;
         letter-spacing: 0px;
     }
-    #div-titulo h1{
-        font-size: 2em;
-    }
     .img-award-purple{
         background-position: -160px -179px;
         background-size: 685px 441px;
@@ -301,5 +296,18 @@ a:hover {
         margin-top: 0px;
         position: absolute;
         top: 150px;
+    }
+}
+
+
+@media screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1024px) {
+    #div-titulo{
+        margin-top: 0px;
+    }
+}
+
+@media screen and (orientation: landscape) and (min-width: 768px) and (max-width: 1024px) {
+    #div-titulo{
+        margin-top: 0px;
     }
 }

@@ -32,7 +32,7 @@
 }
 @font-face {
     font-family: content_font_light;
-    src: url("fonts/SaginawLight.otf");
+    src: url("fonts/PRINC.TTF");
 }
 /*------------------------------------*\
     MAIN
@@ -538,15 +538,16 @@ a img.aligncenter {
     margin-left: 60px;
 }
 #divFooter1 .newsletter input{
-    padding: 8px 0px 3px 20px;
-    font-family: content_font_light;    
+    padding: 8px 0px 5px 20px;
+    font-family: content_font_light;
+    max-width: 300px;
 }
 #divFooter1 .newsletter button{
     font-family: content_font_light;
     padding: 8px 20px 5px 20px;
     position: relative;
     left: 20px;
-    top: -2px;
+    top: -6px;
     height: 46px;
     background-color: #fff;
     color: #474747;
@@ -712,6 +713,9 @@ a img.aligncenter {
 
 /* END Buton configuration*/
 
+.margin-bottom3{
+	margin-bottom: 3px;
+}
 /*Only for smartphones*/
 
 @media only screen and (max-width: 768px){

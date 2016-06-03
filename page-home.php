@@ -38,7 +38,7 @@ echo $content;
 </div>
 <div id="div-ourServices" class="row margin-top-ourServices">
 	<div class="col-md-12">
-		<h3 class="with-font-title"><em>Our services</em></h3>
+		<h3><em class="with-font-title">Our services</em></h3>
 	</div>
 	<div class="col-md-12 col-xs-12 clear center">
 		<a href="#" class="col-md-4 col-xs-12 col-sm-6 img-venues highlight-element">
