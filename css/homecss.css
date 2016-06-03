@@ -357,7 +357,7 @@ a:hover {
         height: 850px;
     }
     .bmwe-menu .ul-menu > li{
-        padding: 20px 30px 20px 30px;
+        padding: 20px;
     }
     .bmwe-menu{
         top: 780px;
@@ -381,6 +381,9 @@ a:hover {
     }
     .bmwe-menu{
         top: 580px;
+    }
+    .bmwe-menu .ul-menu > li{
+        padding: 20px 70px 20px 70px;
     }
     .img-award-purple{
         background-position: -258px -100px;
