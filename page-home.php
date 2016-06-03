@@ -30,7 +30,7 @@ $content = get_page($post->ID)->post_content;
 
 echo $content;
 ?>
-	<div id="div-titulo" class="row">
+	<div class="row">
 		<div class="bmwe-menu">
 			<?php wp_nav_menu(array('menu' => 'sub-menu', 'menu_class' => 'ul-menu')); ?>
 		</div>
@@ -52,13 +52,13 @@ echo $content;
 		</a>			
 		
 
-		<a href="#" class="col-md-4 col-xs-12 img-decor highlight-element">
+		<a href="#" class="col-md-4 col-xs-12  col-sm-6 img-decor highlight-element">
 			<p>DECOR</p>
 		</a>	
-		<a href="#" class="col-md-4 col-xs-12 img-music highlight-element">
+		<a href="#" class="col-md-4 col-xs-12  col-sm-6 img-music highlight-element">
 			<p><span>MUSIC</span><span>AND</span><span>ENTERTAINMENT</span></p>
 		</a>	
-		<a href="#" class="col-md-4 col-xs-12 img-production highlight-element">
+		<a href="#" class="col-md-4 col-xs-12  col-sm-6 img-production highlight-element">
 			<p><span>PRODUCTION</span><span>AND</span><span>LIGHTING</span></p>
 		</a>			
 			
