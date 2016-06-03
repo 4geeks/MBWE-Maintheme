@@ -297,12 +297,33 @@ a:hover {
         position: absolute;
         top: 150px;
     }
+    .fullscreen-bg__video{
+        height: 450px;
+    }
 }
 
 
 @media screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1024px) {
     #div-titulo{
         margin-top: 0px;
+        position: relative;
+        top: 200px;
+    }
+    .img-award-purple{
+        background-position: 0px -185px;
+        background-attachment: local;
+    }
+    #div-awards p span{
+        font-size: 22px;
+    }
+    #div-home-image{
+        height: 650px;
+    }
+    .fullscreen-bg__video{
+        height: 650px;
+    }
+    .bmwe-menu .ul-menu > li{
+        padding: 20px 30px 20px 30px;
     }
 }
 
