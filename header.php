@@ -90,7 +90,7 @@ $tour = types_render_field("venue-360-tour");
 				<div class="menu-small">
 			      <div class="row">  
 			        <div class="col-md-12">
-			          <div class="bmwe-menu">
+			          <div class="bmwe-menu not-for-mobile">
 						<?php wp_nav_menu(array('menu' => 'sub-menu', 'menu_class' => 'ul-menu')); ?>
 					</div>
 			        </div>

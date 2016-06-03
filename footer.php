@@ -28,7 +28,7 @@
 						</div>
 						<div class="col-md-offset-2 col-md-5">
 							<div class="newsletter">
-								<div class="col-md-12">
+								<div class="col-md-12 margin-bottom3">
 									<span>NEWSLETTER</span>
 								</div>
 								<div class="col-md-12">

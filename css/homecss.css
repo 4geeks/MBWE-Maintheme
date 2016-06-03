@@ -27,7 +27,6 @@ a:hover {
     margin-top: 200px;
 }
 #div-titulo h1{
-	font-size: 7em;
 	text-align: center;
 }
 
@@ -215,7 +214,6 @@ a:hover {
 #div-awards p span{
     font-family: content_font_light;
     color: #fff;
-    font-size: 25px;
     letter-spacing: 3px;
     line-height: 2;
 }
@@ -260,4 +258,56 @@ a:hover {
 .borde{
     border: 1px solid;
     height: 100px;
+}
+
+.not-for-mobile{
+    display: none;
+}
+
+/* media query responsive for any mobiles */
+@media screen and (max-width: 767px) {
+    .div-only-for-mobile{
+        display: block;
+    }
+    #div-awards p span{
+        font-size: 11px;
+        letter-spacing: 0px;
+    }
+    .img-award-purple{
+        background-position: -160px -179px;
+        background-size: 685px 441px;
+        background-attachment: local;
+    }
+    .bmwe-menu{
+        top: 260px;
+    }
+    .ul-menu{
+        padding-left: 0px;
+    }
+    .bmwe-menu .ul-menu > li > a{
+        font-size: 8px;
+    }
+    .bmwe-menu .ul-menu > li{
+        display: table-cell;
+        min-width: 110px;
+        padding: 0px;
+    }
+    #div-titulo{
+        margin-top: 0px;
+        position: absolute;
+        top: 150px;
+    }
+}
+
+
+@media screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1024px) {
+    #div-titulo{
+        margin-top: 0px;
+    }
+}
+
+@media screen and (orientation: landscape) and (min-width: 768px) and (max-width: 1024px) {
+    #div-titulo{
+        margin-top: 0px;
+    }
 }

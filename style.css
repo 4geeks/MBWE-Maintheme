@@ -466,29 +466,28 @@ a img.aligncenter {
     background-image: url(img/logo.png);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 187px 90px;
-    height: 90px;
-}
+    background-size: 145px 68px;
+    height: 68px}
 .img-logofe{
     background-image: url(img/logof&e.png);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 120px 90px;
-    height: 90px;
+    background-size: 110px 68px;
+    height: 68px;
 }
 .img-aw1{
     background-image: url(img/aw1.png);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 99px 114px;
-    height: 114px;
+    background-size: 80px 92px;
+    height: 92px;
 }
 .img-aw2{
     background-image: url(img/aw2.png);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 99px 114px;
-    height: 114px;
+    background-size: 80px 92px;
+    height: 92px;
 }
 
 .line2{
@@ -502,7 +501,7 @@ a img.aligncenter {
 }
 #divFooter2{
     background-color: #474747;
-    height: 500px;
+    height: auto;
 }
 #divFooter1 .social .social-icon{
     display: inline-block;
@@ -539,15 +538,16 @@ a img.aligncenter {
     margin-left: 60px;
 }
 #divFooter1 .newsletter input{
-    padding: 8px 0px 3px 20px;
-    font-family: content_font_light;    
+    padding: 8px 0px 5px 20px;
+    font-family: content_font_light;
+    max-width: 300px;
 }
 #divFooter1 .newsletter button{
     font-family: content_font_light;
     padding: 8px 20px 5px 20px;
     position: relative;
     left: 20px;
-    top: -2px;
+    top: -6px;
     height: 46px;
     background-color: #fff;
     color: #474747;
@@ -559,7 +559,6 @@ a img.aligncenter {
 }
 #divFooter2 .links{
     color: #fff;
-    margin-top: 40px;
 }
 #divFooter2 .links #div-links-title span{    
     font-size: 60px;
@@ -571,11 +570,8 @@ a img.aligncenter {
     left: 20px;
     width: 91%;
 }
-#divFooter2 .logos{
-    margin-top: 60px;
-}
 #divFooter2 .logos .col-md-6{
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 
 #divFooter2 .links .ul-menu li{
@@ -717,6 +713,9 @@ a img.aligncenter {
 
 /* END Buton configuration*/
 
+.margin-bottom3{
+	margin-bottom: 3px;
+}
 /*Only for smartphones*/
 
 @media only screen and (max-width: 768px){
