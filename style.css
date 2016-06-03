@@ -501,7 +501,7 @@ a img.aligncenter {
 }
 #divFooter2{
     background-color: #474747;
-    height: 350px;
+    height: auto;
 }
 #divFooter1 .social .social-icon{
     display: inline-block;
@@ -558,7 +558,6 @@ a img.aligncenter {
 }
 #divFooter2 .links{
     color: #fff;
-    margin-top: 40px;
 }
 #divFooter2 .links #div-links-title span{    
     font-size: 60px;

@@ -41,13 +41,13 @@ echo $content;
 		<h3 class="with-font-title"><em>Our services</em></h3>
 	</div>
 	<div class="col-md-12 col-xs-12 clear center">
-		<a href="#" class="col-md-4 col-xs-12 img-venues highlight-element">
+		<a href="#" class="col-md-4 col-xs-12 col-sm-6 img-venues highlight-element">
 			<p>VENUES</p>
 		</a>
-		<a href="#" class="col-md-4 col-xs-12 img-catering highlight-element">
+		<a href="#" class="col-md-4 col-xs-12 col-sm-6 img-catering highlight-element">
 			<p>CATERING</p>
 		</a>
-		<a href="#" class="col-md-4 col-xs-12 img-staffing highlight-element">
+		<a href="#" class="col-md-4 col-xs-12 col-sm-6 img-staffing highlight-element">
 			<p>STAFFING</p>
 		</a>			
 		
