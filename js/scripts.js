@@ -76,6 +76,18 @@
 			$('#div-only-for-mobile').css('background-size', 'cover');
 			$('#div-only-for-mobile').css('background-position', 'center center');
 		}
+
+		/*
+	  	* Config arrow-down button
+	  	*/
+
+	  	$("#arrow-down-home").click(function() {
+
+		    $('html, body').animate({
+		        scrollTop: ($("#div-ourServices").offset().top - 60)
+		    }, 1000);
+
+		});
 		
 	});
 	

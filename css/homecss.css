@@ -31,11 +31,6 @@ a:hover {
 	text-align: center;
 }
 
-#div-titulo div{
-    position: relative;
-    left: 60px;
-}
-
 #div-link-central{
     margin-top: 20px;
 	text-align: center;
@@ -167,10 +162,14 @@ a:hover {
 .img-award-purple{
     background-image: url(../img/aw_content.png);
     background-repeat: no-repeat;
-    background-position: 0px -321px;
+    background-position: 0px -100px;
     background-size: cover;
     height: 250px;
     background-attachment: fixed;
+}
+#div-awards{
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 #div-awards h4{
     color: #fff;
@@ -266,15 +265,30 @@ a:hover {
     height: 100px;
 }
 
+#arrow-down-home{
+    position: absolute;
+    height:53px;
+    width: 53px;
+    font-size:40px;
+    font-weight: bold;
+    top: 410px;
+    left: 50%;
+    padding-left: 4px;
+    padding-top: 16px;
+    color:#fff;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    background-color: #ec971f;
+    cursor: pointer;
+    opacity: 0.7;    
+}
 
 /* media query responsive for any mobiles */
 @media screen and (max-width: 767px) {
     .div-only-for-mobile{
         display: block;
-    }
-    #div-awards{
-        padding-top: 20px;
-    }
+    }    
     #div-awards p{
         padding: 50px 5px 0px 5px;
     }
@@ -372,7 +386,7 @@ a:hover {
         padding: 20px 70px 20px 70px;
     }
     .img-award-purple{
-        background-position: -258px -321px;
+        background-position: -258px -100px;
     }
     .not-for-mobile{
         display: none;
