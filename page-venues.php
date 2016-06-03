@@ -47,7 +47,7 @@ $content = get_page($post->ID)->post_content;
             <!-- ========== testimonies TOP ========== -->        
 
             <!-- ========== WHY FETES & EVENTS PART ========== -->
-            <?php get_template_part( 'template-parts/part', 'why-fetes-events' ); ?>
+            <?php //get_template_part( 'template-parts/part', 'why-fetes-events' ); ?>
             <!-- ========== WHY FETES & EVENTS PART ========== -->
 		</main>
 	</div>
