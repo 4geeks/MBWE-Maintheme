@@ -180,7 +180,7 @@ a:hover {
     text-align: center;
     left: 0px;
     right: 0px;
-    top: 400px; 
+    top: 370px; 
 }
 
 .bmwe-menu .ul-menu > li{
@@ -260,17 +260,20 @@ a:hover {
     height: 100px;
 }
 
-.not-for-mobile{
-    display: none;
-}
 
 /* media query responsive for any mobiles */
 @media screen and (max-width: 767px) {
     .div-only-for-mobile{
         display: block;
     }
+    #div-awards{
+        padding-top: 20px;
+    }
+    #div-awards p{
+        padding: 50px 5px 0px 5px;
+    }
     #div-awards p span{
-        font-size: 11px;
+        font-size: 15px;
         letter-spacing: 0px;
     }
     .img-award-purple{
@@ -302,6 +305,15 @@ a:hover {
     .btn-lg{
         font-size: 17px;
     }
+    .not-for-mobile{
+        display: none;
+    }
+    .margin-top20{
+        margin-bottom: 20px;
+    }
+    .margin-top-ourServices{
+        margin-top: 0px;
+    }
 }
 
 
@@ -330,6 +342,9 @@ a:hover {
     .bmwe-menu{
         top: 780px;
     }
+    .not-for-mobile{
+        display: none;
+    }
 }
 
 @media screen and (orientation: landscape) and (min-width: 768px) and (max-width: 1024px) {
@@ -352,5 +367,8 @@ a:hover {
     }
     .img-award-purple{
         background-position: -258px -321px;
+    }
+    .not-for-mobile{
+        display: none;
     }
 }

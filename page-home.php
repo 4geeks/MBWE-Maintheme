@@ -34,6 +34,9 @@ echo $content;
 		<div class="bmwe-menu">
 			<?php wp_nav_menu(array('menu' => 'sub-menu', 'menu_class' => 'ul-menu')); ?>
 		</div>
+		<center>
+			<div id="arrow-down"><span class="glyphicon glyphicon-chevron-down"></span></div>
+		</center>
 	</div>
 </div>
 <div id="div-ourServices" class="row margin-top-ourServices">
