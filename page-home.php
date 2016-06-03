@@ -40,25 +40,25 @@ echo $content;
 	<div class="col-md-12">
 		<h3 class="with-font-title"><em>Our services</em></h3>
 	</div>
-	<div class="col-md-12 clear center">
-		<a href="#" class="col-md-4 img-venues highlight-element">
+	<div class="col-md-12 col-xs-12 clear center">
+		<a href="#" class="col-md-4 col-xs-12 img-venues highlight-element">
 			<p>VENUES</p>
 		</a>
-		<a href="#" class="col-md-4 img-catering highlight-element">
+		<a href="#" class="col-md-4 col-xs-12 img-catering highlight-element">
 			<p>CATERING</p>
 		</a>
-		<a href="#" class="col-md-4 img-staffing highlight-element">
+		<a href="#" class="col-md-4 col-xs-12 img-staffing highlight-element">
 			<p>STAFFING</p>
 		</a>			
 		
 
-		<a href="#" class="col-md-4 img-decor highlight-element">
+		<a href="#" class="col-md-4 col-xs-12 img-decor highlight-element">
 			<p>DECOR</p>
 		</a>	
-		<a href="#" class="col-md-4 img-music highlight-element">
+		<a href="#" class="col-md-4 col-xs-12 img-music highlight-element">
 			<p><span>MUSIC</span><span>AND</span><span>ENTERTAINMENT</span></p>
 		</a>	
-		<a href="#" class="col-md-4 img-production highlight-element">
+		<a href="#" class="col-md-4 col-xs-12 img-production highlight-element">
 			<p><span>PRODUCTION</span><span>AND</span><span>LIGHTING</span></p>
 		</a>			
 			
@@ -70,7 +70,7 @@ echo $content;
 	</div>
 	<div class="col-md-12 img-award-purple center margin-top20">	
 		<p><span><?php echo $awardText; ?></span></p>
-		<div class="col-md-4 col-md-offset-4 line"></div>
+		<div class="col-md-4 col-md-offset-4 col-xs-6 col-xs-offset-3 line"></div>
 	</div>
 	<div class="img-aw col-md-12 margin-top20">		
 	</div>
