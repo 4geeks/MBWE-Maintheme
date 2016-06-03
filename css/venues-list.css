@@ -12,32 +12,36 @@
     color: #ffffff;
 }
 
+.content-header-description {
+	position: relative;
+	height: auto;
+	width: 100%;
+	text-align: center;
+	/*background-color: #93D5D9;*/
+	padding-top: 12px;
+	padding-bottom: 20px;
+}
+
 #list-content {
 	position: relative;
 	padding: 0px;
-	height: auto;
+	height: 440px;
+	width: 100%;
 }
 
 .div-schedule {
 	text-align: center;
 }
 .div-schedule p {	
-	font-size: 25px;
+	font-size: 30px;
 	margin-top:10px;
+	font-weight: bold;
 }
 
-.content-header-description {
-	position: relative;
-	height: auto;
-	width: 100%;
-	text-align: center;
-	background-color: #93D5D9;
-	padding-top: 12px;
-}
 
 .venue-element{
 	padding: 0px;
-	height: 430px;
+	height: 100%;
 	border-right: 1px solid #ffffff;
 }
 

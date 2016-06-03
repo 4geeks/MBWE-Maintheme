@@ -43,7 +43,7 @@ $tour = types_render_field("venue-360-tour");
 				</a>			
 			</div>
 			<div id="div-menu-button">
-				<button class="btn btn-info">Request a quote</button>
+				<button class="btn btn-warning">Get an instant a quote</button>
 			</div>
 			<div class="scroll">
 				<div class="min-height">
@@ -76,8 +76,7 @@ $tour = types_render_field("venue-360-tour");
 						</div>
 						<div class="social-icon pinterest">
 							<a href="http://www.pinterest.com/" target="_blank"><i class="fa fa-pinterest"></i></a>
-						</div>
-						<span class="copyright">Social Networks <?php //echo get_option('4gacademy_op-company_name', 'Company LLC'); ?></span>        
+						</div>						
 					</div>
 				</div>
 			</nav>
@@ -91,7 +90,7 @@ $tour = types_render_field("venue-360-tour");
 				<div class="menu-small">
 			      <div class="row">  
 			        <div class="col-md-12">
-			          <div class="bmwe-menu">
+			          <div class="bmwe-menu not-for-mobile">
 						<?php wp_nav_menu(array('menu' => 'sub-menu', 'menu_class' => 'ul-menu')); ?>
 					</div>
 			        </div>

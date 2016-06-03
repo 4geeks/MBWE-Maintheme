@@ -28,7 +28,7 @@
 						</div>
 						<div class="col-md-offset-2 col-md-5">
 							<div class="newsletter">
-								<div class="col-md-12">
+								<div class="col-md-12 margin-bottom3">
 									<span>NEWSLETTER</span>
 								</div>
 								<div class="col-md-12">
@@ -42,7 +42,7 @@
 						<div id="div-angle-double" class="col-md-offset-5 col-md-2 fa fa-angle-double-up">
 						</div>
 						<div class="col-md-offset-1 col-md-6">
-							<div class="links">								
+							<div class="links">
 								<div class="col-md-4">
 									<div id="div-links-content" class="col-md-12">
 										<span><?php echo $footerTitle1; ?></span>

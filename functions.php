@@ -160,10 +160,9 @@ function html5blank_styles()
 
     if (is_page('gallery')){
         wp_register_style('masonrycss', get_template_directory_uri() . '/css/masonrygallery.css', false, '1.1', 'all');
-        wp_enqueue_style('masonrycss');        
-    }
+        wp_enqueue_style('masonrycss');          }
 
-    if (is_page('wedding-venues')){
+    if (is_page('wedding-venues-locations')){
         wp_register_style('venueslistcss', get_template_directory_uri() . '/css/venues-list.css', false, '1.1', 'all');
         wp_enqueue_style('venueslistcss');        
     }
@@ -183,12 +182,12 @@ function html5blank_styles()
         wp_enqueue_style('aboutuscss');        
     }
 
-    if (is_page('awards')){
+    if (is_page('press-awards')){
         wp_register_style('awardscss', get_template_directory_uri() . '/css/awards.css', false, '1.1', 'all');
         wp_enqueue_style('awardscss');        
     }
 
-    if (is_page('wedding-venues') || is_page('wedding-planners') || is_page('wedding-packages') || is_page('about-us')){
+    if (is_page('wedding-venues-locations') || is_page('wedding-planners') || is_page('wedding-packages') || is_page('about-us')){
         wp_register_style('menutopcss', get_template_directory_uri() . '/css/menu-top.css', false, '1.1', 'all');
         wp_enqueue_style('menutopcss');           
     }
