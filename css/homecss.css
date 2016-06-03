@@ -25,9 +25,15 @@ a:hover {
 }
 #div-titulo{
     margin-top: 200px;
+    text-align: center;
 }
 #div-titulo h1{
 	text-align: center;
+}
+
+#div-titulo div{
+    position: relative;
+    left: 60px;
 }
 
 #div-link-central{
