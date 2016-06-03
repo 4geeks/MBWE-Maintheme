@@ -427,7 +427,7 @@ a img.aligncenter {
 	width: 100%;
 	color: #ffffff;	
 	background-image: url('img/why-fetes-events.jpg');
-	height: 343px;
+	height: 380px;
 	background-size: cover;    
     background-position-x: 50%;
     background-position-y: 80%;
@@ -441,6 +441,14 @@ a img.aligncenter {
 
 #why-fetes-events p{
 	padding: 40px;
+}
+
+.custom-overlay {
+	position: absolute;
+    background: rgba(0,0,0,0.42);
+    -pie-background: rgba(0,0,0,0.42);
+    height: 100%;
+    width: 100%;
 }
 /*END FOR WHY FETES & EVENTS*/
 

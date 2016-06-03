@@ -79,7 +79,7 @@ $venues = new WP_Query( $args );
                     </video>
                 </div>            
                 <div id="div-venue-name">
-                    <span class="with-font-sub-title" <?php echo ($isClubOfKnigth? " style='font-size:90px;' ":'') ?>><?php  echo $name;?></span> <br />
+                    <span class="with-font-sub-title" style='font-size:90px;'><?php  echo $name;?></span> <br />
                     <span id="direction" > <?php echo $direction ?></span>
                 </div>
                 <div id="div-venue-button">
