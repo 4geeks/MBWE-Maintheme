@@ -58,9 +58,7 @@ body {
 	/*font:300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
 	color:#444;
 }
-.row, .col-md-12{
-	padding-right: 0px;
-}
+
 /* clear */
 .clear:before,
 .clear:after {
@@ -739,6 +737,29 @@ a img.aligncenter {
 .margin-bottom3{
 	margin-bottom: 3px;
 }
+
+
+#animatedModalContact {
+	background-color: #ffffff;
+}
+
+#contact-us {
+	height: 100%;
+	background-color: #ffffff;
+}
+
+#contact-call-us, #div-form-contact-us {
+	height: 100%;
+}
+#contact-call-us {
+	padding-left:30px;
+}
+
+#contact-call-us h1{
+	padding-left:40px;
+}
+
+
 /*Only for smartphones*/
 
 @media only screen and (max-width: 768px){
