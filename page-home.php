@@ -73,7 +73,12 @@ echo $content;
 		<p><span><?php echo $awardText; ?></span></p>
 		<div class="col-md-4 col-md-offset-4 col-xs-6 col-xs-offset-3 line"></div>
 	</div>
-	<div class="img-aw col-md-12 margin-top20">		
+	<div class="col-md-12 margin-top20">
+		<div class="col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6 col-xs-12">
+			<div class="col-md-4 col-sm-4 col-xs-4 img-aw4"></div>
+			<div class="col-md-4 col-sm-4 col-xs-4 img-aw1"></div>
+			<div class="col-md-4 col-sm-4 col-xs-4 img-aw2"></div>
+		</div>
 	</div>
 </div>
 <div class="blue-background"><h2>What our clients say about Fetes & Events</h2></div>

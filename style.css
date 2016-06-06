@@ -497,6 +497,20 @@ a img.aligncenter {
     background-size: 80px 92px;
     height: 92px;
 }
+.img-aw3{
+    background-image: url(img/aw3.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 80px 92px;
+    height: 92px;
+}
+.img-aw4{
+    background-image: url(img/aw4.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    height: 92px;
+}
 
 .line2{
     height: 1px;
