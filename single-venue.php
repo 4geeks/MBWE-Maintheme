@@ -90,18 +90,18 @@ $venues = new WP_Query( $args );
                 <div id="arrow-down" class="not-for-mobile"><span class="glyphicon glyphicon-chevron-down"></span></div>     
             </div>
 
-            <div id="div-venue-description">                
-                <div class="col-md-8 container"><?php echo $generalInfo ?></div>
-                <div class="col-md-4 container">
+            <div id="div-venue-description" class="row">                
+                <div class="col-md-7 container"><?php echo $generalInfo ?></div>
+                <div class="col-md-5 container">
                     <div class="col-md-1 col-xs-1">
                         <span class="important glyphicon glyphicon-user"></span>
                     </div>
-                    <div class="col-md-5 col-xs-10"><p><?php echo $maxCapacity ?> people capacity</p></div>
+                    <div class="col-md-11 col-xs-10"><p><?php echo $maxCapacity ?> people capacity</p></div>
 
-                    <div class="col-md-1 col-xs-1">
+                    <div class="col-md-1 col-xs-1 margin-top20">
                         <span class="important glyphicon glyphicon-time"></span>
                     </div>
-                    <div class="col-md-5 col-xs-10"><p>The event must end by <?php echo $curfew ?></p></div>
+                    <div class="col-md-11 col-xs-10 margin-top20"><p>The event must end by <?php echo $curfew ?></p></div>
                 </div>
             </div>
             <div id="div-venue-location" class="row">
@@ -110,7 +110,7 @@ $venues = new WP_Query( $args );
                         
                     </div>                
                 </div>
-                <div id="p-location" class="col-md-6" >
+                <div class="col-md-6 p-location" >
                     <h2 class="with-font-sub-title">Location</h2>
                     <div>
                         <?php echo $location ?>
@@ -160,7 +160,7 @@ $venues = new WP_Query( $args );
             </div>
             <?php if($blueprint != ''){ ?>
                 <div id="div-venue-blueprint" class="row">
-                    <div class="container">
+                    <div class="p-location">
                         <h3 class="with-font-sub-title">Areas and distribution</h3>
                         <?php echo $blueprint?>
                     </div>
