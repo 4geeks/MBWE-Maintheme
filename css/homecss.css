@@ -285,10 +285,15 @@ a:hover {
     opacity: 0.7;    
 }
 
+/*.not-for-pc{
+    display: none;
+}*/
+
 /* media query responsive for any mobiles */
 @media screen and (max-width: 767px) {
     .div-only-for-mobile{
         display: block;
+        height: 450px;
     }    
     #div-awards p{
         padding: 50px 5px 0px 5px;
@@ -365,6 +370,10 @@ a:hover {
     }
     .not-for-mobile{
         display: none;
+    }
+    .div-only-for-mobile{
+        display: block;
+        height: 850px;
     }
 }
 
