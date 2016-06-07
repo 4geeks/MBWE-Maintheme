@@ -43,7 +43,7 @@ $tour = types_render_field("venue-360-tour");
 				</a>			
 			</div>
 			<div id="div-menu-button">
-				<button class="btn btn-warning">Get an instant a quote</button>
+				<a class="btn btn-warning modalContact" href="#animatedModalContact">Get an instant a quote</a>
 			</div>
 			<div class="scroll">
 				<div class="min-height">
@@ -97,5 +97,18 @@ $tour = types_render_field("venue-360-tour");
 			      </div>    
 			    </div>
 		    <?php } ?>
+
+		    <div id="animatedModalContact">
+                <div class="col-md-12 modal-contact-menu">                                             
+                    <div class="close-animatedModalContact btn-close"> 
+                        <span class="glyphicon glyphicon-remove" style="color:white"></span>
+                    </div>                    
+                </div>
+                <div class="modal-content">                    
+		    		<!-- ========== CONTACT US PART ========== -->
+        			<?php get_template_part( 'template-parts/part', 'contact-us' ); ?>
+            		<!-- ========== CONTACT US PART ========== -->
+                </div>
+            </div>
 			<!-- header -->
 			<!-- /header -->

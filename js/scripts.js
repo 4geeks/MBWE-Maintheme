@@ -88,6 +88,29 @@
 		    }, 1000);
 
 		});
+
+		/*
+		* Config modal Get an instant budget
+		*/
+
+		$(".modalContact").animatedModal({
+ 			animatedIn: 'bounceInUp',
+ 			animatedOut: 'bounceOutDown',
+ 			overflow:'hidden',
+ 			modalTarget: 'animatedModalContact',
+ 			beforeOpen: function(e){
+ 				// alert('hola')
+ 			},
+			afterOpen: function() {
+			
+			},
+			beforeClose: function() {
+			
+			},
+			afterClose: function(){
+			
+			}
+ 		});
 		
 	});
 	

@@ -76,7 +76,7 @@
 
 #my-sidebar ul li a {
   display: block;
-  font-size: 1.2em;
+  font-size: 0.8em;
   padding: 0.5em 1em;
 }
 #my-sidebar ul li a:hover {
@@ -116,13 +116,9 @@
 #my-sidebar ul li.current-menu-item {
   background-color: rgba(255, 255, 255, 0.2);
 }
-#my-sidebar ul li a {
-  display: block;
-  font-size: 1.2em;
-  padding: 0.5em 1em;
-}
+
 #my-sidebar ul li a:hover {
-  color: #8A764D;;
+  color: #8A764D;
 }
 #my-sidebar .social {
   position: absolute;
