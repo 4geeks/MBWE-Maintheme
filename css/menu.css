@@ -159,35 +159,20 @@
     margin-top: 15px;
 }
 
-
-
 .min-height{
   min-height: 350px;
 }
 
-@media screen and (min-width: 1025px) {
-    
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px){
-    #my-sidebar-toggle{
-      top: 15px;
-      font-size: 20px;
-    }
-    .min-height{
-      min-height: 700px;
-    }
-}
-
+/*ONLY FOR MOBILE*/
 @media screen and (max-width: 767px) {
   .not-for-phone {
       display: none;
   }  
-  #my-sidebar-toggle{
-    font-size: 15px;
-  }
   .for-phone{
     display: block;
+  }
+  #my-sidebar-toggle{
+    font-size: 15px;
   }
   .scroll{
     overflow: scroll;
@@ -195,7 +180,30 @@
   }
 } 
 
-@media screen and (min-width: 1024px) and (max-width: 1024px){
+@media screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1024px){
+  .not-for-phone {
+    display: none;
+  }  
+  .for-phone{
+    display: block;
+  }
+  #my-sidebar-toggle{
+    font-size: 20px;
+  }
+  .min-height{
+    min-height: 700px;
+  }
+  #sub-menu{
+    margin: 18px 0px 0px;
+  }
+  #sub-menu li{
+    height: 120px;
+  }
+}
+
+
+
+@media screen and (orientation: landscape) and (min-width: 768px) and (max-width: 1024px){
   .min-height{
       min-height: 450px;
     }
