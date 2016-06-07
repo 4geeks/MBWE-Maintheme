@@ -148,6 +148,7 @@ Saved: Apr 17 2016 | 20:42:27 */
 
 #div-venue-location div{
     padding-left: 0px;
+    padding-right: 0px;
 }
 
 #p-location {
@@ -410,11 +411,41 @@ Saved: Apr 18 2016 | 16:49:53 */
     font-size: 14px;
     float: right;
   }
-  .fullscreen-bg__video{
-        height: 450px;
-    }
-    .with-font-sub-title{
+  #menu-desplegable span{
+    font-size: 22px;
+  }
+  .with-font-sub-title{
         font-size: 46px;
+    }
+    #div-venue-name{
+        font-size: 0px;
+    }
+    #direction{
+        top: 15px;
+    }
+    #direction p, #div-venue-button p{
+        font-size: 13px;
+    }
+    #div-venue-image, .fullscreen-bg__video{
+        height: 600px;
+    }
+    .btn-lg{
+        font-size: 15px;
+    }
+    #sub-menu{
+        margin: 9px -2px 0px;
+        width: 250px;
+    }
+    #div-venue-description p{
+        text-align: justify;
+        letter-spacing: 1px;
+        line-height: 1;
+        font-size: 20px;
+    }
+    #p-location{
+        padding-left: 25px !important;
+        padding-top: 25px !important;
+        padding-right: 25px !important;
     }
 }
 

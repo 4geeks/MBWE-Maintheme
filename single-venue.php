@@ -87,21 +87,21 @@ $venues = new WP_Query( $args );
                    <button class="btn btn-warning btn-lg">Request a quote</button>
                    <p class="highlight-p">or call now! 305-985-4663</p>
                 </div>
-                <div id="arrow-down"><span class="glyphicon glyphicon-chevron-down"></span></div>     
+                <div id="arrow-down" class="not-for-mobile"><span class="glyphicon glyphicon-chevron-down"></span></div>     
             </div>
 
             <div id="div-venue-description">                
                 <div class="col-md-8 container"><?php echo $generalInfo ?></div>
                 <div class="col-md-4 container">
-                    <div class="col-md-1">
+                    <div class="col-md-1 col-xs-1">
                         <span class="important glyphicon glyphicon-user"></span>
                     </div>
-                    <div class="col-md-5"><?php echo $maxCapacity ?> people capacity</div>
+                    <div class="col-md-5 col-xs-10"><p><?php echo $maxCapacity ?> people capacity</p></div>
 
-                    <div class="col-md-1">
+                    <div class="col-md-1 col-xs-1">
                         <span class="important glyphicon glyphicon-time"></span>
                     </div>
-                    <div class="col-md-5">The event must end by <?php echo $curfew ?> </div>
+                    <div class="col-md-5 col-xs-10"><p>The event must end by <?php echo $curfew ?></p></div>
                 </div>
             </div>
             <div id="div-venue-location" class="row">
@@ -113,7 +113,7 @@ $venues = new WP_Query( $args );
                 <div id="p-location" class="col-md-6" >
                     <h2 class="with-font-sub-title">Location</h2>
                     <div>
-                        <p><?php echo $location ?></p>
+                        <?php echo $location ?>
                     </div>    
                 </div>
             </div>
