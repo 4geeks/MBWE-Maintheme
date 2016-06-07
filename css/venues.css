@@ -489,14 +489,6 @@ Saved: Apr 18 2016 | 16:49:53 */
     .top-venue-menu{
         padding-top: 17px;
     }
-    .col-md-1{
-        float: left;
-        width: 13%;
-    }
-    .col-md-7{
-        float: left;
-        width: 60%;
-    }
     .not-for-mobile{
         display: none;
     }
@@ -517,7 +509,7 @@ Saved: Apr 18 2016 | 16:49:53 */
       padding: 5px;
     }
     #menu-desplegable{
-        margin: 20px 0px 0px 30px;
+        margin: 20px 0px 0px -30px;
         font-size: 19px;
     }
     .top-venue-menu{
