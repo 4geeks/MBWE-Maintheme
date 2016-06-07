@@ -782,12 +782,20 @@ a img.aligncenter {
     margin-bottom: 10px !important;
     vertical-align: middle;
 }
+
 li.col2 {
     width: 45% !important;
     margin: 0 2.5% !important;
     display: inline-block !important;
 
+}
 
+li.col1 {
+    width: 95% !important;
+    margin: 0 2.5% !important;
+    display: inline-block !important;
+
+}
 
 /*Only for smartphones*/
 
