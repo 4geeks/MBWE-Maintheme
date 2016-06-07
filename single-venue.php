@@ -91,8 +91,8 @@ $venues = new WP_Query( $args );
             </div>
 
             <div id="div-venue-description" class="row">                
-                <div class="col-md-7 container"><?php echo $generalInfo ?></div>
-                <div class="col-md-5 container">
+                <div class="col-md-7 col-sm-7 container"><?php echo $generalInfo ?></div>
+                <div class="col-md-5 col-sm-5 container">
                     <div class="col-md-1 col-xs-1">
                         <span class="important glyphicon glyphicon-user"></span>
                     </div>
