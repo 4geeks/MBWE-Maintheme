@@ -9,7 +9,7 @@
             <h3>Or chat with us</h3>
         </div>
         <div class="col-md-7 div-form-contact-us highlight-p">
-            <?php[gravityform id="1" title="false" description="false"]?>
+            <?php [gravityform id="1" title="false" description="false"] ?>
             <!-- <form>
                 <div class="form-group col-md-6">
                     <label for="firstName">First Name</label>
