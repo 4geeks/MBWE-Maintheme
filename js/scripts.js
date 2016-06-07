@@ -92,7 +92,6 @@
 		/*
 		* Config modal Get an instant budget
 		*/
-
 		$(".modalContact").animatedModal({
  			animatedIn: 'bounceInUp',
  			animatedOut: 'bounceOutDown',
@@ -111,6 +110,7 @@
 			
 			}
  		});
+		$('#animatedModalContact').css('display','block');
 		
 	});
 	
