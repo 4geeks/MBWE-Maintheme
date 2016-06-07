@@ -73,13 +73,14 @@ $venues = new WP_Query( $args );
     <div id="primary" class="<?php echo $primary_class; ?>">
         <main id="main">
             <div id='div-venue-image'>                
-                <div class="fullscreen-bg">                    
+                <div class="fullscreen-bg">  
+                    <div id="div-only-for-mobile" class="fullscreen-bg__video not-for-pc" style="background-image: url(<?php echo $mainImage; ?>); background-size: cover; background-position: center center;"></div>                  
                     <video id="videoVenue" loop="" muted="" autoplay="" class="fullscreen-bg__video" poster="<?php echo $mainImage; ?>">
                         <source src="<?php echo $mainVideo; ?>">
                     </video>
                 </div>            
                 <div id="div-venue-name">
-                    <span class="with-font-sub-title" style='font-size:90px;'><?php  echo $name;?></span> <br />
+                    <span class="with-font-sub-title" ><?php  echo $name;?></span> <br />
                     <span id="direction" > <?php echo $direction ?></span>
                 </div>
                 <div id="div-venue-button">
