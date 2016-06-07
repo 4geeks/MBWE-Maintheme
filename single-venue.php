@@ -73,34 +73,35 @@ $venues = new WP_Query( $args );
     <div id="primary" class="<?php echo $primary_class; ?>">
         <main id="main">
             <div id='div-venue-image'>                
-                <div class="fullscreen-bg">                    
+                <div class="fullscreen-bg">  
+                    <div id="div-only-for-mobile" class="fullscreen-bg__video not-for-pc" style="background-image: url(<?php echo $mainImage; ?>); background-size: cover; background-position: center center;"></div>                  
                     <video id="videoVenue" loop="" muted="" autoplay="" class="fullscreen-bg__video" poster="<?php echo $mainImage; ?>">
                         <source src="<?php echo $mainVideo; ?>">
                     </video>
                 </div>            
                 <div id="div-venue-name">
-                    <span class="with-font-sub-title" style='font-size:90px;'><?php  echo $name;?></span> <br />
+                    <span class="with-font-sub-title" ><?php  echo $name;?></span> <br />
                     <span id="direction" > <?php echo $direction ?></span>
                 </div>
                 <div id="div-venue-button">
                    <button class="btn btn-warning btn-lg">Request a quote</button>
                    <p class="highlight-p">or call now! 305-985-4663</p>
                 </div>
-                <div id="arrow-down"><span class="glyphicon glyphicon-chevron-down"></span></div>     
+                <div id="arrow-down" class="not-for-mobile"><span class="glyphicon glyphicon-chevron-down"></span></div>     
             </div>
 
             <div id="div-venue-description">                
                 <div class="col-md-8 container"><?php echo $generalInfo ?></div>
                 <div class="col-md-4 container">
-                    <div class="col-md-1">
+                    <div class="col-md-1 col-xs-1">
                         <span class="important glyphicon glyphicon-user"></span>
                     </div>
-                    <div class="col-md-5"><?php echo $maxCapacity ?> people capacity</div>
+                    <div class="col-md-5 col-xs-10"><p><?php echo $maxCapacity ?> people capacity</p></div>
 
-                    <div class="col-md-1">
+                    <div class="col-md-1 col-xs-1">
                         <span class="important glyphicon glyphicon-time"></span>
                     </div>
-                    <div class="col-md-5">The event must end by <?php echo $curfew ?> </div>
+                    <div class="col-md-5 col-xs-10"><p>The event must end by <?php echo $curfew ?></p></div>
                 </div>
             </div>
             <div id="div-venue-location" class="row">
@@ -112,7 +113,7 @@ $venues = new WP_Query( $args );
                 <div id="p-location" class="col-md-6" >
                     <h2 class="with-font-sub-title">Location</h2>
                     <div>
-                        <p><?php echo $location ?></p>
+                        <?php echo $location ?>
                     </div>    
                 </div>
             </div>
@@ -131,9 +132,9 @@ $venues = new WP_Query( $args );
                             <?php
                                 foreach ($child_posts as $child_post) {
                                     echo "<div class='acommodations-group'>";
-                                        echo "<div class='col-md-3 image-acommodation' style='background-image: url(".$child_post->fields['thumbnail']."')> </div>";
+                                        echo "<div class='col-md-3 col-xs-2 image-acommodation' style='background-image: url(".$child_post->fields['thumbnail']."')> </div>";
 
-                                        echo "<div class='col-md-9 name-acommodation'>".
+                                        echo "<div class='col-md-9 col-xs-10 name-acommodation'>".
                                                 $child_post->fields['name_nerby']."<br>".
                                                 $child_post->fields['direction_acommodation'].
                                             "</div>";
@@ -146,13 +147,13 @@ $venues = new WP_Query( $args );
                     <div class="col-md-4 col-sm-4" id="div-venue-parking">
                         <div>
                             <h2>Parking</h2>
-                            <p><?php echo $parking ?></p>
+                            <?php echo $parking ?>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-4" id="div-venue-transportation">
                         <div>
                             <h2>Transportation</h2>
-                            <p><?php echo $transportation ?></p>
+                            <?php echo $transportation ?>
                         </div>
                     </div>
                 </div>
@@ -161,7 +162,7 @@ $venues = new WP_Query( $args );
                 <div id="div-venue-blueprint" class="row">
                     <div class="container">
                         <h3 class="with-font-sub-title">Areas and distribution</h3>
-                        <p> <?php echo $blueprint?> </p>
+                        <?php echo $blueprint?>
                     </div>
                     <?php if($blueprintImage != '') {?>
                         <div class="container">

@@ -148,6 +148,7 @@ Saved: Apr 17 2016 | 20:42:27 */
 
 #div-venue-location div{
     padding-left: 0px;
+    padding-right: 0px;
 }
 
 #p-location {
@@ -400,38 +401,70 @@ Saved: Apr 18 2016 | 16:49:53 */
     background-color: #707070;
 }
 
-@media screen and (min-width: 1025px) {
-
-}
-
-
-
-@media screen and (min-width: 768px) and (max-width: 1024px){
-    .ul-menu li a{
-      font-size: 12px;
-      padding: 5px;
-  }
-  #menu-desplegable{
-    margin: 15px 0px 0px 0px;
-    font-size: 19px;
-}
-.top-venue-menu{
-    margin-left: 0px;
-}
-}
-
+/* media query responsive for any mobiles */
 @media screen and (max-width: 767px) {
-  .not-for-phone {
-      display: none;
-  }  
-    #menu-desplegable{
-        margin: 8px 10px 0px 0px;
-        font-size: 14px;
-        float: right;
+  .not-for-mobile{
+        display: none;
+    }   
+  #menu-desplegable{
+    margin: 8px 10px 0px 0px;
+    font-size: 14px;
+    float: right;
+  }
+  #menu-desplegable span{
+    font-size: 22px;
+  }
+  .with-font-sub-title{
+        font-size: 46px;
     }
-} 
+    #div-venue-name{
+        font-size: 0px;
+    }
+    #direction{
+        top: 15px;
+    }
+    #direction p, #div-venue-button p{
+        font-size: 13px;
+    }
+    #div-venue-image, .fullscreen-bg__video{
+        height: 600px;
+    }
+    .btn-lg{
+        font-size: 15px;
+        margin-top: 20px;
+    }
+    #sub-menu{
+        margin: 22px -2px 0px;
+        width: 250px;
+    }
+    #sub-menu li{
+        padding: 0px;
+        height: 100px;
+    }
+    #div-venue-description p, #p-location p, #div-venue-parking p, #div-venue-transportation p, #div-venue-blueprint p{
+        text-align: justify;
+        letter-spacing: 1px;
+        line-height: 1;
+        font-size: 21px;
+    }
+    #p-location{
+        padding-left: 25px !important;
+        padding-top: 25px !important;
+        padding-right: 25px !important;
+    }
+    .scrollbar{
+        margin-left: 0px;
+    }
+    #div-venue-location{
+        height: 250px;
+    }
+    #div-venue-transportation h2{
+        margin-top: 0px;
+    }
+}
 
-@media screen and (min-width: 768px) and (max-width: 768px){
+
+@media screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1024px){
     #menu-desplegable{
         margin: 12px 10px 0px 0px;        
         float: right;
@@ -447,5 +480,31 @@ Saved: Apr 18 2016 | 16:49:53 */
     .col-md-7{
         float: left;
         width: 60%;
+    }
+    .not-for-mobile{
+        display: none;
+    }
+    .fullscreen-bg__video{
+        height: 850px;
+    }
+}
+
+@media screen and (orientation: landscape) and (min-width: 768px) and (max-width: 1024px){
+    .ul-menu li a{
+      font-size: 12px;
+      padding: 5px;
+    }
+    #menu-desplegable{
+        margin: 15px 0px 0px 0px;
+        font-size: 19px;
+    }
+    .top-venue-menu{
+        margin-left: 0px;
+    }    
+    .not-for-mobile{
+        display: none;
+    }
+    .fullscreen-bg__video{
+        height: 650px;
     }
 }

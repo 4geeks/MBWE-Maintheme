@@ -69,7 +69,7 @@
 
 		if ($(window).width() <= 1024){			
 			$('#videoVenue').addClass("not-for-mobile");
-			$('#div-only-for-mobile').css('display', 'block');
+			$('#div-only-for-mobile').css('display', 'block');			
 			/*$('#div-only-for-mobile').css('background-image', 'url(' + $('#videoVenue').attr('poster') + ')');
 			$('#div-only-for-mobile').css('background-attachment', 'fixed');
 			$('#div-only-for-mobile').css('background-size', 'cover');
