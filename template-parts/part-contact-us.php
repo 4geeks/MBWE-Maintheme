@@ -1,14 +1,14 @@
-<div id="contact-us">
-    <div id="contact-title" class="col-md-12 well">
+<div class="contact-us">
+    <div class="col-md-12 contact-title highlight-p">
        <center><p>Responsiveness is one of our main values, <br /> we guaranty you a response in less than 10min</p></center>       
     </div>
-    <div class="row">
-        <div id="contact-call-us" class="col-md-5">
+    <!-- <div class="row"> -->
+        <div class="col-md-5 contact-call-us highlight-p">
             <h3>Call us now!</h3>
             <h1>(305) 662-47-42</h1>
             <h3>Or chat with us</h3>
         </div>
-        <div id="div-form-contact-us" class="col-md-7">
+        <div class="col-md-7 div-form-contact-us highlight-p">
             <form>
                 <div class="form-group col-md-6">
                     <label for="firstName">First Name</label>
@@ -53,5 +53,5 @@
                 </div>
             </form>
         </div>        
-    </div>
+    <!-- </div> -->
 </div>
