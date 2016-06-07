@@ -9,7 +9,8 @@
             <h3>Or chat with us</h3>
         </div>
         <div class="col-md-7 div-form-contact-us highlight-p">
-            <form>
+            <?php[gravityform id="1" title="false" description="false"]?>
+            <!-- <form>
                 <div class="form-group col-md-6">
                     <label for="firstName">First Name</label>
                     <input type="text" class="form-control" id="firstName" placeholder="First Name">
@@ -51,7 +52,7 @@
                         <button type="button" class="btn btn-warning btn-lg" style="width:100%">Send</button>
                     </p>
                 </div>
-            </form>
+            </form> -->
         </div>        
     <!-- </div> -->
 </div>
