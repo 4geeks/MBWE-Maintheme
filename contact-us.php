@@ -11,8 +11,10 @@ get_header();
 	<!-- ========== MENU TOP ========== -->
     <?php get_template_part( 'template-parts/menu', 'top' ); ?>
     <!-- ========== MENU TOP ========== -->
-	<!-- ========== MENU TOP ========== -->
-    <?php get_template_part( 'template-parts/part', 'contact-us' ); ?>
-    <!-- ========== MENU TOP ========== -->
+    <div id="page-contact-us">
+    	<!-- ========== MENU TOP ========== -->
+        <?php get_template_part( 'template-parts/part', 'contact-us' ); ?>
+        <!-- ========== MENU TOP ========== -->        
+    </div>
 
 <?php get_footer(); ?>

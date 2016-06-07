@@ -743,7 +743,7 @@ a img.aligncenter {
 	background-color: #ffffff;
 }
 
-#contact-us {
+.contact-us {
 	height: 100%;
 	background-color: #ffffff;
 	color: #ffffff;
@@ -753,21 +753,24 @@ a img.aligncenter {
 
 }
 
-#contact-title {
+.contact-title {
 	font-weight: bold;
 }
-#contact-call-us, #div-form-contact-us {
+.contact-call-us, .div-form-contact-us {
 	height: 100%;
 }
-#contact-call-us {
+.contact-call-us {
 	padding-left:30px;
 }
 
-#contact-call-us h1{
+.contact-call-us h1{
 	padding-left:40px;
 }
 
-
+#page-contact-us {
+	position: relative;
+	height: 600px;
+}
 /*Only for smartphones*/
 
 @media only screen and (max-width: 768px){
