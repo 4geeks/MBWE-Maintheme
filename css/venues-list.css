@@ -48,7 +48,7 @@
 .div-venue-image{
 	padding: 0px;
 	height: 300px;	
-   -webkit-background-size: cover;
+   	background-size: cover;
     background-size: ;
     background-position: center;
 }
