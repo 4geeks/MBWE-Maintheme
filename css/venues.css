@@ -457,6 +457,9 @@ Saved: Apr 18 2016 | 16:49:53 */
     #div-venue-location{
         height: 250px;
     }
+    #div-venue-transportation h2{
+        margin-top: 0px;
+    }
 }
 
 
