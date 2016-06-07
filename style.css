@@ -774,6 +774,21 @@ a img.aligncenter {
 	position: relative;
 	height: 600px;
 }
+
+/*FORM CONTACT US*/
+
+
+article .gform_wrapper .gform_body ul li.gfield {
+    margin-bottom: 10px !important;
+    vertical-align: middle;
+}
+article .gform_wrapper ul li.col2 {
+    width: 45% !important;
+    margin: 0 2.5% !important;
+    display: inline-block !important;
+
+
+
 /*Only for smartphones*/
 
 @media only screen and (max-width: 768px){
