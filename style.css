@@ -778,11 +778,11 @@ a img.aligncenter {
 /*FORM CONTACT US*/
 
 
-article .gform_wrapper .gform_body ul li.gfield {
+.gform_wrapper ul li.gfield{
     margin-bottom: 10px !important;
     vertical-align: middle;
 }
-article .gform_wrapper ul li.col2 {
+li.col2 {
     width: 45% !important;
     margin: 0 2.5% !important;
     display: inline-block !important;
