@@ -270,6 +270,8 @@ a:hover {
 }
 
 #arrow-down-home{
+    position: relative;
+    top: 280px;
     height:53px;
     width: 53px;
     font-size:40px;
@@ -340,6 +342,9 @@ a:hover {
     .margin-top-ourServices{
         margin-top: 0px;
     }
+    .fullscreen-bg-home{
+        position: absolute;
+    }
 }
 
 
@@ -375,6 +380,9 @@ a:hover {
         display: block;
         height: 850px;
     }
+    .fullscreen-bg__video{
+        position: fixed;
+    }
 }
 
 @media screen and (orientation: landscape) and (min-width: 768px) and (max-width: 1024px) {
@@ -400,5 +408,8 @@ a:hover {
     }
     .not-for-mobile{
         display: none;
+    }
+    .fullscreen-bg__video{
+        position: fixed;
     }
 }

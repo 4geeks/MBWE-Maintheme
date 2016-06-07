@@ -43,7 +43,7 @@ echo $content;
 	<div class="col-md-12">
 		<h3><em class="with-font-title">Our services</em></h3>
 	</div>
-	<div class="col-md-12 col-xs-12 clear center">
+	<div class="col-md-12 col-xs-12 clear center padding-right0">
 		<a href="#" class="col-md-4 col-xs-12 col-sm-6 img-venues highlight-element">
 			<p>VENUES</p>
 		</a>
