@@ -433,19 +433,29 @@ Saved: Apr 18 2016 | 16:49:53 */
         font-size: 15px;
     }
     #sub-menu{
-        margin: 9px -2px 0px;
+        margin: 22px -2px 0px;
         width: 250px;
     }
-    #div-venue-description p{
+    #sub-menu li{
+        padding: 0px;
+        height: 100px;
+    }
+    #div-venue-description p, #p-location p, #div-venue-parking p, #div-venue-transportation p, #div-venue-blueprint p{
         text-align: justify;
         letter-spacing: 1px;
         line-height: 1;
-        font-size: 20px;
+        font-size: 21px;
     }
     #p-location{
         padding-left: 25px !important;
         padding-top: 25px !important;
         padding-right: 25px !important;
+    }
+    .scrollbar{
+        margin-left: 0px;
+    }
+    #div-venue-location{
+        height: 250px;
     }
 }
 

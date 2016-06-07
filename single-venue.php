@@ -132,9 +132,9 @@ $venues = new WP_Query( $args );
                             <?php
                                 foreach ($child_posts as $child_post) {
                                     echo "<div class='acommodations-group'>";
-                                        echo "<div class='col-md-3 image-acommodation' style='background-image: url(".$child_post->fields['thumbnail']."')> </div>";
+                                        echo "<div class='col-md-3 col-xs-2 image-acommodation' style='background-image: url(".$child_post->fields['thumbnail']."')> </div>";
 
-                                        echo "<div class='col-md-9 name-acommodation'>".
+                                        echo "<div class='col-md-9 col-xs-10 name-acommodation'>".
                                                 $child_post->fields['name_nerby']."<br>".
                                                 $child_post->fields['direction_acommodation'].
                                             "</div>";
@@ -147,13 +147,13 @@ $venues = new WP_Query( $args );
                     <div class="col-md-4 col-sm-4" id="div-venue-parking">
                         <div>
                             <h2>Parking</h2>
-                            <p><?php echo $parking ?></p>
+                            <?php echo $parking ?>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-4" id="div-venue-transportation">
                         <div>
                             <h2>Transportation</h2>
-                            <p><?php echo $transportation ?></p>
+                            <?php echo $transportation ?>
                         </div>
                     </div>
                 </div>
@@ -162,7 +162,7 @@ $venues = new WP_Query( $args );
                 <div id="div-venue-blueprint" class="row">
                     <div class="container">
                         <h3 class="with-font-sub-title">Areas and distribution</h3>
-                        <p> <?php echo $blueprint?> </p>
+                        <?php echo $blueprint?>
                     </div>
                     <?php if($blueprintImage != '') {?>
                         <div class="container">
