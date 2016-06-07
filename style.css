@@ -746,8 +746,16 @@ a img.aligncenter {
 #contact-us {
 	height: 100%;
 	background-color: #ffffff;
+	color: #ffffff;
+	background-image: url(img/torta.png);
+	background-position: center;
+	background-size: cover;
+
 }
 
+#contact-title {
+	font-weight: bold;
+}
 #contact-call-us, #div-form-contact-us {
 	height: 100%;
 }
