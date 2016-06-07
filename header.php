@@ -98,7 +98,7 @@ $tour = types_render_field("venue-360-tour");
 			    </div>
 		    <?php } ?>
 
-		    <div id="animatedModalContact">
+		    <div id="animatedModalContact" style="display:none">
                 <div class="col-md-12 modal-contact-menu">                                             
                     <div class="close-animatedModalContact btn-close"> 
                         <span class="glyphicon glyphicon-remove" style="color:white"></span>
