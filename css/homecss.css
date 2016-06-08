@@ -24,8 +24,8 @@ a:hover {
 	margin-right: 0px;
 }
 #div-titulo{
-    margin-top: 200px;
-    text-align: center;
+    position: relative;
+    top: 200px;
 }
 #div-titulo h1{
 	text-align: center;
@@ -271,7 +271,7 @@ a:hover {
 
 #arrow-down-home{
     position: relative;
-    top: 280px;
+    top: 270px;
     height:53px;
     width: 53px;
     font-size:40px;
@@ -287,11 +287,8 @@ a:hover {
     opacity: 0.7;    
 }
 
-/*.not-for-pc{
-    display: none;
-}*/
 
-/* media query responsive for any mobiles */
+/* ONLY FOR MOBILES */
 @media screen and (max-width: 767px) {
     .div-only-for-mobile{
         display: block;
@@ -347,7 +344,7 @@ a:hover {
     }
 }
 
-
+/* ONLY FOR TABLETS IN PORTRAIT */
 @media screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1024px) {
     #div-titulo{
         margin-top: 0px;
@@ -385,6 +382,7 @@ a:hover {
     }
 }
 
+/* ONLY FOR TABLETS IN LANDSCAPE */
 @media screen and (orientation: landscape) and (min-width: 768px) and (max-width: 1024px) {
     #div-titulo{
         margin-top: 0px;
@@ -411,5 +409,34 @@ a:hover {
     }
     .fullscreen-bg__video{
         position: fixed;
+    }
+}
+
+/* UNTIL SCREEN RESOLUTION 1366PX */
+@media screen and (max-width: 1366px) {
+    #div-home-image{
+        height: 630px;
+    }
+    .bmwe-menu{
+        top: 550px;
+    }
+    #arrow-down-home{
+        top: 460px;
+    }
+}
+
+/* STARTING FROM SCREEN RESOLUTION 1366PX */
+@media screen and (min-width: 1920px){
+    #div-home-image{
+        height: 970px;
+    }
+    #arrow-down-home{
+        top: 750px;
+    }
+    .bmwe-menu{
+        top: 800px;
+    }
+    #div-titulo{
+        top: 350px;
     }
 }
