@@ -13,7 +13,7 @@ get_header();
     <!-- ========== MENU TOP ========== -->
     <div id="page-contact-us">
     	<!-- ========== MENU TOP ========== -->
-        <?php get_template_part( 'template-parts/part', 'contact-us' ); ?>
+        <?php // get_template_part( 'template-parts/part', 'contact-us' ); ?>
         <!-- ========== MENU TOP ========== -->        
     </div>
 
