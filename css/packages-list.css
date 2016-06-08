@@ -132,7 +132,7 @@
 	#content-header{
 		background-size: 1030px;
     	background-position-y: -316%;
-    	background-attachment: fixed;
+    	background-attachment: fixed; 
 	}
 	#content-header h2 {
 		padding-top: 20px;
