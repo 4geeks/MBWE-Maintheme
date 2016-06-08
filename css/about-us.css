@@ -91,7 +91,11 @@
 	opacity: 0.5;
 	background-repeat: no-repeat;
 }
-
+.item-our-team-info {
+	position: absolute;
+	color: #ffffff;
+	bottom: 10px
+}
 
 #our-partners {
 	position: relative;
