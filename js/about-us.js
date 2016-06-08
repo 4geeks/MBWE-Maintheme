@@ -4,7 +4,7 @@
 		
 		
 
-		$(".item-our-team").hover,function(){
+		$(".item-our-team").hover(function(){
 			var imgFun = $(this).find('.imgFun').val();
 			$( this ).css( "background-image", "url("+imgFun+")");
 		},function(){
