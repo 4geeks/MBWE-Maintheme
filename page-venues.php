@@ -20,7 +20,7 @@ $content = get_page($post->ID)->post_content;
 	<div id="primary" class="full-width-page no-sidebar">
 		<main id="main">
             <?php echo $content; ?>
-            <div id="list-content">                    
+            <div id="list-content" class="row">                    
                 <?php foreach ($venues->posts as $venue) {
                         // var_dump($venue)
                     ?>

@@ -25,8 +25,7 @@
 #list-content {
 	position: relative;
 	padding: 0px;
-	height: 440px;
-	width: 100%;
+	height: auto;
 	background-color: grey;
 }
 
@@ -41,7 +40,7 @@
 
 
 .venue-element{
-	padding: 0px;
+	padding-bottom: 20px;
 	height: 100%;
 	border-right: 1px solid #ffffff;
 }
@@ -89,6 +88,7 @@
 /* ONLY FOR TABLETS IN PORTRAIT */
 @media screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1024px) {
 	#list-content{
+		padding-bottom: 110px;  
 		height: auto;  	
 	}
 	.venue-element{
