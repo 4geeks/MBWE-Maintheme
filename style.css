@@ -856,9 +856,18 @@ li.col1 {
     border-radius: 0px !important;
 }
 /*END GRAVITY FORM CUSTOM CONTACT US*/
-/*Only for smartphones*/
 
-@media only screen and (max-width: 768px){
+/*Only for smartphones*/
+@media screen and (max-width: 767px) {
+	
+	.with-font-title {
+		font-size: 55px;
+		line-height: 1em;
+	}
+
+	h3 {
+		font-size: 18px;		
+	}
 
 	.blue-background {
 		padding-top: 1px;
@@ -882,6 +891,7 @@ li.col1 {
 
 }
 
+
 @media only screen and (min-width: 768px) and (max-width: 1024px ) {
 	.p-testimonie {
 		margin: 15px 110px 10px;
@@ -896,14 +906,3 @@ li.col1 {
 	}
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-height: 640px) { 
-	
-	.with-font-title {
-		font-size: 55px;
-	}
-
-	h3 {
-		font-size: 18px;		
-	}
-
-}

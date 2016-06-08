@@ -71,11 +71,12 @@
 }
 
 
-/*Only for smartphnes*/
-@media only screen and (max-width: 768px){
+/* media query responsive for any mobiles */
+
+@media screen and (max-width: 767px){
   #content-header {
   	height: 430px;
-  	padding-top: 50px;
+  	padding-top: 70px;
   }
 
   .inner-package-element {
@@ -85,9 +86,29 @@
   .content-header-description {
   	padding-top: 10px;
   }
+}
 
+/* ONLY FOR TABLETS IN PORTRAIT */
+@media screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1024px) {
 
 }
+
+/* ONLY FOR TABLETS IN LANDSCAPE */
+@media screen and (orientation: landscape) and (min-width: 768px) and (max-width: 1024px) { 
+
+}
+
+
+/* UNTIL SCREEN RESOLUTION 1366PX */
+@media screen and (max-width: 1366px) {
+
+}
+
+/* STARTING FROM SCREEN RESOLUTION 1366PX */
+@media screen and (min-width: 1920px){
+
+}
+
 
 @media only screen and (min-width: 768px) and (max-width: 1024px ) {
 	#list-content {
