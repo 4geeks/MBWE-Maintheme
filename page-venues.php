@@ -22,7 +22,6 @@ $content = get_page($post->ID)->post_content;
             <?php echo $content; ?>
             <div id="list-content" class="row">                    
                 <?php foreach ($venues->posts as $venue) {
-                        // var_dump($venue)
                     ?>
                     <div class="col-md-4 venue-element">
                         <div class="col-md-12 inner-venue-element">
