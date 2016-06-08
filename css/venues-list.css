@@ -27,6 +27,7 @@
 	padding: 0px;
 	height: auto;
 	background-color: grey;
+	margin-right: 0px;
 }
 
 .div-schedule {
@@ -96,11 +97,16 @@
 		height: auto;
 		padding-bottom: 20px;
 	}
+	#content-header{
+		background-position-y: -275px;
+	}
 }
 
 /* ONLY FOR TABLETS IN LANDSCAPE */
 @media screen and (orientation: landscape) and (min-width: 768px) and (max-width: 1024px) {
-    
+    #content-header{
+		background-position-y: -210px;
+	}
 }
 
 /* UNTIL SCREEN RESOLUTION 1366PX */
