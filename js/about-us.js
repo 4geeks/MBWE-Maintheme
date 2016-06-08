@@ -5,7 +5,7 @@
 		
 
 		$(".item-our-team").on('hover',function(){
-			console.log($(this).value());
+			console.log($(this).find('input').val());
 		});
 
  		// console.log($(".detail-package"));
