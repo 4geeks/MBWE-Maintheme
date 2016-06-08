@@ -8,8 +8,7 @@
 .div-news {
     height: 400px;
     font-size: 30px;
-    padding-top:30px;
-    padding-left:35px;
+    padding: 20px 30px 30px 30px;
 }
 
 .div-news:after {
@@ -29,7 +28,13 @@
 
 .div-news span {
     color: #ffffff;
+    text-align: center;
     font-size: 27px;
+}
+.div-news p{
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1;
 }
 #div-header span{
 	font-family: content_font_bold;
@@ -125,4 +130,48 @@
 	font-size: 24px;	
 	font-family: content_font_black;
 	font-weight: 900;
+}
+
+/* ONLY FOR MOBILES */
+@media screen and (max-width: 767px) {
+    .img-header-award{
+        background-position-x: 96%;
+    }
+    .div-news{
+        height: auto;
+    }
+    .div-news span, .div-news p {
+        font-size: 18px;
+    }
+    .award{
+        height: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .aw-img{
+        margin-bottom: 10px;
+    }
+    #awards p span{
+        font-size: 18px;
+    }
+}
+
+/* ONLY FOR TABLETS IN PORTRAIT */
+@media screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+/* ONLY FOR TABLETS IN LANDSCAPE */
+@media screen and (orientation: landscape) and (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+/* UNTIL SCREEN RESOLUTION 1366PX */
+@media screen and (max-width: 1366px) {
+
+}
+
+/* STARTING FROM SCREEN RESOLUTION 1366PX */
+@media screen and (min-width: 1920px){
+
 }
