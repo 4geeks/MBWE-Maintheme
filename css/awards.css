@@ -180,15 +180,13 @@
 
 /* ONLY FOR TABLETS IN LANDSCAPE */
 @media screen and (orientation: landscape) and (min-width: 768px) and (max-width: 1024px) {
-    .img-header-award{
-        background-position-y: -165px;
-    }
+    
 }
 
 /* UNTIL SCREEN RESOLUTION 1366PX */
 @media screen and (min-width: 1024px) and (max-width: 1366px) {
     .img-header-award{
-        background-position-y: -386px;
+        background-position-y: -360px;
         height: 400px;
     }
 }
