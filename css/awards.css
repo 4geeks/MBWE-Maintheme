@@ -118,7 +118,7 @@
 #div-other p.title{
 	font-family: content_font_bold;
 	font-weight: 900;
-	margin-bottom: -5px;
+	margin-bottom: 5px;
 }
 
 #div-other center span{
@@ -140,7 +140,7 @@
     .div-news{
         height: auto;
     }
-    .div-news span, .div-news p {
+    .div-news span, .div-news p, #div-other p span, #awards p span {
         font-size: 18px;
     }
     .award{
@@ -151,8 +151,8 @@
     .aw-img{
         margin-bottom: 10px;
     }
-    #awards p span{
-        font-size: 18px;
+    #div-other > .col-md-12{
+        padding: 10px 30px 10px 30px;
     }
 }
 
