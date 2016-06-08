@@ -161,7 +161,7 @@
     .img-header-award{
         background-size: contain;
         background-position-x: initial;
-        background-position-y: initial;
+        background-position-y: -88px;
     }
     .div-news{
         height: auto;
@@ -186,10 +186,16 @@
 
 /* UNTIL SCREEN RESOLUTION 1366PX */
 @media screen and (max-width: 1366px) {
-
+    .img-header-award{
+        background-position-y: -386px;
+        height: 400px;
+    }
 }
 
 /* STARTING FROM SCREEN RESOLUTION 1366PX */
 @media screen and (min-width: 1920px){
-
+    .img-header-award{
+        background-position-y: -568px;
+        height: 600px;
+    }
 }
