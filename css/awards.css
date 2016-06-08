@@ -100,7 +100,6 @@
 
 #div-other{
 	background-image: url(../img/other_awards.jpg);
-    background-position-y: 70%;
     background-size: cover;
     background-position-x: 50%;
     background-position-y: 60%;
@@ -174,6 +173,10 @@
     }
     .aw-img{
         margin-bottom: 10px;
+    }
+    #div-other{
+        background-position-y: 80%;
+        background-size: contain;
     }
 }
 
