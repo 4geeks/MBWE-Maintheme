@@ -50,6 +50,7 @@ $tour = types_render_field("venue-360-tour");
 					<?php wp_nav_menu( array(
 						'menu' => 'hamburger')); 
 						?>	
+						<?php if (is_singular('venue') || is_page("gallery")) { ?>
 						<div class="for-phone">
 							<ul>
 								<li><a href="#primary">GENERAL INFO</a></li>
@@ -60,6 +61,7 @@ $tour = types_render_field("venue-360-tour");
 								<li><a href="#div-venue-location">LOCATION</a></li>
 							</ul>
 						</div>	
+						<?php } ?>
 					</div>	
 					<div class="social">
 						<div class="social-icon instagram">
