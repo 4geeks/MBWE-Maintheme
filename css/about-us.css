@@ -110,15 +110,17 @@
 	#div-hits {
 		padding-left: 0px;
 	    padding-right: 0px;		
-	    top: 35px;
+	    top: 70px;
 	}    
-
 	.hit {
 		font-size: 14px;
 	}	
 
 	.item-our-team {
 		height: 90px
+	}
+	#div-logo{
+		padding-top: 60px;
 	}
 }
 
