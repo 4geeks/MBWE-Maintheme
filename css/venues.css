@@ -530,3 +530,19 @@ Saved: Apr 18 2016 | 16:49:53 */
         left: 10px;
     }
 }
+
+@media screen and (min-width: 1920px){
+    #div-venue-image{
+        height: 980px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    #div-venue-image{
+        height: 645px;
+    }
+}
+
+video{
+    background-size: 100px 100px;
+}
