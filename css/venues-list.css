@@ -106,13 +106,13 @@
 /* UNTIL SCREEN RESOLUTION 1366PX */
 @media screen and (max-width: 1366px) {
 	#content-header{
-		height: 600px;
+		height: 400px;
 	}
 }
 
 /* STARTING FROM SCREEN RESOLUTION 1366PX */
 @media screen and (min-width: 1920px){
 	#content-header{
-		height: 400px;
+		height: 600px;
 	}
 }
