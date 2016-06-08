@@ -3,7 +3,7 @@
     background-position-x: 50%;
     background-position-y: 60%;
     background-attachment: fixed;
-    height: 500px;
+    height: 400px;
 }
 .div-news {
     height: 400px;
@@ -179,7 +179,9 @@
 
 /* ONLY FOR TABLETS IN LANDSCAPE */
 @media screen and (orientation: landscape) and (min-width: 768px) and (max-width: 1024px) {
-
+    .img-header-award{
+        background-position-y: -165px;
+    }
 }
 
 /* UNTIL SCREEN RESOLUTION 1366PX */
