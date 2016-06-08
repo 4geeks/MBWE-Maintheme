@@ -167,15 +167,41 @@
 
 /* ONLY FOR TABLETS IN LANDSCAPE */
 @media screen and (orientation: landscape) and (min-width: 768px) and (max-width: 1024px) {
-    
+    #div-hits{
+    	top: 160px;
+    }
+    #div-logo{
+		padding-top: 80px;
+	}
+	.item-partner{
+		background-size: contain;
+	}
+	#content-header{
+		background-size: 1057px;
+    	background-position-y: -92px;
+	}
 }
 
 /* UNTIL SCREEN RESOLUTION 1366PX */
 @media screen and (min-width: 1025px) {
-	
+	#content-header{
+		height: 400px;
+		background-size: 1355px;
+    	background-position-y: 100%;
+	}
+	#div-hits {
+	    top: 165px;
+	}
+
 }
 
 /* STARTING FROM SCREEN RESOLUTION 1366PX */
 @media screen and (min-width: 1920px){
-
+	#content-header{
+		background-size: 1910px;
+    	background-position-y: -155px;
+	}
+	#div-hits{
+		top: 365px;
+	}
 }
