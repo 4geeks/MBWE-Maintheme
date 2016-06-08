@@ -185,7 +185,7 @@
 }
 
 /* UNTIL SCREEN RESOLUTION 1366PX */
-@media screen and (max-width: 1366px) {
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
     .img-header-award{
         background-position-y: -386px;
         height: 400px;
