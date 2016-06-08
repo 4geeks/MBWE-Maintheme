@@ -801,7 +801,7 @@ li.col1 {
 }
 
 .gform_wrapper input[type=text] {
-	padding: .313em 0 -0.687em 0 !important;
+	padding: 0.313em 0 0 0 !important;
 	color: #000000;
 }
 
