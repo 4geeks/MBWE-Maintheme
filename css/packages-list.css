@@ -66,8 +66,13 @@
 }
 
 .div-package-btn{
-	position: relative;
+	position: absolute;
 	text-align: center;
+	left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 10px;
 }
 
 
@@ -90,7 +95,22 @@
 
 /* ONLY FOR TABLETS IN PORTRAIT */
 @media screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1024px) {
+	
+	#content-header {
+		padding-top: 100px;
+	}
 
+	.content-header-description {
+		padding-top: 15px;
+	}
+
+	.div-package-name { 
+		height: 300px;
+	}
+
+	#list-content {
+		height: 550px;	
+	}
 }
 
 /* ONLY FOR TABLETS IN LANDSCAPE */
@@ -107,17 +127,4 @@
 /* STARTING FROM SCREEN RESOLUTION 1366PX */
 @media screen and (min-width: 1920px){
 
-}
-
-
-@media only screen and (min-width: 768px) and (max-width: 1024px ) {
-	#list-content {
-		height: 655px;
-	}
-}
-
-@media only screen and (min-width: 1024px) { 
-	#list-content {
-		height: 655px;
-	}
 }
