@@ -54,4 +54,6 @@ $content = get_page($post->ID)->post_content;
                 adasdas
             </div>
         </div>
-	</div> 
+	</div>
+
+    <?php get_footer(); ?>

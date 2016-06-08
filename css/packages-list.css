@@ -129,6 +129,10 @@
 	.content-header-description {
 		padding-top: 20px;
 	}
+
+	.div-description {
+		min-height: 200px;
+	}
 }
 
 
