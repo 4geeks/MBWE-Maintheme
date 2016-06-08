@@ -104,24 +104,9 @@
     color: #868686;
 }
 
-@media only screen and (min-device-width: 768px) {
 
-	.hit {
-		font-size: 18px;
-	}
-
-	.w-wrap {
-		position: relative;
-    	top: -10px;
-	}
-	.item-our-team {
-		height: 230px
-	}
-
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-height: 640px) {
-	
+/* ONLY FOR MOBILES */
+@media screen and (max-width: 767px) {
 	#div-hits {
 		padding-left: 0px;
 	    padding-right: 0px;		
@@ -135,5 +120,34 @@
 	.item-our-team {
 		height: 90px
 	}
+}
+
+/* ONLY FOR TABLETS IN PORTRAIT */
+@media screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1024px) {
+	.hit {
+		font-size: 18px;
+	}
+
+	.w-wrap {
+		position: relative;
+    	top: -10px;
+	}
+	.item-our-team {
+		height: 230px
+	}
+}
+
+/* ONLY FOR TABLETS IN LANDSCAPE */
+@media screen and (orientation: landscape) and (min-width: 768px) and (max-width: 1024px) {
+    
+}
+
+/* UNTIL SCREEN RESOLUTION 1366PX */
+@media screen and (max-width: 1366px) {
+	
+}
+
+/* STARTING FROM SCREEN RESOLUTION 1366PX */
+@media screen and (min-width: 1920px){
 
 }
