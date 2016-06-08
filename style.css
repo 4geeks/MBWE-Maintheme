@@ -887,6 +887,40 @@ li.col1 {
 		background-position-x: 40%;
 	}
 
+	.contact-us {
+	height: 100%;
+	background-color: #ffffff;
+	color: #ffffff;
+	background-image: url(img/torta.png);
+	background-position: center;
+	background-size: cover;
+
+	}
+
+	.contact-title {
+		font-weight: bold;
+	}
+	.contact-title p {
+		font-size: 20px;
+	}
+	.contact-call-us, .div-form-contact-us {
+		height: 100%;
+	}
+	.contact-call-us {
+		padding-left:30px;
+	}
+
+	.contact-call-us h1{
+		padding-left:40px;
+	}
+
+	#page-contact-us {
+		position: relative;
+		height: 600px;
+	}
+
+
+
 	footer {
 		display: none;
 	}

@@ -3,12 +3,12 @@
        <center><p>Responsiveness is one of our main values, <br /> we guaranty you a response in less than 10min</p></center>       
     </div>
     <!-- <div class="row"> -->
-        <div class="col-md-5 contact-call-us highlight-p">
+        <div class="col-md-5 col-xs-12 contact-call-us highlight-p">
             <h3>Call us now!</h3>
             <h1>(305) 662-47-42</h1>
             <h3>Or chat with us</h3>
         </div>
-        <div class="col-md-7 div-form-contact-us highlight-p">
+        <div class="col-md-7 col-xs-12 div-form-contact-us highlight-p">
             <?php gravity_form( 1, false, false, false, '', false ); ?>
             <!-- <form>
                 <div class="form-group col-md-6">

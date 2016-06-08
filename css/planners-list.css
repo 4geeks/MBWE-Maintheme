@@ -83,7 +83,7 @@
 
 @media screen and (max-width: 767px){
 	#content-header {
-		height: 520px;
+		height: 530px;
 		padding-top: 68px;
 		background-position-x: 62%;
 	}
@@ -127,7 +127,7 @@
 
 
 /* UNTIL SCREEN RESOLUTION 1366PX */
-@media screen and (max-width: 1366px) {
+@media screen and (min-width: 1025px) {
 	#content-header{
 		height: 400px;
 	}
