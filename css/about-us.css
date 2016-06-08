@@ -122,6 +122,17 @@
 	#div-logo{
 		padding-top: 60px;
 	}
+	#div-story{
+    	padding-bottom: 30px;		
+	}
+	#div-story p{
+		line-height: 1;
+    	letter-spacing: 1px;
+	}
+	.item-partner{
+		background-position: center center;
+		background-size: contain;
+	}
 }
 
 /* ONLY FOR TABLETS IN PORTRAIT */
@@ -129,13 +140,21 @@
 	.hit {
 		font-size: 18px;
 	}
-
 	.w-wrap {
 		position: relative;
     	top: -10px;
 	}
 	.item-our-team {
 		height: 230px
+	}
+	#content-header{
+		height: 600px;
+	}
+	#div-hits{
+		top: 325px;
+	}
+	#div-logo{
+		padding-top: 80px;
 	}
 }
 
@@ -145,7 +164,7 @@
 }
 
 /* UNTIL SCREEN RESOLUTION 1366PX */
-@media screen and (max-width: 1366px) {
+@media screen and (min-width: 1025px) {
 	
 }
 

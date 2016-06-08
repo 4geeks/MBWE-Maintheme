@@ -50,7 +50,7 @@ $content = get_page($post->ID)->post_content;
 				<center><h1>Some of our partners</h1></center>				
 				<div id="" class="container">
 					<?php foreach ($partners->posts as $partner) {?>    
-						<div class="item-partner col-md-2 col-xs-6" style="background-image: url('<?php echo get_post_meta( $partner->ID, 'wpcf-partner-image', false)[0]; ?>')">
+						<div class="item-partner col-md-2 col-xs-6 col-sm-5 col-sm-offset-1" style="background-image: url('<?php echo get_post_meta( $partner->ID, 'wpcf-partner-image', false)[0]; ?>')">
 						</div>                   
                     
                		<?php }?>
