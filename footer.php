@@ -7,7 +7,7 @@
 			<!-- footer -->
 			<footer class="footer" role="contentinfo">
 
-				<div class="row">
+				<div class="row fix-margin-row">
 					<div id="divFooter1" class="col-md-12">
 						<div class="col-md-offset-1 col-md-4">
 							<div class="social">
@@ -41,7 +41,7 @@
 					<div id="divFooter2" class="col-md-12">
 						<div id="div-angle-double" class="col-md-offset-5 col-md-2 fa fa-angle-double-up">
 						</div>
-						<div class="col-md-offset-1 col-md-6">
+						<div class="col-md-offset-1 col-md-7">
 							<div class="links">
 								<div class="col-md-4">
 									<div id="div-links-content" class="col-md-12">

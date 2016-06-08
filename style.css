@@ -776,6 +776,12 @@ a img.aligncenter {
 	height: 600px;
 }
 
+.fix-margin-row {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+
 /*GRAVITY FORM CUSTOM CONTACT US*/
 
 
@@ -966,12 +972,12 @@ li.col1 {
 	#why-fetes-events {
 		height: 510px;
 	}
-	
+
 	#divFooter1 .social {
 		left: 0px
 	}
 
 	#divFooter1 .newsletter input {
-		max-width: 250px;
+		max-width: 235px;;
 	}
 }
