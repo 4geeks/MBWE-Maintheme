@@ -429,8 +429,8 @@ a img.aligncenter {
 	color: #ffffff;	
 	background-image: url('img/why-fetes-events.jpg');
 	height: 380px;
-	background-size: contain;    
-	background-position: cover;
+	background-size: cover;
+	background-position: center center;
     /*background-position-x: 50%;
     background-position-y: 80%;*/
     background-attachment: fixed;
