@@ -801,13 +801,13 @@ li.col1 {
 }
 
 .gform_wrapper input[type=text] {
-	padding: 0.313em 0 0 0 !important;
+	padding: 0 0 0 0 !important;
 	color: #000000;
 }
 
 .gform_wrapper.gf_browser_chrome ul.gform_fields li.gfield select {
     margin-left: 0.063em !important;
-    color: #ffffff !important;
+    color: #000000 !important;
 }
 
 .gform_wrapper textarea.large {
@@ -820,6 +820,11 @@ li.col1 {
     padding: 0em 0 -0.375em 0 !important;
     margin: 0em 0 0 0 !important;
     clear: both !important;
+}
+
+.gform_wrapper .gform_footer {
+    padding: 0 0 0 0;
+    color: #000000;
 }
 /*END GRAVITY FORM CUSTOM CONTACT US*/
 /*Only for smartphones*/
