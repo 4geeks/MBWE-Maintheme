@@ -135,6 +135,7 @@
 @media screen and (max-width: 767px) {
     .img-header-award{
         background-position-x: 96%;
+        background-position-y: -100px;
     }
     .div-news{
         height: auto;
@@ -158,9 +159,8 @@
 /* ONLY FOR TABLETS IN PORTRAIT */
 @media screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1024px) {
     .img-header-award{
-        background-size: contain;
-        background-position-x: initial;
-        background-position-y: -88px;
+        background-position-x: 75%;
+        background-position-y: -440px;
     }
     .div-news{
         height: auto;
@@ -175,22 +175,18 @@
         margin-bottom: 10px;
     }
     #div-other{
-        background-position-y: 80%;
-        background-size: contain;
     }
 }
 
 /* ONLY FOR TABLETS IN LANDSCAPE */
 @media screen and (orientation: landscape) and (min-width: 768px) and (max-width: 1024px) {
-    .img-header-award{
-        background-position-y: -165px;
-    }
+    
 }
 
 /* UNTIL SCREEN RESOLUTION 1366PX */
-@media screen and (min-width: 1024px) and (max-width: 1366px) {
+@media screen and (max-width: 1366px) {
     .img-header-award{
-        background-position-y: -386px;
+        background-position-y: -360px;
         height: 400px;
     }
 }

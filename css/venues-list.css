@@ -25,8 +25,8 @@
 #list-content {
 	position: relative;
 	padding: 0px;
-	height: 440px;
-	width: 100%;
+	height: auto;
+	background-color: grey;
 }
 
 .div-schedule {
@@ -43,13 +43,13 @@
 	padding: 0px;
 	height: 100%;
 	border-right: 1px solid #ffffff;
+	padding-bottom: 20px;
 }
 
 .div-venue-image{
 	padding: 0px;
 	height: 300px;	
    	background-size: cover;
-    background-size: ;
     background-position: center;
 }
 
@@ -70,7 +70,8 @@
 	margin-top: 20px;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-height: 640px) { 
+/* ONLY FOR MOBILES */
+@media screen and (max-width: 767px) {
 	#content-header {
 		padding-top: 58px;
 	}
@@ -82,5 +83,36 @@
 
 	.content-header-description {				
 		padding-top: 0px;
+	}
+}
+
+/* ONLY FOR TABLETS IN PORTRAIT */
+@media screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1024px) {
+	#list-content{
+		padding-bottom: 110px;  
+		height: auto;  	
+	}
+	.venue-element{
+		height: auto;
+		padding-bottom: 20px;
+	}
+}
+
+/* ONLY FOR TABLETS IN LANDSCAPE */
+@media screen and (orientation: landscape) and (min-width: 768px) and (max-width: 1024px) {
+    
+}
+
+/* UNTIL SCREEN RESOLUTION 1366PX */
+@media screen and (max-width: 1366px) {
+	#content-header{
+		height: 400px;
+	}
+}
+
+/* STARTING FROM SCREEN RESOLUTION 1366PX */
+@media screen and (min-width: 1920px){
+	#content-header{
+		height: 600px;
 	}
 }
