@@ -93,6 +93,10 @@
   .content-header-description {
   	padding-top: 10px;
   }
+
+  .div-description {
+ 	min-height: 180px;
+  }
 }
 
 /* ONLY FOR TABLETS IN PORTRAIT */
