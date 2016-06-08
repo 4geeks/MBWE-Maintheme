@@ -924,4 +924,8 @@ li.col1 {
 		font-size: 0.8em;
 		line-height: 22px;
 	}
+
+	#why-fetes-events {
+		height: 510px;
+	}
 }
