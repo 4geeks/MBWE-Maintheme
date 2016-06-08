@@ -94,7 +94,7 @@
 .aw-img{
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
     height: 114px;
 }
 
@@ -159,6 +159,8 @@
 /* ONLY FOR TABLETS IN PORTRAIT */
 @media screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1024px) {
     .img-header-award{
+        background-position-x: 75%;
+        background-position-y: -440px;
     }
     .div-news{
         height: auto;
