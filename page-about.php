@@ -43,7 +43,7 @@ $content = get_page($post->ID)->post_content;
 						<input type="hidden" class="imgFun" value="<?php echo get_post_meta( $team->ID, 'wpcf-teams-fun-image', false)[0]; ?>" />
 						<div class="item-our-team-info text highlight-p">
 							<h2><?php echo get_post_meta( $team->ID, 'wpcf-teams-full-name', false)[0]; ?></h2>
-							<h3><?php echo get_post_meta( $team->ID, 'wpcf-teams-full-name', false)[0]; ?></h3>
+							<p><?php echo get_post_meta( $team->ID, 'wpcf-teams-role', false)[0]; ?></p>
 						</div>
 					</div>                    
                     
