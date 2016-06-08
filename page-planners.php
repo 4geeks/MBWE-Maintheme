@@ -22,7 +22,7 @@ $content = get_page($post->ID)->post_content;
 	<div id="primary" class="full-width-page no-sidebar">
 		<main id="main">
             <?php echo $content; ?>
-            <div id="list-content">                    
+            <div id="list-content" class="row">                    
                 <?php foreach ($planners->posts as $planner) {?>                        
                     <div class="col-md-4 planner-element">
                         <div class="col-md-12 inner-planner-element">

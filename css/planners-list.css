@@ -32,14 +32,15 @@
 #list-content{
 	position: relative;
 	padding: 0px;
-	height: 500px;
+	min-height: 500px;
+	height: auto;
 }
 
 .planner-element{
-	padding: 0px;
 	height: 100%;
 	margin: 1px solid black;
 	color:#808080;
+	padding-bottom: 30px;
 }
 
 .div-planner-name{
@@ -75,4 +76,60 @@
 
 .div-planner-btn{
 	text-align: center;
+}
+
+
+/* media query responsive for any mobiles */
+
+@media screen and (max-width: 767px){
+	#content-header {
+		height: 480px;
+		padding-top: 68px;
+		background-position-x: 62%;
+	}
+
+  	#content-header h2 {
+		padding-top: 0px;
+	}
+	
+	#div-schedule {
+		padding-top: 12px;
+	}
+
+	#btn-skype, #btn-instant-quote {
+		display: block;
+		margin-left: auto;
+    	margin-right: auto; 
+	}
+	
+	#list-content {
+		height: auto;
+	}
+
+	.planner-element {
+		padding-bottom: 30px;
+	}	
+
+}
+
+/* ONLY FOR TABLETS IN PORTRAIT */
+@media screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1024px) {
+	
+}
+
+/* ONLY FOR TABLETS IN LANDSCAPE */
+@media screen and (orientation: landscape) and (min-width: 768px) and (max-width: 1024px) { 
+	
+	
+}
+
+
+/* UNTIL SCREEN RESOLUTION 1366PX */
+@media screen and (max-width: 1366px) {
+
+}
+
+/* STARTING FROM SCREEN RESOLUTION 1366PX */
+@media screen and (min-width: 1920px){
+
 }
