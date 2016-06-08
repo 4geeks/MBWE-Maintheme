@@ -794,7 +794,32 @@ li.col1 {
     width: 95% !important;
     margin: 0 2.5% !important;
     display: inline-block !important;
+}
 
+.gform_wrapper .top_label .gfield_label {
+    margin: -0.375em 0 -0.5em 0;
+}
+
+.gform_wrapper input[type=text] {
+	padding: .313em 0 -0.687em 0;
+	color: #000000;
+}
+
+.gform_wrapper.gf_browser_chrome ul.gform_fields li.gfield select {
+    margin-left: 0.063em;
+    color: black;
+}
+
+.gform_wrapper textarea.large {
+    width: 95%;
+    height: 150px;
+    color: #000000;
+}
+
+.gform_wrapper .gform_footer {
+    padding: 0em 0 -0.375em 0;
+    margin: 0em 0 0 0;
+    clear: both;
 }
 
 /*Only for smartphones*/
