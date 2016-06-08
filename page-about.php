@@ -39,6 +39,7 @@ $content = get_page($post->ID)->post_content;
 				<center><h1>Our Team</h1></center>
 				<?php foreach ($teams->posts as $team) {?>    
 					<div class="item-our-team col-md-3 col-xs-3 highlight-element" style="background-image: url('<?php echo get_post_meta( $team->ID, 'wpcf-teams-image', false)[0]; ?>')">	
+						<input type="hidden" value="<?php echo get_post_meta( $team->ID, 'wpcf-teams-fun-image', false)[0]; ?>" />
 					</div>                    
                     
                	<?php }?>				
