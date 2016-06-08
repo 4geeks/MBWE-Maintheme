@@ -908,6 +908,14 @@ li.col1 {
 		margin: 15px 110px 10px;
 		text-align: left;
 	}
+
+	#why-fetes-events {
+		height: 680px;
+	}
+
+	#why-fetes-events .content {
+		padding-top: 10px;
+	}
 }
 
 /* ONLY FOR TABLETS IN LANDSCAPE */
