@@ -775,7 +775,7 @@ a img.aligncenter {
 	height: 600px;
 }
 
-/*FORM CONTACT US*/
+/*GRAVITY FORM CUSTOM CONTACT US*/
 
 
 .gform_wrapper ul li.gfield{
@@ -794,9 +794,68 @@ li.col1 {
     width: 95% !important;
     margin: 0 2.5% !important;
     display: inline-block !important;
-
 }
 
+.gform_wrapper .top_label .gfield_label {
+    margin: -0.375em 0 -0.5em 0 !important;
+}
+
+.gform_wrapper input[type=text] {
+	padding: 0 0 0 0 !important;
+	color: #000000;
+}
+
+.gform_wrapper.gf_browser_chrome ul.gform_fields li.gfield select {
+    margin-left: 0.063em !important;
+    color: #000000 !important;
+}
+
+.gform_wrapper textarea.large {
+    width: 95% !important;
+    height: 150px !important;
+    color: #000000 !important;
+}
+
+.gform_wrapper .gform_footer {
+    padding: 0em 0 -0.375em 0 !important;
+    margin: 0em 0 0 0 !important;
+    clear: both !important;
+}
+
+.gform_wrapper .gform_footer {
+    padding: 0 0 0 0 !important;
+    color: #000000;
+}
+.gform_wrapper .top_label select.large {
+	width: 95% !important;
+}
+.gform_wrapper .gform_footer input[type=submit] {
+    display: -moz-inline-stack !important;
+    display: inline-block !important;
+    zoom: 1 !important;
+    font-size: 20px !important;
+    background-color: #e8a84c !important;
+    border-color: #eea236 !important;
+    display: inline-block !important;
+    padding: 6px 12px !important;
+    margin-bottom: 0 !important;
+    font-weight: 400 !important;
+    line-height: 1.42857143 !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    vertical-align: middle !important;
+    -ms-touch-action: manipulation !important;
+    touch-action: manipulation !important;
+    cursor: pointer !important;
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+    background-image: none !important;
+    border: 1px solid transparent !important;
+    border-radius: 0px !important;
+}
+/*END GRAVITY FORM CUSTOM CONTACT US*/
 /*Only for smartphones*/
 
 @media only screen and (max-width: 768px){
