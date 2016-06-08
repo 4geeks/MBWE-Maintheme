@@ -28,7 +28,7 @@ $content = get_page($post->ID)->post_content;
 				</div>
 				<div id="div-story" class="container">
 					<div class="col-md-6 col-md-offset-3">
-						<?php echo $customPosts['Story'][0]; ?>						
+						<p><?php echo $customPosts['Story'][0]; ?>	</p>					
 					</div>
 					<div class="col-md-3"></div>
 				</div>
