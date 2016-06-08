@@ -952,6 +952,14 @@ li.col1 {
 	#why-fetes-events .content {
 		padding-top: 10px;
 	}
+
+	#divFooter1 .social {
+		left: 0px
+	}
+
+	#divFooter1 .newsletter input {
+		max-width: 250px;
+	}
 }
 
 /* ONLY FOR TABLETS IN LANDSCAPE */
