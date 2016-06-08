@@ -94,7 +94,7 @@
 .aw-img{
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: contain;
+    background-size: cover;
     height: 114px;
 }
 
@@ -135,6 +135,7 @@
 @media screen and (max-width: 767px) {
     .img-header-award{
         background-position-x: 96%;
+        background-position-y: -100px;
     }
     .div-news{
         height: auto;
@@ -158,9 +159,6 @@
 /* ONLY FOR TABLETS IN PORTRAIT */
 @media screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1024px) {
     .img-header-award{
-        background-size: contain;
-        background-position-x: initial;
-        background-position-y: -88px;
     }
     .div-news{
         height: auto;
@@ -175,8 +173,6 @@
         margin-bottom: 10px;
     }
     #div-other{
-        background-position-y: 80%;
-        background-size: contain;
     }
 }
 
