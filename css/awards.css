@@ -160,6 +160,8 @@
 @media screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1024px) {
     .img-header-award{
         background-size: contain;
+        background-position-x: initial;
+        background-position-y: initial;
     }
     .div-news{
         height: auto;
