@@ -127,11 +127,12 @@
 
 /* ONLY FOR TABLETS IN LANDSCAPE */
 @media screen and (orientation: landscape) and (min-width: 768px) and (max-width: 1024px) { 
-	
-	#content-header h2 {
-		padding-top: 20px;
+	#content-header{
 		background-size: 1030px;
     	background-position-y: -316%;
+	}
+	#content-header h2 {
+		padding-top: 20px;
 	}
 
 	.div-btn-call-to-action {
