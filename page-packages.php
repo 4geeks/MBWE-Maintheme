@@ -17,7 +17,7 @@ $content = get_page($post->ID)->post_content;
     <div id="primary" class="full-width-page no-sidebar">
 		<main id="main">            
             <?php echo $content; ?>
-            <div id="list-content" class="row">
+            <div id="list-content" class="row fix-margin-row">
                 <?php foreach ($packages->posts as $package) {?>
                     <div class="col-xs-12 col-sm-4 col-md-4  package-element">
                         <div class="col-md-12 col-sm-12 inner-package-element">
