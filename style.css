@@ -823,7 +823,7 @@ li.col1 {
 }
 
 .gform_wrapper .gform_footer {
-    padding: 0 0 0 0;
+    padding: 0 0 0 0 !important;
     color: #000000;
 }
 /*END GRAVITY FORM CUSTOM CONTACT US*/
