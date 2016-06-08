@@ -95,10 +95,10 @@
 		padding-top: 12px;
 	}
 
-	#div-schedule .btn{
+	#btn-skype, #btn-instant-quote {
 		display: block;
 		margin-left: auto;
-    	margin-right: auto;
+    	margin-right: auto; 
 	}
 
 	.inner-package-element {
