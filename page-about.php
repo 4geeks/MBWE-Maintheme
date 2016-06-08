@@ -38,11 +38,11 @@ $content = get_page($post->ID)->post_content;
                 
 				<center><h1>Our Team</h1></center>
 				<?php foreach ($teams->posts as $team) {?>    
-					<div class="item-our-team col-md-3 col-xs-3 highlight-element" style="background-image: url('<?php echo get_post_meta( $team->ID, 'wpcf-teams-image', false)[0]; ?>')">	
+					<div class="item-our-team col-md-3 col-xs-3" style="background-image: url('<?php echo get_post_meta( $team->ID, 'wpcf-teams-image', false)[0]; ?>')">	
 						<input type="hidden" class="imgNormal" value="<?php echo get_post_meta( $team->ID, 'wpcf-teams-image', false)[0]; ?>" />
 						<input type="hidden" class="imgFun" value="<?php echo get_post_meta( $team->ID, 'wpcf-teams-fun-image', false)[0]; ?>" />
 						<div class="item-our-team-info text highlight-p">
-							<h2><?php echo get_post_meta( $team->ID, 'wpcf-teams-full-name', false)[0]; ?></h2>
+							<p><?php echo get_post_meta( $team->ID, 'wpcf-teams-full-name', false)[0]; ?></p> <br />
 							<p><?php echo get_post_meta( $team->ID, 'wpcf-teams-role', false)[0]; ?></p>
 						</div>
 					</div>                    
