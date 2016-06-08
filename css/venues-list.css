@@ -40,9 +40,10 @@
 
 
 .venue-element{
-	padding-bottom: 20px;
+	padding: 0px;
 	height: 100%;
 	border-right: 1px solid #ffffff;
+	padding-bottom: 20px;
 }
 
 .div-venue-image{
