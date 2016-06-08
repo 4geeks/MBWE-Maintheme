@@ -18,7 +18,7 @@ $awards = new WP_Query( $args );
 	<?php foreach ($awards->posts as $award) {		
 		 if (get_post_meta( $award->ID, 'wpcf-awards-type')[0] == '2'){
 		?>
-	<div class="col-md-3 div-news">
+	<div class="col-md-3 col-xs-6 div-news">
 		<p>
 			"<?php echo get_post_meta( $award->ID, 'wpcf-awards-description')[0]; ?>"
 		</p>
