@@ -953,13 +953,7 @@ li.col1 {
 		padding-top: 10px;
 	}
 
-	#divFooter1 .social {
-		left: 0px
-	}
 
-	#divFooter1 .newsletter input {
-		max-width: 250px;
-	}
 }
 
 /* ONLY FOR TABLETS IN LANDSCAPE */
@@ -971,5 +965,13 @@ li.col1 {
 
 	#why-fetes-events {
 		height: 510px;
+	}
+	
+	#divFooter1 .social {
+		left: 0px
+	}
+
+	#divFooter1 .newsletter input {
+		max-width: 250px;
 	}
 }
