@@ -892,6 +892,12 @@ li.col1 {
 
 }
 
+/* ONLY FOR TABLETS IN PORTRAIT */
+@media screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1024px) {
+	.with-font-title {
+		font-size: 65px;
+		line-height: 0.9em;	
+}
 
 @media only screen and (min-width: 768px) and (max-width: 1024px ) {
 	.p-testimonie {
