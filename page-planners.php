@@ -35,7 +35,7 @@ $content = get_page($post->ID)->post_content;
                                 </div>                                
                                 <br></br>
                                 <div class="col-md-12 div-planner-certified">
-                                    <strong><?php echo get_post_meta( $planner->ID, 'wpcf-planner-full-name', false)[0]; ?>'s top qualities? </strong><br />
+                                    <br />
                                     <?php echo get_post_meta( $planner->ID, 'wpcf-planner-certified', false)[0]; ?>
                                 </div>
                             </div>
