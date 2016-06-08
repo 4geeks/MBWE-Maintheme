@@ -83,7 +83,7 @@
 
 @media screen and (max-width: 767px){
 	#content-header {
-		height: 480px;
+		height: 520px;
 		padding-top: 68px;
 		background-position-x: 62%;
 	}
@@ -114,7 +114,9 @@
 
 /* ONLY FOR TABLETS IN PORTRAIT */
 @media screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1024px) {
-	
+	.div-planner-image {
+		height: 350px;		
+	}
 }
 
 /* ONLY FOR TABLETS IN LANDSCAPE */
@@ -126,10 +128,14 @@
 
 /* UNTIL SCREEN RESOLUTION 1366PX */
 @media screen and (max-width: 1366px) {
-
+	#content-header{
+		height: 400px;
+	}
 }
 
 /* STARTING FROM SCREEN RESOLUTION 1366PX */
 @media screen and (min-width: 1920px){
-
+	#content-header{
+		height: 600px;
+	}
 }
