@@ -149,6 +149,9 @@
 	}
 	#content-header{
 		height: 600px;
+		background-size: 1273px;
+    	background-position-x: 62%;
+    	background-position-y: -85px;
 	}
 	#div-hits{
 		top: 325px;
