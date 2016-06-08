@@ -122,6 +122,12 @@ function html5blank_conditional_scripts()
 
     }
 
+    if (is_page("about-us")){
+        wp_register_script('aboutusjs', get_template_directory_uri() . '/js/about-us.js', array('jquery'), '1.0'); // Modernizr
+        wp_enqueue_script('aboutusjs'); // Enqueue it!        
+
+    }
+
     if (is_page("wedding-packages")){
         wp_register_script('packagejs', get_template_directory_uri() . '/js/package.js', array('jquery'), '1.0'); // Modernizr
         wp_enqueue_script('packagejs'); // Enqueue it!
