@@ -70,7 +70,8 @@
 	margin-top: 20px;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-height: 640px) { 
+/* ONLY FOR MOBILES */
+@media screen and (max-width: 767px) {
 	#content-header {
 		padding-top: 58px;
 	}
@@ -83,4 +84,25 @@
 	.content-header-description {				
 		padding-top: 0px;
 	}
+}
+
+/* ONLY FOR TABLETS IN PORTRAIT */
+@media screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1024px) {
+	#list-content{
+		padding-bottom: 150px;
+    	background-color: grey;
+	}
+}
+
+/* ONLY FOR TABLETS IN LANDSCAPE */
+@media screen and (orientation: landscape) and (min-width: 768px) and (max-width: 1024px) {
+    
+}
+
+/* UNTIL SCREEN RESOLUTION 1366PX */
+@media screen and (max-width: 1366px) {
+}
+
+/* STARTING FROM SCREEN RESOLUTION 1366PX */
+@media screen and (min-width: 1920px){
 }

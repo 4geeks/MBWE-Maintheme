@@ -29,9 +29,9 @@ $content = get_page($post->ID)->post_content;
                             <div class="col-md-12 div-venue-image linkeable highlight-element" style="background-image: url('<?php echo get_post_meta( $venue->ID, 'wpcf-venue-main-image', false)[0]; ?>')">
                             </div>
                             <div class="col-md-12 div-description">
-                                <center><h4><?php echo get_post_meta( $venue->ID, 'wpcf-venue-name', false)[0]; ?></h4></center>
+                                <center><h2><?php echo get_post_meta( $venue->ID, 'wpcf-venue-name', false)[0]; ?></h2></center>
                                 <div class="col-md-12">
-                                    <?php echo get_post_meta( $venue->ID, 'wpcf-venue-direction', false)[0]; ?>
+                                    <h4><?php echo get_post_meta( $venue->ID, 'wpcf-venue-direction', false)[0]; ?></h4>
                                 </div>
                                 <div class="col-md-12">
                                     <a href="<?php echo get_home_url()."/venue/".$venue->post_name ?>" class="btn btn-info btn-sm">Read more</a>
