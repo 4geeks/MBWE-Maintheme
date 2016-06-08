@@ -198,6 +198,7 @@
 /* STARTING FROM SCREEN RESOLUTION 1366PX */
 @media screen and (min-width: 1920px){
 	#content-header{
+		height: 600px;
 		background-size: 1910px;
     	background-position-y: -155px;
 	}
