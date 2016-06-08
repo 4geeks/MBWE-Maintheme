@@ -4,8 +4,12 @@
 		
 		
 
-		$(".item-our-team").on('hover',function(){
-			console.log($(this).find('input').val());
+		$(".item-our-team").hover,function(){
+			var imgFun = $(this).find('.imgFun').val());
+			$( this ).css( "background-image", "url("+imgFun+")");
+		},function(){
+			var imgNormal = $(this).find('.imgNormal').val());
+			$( this ).css( "background-image", "url("+imgNormal+")");
 		});
 
  		// console.log($(".detail-package"));
