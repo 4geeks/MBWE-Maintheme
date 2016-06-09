@@ -131,7 +131,7 @@
 @media screen and (orientation: landscape) and (min-width: 768px) and (max-width: 1024px) { 
 	#content-header{
 		background-size: 1030px;
-    	background-position-y: -365%;
+    	background-position-y: -300%;
     	background-attachment: fixed; 
 	}
 	#content-header h2 {
