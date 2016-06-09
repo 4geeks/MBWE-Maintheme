@@ -867,7 +867,7 @@ li.col1 {
 .gform_wrapper div.validation_error {
     /*display: none;*/
     color: #D07C7C !important;
-    font-size: .8em !important;
+    font-size: 0.8em !important;
     font-weight: bold !important;
     margin-bottom: .4em !important;    
     line-height: 1 !important;
