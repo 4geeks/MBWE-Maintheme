@@ -987,7 +987,9 @@ li.col1 {
 
 	#why-fetes-events {
 		height: 680px;
-		background-size: 1423px 880px;
+		background-size: 1458px;
+    	background-position-x: 60%;
+    	background-position-y: 150px;
 	}
 
 	#why-fetes-events .content {
