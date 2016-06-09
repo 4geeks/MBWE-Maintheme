@@ -98,25 +98,28 @@
 		padding-bottom: 20px;
 	}
 	#content-header{
-		background-position-y: -275px;
+		height: 600px
+		background-position-y: -83px;
+    	background-size: 1355px;
 	}
 }
 
 /* ONLY FOR TABLETS IN LANDSCAPE */
 @media screen and (orientation: landscape) and (min-width: 768px) and (max-width: 1024px) {
     #content-header{
-		background-position-y: -210px;
+		background-position-y: -33px;
+		background-size: 1000px;
 	}
 }
 
-/* UNTIL SCREEN RESOLUTION 1366PX */
-@media screen and (max-width: 1366px) {
+/* STARTING FROM SCREEN RESOLUTION 1025PX */
+@media screen and (min-width: 1025PX) {
 	#content-header{
 		height: 400px;
 	}
 }
 
-/* STARTING FROM SCREEN RESOLUTION 1366PX */
+/* STARTING FROM SCREEN RESOLUTION 1920px */
 @media screen and (min-width: 1920px){
 	#content-header{
 		height: 600px;
