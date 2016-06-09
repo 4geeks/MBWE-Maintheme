@@ -909,6 +909,13 @@ li.col1 {
 }
 
 
+.gform_wrapper li.gfield.gfield_error.gfield_contains_required {
+    margin-top: 0px !important;
+}
+
+.gform_wrapper .top_label .gfield_description.validation_message, .gform_wrapper .gfield_description.validation_message {
+    padding: 0px 0 !important;
+}
 /*END GRAVITY FORM CUSTOM CONTACT US*/
 
 /*Only for smartphones*/
