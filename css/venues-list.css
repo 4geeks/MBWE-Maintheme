@@ -108,7 +108,7 @@
 @media screen and (orientation: landscape) and (min-width: 768px) and (max-width: 1024px) {
     #content-header{
 		background-position-y: -33px;
-		background-size: 1000px;
+		background-size: 1050px;
 	}
 }
 
