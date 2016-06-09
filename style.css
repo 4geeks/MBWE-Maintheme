@@ -748,7 +748,7 @@ a img.aligncenter {
 }
 
 .contact-us {
-	height: 100%;
+	height: auto;
 	background-color: #ffffff;
 	color: #ffffff;
 	background-image: url(img/torta.png);
