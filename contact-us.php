@@ -23,7 +23,7 @@ get_header();
 		        <h3>Or chat with us</h3>
 		    </div>
 		    <div class="col-md-7 col-xs-12 div-form-contact-us highlight-p">
-		        <?php gravity_form( 1, false, false, false, '', false ); ?>           
+		        <?php gravity_form( 1, false, false, false, '', true ); ?>           
 		    </div>        
 		<!-- </div> -->
 		</div>     
