@@ -95,7 +95,7 @@
 		$(".modalContact").animatedModal({
  			animatedIn: 'bounceInUp',
  			animatedOut: 'bounceOutDown',
- 			overflow:'hidden',
+ 			overflow:'scroll',
  			modalTarget: 'animatedModalContact',
  			beforeOpen: function(e){
  				// alert('hola')
