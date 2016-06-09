@@ -754,6 +754,7 @@ a img.aligncenter {
 	background-image: url(img/torta.png);
 	background-position: center;
 	background-size: cover;
+	background-attachment: fixed;
 
 }
 
@@ -953,7 +954,7 @@ li.col1 {
 	}
 
 	.contact-us {
-	height: 100%;
+	height: 160px;
 	background-color: #ffffff;
 	color: #ffffff;
 	background-image: url(img/torta.png);
@@ -984,6 +985,11 @@ li.col1 {
 		height: 600px;
 	}
 
+	.gform_wrapper {
+	    overflow: inherit;
+	    margin: 1em 0.5em;
+	    max-width: 98%;
+	}
 
 
 	footer {
