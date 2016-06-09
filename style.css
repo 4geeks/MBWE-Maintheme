@@ -865,14 +865,15 @@ li.col1 {
 
 /*Message validation*/
 .gform_wrapper div.validation_error {
-    color: #D07C7C !important;
+    display: none;
+    /*color: #D07C7C !important;
     font-size: 1.2em !important;
     font-weight: bold !important;
     margin-bottom: .4em !important;    
     line-height: 1 !important;
     border-top: transparent !important;
     border-bottom: transparent !important;
-    padding: 0 !important;
+    padding: 0 !important;*/
 }
 
 .gform_wrapper li.gfield.gfield_error {
@@ -896,6 +897,17 @@ li.col1 {
 .gform_wrapper .gfield_error .gfield_label {
     color: #D07C7C !important;
 }
+
+.gform_wrapper li.gfield.gfield_error {
+	border-top: transparent !important;
+    border-bottom: transparent !important;
+}
+
+.gform_wrapper .validation_message {
+    color: #CE7A7A !important;
+    font-weight: normal !important; 
+}
+
 
 /*END GRAVITY FORM CUSTOM CONTACT US*/
 
