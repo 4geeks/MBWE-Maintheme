@@ -9,50 +9,7 @@
             <h3>Or chat with us</h3>
         </div>
         <div class="col-md-7 col-xs-12 div-form-contact-us highlight-p">
-            <?php gravity_form( 1, false, false, false, '', false ); ?>
-            <!-- <form>
-                <div class="form-group col-md-6">
-                    <label for="firstName">First Name</label>
-                    <input type="text" class="form-control" id="firstName" placeholder="First Name">
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="lastName">Last Name</label>
-                    <input type="text" class="form-control" id="lastName" placeholder="Last Name">
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="phoneNumber">Phone Number</label>
-                    <input type="text" class="form-control" id="phoneNumber" placeholder="Phone Number">
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="email1">Email</label>
-                    <input type="email" class="form-control" id="email1" placeholder="Email">
-                </div>
-                <div class="form-group col-md-12">
-                    <label for="purpose">What is the purpose of this contact</label>
-                    <select class="form-control" id="purpose">
-                        <option>I'm planning my wedding, I want more information</option>
-                        <option>I'm a vendor offering my services</option>
-                        <option>Other</option>
-                    </select>
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="dayEvent">Day of event</label>
-                    <input type="date" class="form-control" id="dayEvent" placeholder="Email">
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="budget">Budget</label>
-                    <input type="email" class="form-control" id="budget" placeholder="Budget">
-                </div>
-                <div class="form-group col-md-12">
-                    <label for="budget">Observation</label>
-                    <textarea class="form-control"></textarea>
-                </div>
-                <div class="form-group col-md-12">
-                    <p>
-                        <button type="button" class="btn btn-warning btn-lg" style="width:100%">Send</button>
-                    </p>
-                </div>
-            </form> -->
+            <?php gravity_form( 2, false, false, false, '', false ); ?>           
         </div>        
     <!-- </div> -->
 </div>
