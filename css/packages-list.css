@@ -152,14 +152,14 @@
 }
 
 
-/* UNTIL SCREEN RESOLUTION 1366PX */
+/* UNTIL SCREEN RESOLUTION 1366PX 
 @media screen and (min-width: 1025px) {
 	#content-header{
 		height: 400px;
 		background-size: 1355px;
     	background-position-y: 153%;
 	}
-}
+}*/
 
 /* STARTING FROM SCREEN RESOLUTION 1366PX */
 @media screen and (min-width: 1920px){
