@@ -87,6 +87,7 @@
   	padding-top: 70px;
   	background-size: 759px;
     background-position-y: -55%;
+   	background-attachment: fixed;
   }
 
   .inner-package-element {
@@ -109,7 +110,8 @@
 		padding-top: 190px;
 		height: 600px;
 		background-size: 911px;
-    	background-position-y: 0%;
+    	background-position-y: 0%;    	
+    	background-attachment: fixed;
 	}
 
 	.content-header-description {
@@ -127,11 +129,13 @@
 
 /* ONLY FOR TABLETS IN LANDSCAPE */
 @media screen and (orientation: landscape) and (min-width: 768px) and (max-width: 1024px) { 
-	
-	#content-header h2 {
-		padding-top: 20px;
+	#content-header{
 		background-size: 1030px;
     	background-position-y: -316%;
+    	background-attachment: fixed; 
+	}
+	#content-header h2 {
+		padding-top: 20px;
 	}
 
 	.div-btn-call-to-action {
