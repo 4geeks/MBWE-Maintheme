@@ -868,17 +868,33 @@ li.col1 {
     color: #D07C7C !important;
     font-size: 1.2em !important;
     font-weight: bold !important;
-    margin-bottom: .4em !important;
-    /* margin-bottom: 1.6em; * !important;
-    /* border-top: 2px solid #790000; * !important;
-    /* border-bottom: 2px solid #790000; * !important;
-    /* padding: 1em 0 1em 0; * !important;*/
+    margin-bottom: .4em !important;    
     line-height: 1 !important;
+    border-top: transparent !important;
+    border-bottom: transparent !important;
+    padding: 0 !important;
+}
+
+.gform_wrapper li.gfield.gfield_error {
+	background-: transparent !important;
+}
+
+.gform_wrapper li.gfield.gfield_error.gfield_contains_required {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
 }
 
 .gform_wrapper .ginput_container + .gfield_description.validation_message {
-	margin-top: 0px;
-	position: relative;
+	margin-top: 0px !important;
+	position: relative !important;
+}
+
+.gform_wrapper .ginput_container + .gfield_description.validation_message {
+    margin-top: 0px !important;
+}
+
+.gform_wrapper .gfield_error .gfield_label {
+    color: #D07C7C;
 }
 
 /*END GRAVITY FORM CUSTOM CONTACT US*/
