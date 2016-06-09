@@ -876,7 +876,7 @@ li.col1 {
 }
 
 .gform_wrapper li.gfield.gfield_error {
-	background-: transparent !important;
+	background-color: transparent !important;
 }
 
 .gform_wrapper li.gfield.gfield_error.gfield_contains_required {
@@ -894,7 +894,7 @@ li.col1 {
 }
 
 .gform_wrapper .gfield_error .gfield_label {
-    color: #D07C7C;
+    color: #D07C7C !important;
 }
 
 /*END GRAVITY FORM CUSTOM CONTACT US*/
