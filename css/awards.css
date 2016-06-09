@@ -160,8 +160,8 @@
 @media screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1024px) {
     .img-header-award{
         background-position-x: 130%;
-        background-position-y: 0px;
-        background-size: 801px;
+        background-position-y: -64px;
+        background-size: 827px;
     }
     .div-news{
         height: auto;
@@ -176,12 +176,24 @@
         margin-bottom: 10px;
     }
     #div-other{
+        background-position-x: 50%;
+        background-position-y: 98%;
+        background-size: 1000px;
     }
 }
 
 /* ONLY FOR TABLETS IN LANDSCAPE */
 @media screen and (orientation: landscape) and (min-width: 768px) and (max-width: 1024px) {
-    
+    .img-header-award{
+        background-size: 1083px;
+        background-position-x: 88%;
+        background-position-y: -79%;
+    }
+    #div-other{
+        background-position-x: 50%;
+        background-position-y: 98%;
+        background-size: 1000px;
+    }
 }
 
 /* UNTIL SCREEN RESOLUTION 1025PX */
