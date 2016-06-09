@@ -986,9 +986,17 @@ li.col1 {
 	}
 
 	.gform_wrapper {
-	    overflow: inherit;
-	    margin: 1em 0.5em;
-	    max-width: 98%;
+	    overflow: inherit !important;
+	    margin: 1em 0.5em !important;
+	    max-width: 98% !important;
+	}
+
+	.contact-call-us {
+    	height: 140px !important;
+	}
+
+	body .gform_wrapper img.ui-datepicker-trigger {
+		display: none !important;
 	}
 
 
