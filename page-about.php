@@ -8,7 +8,7 @@ get_header();
 $mainImage = wp_get_attachment_url( get_post_thumbnail_id($post->ID), 'thumbnail' );
 $customPosts = get_post_meta($post->ID);
 
-$args = array('post_type' => 'team');
+$args = array('post_type' => 'team','posts_per_page'=>-1);
 $teams = new WP_Query( $args );
 
 $args = array('post_type' => 'partner');
