@@ -187,7 +187,9 @@
 	#div-logo{
 		padding-top: 80px;
 	}
-
+	.item-our-team br{
+		display: none;
+	}
 }
 
 /* ONLY FOR TABLETS IN LANDSCAPE */
