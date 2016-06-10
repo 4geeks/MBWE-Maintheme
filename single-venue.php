@@ -84,7 +84,7 @@ $venues = new WP_Query( $args );
                     <span id="direction" > <?php echo $direction ?></span>
                 </div>
                 <div id="div-venue-button">
-                   <button class="btn btn-warning btn-lg">Request a quote</button>
+                   <button class="btn btn-warning btn-lg modal-contact">Request a quote</button>
                    <p class="highlight-p">or call now! 305-985-4663</p>
                 </div>
                 <div id="arrow-down" class="not-for-mobile"><span class="glyphicon glyphicon-chevron-down"></span></div>     

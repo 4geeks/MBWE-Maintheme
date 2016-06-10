@@ -790,8 +790,7 @@ a img.aligncenter {
 .gform_confirmation_wrapper {
 	height: 160px !important;
     color: white !important;
-    font-weight: bold !important;
-    text-shadow: 1px 1pxgrey !important;
+    font-weight: bold !important;    
     text-align: center !important;
 }
 
