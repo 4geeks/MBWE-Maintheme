@@ -98,8 +98,8 @@ function html5blank_header_scripts()
         wp_register_script('adaptative-background', get_template_directory_uri() . '/js/jquery.adaptive-backgrounds.js', array('jquery'), '1.0');
         wp_enqueue_script('adaptative-background');
         
-        /*wp_register_script( 'venuesjs', get_template_directory_uri() . '/js/venues.js', array ( 'jquery' ), 1.1, true);
-        wp_enqueue_script('venuesjs');*/
+        wp_register_script( 'mailchimpjs', get_template_directory_uri() . '/js/for-mailchimp.js', array ( 'jquery' ), 1.1, true);
+        wp_enqueue_script('mailchimpjs');
         
         
     }
