@@ -74,7 +74,7 @@ $venues = new WP_Query( $args );
         <main id="main">
             <div id='div-venue-image'>                
                 <div class="fullscreen-bg">  
-                    <div id="div-only-for-mobile" class="fullscreen-bg__video not-for-pc" style="background-image: url(<?php echo $mainImage; ?>); background-size: cover; background-position: center center;"></div>                  
+                    <div id="div-only-for-mobile" class="fullscreen-bg__video not-for-pc" style="background-image: url(<?php echo $mainImage; ?>); "></div>                  
                     <video id="videoVenue" loop="" muted="" autoplay="" class="fullscreen-bg__video" style="background-image: url(<?php echo $mainImage; ?>); background-size: cover; background-position: center center;">
                         <source src="<?php echo $mainVideo; ?>">
                     </video>
