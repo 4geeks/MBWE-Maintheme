@@ -1001,7 +1001,27 @@ li.col1 {
 	footer #divFooter2{
 		display: none;
 	}
-
+	#divFooter1 .social{
+		left: 0px;
+	    margin-top: 0px;
+	    top: 10px;
+	}
+	#divFooter1 .newsletter{
+		left: 0px;
+	    margin-top: 0px;
+	    top: 10px;
+	}
+	.newsletter ._form-title{
+		padding-bottom: 10px;
+	}
+	#divFooter1 .newsletter input{
+		position: relative;
+    	left: -14px;
+	}
+	#divFooter1 .newsletter button{
+		left: 0px;
+    	top: 10px;
+	}
 }
 
 /* ONLY FOR TABLETS IN PORTRAIT */
