@@ -559,6 +559,9 @@ a img.aligncenter {
     font-size: 21px;
     color: #9c9c9c;
 }
+#divFooter1 .newsletter ._form-title{
+	padding-bottom: 5px;
+}
 #divFooter1 .newsletter span{
     font-family: content_font_light;
     margin-left: 60px;
@@ -567,14 +570,16 @@ a img.aligncenter {
     padding: 8px 0px 5px 20px;
     font-family: content_font_light;
     max-width: 300px;
+    position: relative;
+    left: -50px;
 }
 #divFooter1 .newsletter button{
     font-family: content_font_light;
     padding: 8px 20px 5px 20px;
     position: relative;
-    left: 20px;
-    top: -6px;
-    height: 46px;
+    left: -10px;
+    top: 0px;
+    height: 45px;
     background-color: #fff;
     color: #474747;
 }
@@ -1117,5 +1122,8 @@ li.col1 {
 		position: relative;
     	left: 40px;
     	height: 44px;
+	}
+	.newsletter ._form-title{
+		padding-bottom: 10px;
 	}
 }

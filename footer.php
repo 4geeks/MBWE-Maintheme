@@ -24,6 +24,9 @@
 								<div class="social-icon youtube">
 									<a href="https://www.youtube.com/channel/UCgv-DOYllKT1ihDbKli8NzQ" target="_blank"><i class="fa fa-youtube"></i></a>
 								</div>
+								<div class="social-icon pinterest">
+					              <a href="http://www.pinterest.com/" target="_blank"><i class="fa fa-pinterest"></i></a>
+					            </div>
 							</div>
 						</div>
 						<div class="col-md-offset-2 col-md-5">
@@ -87,7 +90,7 @@
 							<div class="links">
 								<div class="col-md-4">
 									<div id="div-links-content" class="col-md-12">
-										<span><?php echo $footerTitle1; ?></span>
+										<span>The Company</span>
 									</div>
 									<div class="col-md-12">
 										<?php 										
@@ -108,7 +111,7 @@
 								</div>
 								<div class="col-md-4 margin-left-links">
 									<div id="div-links-content" class="col-md-12">
-										<span><?php echo $footerTitle2; ?></span>
+										<span>Wedding Gallery</span>
 									</div>
 									<div class="col-md-12">
 										<?php 										
@@ -129,7 +132,7 @@
 								</div>
 								<div class="col-md-4 margin-left-links">
 									<div id="div-links-content" class="col-md-12">
-										<span><?php echo $footerTitle3; ?></span>
+										<span>Our services</span>
 									</div>
 									<div class="col-md-12">
 										<?php 										
