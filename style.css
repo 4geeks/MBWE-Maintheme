@@ -1042,7 +1042,10 @@ li.col1 {
 	    top: 30px;
 	}
 	.newsletter ._form-title{
-		padding-bottom: 5px;
+		padding-bottom: 10px;
+	}
+	#divFooter1 .newsletter button{
+		left: -50px;
 	}
 }
 
