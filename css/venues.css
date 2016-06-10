@@ -417,6 +417,11 @@ Saved: Apr 18 2016 | 16:49:53 */
     margin-top: 20px;
 }
 
+.fullscreen-bg__video{
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
 /* media query responsive for any mobiles */
 @media screen and (max-width: 767px) {
   .not-for-mobile{
