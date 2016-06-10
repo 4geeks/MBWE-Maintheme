@@ -1000,7 +1000,7 @@ li.col1 {
 	}
 
 
-	footer .divFooter2{
+	footer #divFooter2{
 		display: none;
 	}
 
@@ -1013,7 +1013,7 @@ li.col1 {
 		line-height: 0.9em;	
 	}
 
-	footer .divFooter2{
+	footer #divFooter2{
 		display: none;
 	}
 
