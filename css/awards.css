@@ -199,7 +199,7 @@
 /* UNTIL SCREEN RESOLUTION 1025PX */
 @media screen and (min-width: 1025px) {
     .img-header-award{
-        background-position-y: -360px;
+        background-position-y: -187px;
         height: 400px;
     }
 }
