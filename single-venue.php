@@ -136,7 +136,6 @@ $venues = new WP_Query( $args );
 
                                         echo "<div class='col-md-9 col-xs-10 name-acommodation'>".
                                                 $child_post->fields['name_nerby']."<br>".
-                                                $child_post->fields['direction_acommodation'].
                                             "</div>";
                                     echo "</div>";
                                 }

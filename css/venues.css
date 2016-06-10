@@ -314,7 +314,7 @@ Saved: Apr 18 2016 | 16:49:53 */
     width: 440px;
     position: fixed;
     right: 2px;
-    max-height: 720px;
+    max-height: 500px;
     overflow-y: auto;
     opacity:0;
 }
