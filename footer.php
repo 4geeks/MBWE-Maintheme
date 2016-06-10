@@ -51,10 +51,10 @@
 								      <div class="_form_element _field16 _inline-style " >
 								        <input type="hidden" name="field[16]" value="newsletter-website" />
 								      </div>
-								      <div class="_form_element _x12877897 _inline-style col-md-6" >								        
+								      <div class="_form_element _x12877897 _inline-style col-md-6 col-sm-6 col-sm-offset-1" >								        
 								        <input type="text" id="inputnewsletter" name="email" placeholder="Type your email" required/>
 								      </div>
-								      <div class="_button-wrapper _inline-style col-md-4">
+								      <div class="_button-wrapper _inline-style col-md-4 col-sm-4">
 								        <button id="_form_20_submit" class="_submit" type="submit">
 								          Suscribe!
 								        </button>
