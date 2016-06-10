@@ -190,6 +190,9 @@
 	.item-our-team br{
 		display: none;
 	}
+	.item-our-team-info{
+		padding-left: 0px;
+	}
 }
 
 /* ONLY FOR TABLETS IN LANDSCAPE */
