@@ -51,12 +51,6 @@
 								      <div class="_form_element _field16 _inline-style " >
 								        <input type="hidden" name="field[16]" value="newsletter-website" />
 								      </div>
-								      <div class="_form_element _x41865684 _inline-style " >
-								        <label class="_form-label">
-								          Full Name
-								        </label>
-								        <input type="text" name="fullname" placeholder="Type your name" />
-								      </div>
 								      <div class="_form_element _x12877897 _inline-style " >
 								        <label class="_form-label">
 								          Email*
@@ -81,7 +75,7 @@
 
 
 
-								
+
 								<!-- <div class="col-md-12">
 									<input type="text" id="inputnewsletter" placeholder="Your Email Addres..."/>
 									<button class="btn btn-info">Suscribe!</button>								
