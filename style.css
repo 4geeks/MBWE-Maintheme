@@ -1101,10 +1101,20 @@ li.col1 {
 	}
 
 	#divFooter1 .social {
-		left: 0px
+		left: 0px;
 	}
 
 	#divFooter1 .newsletter input {
-		max-width: 235px;;
+		max-width: 207px;
+		position: relative;
+    	left: 20px;
+	}
+	#divFooter1 .newsletter button{
+		padding: 0px;
+		top: 0px;
+		width: 120px;
+		position: relative;
+    	left: 40px;
+    	height: 44px;
 	}
 }
