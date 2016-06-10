@@ -90,7 +90,7 @@
 							<div class="links">
 								<div class="col-md-4">
 									<div id="div-links-content" class="col-md-12">
-										<span><?php echo $footerTitle1; ?></span>
+										<span>The Company</span>
 									</div>
 									<div class="col-md-12">
 										<?php 										
@@ -111,7 +111,7 @@
 								</div>
 								<div class="col-md-4 margin-left-links">
 									<div id="div-links-content" class="col-md-12">
-										<span><?php echo $footerTitle2; ?></span>
+										<span>Wedding Gallery</span>
 									</div>
 									<div class="col-md-12">
 										<?php 										
@@ -132,7 +132,7 @@
 								</div>
 								<div class="col-md-4 margin-left-links">
 									<div id="div-links-content" class="col-md-12">
-										<span><?php echo $footerTitle3; ?></span>
+										<span>Our services</span>
 									</div>
 									<div class="col-md-12">
 										<?php 										
