@@ -45,19 +45,16 @@
 								    <div class="_form-content">
 								      <div class="_form_element _x42816285 _inline-style _clear" >
 								        <div class="_form-title">
-								          Subscribe for Email Updates
+								          NEWSLETTER
 								        </div>
 								      </div>
 								      <div class="_form_element _field16 _inline-style " >
 								        <input type="hidden" name="field[16]" value="newsletter-website" />
 								      </div>
-								      <div class="_form_element _x12877897 _inline-style " >
-								        <label class="_form-label">
-								          Email*
-								        </label>
-								        <input type="text" name="email" placeholder="Type your email" required/>
+								      <div class="_form_element _x12877897 _inline-style col-md-6" >								        
+								        <input type="text" id="inputnewsletter" name="email" placeholder="Type your email" required/>
 								      </div>
-								      <div class="_button-wrapper _inline-style">
+								      <div class="_button-wrapper _inline-style col-md-4">
 								        <button id="_form_20_submit" class="_submit" type="submit">
 								          Suscribe!
 								        </button>
