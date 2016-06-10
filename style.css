@@ -1020,7 +1020,7 @@ li.col1 {
 	#divFooter1 .newsletter{
 		left: 0px;
 	    margin-top: 0px;
-	    top: 10px;
+	    top: 20px;
 	}
 	.newsletter ._form-title{
 		padding-bottom: 10px;
@@ -1032,6 +1032,9 @@ li.col1 {
 	#divFooter1 .newsletter button{
 		left: 0px;
     	top: 10px;
+	}
+	#divFooter1{
+		height: 210px;
 	}
 }
 
