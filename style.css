@@ -998,8 +998,6 @@ li.col1 {
 	body .gform_wrapper img.ui-datepicker-trigger {
 		display: none !important;
 	}
-
-
 	footer #divFooter2{
 		display: none;
 	}
@@ -1033,8 +1031,15 @@ li.col1 {
 	#why-fetes-events .content {
 		padding-top: 10px;
 	}
-
-
+	#divFooter1 .social{
+		left: 0px;
+	    margin-top: 0px;
+	    top: 30px;
+	}
+	#divFooter1 .newsletter{
+		left: 0px;
+	    margin-top: 0px;
+	}
 }
 
 /* ONLY FOR TABLETS IN LANDSCAPE */
