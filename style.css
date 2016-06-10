@@ -347,6 +347,7 @@ a img.aligncenter {
   font-family: content_font_bold;
   font-size: 80px;
   text-shadow: 1px 1px grey;
+  line-height: .9em;
   
 }
 
