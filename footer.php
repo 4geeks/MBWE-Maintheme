@@ -28,13 +28,64 @@
 						</div>
 						<div class="col-md-offset-2 col-md-5">
 							<div class="newsletter">
-								<div class="col-md-12 margin-bottom3">
+								<!-- <div class="col-md-12 margin-bottom3">
 									<span>NEWSLETTER</span>
+								</div> -->
+
+
+								<div style="text-align: center;">
+								  <form method="POST" action="https://fetesevents.activehosted.com/proc.php" id="_form_20_" class="_form _form_20 _inline-form _inline-style _dark" novalidate>
+								    <input type="hidden" name="u" value="20" />
+								    <input type="hidden" name="f" value="20" />
+								    <input type="hidden" name="s" />
+								    <input type="hidden" name="c" value="0" />
+								    <input type="hidden" name="m" value="0" />
+								    <input type="hidden" name="act" value="sub" />
+								    <input type="hidden" name="v" value="2" />
+								    <div class="_form-content">
+								      <div class="_form_element _x42816285 _inline-style _clear" >
+								        <div class="_form-title">
+								          Subscribe for Email Updates
+								        </div>
+								      </div>
+								      <div class="_form_element _field16 _inline-style " >
+								        <input type="hidden" name="field[16]" value="newsletter-website" />
+								      </div>
+								      <div class="_form_element _x41865684 _inline-style " >
+								        <label class="_form-label">
+								          Full Name
+								        </label>
+								        <input type="text" name="fullname" placeholder="Type your name" />
+								      </div>
+								      <div class="_form_element _x12877897 _inline-style " >
+								        <label class="_form-label">
+								          Email*
+								        </label>
+								        <input type="text" name="email" placeholder="Type your email" required/>
+								      </div>
+								      <div class="_button-wrapper _inline-style">
+								        <button id="_form_20_submit" class="_submit" type="submit">
+								          Suscribe!
+								        </button>
+								      </div>
+								      <div class="_clear-element">
+								      </div>
+								    </div>
+								    <div class="_form-thank-you" style="display:none;">
+								    </div>
+								  </form>
 								</div>
-								<div class="col-md-12">
+
+
+
+
+
+
+								
+								<!-- <div class="col-md-12">
 									<input type="text" id="inputnewsletter" placeholder="Your Email Addres..."/>
 									<button class="btn btn-info">Suscribe!</button>								
-								</div>
+								</div> -->
 							</div>
 						</div>
 					</div>
