@@ -799,6 +799,10 @@ a img.aligncenter {
     text-align: center !important;
 }
 
+._form-thank-you{
+    position: relative !important;
+    top:-40px !important;
+}
 /*GRAVITY FORM CUSTOM CONTACT US*/
 
 
