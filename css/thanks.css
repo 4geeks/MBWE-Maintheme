@@ -1,4 +1,7 @@
 #div-thanks {
 	height: 600px;
     padding-top: 170px;
+    background-image: url(../img/thans.png);
+    background-position: center;
+	background-size: cover;
 }
