@@ -865,6 +865,9 @@ li.col1 {
 .gform_wrapper .top_label select.large {
 	width: 95% !important;
 }
+.gform_button button {
+    width: 90% !important;
+}
 .gform_wrapper .gform_footer input[type=submit] {
     display: -moz-inline-stack !important;
     display: inline-block !important;

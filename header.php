@@ -3,6 +3,7 @@
 <html <?php language_attributes(); ?> class="no-js">
 <head>
 	<meta charset="<?php bloginfo('charset'); ?>">
+	<meta name="description" content="<?php bloginfo('description'); ?>">
 	<title><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?></title>
 
 	<link href="//www.google-analytics.com" rel="dns-prefetch">
