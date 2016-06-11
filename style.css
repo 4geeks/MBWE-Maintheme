@@ -763,13 +763,19 @@ a img.aligncenter {
 	background-attachment: fixed;
 
 }
+/*For modal*/
+.modal-content .contact-us {
+    height: 100%;
+}
 
 .contact-title {
-	font-weight: bold;
+    font-weight: bold;
 }
 .contact-call-us, .div-form-contact-us {
-	height: 100%;
+    height: auto;
 }
+
+
 .contact-call-us {
 	padding-left:30px;
 }
@@ -992,7 +998,7 @@ li.col1 {
 		font-size: 20px;
 	}
 	.contact-call-us, .div-form-contact-us {
-		height: 100%;
+		height: auto;
 	}
 	.contact-call-us {
 		padding-left:30px;
