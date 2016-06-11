@@ -976,7 +976,7 @@ li.col1 {
 	}
 
 	.contact-us {
-	height: auto;
+    height: 100%;
 	background-color: #ffffff;
 	color: #ffffff;
 	background-image: url(img/torta.png);
