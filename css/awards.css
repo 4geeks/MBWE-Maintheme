@@ -42,7 +42,7 @@
     color: #fff;
     text-shadow: 2px -2px 7px grey;
     position: relative;
-    top: 162px;
+    top: 180px;
 }
 #div-general-description{
 	background-color: #6DD6DA;
@@ -207,7 +207,7 @@
 /* STARTING FROM SCREEN RESOLUTION 1366PX */
 @media screen and (min-width: 1920px){
     .img-header-award{
-        background-position-y: -568px;
+        background-position-y: -270px;
         height: 600px;
     }
 }

@@ -1127,3 +1127,15 @@ li.col1 {
 		padding-bottom: 10px;
 	}
 }
+
+@media screen and (min-width: 1920px){
+	#divFooter1 .social{
+		left: -70px;
+	}
+	#divFooter1 .newsletter button{
+		left: -100px;
+	}
+	#divFooter1 .newsletter input{
+		left: -10px;
+	}
+}
