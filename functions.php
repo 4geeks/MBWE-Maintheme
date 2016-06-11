@@ -166,7 +166,13 @@ function html5blank_styles()
 
     if (is_page('gallery')){
         wp_register_style('masonrycss', get_template_directory_uri() . '/css/masonrygallery.css', false, '1.1', 'all');
-        wp_enqueue_style('masonrycss');          }
+        wp_enqueue_style('masonrycss');        
+    }
+
+    if (is_page('thanks')){
+        wp_register_style('thankscss', get_template_directory_uri() . '/css/thanks.css', false, '1.1', 'all');
+        wp_enqueue_style('thankscss');        
+    }
 
     if (is_page('wedding-venues-locations')){
         wp_register_style('venueslistcss', get_template_directory_uri() . '/css/venues-list.css', false, '1.1', 'all');
