@@ -1019,6 +1019,11 @@ li.col1 {
 	    max-width: 98% !important;
 	}
 
+    .gform_wrapper .top_label .gfield_label {
+        line-height: .8;
+        font-size: 0.8em;
+    }
+
 	.contact-call-us {
     	height: 140px !important;
 	}
