@@ -9,8 +9,8 @@ get_header();
 
 ?>
 <div class="contact-us">
-	<div class="col-md-12 highlight-p">
-	   <center><h1 class="with-font-title">Responsiveness is one of our main values, <br /> we guaranty you a response in less than 10min</h1></center> 
+	<div class="col-md-12 div-thanks highlight-p">
+	   <center><h1 class="with-font-title">Thanks for you request</h1></center> 
 <!-- </div> -->
 </div>     
 
