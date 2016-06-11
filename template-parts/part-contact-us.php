@@ -9,7 +9,7 @@
             <h3>Or chat with us</h3>
         </div>
         <div class="col-md-7 col-xs-12 div-form-contact-us highlight-p">
-            <?php gravity_form( 2, false, false, false, '', true ); ?>           
-        </div>        
+            <?php gravity_form( 3, false, false, false, '', true ); ?>           
+        </div>
     <!-- </div> -->
 </div>
