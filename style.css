@@ -893,6 +893,7 @@ li.col1 {
     background-image: none !important;
     border: 1px solid transparent !important;
     border-radius: 0px !important;
+    width: 90% !important;
 }
 
 /*Message validation*/
