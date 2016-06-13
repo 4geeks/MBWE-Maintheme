@@ -776,6 +776,7 @@ a img.aligncenter {
 
 .contact-call-us h1{
 	padding-left:40px;
+    font-weight: bold;
 }
 
 #page-contact-us {
@@ -975,7 +976,7 @@ li.col1 {
 	}
 
 	.contact-us {
-	height: 160px;
+	height: auto;
 	background-color: #ffffff;
 	color: #ffffff;
 	background-image: url(img/torta.png);
@@ -1003,7 +1004,7 @@ li.col1 {
 
 	#page-contact-us {
 		position: relative;
-		height: 600px;
+		min-height: 790px;
 	}
 
 	.gform_wrapper {
