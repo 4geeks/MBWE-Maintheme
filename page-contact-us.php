@@ -18,9 +18,9 @@ get_header();
 		</div>
 		<!-- <div class="row"> -->
 		    <div class="col-md-5 col-xs-12 contact-call-us">
-		        <h3>Call us now!</h3>
-		        <h1 class="highlight-p">(305) 662-47-42</h1>
-		        <h3>Or chat with us</h3>
+		        <p>Call us now!</p>
+		        <p class="highlight-p with-font-title">(305) 662-47-42</p>
+		        <p>Or chat with us</p>
 		    </div>
 		    <div class="col-md-7 col-xs-12 div-form-contact-us highlight-p">
 		        <?php gravity_form( 4, false, false, false, '', true ); ?>           
