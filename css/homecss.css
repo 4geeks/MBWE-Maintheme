@@ -150,14 +150,6 @@ a:hover {
     height: 250px;
      
 }
-#div-ourServices p{
-    color: #fff;
-    font-size: 22px;
-    font-weight: 900;
-    position: absolute;
-    bottom: 0px;
-    text-align: left;
-}
 
 .img-award-purple{
     background-image: url(../img/aw_content.png);
@@ -166,6 +158,8 @@ a:hover {
     background-size: cover;
     height: 250px;
     background-attachment: fixed;
+    -webkit-filter: brightness(0.50);
+    filter: brightness(0.50);
 }
 #div-awards{
     padding-top: 20px;
@@ -212,7 +206,7 @@ a:hover {
 #div-ourServices, #div-awards, #div-testimonials{
     background-color: #fff;
 }
-#div-ourServices p span, #div-ourServices p{
+#div-ourServices p span{
     float: left;
     clear: both;
     font-family: content_font_black;
@@ -287,6 +281,35 @@ a:hover {
     opacity: 0.7;    
 }
 
+#divTextAwards{
+    position: absolute;
+    /*top: 1237px;*/
+    top: 56%;
+}
+
+#div-ourServices .services-venues, #div-ourServices .services-packages{
+    height: 400px;
+}
+
+#div-ourServices #divServicesContent-venues, #div-ourServices #divServicesContent-packages{
+    position: relative;
+    top: 100px;
+    color: #fff;
+    text-align: center;
+    display: none;
+}
+
+#div-ourServices .services-title{
+    font-size: 32px;
+    font-weight: 900;
+    color: #fff;
+    position: relative;
+    top: 100px;
+}
+
+#div-ourServices .services-content{
+
+}
 
 /* ONLY FOR MOBILES */
 @media screen and (max-width: 767px) {

@@ -680,7 +680,7 @@ a img.aligncenter {
 
 /*HIGHLIGHT*/
 
-.highlight-element {
+.highlight-element, .highlight-element-services {
 	cursor: pointer;
 	transition:all 0.4s ease;
 	-webkit-transition: all 0.4s ease;
@@ -690,6 +690,12 @@ a img.aligncenter {
     -webkit-box-shadow: inset 0px -45px 81px 5px rgba(0,0,0,0.47);
     -moz-box-shadow: inset 0px -45px 81px 5px rgba(0,0,0,0.47);
     box-shadow: inset 0px -45px 81px 5px rgba(0,0,0,0.47);
+}
+
+.highlight-element-services:hover {
+    -webkit-box-shadow: inset 0px -600px 270px 5px rgba(0,0,0,0.47);
+    -moz-box-shadow: inset 0px -600px 270px 5px rgba(0,0,0,0.47);
+    box-shadow: inset 0px -600px 270px 5px rgba(0,0,0,0.47);
 }
 
 .highlight-p {

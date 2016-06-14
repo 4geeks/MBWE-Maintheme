@@ -44,10 +44,25 @@ echo $content;
 		<center><h1>Our services</h1></center>
 	</div>
 	<div class="col-md-12 col-xs-12 clear center padding-right0">
-		<a href="#" class="col-md-4 col-xs-12 col-sm-6 img-venues highlight-element">
-			<p>VENUES</p>
-		</a>
-		<a href="#" class="col-md-4 col-xs-12 col-sm-6 img-catering highlight-element">
+		<div class="col-md-6 col-xs-12 col-sm-6 img-venues highlight-element-services services-venues">
+				<div class="col-md-12"><p class="services-title">Wedding Venues</p></div>
+			<div id="divServicesContent-venues" class="col-md-12 center">
+				<div class="col-md-12"><p class="services-content">Picking a date should be the first step of every wedding, that's why the first thing you should do is booking you venue on a specific date. We have a selection of more than 25 spectacular locations.</p></div>
+				<div class="col-md-12"><a class="btn btn-lg btn-warning" href="#">Take a look at our venues</a></div>
+			</div>
+		</div>
+		<div class="col-md-6 col-xs-12 col-sm-6 img-decor highlight-element-services services-packages">
+				<div class="col-md-12"><p class="services-title">Wedding Packages</p></div>
+			<div id="divServicesContent-packages" class="col-md-12 center">
+				<div class="col-md-12"><p class="services-content">Choosing a wedding package is de best way to get an aproximate budget, once you have a buget you can start customizing everything to make it your way.</p></div>
+				<div class="col-md-12"><a class="btn btn-lg btn-warning" href="#">Review our wedding packages</a></div>
+			</div>
+		</div>	
+
+
+
+		
+		<!--a href="#" class="col-md-4 col-xs-12 col-sm-6 img-catering highlight-element">
 			<p>CATERING</p>
 		</a>
 		<a href="#" class="col-md-4 col-xs-12 col-sm-6 img-staffing highlight-element">
@@ -55,23 +70,22 @@ echo $content;
 		</a>			
 		
 
-		<a href="#" class="col-md-4 col-xs-12  col-sm-6 img-decor highlight-element">
-			<p>DECOR</p>
-		</a>	
 		<a href="#" class="col-md-4 col-xs-12  col-sm-6 img-music highlight-element">
 			<p><span>MUSIC</span><span>AND</span><span>ENTERTAINMENT</span></p>
 		</a>	
 		<a href="#" class="col-md-4 col-xs-12  col-sm-6 img-production highlight-element">
 			<p><span>PRODUCTION</span><span>AND</span><span>LIGHTING</span></p>
-		</a>			
+		</a-->			
 			
 	</div>
 </div>
 <div id="div-awards" class="row">
 	<div class="img-logofe col-md-12"></div>
-	<div class="col-md-12 img-award-purple center margin-top20">	
+	<div class="col-md-12 img-award-purple center margin-top20">
+	</div>
+	<div id="divTextAwards" class="col-md-12 center margin-top20">
 		<p><span><?php echo $awardText; ?></span></p>
-		<div class="col-md-4 col-md-offset-4 col-xs-6 col-xs-offset-3 line"></div>
+		<div class="col-md-4 col-md-offset-4 col-xs-6 col-xs-offset-3 line"></div>		
 	</div>
 	<div class="col-md-12 margin-top20">
 		<div class="col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6 col-xs-12">
