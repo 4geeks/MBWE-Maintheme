@@ -588,6 +588,19 @@ a img.aligncenter {
     background-color: #78AEB1;
     border-color: #78AEB1;
 }
+
+#divFooter1 .newsletter ._form-title {
+    padding-bottom: 5px;
+    text-align: left;
+    padding-left: 8px;
+}
+
+._below {
+    position: relative;
+    left: -36px;
+    width: 275px;
+}
+
 #divFooter2 .links{
     color: #fff;
 }
@@ -769,15 +782,25 @@ a img.aligncenter {
 	background-attachment: fixed;
 
 }
+/*For modal*/
+.modal-content .contact-us {
+    height: 100%;
+}
 
 .contact-title {
-	font-weight: bold;
+    font-weight: bold;
 }
 .contact-call-us, .div-form-contact-us {
-	height: 100%;
+    height: auto;
 }
+
+
 .contact-call-us {
 	padding-left:30px;
+}
+
+.contact-call-us p{
+    margin-top: 25px;
 }
 
 .contact-call-us h1{
@@ -865,6 +888,9 @@ li.col1 {
 .gform_wrapper .top_label select.large {
 	width: 95% !important;
 }
+.gform_button button {
+    width: 90% !important;
+}
 .gform_wrapper .gform_footer input[type=submit] {
     display: -moz-inline-stack !important;
     display: inline-block !important;
@@ -890,6 +916,7 @@ li.col1 {
     background-image: none !important;
     border: 1px solid transparent !important;
     border-radius: 0px !important;
+    width: 90% !important;
 }
 
 /*Message validation*/
@@ -982,7 +1009,7 @@ li.col1 {
 	}
 
 	.contact-us {
-	height: auto;
+    height: 100%;
 	background-color: #ffffff;
 	color: #ffffff;
 	background-image: url(img/torta.png);
@@ -998,7 +1025,7 @@ li.col1 {
 		font-size: 20px;
 	}
 	.contact-call-us, .div-form-contact-us {
-		height: 100%;
+		height: auto;
 	}
 	.contact-call-us {
 		padding-left:30px;
@@ -1018,6 +1045,11 @@ li.col1 {
 	    margin: 1em 0.5em !important;
 	    max-width: 98% !important;
 	}
+
+    .gform_wrapper .top_label .gfield_label {
+        line-height: .8;
+        font-size: 0.8em;
+    }
 
 	.contact-call-us {
     	height: 140px !important;
@@ -1043,7 +1075,13 @@ li.col1 {
 	#divFooter1 .newsletter ._form-title{
 		padding-bottom: 10px;
         font-size: 22px;
-	}
+        text-align: center;
+	}    
+    
+    ._error-inner {
+        padding-left: 75px;
+    }
+
     #divFooter1 .social span{
         font-size: 22px;
     }

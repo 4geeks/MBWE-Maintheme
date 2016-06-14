@@ -25,7 +25,7 @@
 									<a href="https://www.youtube.com/channel/UCgv-DOYllKT1ihDbKli8NzQ" target="_blank"><i class="fa fa-youtube"></i></a>
 								</div>
 								<div class="social-icon pinterest">
-					              <a href="http://www.pinterest.com/" target="_blank"><i class="fa fa-pinterest"></i></a>
+					              <a href="https://www.pinterest.com/bestmiaweddings/" target="_blank"><i class="fa fa-pinterest"></i></a>
 					            </div>
 							</div>
 						</div>

@@ -8,9 +8,9 @@ get_header();
 //Get venue post types to list 
 
 ?>
-<div class="contact-us">
+<div id="div-thanks">
 	<div class="col-md-12 div-thanks highlight-p">
-	   <center><h1 class="with-font-title">Thanks for you request</h1></center> 
+	   <center><h1>Thank you for your inquiry with Best Miami Weddings. We will contact you as soon as possible (we strive to respond by the next business day).</h1></center> 
 <!-- </div> -->
 </div>     
 

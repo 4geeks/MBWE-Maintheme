@@ -80,7 +80,7 @@ $venues = new WP_Query( $args );
                     </video>
                 </div>            
                 <div id="div-venue-name">
-                    <span class="with-font-sub-title" ><?php  echo $name;?></span> <br />
+                    <h1 class="with-font-sub-title" ><?php  echo $name;?></h1> <br />
                     <span id="direction" > <?php echo $direction ?></span>
                 </div>
                 <div id="div-venue-button">

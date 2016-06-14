@@ -7,7 +7,7 @@ get_header();
 
 //Get venue post types to list 
 
-$args = array('post_type' => 'venue'); 
+$args = array('post_type' => 'venue','posts_per_page'=>-1); 
 $venues = new WP_Query( $args );
 
 $content = get_page($post->ID)->post_content;
