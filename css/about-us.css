@@ -121,7 +121,7 @@
 	#div-hits {
 		padding-left: 0px;
 	    padding-right: 0px;		
-	    top: 70px;
+	    top: 55px;
 	}    
 	.hit {
 		font-size: 14px;
@@ -146,6 +146,11 @@
 	.item-partner{
 		background-position: center center;
 		background-size: contain;
+	}
+	#content-header {
+	    background-size: 727px;
+	    background-position-x: 58%;
+	    background-position-y: -1%;
 	}
 }
 

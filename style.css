@@ -1027,26 +1027,35 @@ li.col1 {
 		left: 0px;
 	    margin-top: 0px;
 	    top: 10px;
+        font-size: 0px;
 	}
 	#divFooter1 .newsletter{
 		left: 0px;
 	    margin-top: 0px;
 	    top: 20px;
 	}
-	.newsletter ._form-title{
+	#divFooter1 .newsletter ._form-title{
 		padding-bottom: 10px;
+        font-size: 22px;
 	}
+    #divFooter1 .social span{
+        font-size: 22px;
+    }
 	#divFooter1 .newsletter input{
 		position: relative;
-    	left: -14px;
+    	left: -12px;
+        font-size: 18px;
 	}
 	#divFooter1 .newsletter button{
 		left: 0px;
     	top: 10px;
+        font-size: 18px;
 	}
 	#divFooter1{
 		height: 210px;
 	}
+    #divFooter1 .fa{
+        font-size: 20px;
 }
 
 /* ONLY FOR TABLETS IN PORTRAIT */
