@@ -588,6 +588,19 @@ a img.aligncenter {
     background-color: #78AEB1;
     border-color: #78AEB1;
 }
+
+#divFooter1 .newsletter ._form-title {
+    padding-bottom: 5px;
+    text-align: left;
+    padding-left: 8px;
+}
+
+._error_bellow {
+    position: relative;
+    left: -36px;
+    width: 275px;
+}
+
 #divFooter2 .links{
     color: #fff;
 }
@@ -1052,7 +1065,13 @@ li.col1 {
 	#divFooter1 .newsletter ._form-title{
 		padding-bottom: 10px;
         font-size: 22px;
-	}
+        text-align: center;
+	}    
+    
+    ._error-inner {
+        padding-left: 75px;
+    }
+
     #divFooter1 .social span{
         font-size: 22px;
     }
