@@ -134,8 +134,9 @@
 /* ONLY FOR MOBILES */
 @media screen and (max-width: 767px) {
     .img-header-award{
-        background-position-x: 96%;
-        background-position-y: -100px;
+        background-position-x: 48%;
+        background-position-y: 10px;
+        background-size: 737px;
     }
     .div-news{
         height: auto;
@@ -153,6 +154,9 @@
     }
     #div-other > .col-md-12{
         padding: 10px 30px 10px 30px;
+    }
+    #div-header h1{
+        font-size: 55px;
     }
 }
 
