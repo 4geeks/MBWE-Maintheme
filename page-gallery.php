@@ -18,6 +18,10 @@ foreach( $ids as $id ) {
 
 $urlIsEvent = (isset($_GET["is_event"]) && !$_GET["is_event"]? get_home_url()."/venue/".$post->post_name : get_home_url()."/venue-event/?post_id=".$_GET["post_id"]);
 
+if ((isset($_GET["is_event"]) && $_GET["is_event"]) {
+    $urlVenueListIsEvent = get_home_url()."/venue-event/?post_id=";
+}
+
 $name = get_post_meta( $_GET['post_id'], 'wpcf-venue-name', false)[0];
 $mainImage = get_post_meta( $_GET['post_id'], 'wpcf-venue-main-image', false)[0];
 $tour = (isset(get_post_meta( $_GET['post_id'], 'wpcf-venue-360-tour', false)[0])?get_post_meta( $_GET['post_id'], 'wpcf-venue-360-tour', false)[0]:null);    
@@ -51,7 +55,7 @@ $blueprint = (isset(get_post_meta( $_GET['post_id'], 'wpcf-venue-blueprint', fal
             <?php
                 //list all venues in post types
                 foreach ($venues->posts as $venue) {
-                    echo "<li style='background-image: url(". get_post_meta( $venue->ID, 'wpcf-venue-main-image', false)[0].")'><a class='with-font-title' href='".$urlIsEvent.$venue->post_name."'>".$venue->post_title."</a></li>";
+                    echo "<li style='background-image: url(". get_post_meta( $venue->ID, 'wpcf-venue-main-image', false)[0].")'><a class='with-font-title' href='".$urlVenueListIsEvent.$venue->ID"'>".$venue->post_title."</a></li>";
                 }
             ?>
             </ul>
