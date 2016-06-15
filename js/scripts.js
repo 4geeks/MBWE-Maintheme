@@ -111,6 +111,18 @@
 			}
  		});
 		$('#animatedModalContact').css('display','block');
+
+		$('.services-venues').hover(function(){
+			$('#divServicesContent-venues').show();
+		},function(){
+			$('#divServicesContent-venues').css('display','none');
+		});
+
+		$('.services-packages').hover(function(){
+			$('#divServicesContent-packages').show();
+		},function(){
+			$('#divServicesContent-packages').css('display','none');
+		});
 		
 	});
 	
