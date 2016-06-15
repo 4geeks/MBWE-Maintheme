@@ -18,7 +18,7 @@ foreach( $ids as $id ) {
 
 $urlIsEvent = (isset($_GET["is_event"]) && !$_GET["is_event"]? get_home_url()."/venue/".$post->post_name : get_home_url()."/venue-event/?post_id=".$_GET["post_id"]);
 
-if ((isset($_GET["is_event"]) && $_GET["is_event"]) {
+if ((isset($_GET["is_event"]) && $_GET["is_event"])) {
     $urlVenueListIsEvent = get_home_url()."/venue-event/?post_id=";
 }
 
