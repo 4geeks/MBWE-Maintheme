@@ -73,7 +73,7 @@ $venues = new WP_Query( $args );
             <?php
                 //list all venues in post types
                 foreach ($venues->posts as $venue) {
-                    if (get_post()->ID != $venue->ID) {
+                    if (get_post()->ID != $venue->ID) { 
                         echo "<li style='background-image: url(". get_post_meta( $venue->ID, 'wpcf-venue-main-image', false)[0].")'><a class='with-font-sub-title' href='".get_home_url()."/venue-event/?post_id=".$venue->ID."'>".$venue->post_title."</a></li>";
                     }
                 }
