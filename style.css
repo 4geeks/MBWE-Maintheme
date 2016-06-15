@@ -215,7 +215,21 @@ div.menu.active .logo {
 /*------------------------------------*\
     WORDPRESS CORE
 \*------------------------------------*/
-
+.float-right{
+    float: right;
+}
+.clear{
+    clear: both;
+}
+.center{
+    text-align: center;
+}
+.left{
+    text-align: left;
+}
+.margin-top20{
+    margin-top: 20px;
+}
 .alignnone {
 	margin:5px 20px 20px 0;
 }

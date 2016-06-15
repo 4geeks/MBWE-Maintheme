@@ -85,8 +85,11 @@ $tour = types_render_field("venue-360-tour");
 			</nav>
 			<header class="header clear" role="banner">
 				<div id="my-sidebar-toggle">	        						
-					<i class="fa fa-navicon"></i> <span>Menu</span>									
+					<i class="fa fa-navicon"></i> <span>Menu</span>			
 				</div>
+				<?php if (!is_front_page() and !is_single()){ ?>
+					<p id="phone-number-header" class="highlight-p">Call now! 305-985-4663</p>
+				<?php } ?>
 			</header>
 
 			<?php if (is_front_page()){ ?>

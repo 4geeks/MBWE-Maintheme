@@ -57,12 +57,7 @@ a:hover {
 #div-titulo-content{
   color: #fff;
 }
-.clear{
-    clear: both;
-}
-.center{
-    text-align: center;
-}
+
 #div-ourServices h3, #div-ourServices h5{
     color: #808080;
     text-align: center;
@@ -70,9 +65,6 @@ a:hover {
 }
 .margin-top-ourServices{
     margin-top: 30px;
-}
-.margin-top20{
-    margin-top: 20px;
 }
 .img-i{
     background-image: url(../img/i.png);
