@@ -16,7 +16,7 @@ foreach( $ids as $id ) {
    $imgs[] = wp_get_attachment_image_src( $id ,'Medium');
 } 
 
-$urlIsEvent = (isset($_GET["is_event"]) && !$_GET["is_event"]? get_home_url()."/venue/" : get_home_url()."/venue-event/");
+$urlIsEvent = (isset($_GET["is_event"]) && !$_GET["is_event"]? get_home_url()."/venue/".$post->post_name : get_home_url()."/venue-event/?post_id="$_GET["post_id"]);
 
 $name = get_post_meta( $_GET['post_id'], 'wpcf-venue-name', false)[0];
 $mainImage = get_post_meta( $_GET['post_id'], 'wpcf-venue-main-image', false)[0];
@@ -33,15 +33,15 @@ $blueprint = (isset(get_post_meta( $_GET['post_id'], 'wpcf-venue-blueprint', fal
         <div class="col-md-7">
             <div class="top-venue-menu not-for-phone">
                 <ul class="ul-menu">
-                    <?php echo "<li><a href='".$urlIsEvent.$post->post_name."'>GENERAL INFO</a>"?>
+                    <?php echo "<li><a href='".$urlIsEvent."'>GENERAL INFO</a>"?>
                     <?php if ($blueprint != null)
-                            echo "<li><a href='".$urlIsEvent.$post->post_name."#div-venue-blueprint'>AREAS</a>"                        
+                            echo "<li><a href='".$urlIsEvent."#div-venue-blueprint'>AREAS</a>"                        
                     ?>
                     <?php if ($tour != null){ ?>
                        <li><a id="a-360-tour" href="#animatedModal">360° Tour</a></li>
                     <?php } ?>
                     <?php echo "<li><a href='#'>GALLERY</a></li>";?>
-                    <?php echo "<li><a href='".$urlIsEvent.$post->post_name."#div-venue-location'>LOCATION</a>"?>
+                    <?php echo "<li><a href='".$urlIsEvent."#div-venue-location'>LOCATION</a>"?>
                 </ul>
             </div>
         </div>
@@ -76,15 +76,15 @@ $blueprint = (isset(get_post_meta( $_GET['post_id'], 'wpcf-venue-blueprint', fal
                 <div class="col-md-12 modal-menu">
                     <div class="top-venue-menu">
                         <ul class="ul-menu">
-	                        <?php echo "<li><a href='".$urlIsEvent.$post->post_name."'>GENERAL INFO</a>"?>
+	                        <?php echo "<li><a href='".$urlIsEvent."'>GENERAL INFO</a>"?>
 			                <?php if ($blueprint != null)
-                                echo "<li><a href='".$urlIsEvent.$post->post_name."#div-venue-blueprint'>AREAS</a>"                        
+                                echo "<li><a href='".$urlIsEvent."#div-venue-blueprint'>AREAS</a>"                        
                             ?>
                             <?php if ($tour != null){ ?>
                                 <li><a id="a-360-tour" href="#animatedModal">360° Tour</a></li>
                             <?php } ?>
 			                 <?php echo "<li><a href='".get_home_url()."/gallery/?post_id=".get_post()->ID."'>GALLERY</a></li>";?>
-			                <?php echo "<li><a href='".$urlIsEvent.$post->post_name."#div-venue-location'>LOCATION</a>"?>
+			                <?php echo "<li><a href='".$urlIsEvent."#div-venue-location'>LOCATION</a>"?>
                         </ul>
                     </div>
                     <div class="close-animatedModal btn-close"> 
@@ -104,15 +104,15 @@ $blueprint = (isset(get_post_meta( $_GET['post_id'], 'wpcf-venue-blueprint', fal
                 <div class="col-md-12 modal-menu">
                     <div class="top-venue-menu">
                         <ul class="ul-menu">
-                            <?php echo "<li><a href='".$urlIsEvent.$post->post_name."'>GENERAL INFO</a>"?>
+                            <?php echo "<li><a href='".$urlIsEvent."'>GENERAL INFO</a>"?>
                             <?php if ($blueprint != null)
-                                echo "<li><a href='".$urlIsEvent.$post->post_name."#div-venue-blueprint'>BLUEPRINT</a>"                        
+                                echo "<li><a href='".$urlIsEvent."#div-venue-blueprint'>BLUEPRINT</a>"                        
                             ?>
                             <?php if ($tour != null){ ?>
 	   		                      <li><a id="aa-360-tour" href="#">360° Tour</a></li>
                             <?php } ?>
 			                <?php echo "<li><a href='".get_home_url()."/gallery/?post_id=".get_post()->ID."'>GALLERY</a></li>";?>
-			                <?php echo "<li><a href='".$urlIsEvent.$post->post_name."#div-venue-location'>LOCATION</a>"?>
+			                <?php echo "<li><a href='".$urlIsEvent."#div-venue-location'>LOCATION</a>"?>
                         </ul>
                     </div> 
                     <div class="close-imgAnimatedModal btn-close"> 
