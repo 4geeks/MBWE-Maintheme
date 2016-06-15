@@ -1,31 +1,46 @@
 <?php
-/**
- * The template for displaying all single posts.
- *
- * @package Tesseract
- */
+/*
+Template Name: Venue Event
+*/
 header('X-Frame-Options: GOFORIT');
-get_header(); ?>
+get_header();
 
-<?php
+
+$post = get_post($_GET["post_id"]);
+
 $primary_class = 'full-width-page no-sidebar';
-$mainImage = types_render_field("venue-main-image",array("url" => "true"));
-$mainVideo = types_render_field("venue-main-video",array("output" => "raw"));
-$name = types_render_field("venue-name");
-$direction = types_render_field("venue-direction");
-$generalInfo = types_render_field("venue-general-info");
-$maxCapacity= types_render_field("venue-max-capacity");
-$curfew = types_render_field("venue-curfew");
-$location = types_render_field("venue-location");
-$parking = types_render_field("venue-parking");
-$transportation = types_render_field("venue-transportation");
-$blueprint = types_render_field("venue-blueprint");
-$blueprintImage = types_render_field("venue-blueprint-image",array("url" => "true"));
-$child_posts = types_child_posts('acommodation');
-$latitude = types_render_field("venue-latitude");
-$longitude = types_render_field("venue-longitude");
-$tour = types_render_field("venue-360-tour");
-$galleryPostId = types_render_field("venue-gallery");
+
+$mainImage = ( (get_post_meta( $_GET['post_id'], 'wpcf-venue-main-image', false)) ? get_post_meta( $_GET['post_id'], 'wpcf-venue-main-image', false)[0] : null );
+
+
+
+$name = ( (get_post_meta( $_GET['post_id'], 'wpcf-venue-name', false)) ? get_post_meta( $_GET['post_id'], 'wpcf-venue-name', false)[0] : null);
+$mainVideo = ( (get_post_meta( $_GET['post_id'], 'wpcf-venue-main-video', false)) ? get_post_meta( $_GET['post_id'], 'wpcf-venue-main-video', false)[0] : null);
+$direction = ( (get_post_meta( $_GET['post_id'], 'wpcf-venue-direction', false)) ? get_post_meta( $_GET['post_id'], 'wpcf-venue-direction', false)[0] : null);
+$generalInfo = ( (get_post_meta( $_GET['post_id'], 'wpcf-venue-general-info', false)) ? get_post_meta( $_GET['post_id'], 'wpcf-venue-general-info', false)[0] : null);
+$maxCapacity=  ( (get_post_meta( $_GET['post_id'], 'wpcf-venue-max-capacity', false)) ? get_post_meta( $_GET['post_id'], 'wpcf-venue-max-capacity', false)[0] : null);
+$curfew = ( (get_post_meta( $_GET['post_id'], 'wpcf-venue-curfew', false)) ? get_post_meta( $_GET['post_id'], 'wpcf-venue-curfew', false)[0] : null);
+$location = ( (get_post_meta( $_GET['post_id'], 'wpcf-venue-location', false)) ? get_post_meta( $_GET['post_id'], 'wpcf-venue-location', false)[0] : null);
+$parking = ( (get_post_meta( $_GET['post_id'], 'wpcf-venue-parking', false)) ? get_post_meta( $_GET['post_id'], 'wpcf-venue-parking', false)[0] : null);
+$transportation = ( (get_post_meta( $_GET['post_id'], 'wpcf-venue-transportation', false)) ? get_post_meta( $_GET['post_id'], 'wpcf-venue-transportation', false)[0] : null);
+$blueprint = ( (get_post_meta( $_GET['post_id'], 'wpcf-venue-blueprint', false)) ? get_post_meta( $_GET['post_id'], 'wpcf-venue-blueprint', false)[0] : null);
+$blueprintImage = ( (get_post_meta( $_GET['post_id'], 'wpcf-venue-blueprint-image', false)) ? get_post_meta( $_GET['post_id'], 'wpcf-venue-blueprint-image', false)[0] : null);
+
+$latitude = ( (get_post_meta( $_GET['post_id'], 'wpcf-venue-latitude', false)) ? get_post_meta( $_GET['post_id'], 'wpcf-venue-latitude', false)[0] : null);
+
+$longitude = ( (get_post_meta( $_GET['post_id'], 'wpcf-venue-longitude', false)) ? get_post_meta( $_GET['post_id'], 'wpcf-venue-longitude', false)[0] : null);
+$tour = ( (get_post_meta( $_GET['post_id'], 'wpcf-venue-360-tour', false)) ? get_post_meta( $_GET['post_id'], 'wpcf-venue-360-tour', false)[0] : null);
+
+$childargs = array(
+    'post_type' => 'acommodation',
+    'numberposts' => -1,
+    'meta_key' => 'wpcf-description',
+    'orderby' => 'meta_value',
+    'order' => 'ASC',
+    'meta_query' => array(array('key' => '_wpcf_belongs_venue_id', 'value' => get_the_ID()))
+);
+
+$child_posts = get_posts($childargs);
 
 $post = get_post();
 
@@ -51,7 +66,7 @@ $venues = new WP_Query( $args );
                     <?php if($tour != ''){?>
                         <li><a id="a-360-tour" href="#animatedModal">360° TOUR</a></li>
                     <?php } ?>
-                    <?php echo "<li><a href='".get_home_url()."/gallery/?post_id=".get_post()->ID."&is_event=false'>GALLERY</a></li>";?>
+                    <?php echo "<li><a href='".get_home_url()."/gallery/?post_id=".get_post()->ID."&is_event=true'>GALLERY</a></li>";?>
                     <li><a href="#div-venue-location">LOCATION</a></li>
                 </ul>
             </div>
@@ -62,8 +77,8 @@ $venues = new WP_Query( $args );
             <?php
                 //list all venues in post types
                 foreach ($venues->posts as $venue) {
-                    if (get_post()->ID != $venue->ID) {
-                        echo "<li style='background-image: url(". get_post_meta( $venue->ID, 'wpcf-venue-main-image', false)[0].")'><a class='with-font-sub-title' href='".get_home_url()."/venue/".$venue->post_name."'>".$venue->post_title."</a></li>";
+                    if (get_post()->ID != $venue->ID) { 
+                        echo "<li style='background-image: url(". get_post_meta( $venue->ID, 'wpcf-venue-main-image', false)[0].")'><a class='with-font-sub-title' href='".get_home_url()."/venue-event/?post_id=".$venue->ID."'>".$venue->post_title."</a></li>";
                     }
                 }
             ?>
