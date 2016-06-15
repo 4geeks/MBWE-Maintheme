@@ -26,7 +26,7 @@ $child_posts = get_post_meta( $_GET['post_id'], 'wpcf-acommodation', false)[0];
 $latitude = get_post_meta( $_GET['post_id'], 'wpcf-venue-latitude', false)[0];
 $longitude = get_post_meta( $_GET['post_id'], 'wpcf-venue-longitude', false)[0];
 $tour = get_post_meta( $_GET['post_id'], 'wpcf-venue-360-tour', false)[0];
-$galleryPostId = get_post_meta( $_GET['post_id'], 'wpcf-venue-gallery', false)[0];
+
 
 $post = get_post();
 
