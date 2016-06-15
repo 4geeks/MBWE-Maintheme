@@ -55,7 +55,7 @@ $blueprint = (isset(get_post_meta( $_GET['post_id'], 'wpcf-venue-blueprint', fal
             <?php
                 //list all venues in post types
                 foreach ($venues->posts as $venue) {
-                    echo "<li style='background-image: url(". get_post_meta( $venue->ID, 'wpcf-venue-main-image', false)[0].")'><a class='with-font-title' href='".$urlVenueListIsEvent.$venue->ID"'>".$venue->post_title."</a></li>";
+                    echo "<li style='background-image: url(". get_post_meta( $venue->ID, 'wpcf-venue-main-image', false)[0].")'><a class='with-font-title' href='".$urlVenueListIsEvent.$venue->ID."'>".$venue->post_title."</a></li>";
                 }
             ?>
             </ul>
