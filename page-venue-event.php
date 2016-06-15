@@ -10,30 +10,30 @@ $post = get_post($_GET["post_id"]);
 
 $primary_class = 'full-width-page no-sidebar';
 
-$mainImage = get_post_meta( $_GET['post_id'], 'wpcf-venue-main-image', false)[0];
-$name = get_post_meta( $_GET['post_id'], 'wpcf-venue-name', false)[0];
-$mainVideo = get_post_meta( $_GET['post_id'], 'wpcf-venue-main-video', false)[0];
-$direction = get_post_meta( $_GET['post_id'], 'wpcf-venue-direction', false)[0];
-$generalInfo = get_post_meta( $_GET['post_id'], 'wpcf-venue-general-info', false)[0];
-$maxCapacity=  get_post_meta( $_GET['post_id'], 'wpcf-venue-max-capacity', false)[0];
-$curfew = get_post_meta( $_GET['post_id'], 'wpcf-venue-curfew', false)[0];
-$location = get_post_meta( $_GET['post_id'], 'wpcf-venue-location', false)[0];
-$parking = get_post_meta( $_GET['post_id'], 'wpcf-venue-parking', false)[0];
-$transportation = get_post_meta( $_GET['post_id'], 'wpcf-venue-transportation', false)[0];
-$blueprint = get_post_meta( $_GET['post_id'], 'wpcf-venue-blueprint', false)[0];
-$blueprintImage = get_post_meta( $_GET['post_id'], 'wpcf-venue-blueprint-image', false)[0];
-// $child_posts = get_post_meta( $_GET['post_id'], 'wpcf-acommodation', false)[0];
-$latitude = get_post_meta( $_GET['post_id'], 'wpcf-venue-latitude', false)[0];
-$longitude = get_post_meta( $_GET['post_id'], 'wpcf-venue-longitude', false)[0];
-$tour = get_post_meta( $_GET['post_id'], 'wpcf-venue-360-tour', false)[0];
+$mainImage = (get_post_meta( $_GET['post_id'], 'wpcf-venue-main-image', false)?(get_post_meta( $_GET['post_id'], 'wpcf-venue-main-image', false)[0]:null;
+$name = (get_post_meta( $_GET['post_id'], 'wpcf-venue-name', false)?(get_post_meta( $_GET['post_id'], 'wpcf-venue-name', false)[0]:null;
+$mainVideo = (get_post_meta( $_GET['post_id'], 'wpcf-venue-main-video', false)?(get_post_meta( $_GET['post_id'], 'wpcf-venue-main-video', false)[0]:null;
+$direction = (get_post_meta( $_GET['post_id'], 'wpcf-venue-direction', false)?(get_post_meta( $_GET['post_id'], 'wpcf-venue-direction', false)[0]:null;
+$generalInfo = (get_post_meta( $_GET['post_id'], 'wpcf-venue-general-info', false)?(get_post_meta( $_GET['post_id'], 'wpcf-venue-general-info', false)[0]:null;
+$maxCapacity=  (get_post_meta( $_GET['post_id'], 'wpcf-venue-max-capacity', false)?(get_post_meta( $_GET['post_id'], 'wpcf-venue-max-capacity', false)[0]:null;
+$curfew = (get_post_meta( $_GET['post_id'], 'wpcf-venue-curfew', false)?(get_post_meta( $_GET['post_id'], 'wpcf-venue-curfew', false)[0]:null;
+$location = (get_post_meta( $_GET['post_id'], 'wpcf-venue-location', false)?(get_post_meta( $_GET['post_id'], 'wpcf-venue-location', false)[0]:null;
+$parking = (get_post_meta( $_GET['post_id'], 'wpcf-venue-parking', false)?(get_post_meta( $_GET['post_id'], 'wpcf-venue-parking', false)[0]:null;
+$transportation = (get_post_meta( $_GET['post_id'], 'wpcf-venue-transportation', false)?(get_post_meta( $_GET['post_id'], 'wpcf-venue-transportation', false)[0]:null;
+$blueprint = (get_post_meta( $_GET['post_id'], 'wpcf-venue-blueprint', false)?(get_post_meta( $_GET['post_id'], 'wpcf-venue-blueprint', false)[0]:null;
+$blueprintImage = (get_post_meta( $_GET['post_id'], 'wpcf-venue-blueprint-image', false)?(get_post_meta( $_GET['post_id'], 'wpcf-venue-blueprint-image', false)[0]:null;
+// $c(hild_posts = get_post_meta( $_GET['post_id'], 'wpcf-acommodation', false)[0]?(hild_posts = get_post_meta( $_GET['post_id'], 'wpcf-acommodation', false)[0]:null;
+$latitude = (get_post_meta( $_GET['post_id'], 'wpcf-venue-latitude', false)[0]?(get_post_meta( $_GET['post_id'], 'wpcf-venue-latitude', false)[0]:null;
+$longitude = (get_post_meta( $_GET['post_id'], 'wpcf-venue-longitude', false)[0]?(get_post_meta( $_GET['post_id'], 'wpcf-venue-longitude', false)[0]:null;
+$tour = (get_post_meta( $_GET['post_id'], 'wpcf-venue-360-tour', false)[0]?(get_post_meta( $_GET['post_id'], 'wpcf-venue-360-tour', false)[0]:null;
 
 $childargs = array(
-'post_type' => 'acommodation',
-'numberposts' => -1,
-'meta_key' => 'wpcf-description',
-'orderby' => 'meta_value',
-'order' => 'ASC',
-'meta_query' => array(array('key' => '_wpcf_belongs_venue_id', 'value' => get_the_ID()))
+    'post_type' => 'acommodation',
+    'numberposts' => -1,
+    'meta_key' => 'wpcf-description',
+    'orderby' => 'meta_value',
+    'order' => 'ASC',
+    'meta_query' => array(array('key' => '_wpcf_belongs_venue_id', 'value' => get_the_ID()))
 );
 
 $child_posts = get_posts($childargs);
