@@ -26,10 +26,10 @@ $transportation = ( (get_post_meta( $_GET['post_id'], 'wpcf-venue-transportation
 $blueprint = ( (get_post_meta( $_GET['post_id'], 'wpcf-venue-blueprint', false)) ? get_post_meta( $_GET['post_id'], 'wpcf-venue-blueprint', false)[0] : null);
 $blueprintImage = ( (get_post_meta( $_GET['post_id'], 'wpcf-venue-blueprint-image', false)) ? get_post_meta( $_GET['post_id'], 'wpcf-venue-blueprint-image', false)[0] : null);
 
-$latitude = ( (get_post_meta( $_GET['post_id'], 'wpcf-venue-latitude', false)[0]) ? get_post_meta( $_GET['post_id'], 'wpcf-venue-latitude', false)[0] : null);
+$latitude = ( (get_post_meta( $_GET['post_id'], 'wpcf-venue-latitude', false)) ? get_post_meta( $_GET['post_id'], 'wpcf-venue-latitude', false)[0] : null);
 
-$longitude = ( (get_post_meta( $_GET['post_id'], 'wpcf-venue-longitude', false)[0]) ? get_post_meta( $_GET['post_id'], 'wpcf-venue-longitude', false)[0] : null);
-$tour = ( (get_post_meta( $_GET['post_id'], 'wpcf-venue-360-tour', false)[0]) ? get_post_meta( $_GET['post_id'], 'wpcf-venue-360-tour', false)[0] : null);
+$longitude = ( (get_post_meta( $_GET['post_id'], 'wpcf-venue-longitude', false)) ? get_post_meta( $_GET['post_id'], 'wpcf-venue-longitude', false)[0] : null);
+$tour = ( (get_post_meta( $_GET['post_id'], 'wpcf-venue-360-tour', false)) ? get_post_meta( $_GET['post_id'], 'wpcf-venue-360-tour', false)[0] : null);
 
 $childargs = array(
     'post_type' => 'acommodation',
