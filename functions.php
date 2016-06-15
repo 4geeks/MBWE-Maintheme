@@ -199,6 +199,11 @@ function html5blank_styles()
         wp_enqueue_style('awardscss');        
     }
 
+    if (is_page('venue-event')){
+        wp_register_style('venueeventcss', get_template_directory_uri() . '/css/venue-event.css', false, '1.1', 'all');
+        wp_enqueue_style('venueeventcss');        
+    }
+
     if (is_page('wedding-venues-locations') || is_page('wedding-planners') || is_page('wedding-packages') || is_page('about-us')){
         wp_register_style('menutopcss', get_template_directory_uri() . '/css/menu-top.css', false, '1.1', 'all');
         wp_enqueue_style('menutopcss');           
