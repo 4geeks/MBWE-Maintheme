@@ -16,7 +16,7 @@ foreach( $ids as $id ) {
    $imgs[] = wp_get_attachment_image_src( $id ,'Medium');
 } 
 
-$urlIsEvent = (isset($_GET["is_event"]) && !$_GET["is_event"]? get_home_url()."/venue/".$post->post_name : get_home_url()."/venue-event/?post_id="$_GET["post_id"]);
+$urlIsEvent = (isset($_GET["is_event"]) && !$_GET["is_event"]? get_home_url()."/venue/".$post->post_name : get_home_url()."/venue-event/?post_id=".$_GET["post_id"]);
 
 $name = get_post_meta( $_GET['post_id'], 'wpcf-venue-name', false)[0];
 $mainImage = get_post_meta( $_GET['post_id'], 'wpcf-venue-main-image', false)[0];
