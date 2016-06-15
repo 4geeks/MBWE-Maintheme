@@ -22,11 +22,21 @@ $parking = get_post_meta( $_GET['post_id'], 'wpcf-venue-parking', false)[0];
 $transportation = get_post_meta( $_GET['post_id'], 'wpcf-venue-transportation', false)[0];
 $blueprint = get_post_meta( $_GET['post_id'], 'wpcf-venue-blueprint', false)[0];
 $blueprintImage = get_post_meta( $_GET['post_id'], 'wpcf-venue-blueprint-image', false)[0];
-$child_posts = get_post_meta( $_GET['post_id'], 'wpcf-acommodation', false)[0];
+// $child_posts = get_post_meta( $_GET['post_id'], 'wpcf-acommodation', false)[0];
 $latitude = get_post_meta( $_GET['post_id'], 'wpcf-venue-latitude', false)[0];
 $longitude = get_post_meta( $_GET['post_id'], 'wpcf-venue-longitude', false)[0];
 $tour = get_post_meta( $_GET['post_id'], 'wpcf-venue-360-tour', false)[0];
 
+$childargs = array(
+'post_type' => 'acommodation',
+'numberposts' => -1,
+'meta_key' => 'wpcf-description',
+'orderby' => 'meta_value',
+'order' => 'ASC',
+'meta_query' => array(array('key' => '_wpcf_belongs_venue_id', 'value' => get_the_ID()))
+);
+
+$child_posts = get_posts($childargs);
 
 $post = get_post();
 
