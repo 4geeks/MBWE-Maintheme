@@ -163,6 +163,12 @@
   min-height: 350px;
 }
 
+#phone-number-header{
+  position: fixed;
+  top: 15px;
+  right: 20px;
+}
+
 /*ONLY FOR MOBILE*/
 @media screen and (max-width: 767px) {
   .not-for-phone {
