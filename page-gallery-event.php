@@ -71,33 +71,7 @@ $blueprint = (isset(get_post_meta( $_GET['post_id'], 'wpcf-venue-blueprint', fal
 					}
 				?>
 			</div>
-			<div id="animatedModal">
-                <div class="col-md-12 modal-menu">
-                    <div class="top-venue-menu">
-                        <ul class="ul-menu">
-	                        <?php echo "<li><a href='".get_home_url()."/venue-event/?post_id=".$_GET["post_id"]."'>GENERAL INFO</a>"?>
-			                <?php if ($blueprint != null)
-                                echo "<li><a href='".get_home_url()."/venue-event/?post_id=".$_GET["post_id"]."#div-venue-blueprint'>AREAS</a>"                        
-                            ?>
-                            <?php if ($tour != null){ ?>
-                                <li><a id="a-360-tour" href="#animatedModal">360° Tour</a></li>
-                            <?php } ?>
-			                 <?php echo "<li><a href='".get_home_url()."/gallery-event/?post_id=".get_post()->ID."'>GALLERY</a></li>";?>
-			                <?php echo "<li><a href='".get_home_url()."/venue-event/?post_id=".$_GET["post_id"]."#div-venue-location'>LOCATION</a>"?>
-                        </ul>
-                    </div>
-                    <div class="close-animatedModal btn-close"> 
-                        <span class="glyphicon glyphicon-remove" style="color:white"></span>
-                    </div>                    
-                </div>
-                <div class="modal-content">
-                    <?php 
-                        if ($tour != null){
-                            echo "<iframe src=".$tour." width='100%' height='100%'></iframe>"; 
-                        }
-                        ?>
-                </div>
-            </div>
+			
 
 			<div id="imgAnimatedModal">
                 <div class="col-md-12 modal-menu">
