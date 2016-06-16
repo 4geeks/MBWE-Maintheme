@@ -114,7 +114,7 @@ function html5blank_conditional_scripts()
     }
 
 
-    if (is_page("gallery")){
+    if (is_page("gallery") || is_page("gallery-event")){
         wp_register_script('masonryjs', 'http://masonry.desandro.com/masonry.pkgd.js', array(), '2.7.1'); // Modernizr
         wp_enqueue_script('masonryjs'); // Enqueue it!        
         wp_register_script('galleryjs', get_template_directory_uri() . '/js/gallery.js', array('jquery'), '1.0'); // Modernizr
