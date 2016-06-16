@@ -84,7 +84,7 @@ echo $content;
 	<div class="col-md-12 img-award-purple center margin-top20">
 	</div>
 	<div id="divTextAwards" class="col-md-12 center margin-top20">
-		<p><span><?php echo $awardText; ?></span></p>
+		<span><pre><?php echo $awardText; ?></pre></span>
 		<div class="col-md-4 col-md-offset-4 col-xs-6 col-xs-offset-3 line"></div>		
 	</div>
 	<div class="col-md-12 margin-top20">
