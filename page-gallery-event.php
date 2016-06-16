@@ -16,8 +16,6 @@ foreach( $ids as $id ) {
    $imgs[] = wp_get_attachment_image_src( $id ,'Medium');
 } 
 
-get_home_url()."/venue-event/?post_id=".$_GET["post_id"] = (isset($_GET["is_event"]) && !$_GET["is_event"]? get_home_url()."/venue/".$post->post_name : get_home_url()."/venue-event/?post_id=".$_GET["post_id"]);
-
 
 $name = get_post_meta( $_GET['post_id'], 'wpcf-venue-name', false)[0];
 $mainImage = get_post_meta( $_GET['post_id'], 'wpcf-venue-main-image', false)[0];
@@ -84,7 +82,7 @@ $blueprint = (isset(get_post_meta( $_GET['post_id'], 'wpcf-venue-blueprint', fal
                             <?php if ($tour != null){ ?>
                                 <li><a id="a-360-tour" href="#animatedModal">360° Tour</a></li>
                             <?php } ?>
-			                 <?php echo "<li><a href='".get_home_url()."/gallery/?post_id=".get_post()->ID."'>GALLERY</a></li>";?>
+			                 <?php echo "<li><a href='".get_home_url()."/gallery-event/?post_id=".get_post()->ID."'>GALLERY</a></li>";?>
 			                <?php echo "<li><a href='".get_home_url()."/venue-event/?post_id=".$_GET["post_id"]."#div-venue-location'>LOCATION</a>"?>
                         </ul>
                     </div>
@@ -112,7 +110,7 @@ $blueprint = (isset(get_post_meta( $_GET['post_id'], 'wpcf-venue-blueprint', fal
                             <?php if ($tour != null){ ?>
 	   		                      <li><a id="aa-360-tour" href="#">360° Tour</a></li>
                             <?php } ?>
-			                <?php echo "<li><a href='".get_home_url()."/gallery/?post_id=".get_post()->ID."'>GALLERY</a></li>";?>
+			                <?php echo "<li><a href='".get_home_url()."/gallery-event/?post_id=".get_post()->ID."'>GALLERY</a></li>";?>
 			                <?php echo "<li><a href='".get_home_url()."/venue-event/?post_id=".$_GET["post_id"]."#div-venue-location'>LOCATION</a>"?>
                         </ul>
                     </div> 

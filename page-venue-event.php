@@ -44,7 +44,6 @@ $child_posts = get_posts($childargs);
 
 $post = get_post();
 
-$isClubOfKnigth = ($post->post_name == 'club-of-knight');
 
 //Get venue post types to list in dropdown list 
 $args = array('post_type' => 'venue'); 
@@ -66,7 +65,7 @@ $venues = new WP_Query( $args );
                     <?php if($tour != ''){?>
                         <li><a id="a-360-tour" href="#animatedModal">360° TOUR</a></li>
                     <?php } ?>
-                    <?php echo "<li><a href='".get_home_url()."/gallery-event/?post_id=".get_post()->ID."&is_event=true'>GALLERY</a></li>";?>
+                    <?php echo "<li><a href='".get_home_url()."/gallery-event/?post_id=".get_post()->ID."'>GALLERY</a></li>";?>
                     <li><a href="#div-venue-location">LOCATION</a></li>
                 </ul>
             </div>
