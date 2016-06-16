@@ -164,7 +164,7 @@ function html5blank_styles()
     wp_enqueue_style('custommodalcss', get_template_directory_uri() . '/css/custom-modal.css', false, '1.1', 'all');
     wp_enqueue_style('custommodalcss');    
 
-    if (is_page('gallery')){
+    if (is_page('gallery') || is_page('gallery-event')){
         wp_register_style('masonrycss', get_template_directory_uri() . '/css/masonrygallery.css', false, '1.1', 'all');
         wp_enqueue_style('masonrycss');        
     }
