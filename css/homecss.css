@@ -280,7 +280,7 @@ a:hover {
 #divTextAwards{
     position: absolute;
     /*top: 1237px;*/
-    top: 45%;
+    top: 45%; 
 }
 
 #div-ourServices .services-venues, #div-ourServices .services-packages{
