@@ -214,7 +214,7 @@ a:hover {
     background-color: transparent;
     border: none;
     font-size: 27px;
-    word-break: normal;
+    word-break: normal; 
 }
 .line{
     height: 2px;
