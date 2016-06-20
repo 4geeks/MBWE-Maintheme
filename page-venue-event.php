@@ -105,7 +105,7 @@ $venues = new WP_Query( $args );
             </div>
 
             <div id="div-venue-description" class="row">                
-                <div class="col-md-7 col-sm-7 container"><?php echo $generalInfo ?></div>
+                <div class="col-md-7 col-sm-7 container"><p><?php echo $generalInfo ?></p></div>
                 <div class="col-md-5 col-sm-5 container">
                     <div class="col-md-1 col-xs-1">
                         <span class="important glyphicon glyphicon-user"></span>
@@ -127,7 +127,7 @@ $venues = new WP_Query( $args );
                 <div class="col-md-6 p-location" >
                     <h2 class="with-font-sub-title">Location</h2>
                     <div>
-                        <?php echo $location ?>
+                        <p><?php echo $location ?></p>
                     </div>    
                 </div>
             </div>
@@ -175,7 +175,7 @@ $venues = new WP_Query( $args );
                 <div id="div-venue-blueprint" class="row">
                     <div class="p-location">
                         <h1>Areas and distribution</h1>
-                        <?php echo $blueprint?>
+                        <?php echo $blueprint ?>
                     </div>
                     <?php if($blueprintImage != '') {?>
                         <div class="container">
@@ -209,4 +209,4 @@ $venues = new WP_Query( $args );
 
         </main><!-- #main -->
     </div><!-- #primary -->
-<?php get_footer(); ?>
+
