@@ -88,7 +88,7 @@ $tour = types_render_field("venue-360-tour");
 					<i class="fa fa-navicon"></i> <span>Menu</span>			
 				</div>
 				<?php if (!is_front_page() and !is_single() and !is_page('venue-event') and !is_page('gallery-event') and !is_page('gallery')){ ?>
-					<p id="phone-number-header" class="highlight-p">Call now! 305-985-4663</p>
+					<p id="phone-number-header" class="highlight-p not-for-mobile">Call now! 305-662-4742</p>
 				<?php } ?>
 			</header>
 

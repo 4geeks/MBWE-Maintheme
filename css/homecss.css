@@ -150,8 +150,6 @@ a:hover {
     background-size: cover;
     height: 250px;
     background-attachment: fixed;
-    -webkit-filter: brightness(0.50);
-    filter: brightness(0.40);
 }
 #div-awards{
     padding-top: 20px;
@@ -277,12 +275,6 @@ a:hover {
     opacity: 0.7;    
 }
 
-#divTextAwards{
-    position: absolute;
-    /*top: 1237px;*/
-    top: 45%; 
-}
-
 #div-ourServices .services-venues, #div-ourServices .services-packages{
     height: 400px;
 }
@@ -305,7 +297,7 @@ a:hover {
 
 #div-ourServices .services-content{
 
-}
+} 
 
 /* ONLY FOR MOBILES */
 @media screen and (max-width: 767px) {

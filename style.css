@@ -467,6 +467,13 @@ a img.aligncenter {
     height: 100%;
     width: 100%;
 }
+
+.custom-overlay-home{
+    position: absolute;
+    background: rgba(0,0,0,0.42);
+    -pie-background: rgba(0,0,0,0.42);
+    height: 250px;
+}
 /*END FOR WHY FETES & EVENTS*/
 
 /* FOOTER */
