@@ -278,9 +278,8 @@ a:hover {
 }
 
 #divTextAwards{
-    position: absolute;
-    /*top: 1237px;*/
-    top: 45%; 
+    position: relative;
+    top: -250px;
 }
 
 #div-ourServices .services-venues, #div-ourServices .services-packages{
