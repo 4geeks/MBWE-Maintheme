@@ -304,9 +304,6 @@ a:hover {
     .div-only-for-mobile{
         display: block;
         height: 450px;
-    }    
-    #divTextAwards {
-        top: 71%;
     }
     #div-awards span pre{
         font-size: 13px;
@@ -365,10 +362,6 @@ a:hover {
     .img-award-purple{
         background-position: 0px -185px;
         background-attachment: local;
-    }
-    #divTextAwards{
-        top: 49%;
-        left: 10px;
     }
     #div-awards span pre{
         font-size: 20px;
