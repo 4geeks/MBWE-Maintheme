@@ -6,11 +6,14 @@ Template Name: Thanks
 get_header(); 
 
 //Get venue post types to list 
+$content = get_page($post->ID)->post_content;
 
 ?>
 <div id="div-thanks">
 	<div class="col-md-12 div-thanks highlight-p">
-	   <center><h1>Thank you for your inquiry with Best Miami Weddings. We will contact you as soon as possible (we strive to respond by the next business day).</h1></center> 
+	   <center>
+	   	<?php echo $content; ?>
+	   </center> 
 <!-- </div> -->
 </div>     
 
