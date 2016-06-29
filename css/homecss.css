@@ -350,6 +350,16 @@ a:hover {
     .fullscreen-bg-home{
         position: absolute;
     }
+    #div-ourServices .services-title{
+        top: 60px;
+    }
+    #div-ourServices #divServicesContent-venues, #div-ourServices #divServicesContent-packages{
+        top: 65px;
+        display: block;
+    }
+    #div-ourServices .services-content{
+        text-align: justify;
+    }
 }
 
 /* ONLY FOR TABLETS IN PORTRAIT */
@@ -388,6 +398,16 @@ a:hover {
     .fullscreen-bg__video{
         position: fixed;
     }
+    #div-ourServices .services-title{
+        top: 60px;
+    }
+    #div-ourServices #divServicesContent-venues, #div-ourServices #divServicesContent-packages{
+        top: 65px;
+        display: block;
+    }
+    #div-ourServices .services-content{
+        text-align: justify;
+    }
 }
 
 /* ONLY FOR TABLETS IN LANDSCAPE */
@@ -418,6 +438,23 @@ a:hover {
     .fullscreen-bg__video{
         position: fixed;
     }
+    #div-ourServices .services-title{
+        top: 60px;
+    }
+    #div-ourServices #divServicesContent-venues, #div-ourServices #divServicesContent-packages{
+        top: 65px;
+        display: block;
+    }
+    #div-ourServices .services-content{
+        text-align: justify;
+    }
+    #divFooter1 .newsletter ._form-title{
+        padding-left: 66px;
+    }
+    #divFooter1 .newsletter{
+        left: -60px;
+    }
+
 }
 
 /* UNTIL SCREEN RESOLUTION 1366PX */
