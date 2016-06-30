@@ -153,8 +153,10 @@ function html5blank_styles()
     wp_register_style('menucss', get_template_directory_uri() . '/css/menu.css', array(), '1.0', 'all');
     wp_enqueue_style('menucss');
 
+    if (is_home()) {
         wp_register_style('homecss', get_template_directory_uri() . '/css/homecss.css', array(), '1.0', 'all');
         wp_enqueue_style('homecss');
+    }
 
     wp_enqueue_style('venuescss', get_template_directory_uri() . '/css/venues.css', false, '1.1', 'all');
     wp_enqueue_style('venuescss');    
