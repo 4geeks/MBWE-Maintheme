@@ -42,6 +42,10 @@
 	color:#808080;
 	padding-bottom: 30px;
 }
+.planner-element h3{
+	font-size: 30px;
+    font-weight: bold;
+}
 
 .div-planner-name{
 	border: 1px solid black;

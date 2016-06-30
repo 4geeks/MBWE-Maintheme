@@ -48,7 +48,7 @@
 								    <div class="_form-content">
 								      <div class="_form_element _x42816285 _inline-style _clear" >
 								        <div class="_form-title">
-								          NEWSLETTER
+								          Sign up to our newsletter
 								        </div>
 								      </div>
 								      <div class="_form_element _field16 _inline-style " >
