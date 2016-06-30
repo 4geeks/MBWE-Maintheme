@@ -81,7 +81,7 @@ $venues = new WP_Query( $args );
                 </div>            
                 <div id="div-venue-name">
                     <h1 class="with-font-sub-title" ><?php  echo $name;?></h1> <br />
-                    <span id="direction" > <?php echo $direction ?></span>
+                    <h2 id="direction" > <?php echo $direction ?></h2>
                 </div>
                 <div id="div-venue-button">
                     <a class="btn btn-warning modalContact" href="#animatedModalContact">Request a quote</a>                    
