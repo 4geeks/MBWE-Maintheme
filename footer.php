@@ -8,8 +8,8 @@
 			<footer class="footer" role="contentinfo">
 
 				<div class="row fix-margin-row">
-					<div id="divFooter1" class="col-md-12">
-						<div class="col-md-offset-1 col-md-4">
+					<div id="divFooter1" class="col-md-12 col-sm-12">
+						<div class="col-md-offset-1 col-md-5 col-sm-12">
 							<div class="social">
 								<span class="copyright">FOLLOW US</span>        
 								<div class="social-icon instagram">
@@ -29,7 +29,7 @@
 					            </div>
 							</div>
 						</div>
-						<div class="col-md-offset-2 col-md-5">
+						<div class="col-md-offset-1 col-md-5 col-sm-12">
 							<div class="newsletter">
 								<!-- <div class="col-md-12 margin-bottom3">
 									<span>NEWSLETTER</span>
@@ -83,7 +83,7 @@
 							</div>
 						</div>
 					</div>
-					<div id="divFooter2" class="col-md-12">
+					<div id="divFooter2" class="col-md-12 col-sm-12">
 						<div id="div-angle-double" class="col-md-offset-5 col-md-2 fa fa-angle-double-up">
 						</div>
 						<div class="col-md-offset-1 col-md-7">

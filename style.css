@@ -561,7 +561,7 @@ a img.aligncenter {
     border: 1px solid;
     padding: 8px 0px 8px 0px; 
     position: relative;
-    left: 70px;   
+    left: -60px;   
     margin-top: 90px;
 }
 #divFooter1 .social a{
@@ -727,9 +727,9 @@ a img.aligncenter {
 }
 
 .highlight-element-services:hover {
-    -webkit-box-shadow: inset 0px -600px 270px 5px rgba(0,0,0,0.47);
-    -moz-box-shadow: inset 0px -600px 270px 5px rgba(0,0,0,0.47);
-    box-shadow: inset 0px -600px 270px 5px rgba(0,0,0,0.47);
+    -webkit-box-shadow: inset 0px 0px 0px 200px rgba(0,0,0,0.47);
+    -moz-box-shadow: inset 0px 0px 0px 200px rgba(0,0,0,0.47);
+    box-shadow: inset 0px 0px 0px 200px rgba(0,0,0,0.47);
 }
 
 .highlight-p {
@@ -837,6 +837,8 @@ a img.aligncenter {
 .fix-margin-row {
 	margin-left: 0px;
 	margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .gform_confirmation_message_1 {
@@ -1121,6 +1123,7 @@ li.col1 {
 	}
     #divFooter1 .fa{
         font-size: 20px;
+    }
 }
 
 /* ONLY FOR TABLETS IN PORTRAIT */
@@ -1160,11 +1163,15 @@ li.col1 {
 	    margin-top: 0px;
 	    top: 30px;
 	}
-	.newsletter ._form-title{
-		padding-bottom: 10px;
-	}
+    #divFooter1 .newsletter ._form-title{
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    #divFooter1 .newsletter input{
+        left: 30px;
+    } 
 	#divFooter1 .newsletter button{
-		left: -50px;
+		left: -30px;
 		top: 0px;
 		height: 45px;
 	}

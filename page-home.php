@@ -79,16 +79,16 @@ echo $content;
 			
 	</div>
 </div>
-<div id="div-awards" class="row">
+<div id="div-awards" class="row fix-margin-row">
 	<div class="img-logofe col-md-12"></div>
-	<div class="img-award-purple col-md-12">
-		<div class="custom-overlay-home col-md-12 fix-margin-row"></div>
+	<div class="img-award-purple col-md-12 col-xs-12 fix-margin-row">
+		<div class="custom-overlay-home col-md-12 col-xs-12 fix-margin-row"></div>
 		<div id="divTextAwards" class="col-md-12 center margin-top20">
 			<span><pre><?php echo $awardText; ?></pre></span>
 			<div class="col-md-4 col-md-offset-4 col-xs-6 col-xs-offset-3 line"></div>		
 		</div>
 	</div>	
-	<div class="col-md-12 margin-top20">
+	<div class="col-md-12 col-xs-12 margin-top20">
 		<div class="col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6 col-xs-12">
 			<div class="col-md-4 col-sm-4 col-xs-4 img-aw4"></div>
 			<div class="col-md-4 col-sm-4 col-xs-4 img-aw1"></div>
