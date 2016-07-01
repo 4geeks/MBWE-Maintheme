@@ -4,8 +4,10 @@
  *
  * @package Tesseract
  */
+global $BMW_PHONE_NUMBER;
 header('X-Frame-Options: GOFORIT');
-get_header(); ?>
+get_header(); 
+?>
 
 <?php
 $primary_class = 'full-width-page no-sidebar';
@@ -85,7 +87,7 @@ $venues = new WP_Query( $args );
                 </div>
                 <div id="div-venue-button">
                     <a class="btn btn-warning modalContact" href="#animatedModalContact">Request a quote</a>                    
-                    <p class="highlight-p">or call now! 305-662-4742</p> 
+                    <p class="highlight-p">or call now! <?php echo $BMW_PHONE_NUMBER; ?></p> 
                 </div>
                 <div id="arrow-down" class="not-for-mobile"><span class="glyphicon glyphicon-chevron-down"></span></div>     
             </div>

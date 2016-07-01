@@ -5,6 +5,8 @@
  *  Custom functions, support, custom post types and more.
  */
 
+global $BMW_PHONE_NUMBER = '(305) 662-4742';
+
 /*------------------------------------*\
 	External Modules/Files
 \*------------------------------------*/

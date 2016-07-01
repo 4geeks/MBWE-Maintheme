@@ -1,4 +1,7 @@
-<?php header("Access-Control-Allow-Origin: *");  ?>
+<?php 
+header("Access-Control-Allow-Origin: *");  
+global $BMW_PHONE_NUMBER;
+?>
 <!doctype html>
 <html <?php language_attributes(); ?> class="no-js">
 <head>
@@ -31,7 +34,7 @@ $tour = types_render_field("venue-360-tour");
 
 ?>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> onload="_googWcmGet('tracking-phone-number', '<?php echo $BMW_PHONE_NUMBER; ?>')">
 	<!-- wrapper -->
 	<div class="wrapper">
 		<nav id="my-sidebar">
@@ -85,7 +88,7 @@ $tour = types_render_field("venue-360-tour");
 					<i class="fa fa-navicon"></i> <span>Menu</span>			
 				</div>
 				<?php if (!is_front_page() and !is_single() and !is_page('venue-event') and !is_page('gallery-event') and !is_page('gallery')){ ?>
-					<p id="phone-number-header" class="not-for-mobile">Call now! 305-662-4742</p>
+					<p id="phone-number-header" class="not-for-mobile">Call now! <?php echo $BMW_PHONE_NUMBER; ?></p>
 				<?php } ?>
 			</header>
 

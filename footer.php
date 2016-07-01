@@ -180,8 +180,6 @@
 		<!-- /wrapper -->
 
 		<?php wp_footer(); ?>
-
-		<!-- analytics -->
 		
 	</body>
 </html>

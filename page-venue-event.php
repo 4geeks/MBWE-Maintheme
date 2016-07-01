@@ -3,6 +3,7 @@
 Template Name: Venue Event
 */
 header('X-Frame-Options: GOFORIT');
+global $BMW_PHONE_NUMBER;
 get_header();
 
 
@@ -99,7 +100,7 @@ $venues = new WP_Query( $args );
                 </div>
                 <div id="div-venue-button">
                     <a class="btn btn-warning modalContact" href="#animatedModalContact">Request a quote</a>                    
-                    <p class="highlight-p">or call now! 305-985-4663</p>
+                    <p class="highlight-p">or call now! <?php echo $BMW_PHONE_NUMBER; ?></p>
                 </div>
                 <div id="arrow-down" class="not-for-mobile"><span class="glyphicon glyphicon-chevron-down"></span></div>     
             </div>
