@@ -49,21 +49,21 @@ $f = $GLOBALS['BMW_PHONE_NUMBER'];
 			</div>
 			<div class="scroll">
 				<div class="min-height">
-					<?php wp_nav_menu( array(
-						'menu' => 'hamburger')); 
-						?>	
 						<?php if (is_singular('venue') || is_page("gallery")) { ?>
 						<div class="for-phone">
 							<ul>
-								<li><a href="#primary">GENERAL INFO</a></li>
+								<li><a href="#primary">VENUE INFO</a></li>
 								<?php if($blueprint != ''){?>
-								<li><a href="#div-venue-blueprint">BLUEPRINT</a></li>
+								<li><a href="#div-venue-blueprint">VENUE BLUEPRINT</a></li>
 								<?php } ?>
 								<?php echo "<li><a href='".get_home_url()."/gallery/?post_id=".get_post()->ID."'>GALLERY</a></li>";?>
-								<li><a href="#div-venue-location">LOCATION</a></li>
+								<li><a href="#div-venue-location">VENUE LOCATION</a></li>
 							</ul>
 						</div>	
 						<?php } ?>
+					<?php wp_nav_menu( array(
+						'menu' => 'hamburger')); 
+						?>	
 					</div>	
 					<div class="social">
 						<div class="social-icon instagram">
