@@ -1,6 +1,5 @@
 <?php 
 header("Access-Control-Allow-Origin: *");  
-global $BMW_PHONE_NUMBER;
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?> class="no-js">
@@ -31,10 +30,12 @@ global $BMW_PHONE_NUMBER;
 $blueprint = types_render_field("venue-blueprint");
 $blueprintImage = types_render_field("venue-blueprint-image",array("url" => "true"));
 $tour = types_render_field("venue-360-tour");
+$f = $GLOBALS['BMW_PHONE_NUMBER'];
 
 ?>
 
-<body <?php body_class(); ?> onload="_googWcmGet('tracking-phone-number', '<?php echo $BMW_PHONE_NUMBER; ?>')">
+<body <?php body_class(); ?> onload="_googWcmGet('tracking-phone-number', '<?php echo $f ?>')">
+
 	<!-- wrapper -->
 	<div class="wrapper">
 		<nav id="my-sidebar">
@@ -88,7 +89,7 @@ $tour = types_render_field("venue-360-tour");
 					<i class="fa fa-navicon"></i> <span>Menu</span>			
 				</div>
 				<?php if (!is_front_page() and !is_single() and !is_page('venue-event') and !is_page('gallery-event') and !is_page('gallery')){ ?>
-					<p id="phone-number-header" class="not-for-mobile tracking-phone-number">Call now! <?php echo $BMW_PHONE_NUMBER; ?></p>
+					<p id="phone-number-header" class="not-for-mobile">Call now! <?php echo $f; ?></p>
 				<?php } ?>
 			</header>
 
@@ -103,7 +104,6 @@ $tour = types_render_field("venue-360-tour");
 			      </div>    
 			    </div>
 		    <?php } ?>
-
 		    <div id="animatedModalContact" style="display:none">
                 <div class="col-md-12 modal-contact-menu">                                             
                     <div class="close-animatedModalContact btn-close"> 

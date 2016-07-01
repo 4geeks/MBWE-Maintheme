@@ -2,7 +2,6 @@
 /*
 Template Name: Contactus
 */
-global $BMW_PHONE_NUMBER;
 get_header(); 
 
 //Get venue post types to list 
@@ -19,7 +18,7 @@ get_header();
 		<!-- <div class="row"> -->
 		    <div class="col-md-5 col-xs-12 contact-call-us">
 		        <p>Call us now!</p>
-		        <p class="highlight-p with-font-sub-title tracking-phone-number"><?php echo $BMW_PHONE_NUMBER; ?></p>
+		        <p class="highlight-p with-font-sub-title"><?php echo $GLOBALS['BMW_PHONE_NUMBER']; ?></p>
 		        <p>Or chat with us</p>
 		    </div>
 		    <div class="col-md-7 col-xs-12 div-form-contact-us highlight-p">
