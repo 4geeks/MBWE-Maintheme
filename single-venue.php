@@ -86,7 +86,7 @@ $venues = new WP_Query( $args );
                 </div>
                 <div id="div-venue-button">
                     <a class="btn btn-warning modalContact" href="#animatedModalContact">Request a quote</a>
-                    <p class="highlight-p">or call now! <?php echo $GLOBALS['BMW_PHONE_NUMBER']; ?></p> 
+                    <p class="highlight-p">or call now! <span class="tracking-phone-number"><?php echo $GLOBALS['BMW_PHONE_NUMBER']; ?></span></p> 
                 </div>
                 <div id="arrow-down" class="not-for-mobile"><span class="glyphicon glyphicon-chevron-down"></span></div>     
             </div>
