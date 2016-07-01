@@ -4,7 +4,7 @@
     </div>
     <!-- <div class="row"> -->
         <div class="col-md-5 col-xs-12 contact-call-us highlight-p">
-            <p>Call us now!</p>
+            <p>Call us now!</p> 
             <p class="with-font-sub-title"><?php echo $GLOBALS['BMW_PHONE_NUMBER']; ?></p>
             <p>Or chat with us</p>
         </div>
