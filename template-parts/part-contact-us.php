@@ -8,8 +8,8 @@ global $BMW_PHONE_NUMBER;
     <!-- <div class="row"> -->
         <div class="col-md-5 col-xs-12 contact-call-us highlight-p">
             <p>Call us now!</p>
-            <p class="with-font-sub-title"><?php echo $BMW_PHONE_NUMBER; ?></p>
-            <p>Or chat with us</p>
+            <p class="with-font-sub-title tracking-phone-number"><?php echo $BMW_PHONE_NUMBER; ?></p>
+            <p>Or chat with us in the bottom right corner</p>
         </div>
         <div class="col-md-7 col-xs-12 div-form-contact-us highlight-p">
             <?php gravity_form( 3, false, false, false, '', true ); ?>           
