@@ -112,8 +112,9 @@ $venues = new WP_Query( $args );
                     </div>                
                 </div>
                 <div class="col-md-6 p-location" >
-                    <h2 class="with-font-sub-title">Location</h2>
+                    <h2 class="with-font-sub-title">Address and location for <?php  echo $name;?></h2>
                     <div>
+                        <p><?php echo $direction ?></p>
                         <?php echo $location ?>
                     </div>    
                 </div>
@@ -161,7 +162,7 @@ $venues = new WP_Query( $args );
             <?php if($blueprint != ''){ ?>
                 <div id="div-venue-blueprint" class="row">
                     <div class="p-location">
-                        <h1>Areas and distribution</h1>
+                        <h2>Areas and distribution of <?php  echo $name;?></h2>
                         <?php echo $blueprint?>
                     </div>
                     <?php if($blueprintImage != '') {?>

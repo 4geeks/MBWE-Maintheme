@@ -7,7 +7,23 @@ get_header();
 
 //Get venue post types to list 
 
-$args = array('post_type' => 'venue','posts_per_page'=>-1); 
+$args = array(
+    'post_type' => 'venue',
+    'meta_query' => array(
+        'relation' => 'OR',
+        array(
+            'key' => 'wpcf-venue-visibility',
+            'value' => '1',
+            'compare' => '='
+        ),
+        array(
+            'key' => 'wpcf-venue-visibility',
+            'value' => '2',
+            'compare' => '='
+        )
+    ),
+    'posts_per_page'=>-1
+    ); 
 $venues = new WP_Query( $args );
 
 $content = get_page($post->ID)->post_content;
