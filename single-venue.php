@@ -33,7 +33,17 @@ $post = get_post();
 $isClubOfKnigth = ($post->post_name == 'club-of-knight');
 
 //Get venue post types to list in dropdown list 
-$args = array('post_type' => 'venue'); 
+$args = array(
+    'post_type' => 'venue',
+    'meta_query' => array(
+        array(
+            'key' => 'wpcf-venue-visibility',
+            'value' => array('1', '2'),
+            'compare' => 'IN'
+        )
+    ),
+    'posts_per_page'=>-1
+    ); 
 $venues = new WP_Query( $args );
 
 ?>  
@@ -64,7 +74,7 @@ $venues = new WP_Query( $args );
                 //list all venues in post types
                 foreach ($venues->posts as $venue) {
                     if (get_post()->ID != $venue->ID) {
-                        echo "<li style='background-image: url(". get_post_meta( $venue->ID, 'wpcf-venue-main-image', false)[0].")'><a class='with-font-sub-title' href='".get_home_url()."/venue/".$venue->post_name."'>".$venue->post_title."</a></li>";
+                        echo "<li style='background-image: url(". get_post_meta( $venue->ID, 'wpcf-venue-small-image', false)[0].")'><a class='with-font-sub-title' href='".get_home_url()."/venue/".$venue->post_name."'>".$venue->post_title."</a></li>";
                     }
                 }
             ?>
