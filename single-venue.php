@@ -75,7 +75,6 @@ $venues = new WP_Query( $args );
                 //list all venues in post types
                 foreach ($venues->posts as $venue) {
                     if (get_post()->ID != $venue->ID) {
-                        pippin_get_image_id
                         echo "<li style='background-image: url(". get_post_meta( $venue->ID, 'wpcf-venue-small-image', false)[0].")'><a class='with-font-sub-title' href='".get_home_url()."/venue/".$venue->post_name."'>".$venue->post_title."</a></li>";
                     }
                 }
