@@ -10,16 +10,10 @@ get_header();
 $args = array(
     'post_type' => 'venue',
     'meta_query' => array(
-        'relation' => 'OR',
         array(
             'key' => 'wpcf-venue-visibility',
-            'value' => '1',
-            'compare' => '='
-        ),
-        array(
-            'key' => 'wpcf-venue-visibility',
-            'value' => '2',
-            'compare' => '='
+            'value' => array('1', '2'),
+            'compare' => 'IN'
         )
     ),
     'posts_per_page'=>-1
