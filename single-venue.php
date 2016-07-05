@@ -10,19 +10,6 @@ get_header();
 
 <?php
 
-function pippin_get_thumb_image_url($image_url = ''){
-
-    // retrieves the attachment ID from the file URL
-    global $wpdb;
-    $attachment = $wpdb->get_col($wpdb->prepare("SELECT ID FROM $wpdb->posts WHERE guid='%s';", $image_url )); 
-    $image_id = $attachment[0]; 
-     
-    // retrieve the thumbnail size of our image
-    $image_thumb = wp_get_attachment_image_src($image_id, 'thumbnail');    
-
-    return $image_thumb;
-}
-
 $primary_class = 'full-width-page no-sidebar';
 $mainImage = types_render_field("venue-main-image",array("url" => "true"));
 $mainVideo = types_render_field("venue-main-video",array("output" => "raw"));
@@ -88,7 +75,8 @@ $venues = new WP_Query( $args );
                 //list all venues in post types
                 foreach ($venues->posts as $venue) {
                     if (get_post()->ID != $venue->ID) {
-                        echo "<li style='background-image: url(". pippin_get_thumb_image_url(get_post_meta( $venue->ID, 'wpcf-venue-main-image', false)[0]).")'><a class='with-font-sub-title' href='".get_home_url()."/venue/".$venue->post_name."'>".$venue->post_title."</a></li>";
+                        pippin_get_image_id
+                        echo "<li style='background-image: url(". get_post_meta( $venue->ID, 'wpcf-venue-small-image', false)[0].")'><a class='with-font-sub-title' href='".get_home_url()."/venue/".$venue->post_name."'>".$venue->post_title."</a></li>";
                     }
                 }
             ?>
