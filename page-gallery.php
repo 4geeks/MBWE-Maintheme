@@ -9,7 +9,9 @@ $gallery = get_post_gallery($_GET["post_id"],false);
 $post = get_post($_GET["post_id"]);
 
 //Get venue post types to list in dropdown list 
-$args = array('post_type' => $post->post_type); 
+$postType = $post->post_type;
+
+$args = array('post_type' => $postType); 
 $venues = new WP_Query( $args );
 $ids = explode( ",", $gallery['ids'] );
 
@@ -32,15 +34,15 @@ $blueprint = (isset(get_post_meta( $_GET['post_id'], 'wpcf-venue-blueprint', fal
         <div class="col-md-7">
             <div class="top-venue-menu not-for-phone">
                 <ul class="ul-menu">
-                    <?php echo "<li><a href='".get_home_url()."/venue/".$post->post_name."'>GENERAL INFO</a>"?>
+                    <?php echo "<li><a href='".get_home_url()."/".$postType."/".$post->post_name."'>GENERAL INFO</a>"?>
                     <?php if ($blueprint != null)
-                            echo "<li><a href='".get_home_url()."/venue/".$post->post_name."#div-venue-blueprint'>AREAS</a>"                        
+                            echo "<li><a href='".get_home_url()."/".$postType."/".$post->post_name."#div-venue-blueprint'>AREAS</a>"                        
                     ?>
                     <?php if ($tour != null){ ?>
                        <li><a id="a-360-tour" href="#animatedModal">360° Tour</a></li>
                     <?php } ?>
                     <?php echo "<li><a href='#'>GALLERY</a></li>";?>
-                    <?php echo "<li><a href='".get_home_url()."/venue/".$post->post_name."#div-venue-location'>LOCATION</a>"?>
+                    <?php echo "<li><a href='".get_home_url()."/".$postType."/".$post->post_name."#div-venue-location'>LOCATION</a>"?>
                 </ul>
             </div>
         </div>
@@ -50,7 +52,7 @@ $blueprint = (isset(get_post_meta( $_GET['post_id'], 'wpcf-venue-blueprint', fal
             <?php
                 //list all venues in post types
                 foreach ($venues->posts as $venue) {
-                    echo "<li style='background-image: url(". get_post_meta( $venue->ID, 'wpcf-venue-main-image', false)[0].")'><a class='with-font-title' href='".get_home_url()."/venue/".$venue->post_name."'>".$venue->post_title."</a></li>";
+                    echo "<li style='background-image: url(". get_post_meta( $venue->ID, 'wpcf-venue-main-image', false)[0].")'><a class='with-font-title' href='".get_home_url()."/".$postType."/".$venue->post_name."'>".$venue->post_title."</a></li>";
                 }
             ?>
             </ul>
@@ -75,15 +77,15 @@ $blueprint = (isset(get_post_meta( $_GET['post_id'], 'wpcf-venue-blueprint', fal
                 <div class="col-md-12 modal-menu">
                     <div class="top-venue-menu">
                         <ul class="ul-menu">
-	                        <?php echo "<li><a href='".get_home_url()."/venue/".$post->post_name."'>GENERAL INFO</a>"?>
+	                        <?php echo "<li><a href='".get_home_url()."/".$postType."/".$post->post_name."'>GENERAL INFO</a>"?>
 			                <?php if ($blueprint != null)
-                                echo "<li><a href='".get_home_url()."/venue/".$post->post_name."#div-venue-blueprint'>AREAS</a>"                        
+                                echo "<li><a href='".get_home_url()."/".$postType."/".$post->post_name."#div-venue-blueprint'>AREAS</a>"                        
                             ?>
                             <?php if ($tour != null){ ?>
                                 <li><a id="a-360-tour" href="#animatedModal">360° Tour</a></li>
                             <?php } ?>
 			                 <?php echo "<li><a href='".get_home_url()."/gallery/?post_id=".get_post()->ID."'>GALLERY</a></li>";?>
-			                <?php echo "<li><a href='".get_home_url()."/venue/".$post->post_name."#div-venue-location'>LOCATION</a>"?>
+			                <?php echo "<li><a href='".get_home_url()."/".$postType."/".$post->post_name."#div-venue-location'>LOCATION</a>"?>
                         </ul>
                     </div>
                     <div class="close-animatedModal btn-close"> 
@@ -103,15 +105,15 @@ $blueprint = (isset(get_post_meta( $_GET['post_id'], 'wpcf-venue-blueprint', fal
                 <div class="col-md-12 modal-menu">
                     <div class="top-venue-menu">
                         <ul class="ul-menu">
-                            <?php echo "<li><a href='".get_home_url()."/venue/".$post->post_name."'>GENERAL INFO</a>"?>
+                            <?php echo "<li><a href='".get_home_url()."/".$postType."/".$post->post_name."'>GENERAL INFO</a>"?>
                             <?php if ($blueprint != null)
-                                echo "<li><a href='".get_home_url()."/venue/".$post->post_name."#div-venue-blueprint'>BLUEPRINT</a>"                        
+                                echo "<li><a href='".get_home_url()."/".$postType."/".$post->post_name."#div-venue-blueprint'>BLUEPRINT</a>"                        
                             ?>
                             <?php if ($tour != null){ ?>
 	   		                      <li><a id="aa-360-tour" href="#">360° Tour</a></li>
                             <?php } ?>
 			                <?php echo "<li><a href='".get_home_url()."/gallery/?post_id=".get_post()->ID."'>GALLERY</a></li>";?>
-			                <?php echo "<li><a href='".get_home_url()."/venue/".$post->post_name."#div-venue-location'>LOCATION</a>"?>
+			                <?php echo "<li><a href='".get_home_url()."/".$postType."/".$post->post_name."#div-venue-location'>LOCATION</a>"?>
                         </ul>
                     </div> 
                     <div class="close-imgAnimatedModal btn-close"> 
