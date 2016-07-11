@@ -6,11 +6,12 @@ header('X-Frame-Options: GOFORIT');
 get_header(); 
 
 $gallery = get_post_gallery($_GET["post_id"],false);
+$post = get_post($_GET["post_id"]);
+
 //Get venue post types to list in dropdown list 
-$args = array('post_type' => 'venue'); 
+$args = array('post_type' => $post->post_type); 
 $venues = new WP_Query( $args );
 $ids = explode( ",", $gallery['ids'] );
-$post = get_post($_GET["post_id"]);
 
 foreach( $ids as $id ) {
    $imgs[] = wp_get_attachment_image_src( $id ,'Medium');
