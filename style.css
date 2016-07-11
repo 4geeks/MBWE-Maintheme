@@ -474,6 +474,10 @@ a img.aligncenter {
     -pie-background: rgba(0,0,0,0.42);
     height: 250px;
 }
+.black-background{background: #000000; color: white;
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+    }
 /*END FOR WHY FETES & EVENTS*/
 
 /* FOOTER */
