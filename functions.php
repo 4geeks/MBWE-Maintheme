@@ -435,7 +435,7 @@ function html5blankcomments($comment, $args, $depth)
 
 function ownScript() {
     
-    if (is_singular('venue') || is_page('venue-event')) {
+    if (is_singular('church') || is_singular('venue') || is_page('venue-event')) {
 
         wp_enqueue_script('googlemap','https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true&libraries=places');
         wp_enqueue_script('googlemap');
