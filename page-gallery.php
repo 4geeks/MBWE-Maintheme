@@ -41,7 +41,7 @@ $blueprint = (isset(get_post_meta( $_GET['post_id'], 'wpcf-venue-blueprint', fal
                     <?php if ($tour != null){ ?>
                        <li><a id="a-360-tour" href="#animatedModal">360° Tour</a></li>
                     <?php } ?>
-                    <?php echo "<li><a href='#'>GALLERY</a></li>";?>
+                    <?php echo "<li><a href='#'>PHOTO GALLERY</a></li>";?>
                     <?php echo "<li><a href='".get_home_url()."/".$postType."/".$post->post_name."#div-venue-location'>LOCATION</a>"?>
                 </ul>
             </div>
@@ -84,7 +84,7 @@ $blueprint = (isset(get_post_meta( $_GET['post_id'], 'wpcf-venue-blueprint', fal
                             <?php if ($tour != null){ ?>
                                 <li><a id="a-360-tour" href="#animatedModal">360° Tour</a></li>
                             <?php } ?>
-			                 <?php echo "<li><a href='".get_home_url()."/gallery/?post_id=".get_post()->ID."'>GALLERY</a></li>";?>
+			                 <?php echo "<li><a href='".get_home_url()."/gallery/?post_id=".get_post()->ID."'>PHOTO GALLERY</a></li>";?>
 			                <?php echo "<li><a href='".get_home_url()."/".$postType."/".$post->post_name."#div-venue-location'>LOCATION</a>"?>
                         </ul>
                     </div>
@@ -112,7 +112,7 @@ $blueprint = (isset(get_post_meta( $_GET['post_id'], 'wpcf-venue-blueprint', fal
                             <?php if ($tour != null){ ?>
 	   		                      <li><a id="aa-360-tour" href="#">360° Tour</a></li>
                             <?php } ?>
-			                <?php echo "<li><a href='".get_home_url()."/gallery/?post_id=".get_post()->ID."'>GALLERY</a></li>";?>
+			                <?php echo "<li><a href='".get_home_url()."/gallery/?post_id=".get_post()->ID."'>PHOTO GALLERY</a></li>";?>
 			                <?php echo "<li><a href='".get_home_url()."/".$postType."/".$post->post_name."#div-venue-location'>LOCATION</a>"?>
                         </ul>
                     </div> 

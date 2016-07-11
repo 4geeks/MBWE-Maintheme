@@ -34,8 +34,9 @@ $post = get_post();
 $isClubOfKnigth = ($post->post_name == 'club-of-knight');
 
 //Get venue post types to list in dropdown list 
+$postType = "church";
 $args = array(
-    'post_type' => 'church',
+    'post_type' => $postType,
     'meta_query' => array(
         array(
             'key' => 'wpcf-venue-visibility',
@@ -63,7 +64,7 @@ $venues = new WP_Query( $args );
                     <?php if($tour != ''){?>
                         <li><a id="a-360-tour" href="#animatedModal">360° TOUR</a></li>
                     <?php } ?>
-                    <?php echo "<li><a href='".get_home_url()."/gallery/?post_id=".get_post()->ID."&is_event=false'>GALLERY</a></li>";?>
+                    <?php echo "<li><a href='".get_home_url()."/gallery/?post_id=".get_post()->ID."&is_event=false'>PHOTO GALLERY</a></li>";?>
                     <li><a href="#div-venue-location">LOCATION</a></li>
                 </ul>
             </div>
@@ -75,7 +76,7 @@ $venues = new WP_Query( $args );
                 //list all venues in post types
                 foreach ($venues->posts as $venue) {
                     if (get_post()->ID != $venue->ID) {
-                        echo "<li style='background-image: url(". get_post_meta( $venue->ID, 'wpcf-venue-small-image', false)[0].")'><a class='with-font-sub-title' href='".get_home_url()."/venue/".$venue->post_name."'>".$venue->post_title."</a></li>";
+                        echo "<li style='background-image: url(". get_post_meta( $venue->ID, 'wpcf-venue-small-image', false)[0].")'><a class='with-font-sub-title' href='".get_home_url()."/".$postType."/".$venue->post_name."'>".$venue->post_title."</a></li>";
                     }
                 }
             ?>
