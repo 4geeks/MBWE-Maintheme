@@ -176,7 +176,7 @@ function html5blank_styles()
         wp_enqueue_style('thankscss');        
     }
 
-    if (is_page('wedding-venues-locations')){
+    if (is_page('wedding-venues-locations') || is_page('wedding-churches-in-miami')){
         wp_register_style('venueslistcss', get_template_directory_uri() . '/css/venues-list.css', false, '1.1', 'all');
         wp_enqueue_style('venueslistcss');        
     }
