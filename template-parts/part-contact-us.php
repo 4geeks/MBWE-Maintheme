@@ -17,7 +17,8 @@
             }
 
             if(!empty($gravityForm) and $gravityForm!="" and $gravityForm!=null) gravity_form( $gravityForm, false, false, false, '', true ); 
-            else gravity_form( 3, false, false, false, '', true ); 
+            else
+                gravity_form( 3, false, false, false, '', true ); 
 
             ?>           
         </div>

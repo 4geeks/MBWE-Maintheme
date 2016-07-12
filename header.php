@@ -115,7 +115,7 @@ $f = $GLOBALS['BMW_PHONE_NUMBER'];
                 <div class="modal-content">                    
 		    		<!-- ========== CONTACT US PART ========== -->
         			<?php //include( locate_template( 'template-parts/contact-us.php', false, false ) ); ?>
-        			<?php get_template_part( 'template-parts/part', '', 'contact-us' ); ?>
+        			<?php get_template_part( 'template-parts/part', 'contact-us' ); ?>
             		<!-- ========== CONTACT US PART ========== -->
                 </div>
             </div>
