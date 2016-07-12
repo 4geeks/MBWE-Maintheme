@@ -21,7 +21,7 @@ $content = get_page($post->ID)->post_content;
                 <?php foreach ($packages->posts as $package) {?>
                     <div class="col-xs-12 col-sm-4 col-md-4  package-element">
                         <div class="col-md-12 col-sm-12 inner-package-element">
-                            <div class="col-md-12 div-package-name highlight-element" style="background: url('<?php echo get_post_meta( $package->ID, 'wpcf-package-main-image', false)[0]; ?>') no-repeat center center / cover">
+                            <div class="col-md-12 div-package-name linkeable highlight-element" style="background: url('<?php echo get_post_meta( $package->ID, 'wpcf-package-main-image', false)[0]; ?>') no-repeat center center / cover">
                                 <h3 class="with-font-title"><?php echo get_post_meta( $package->ID, 'wpcf-package-name', false)[0]; ?></h3>                                
                             </div>                            
                             <div class="col-md-12 div-description">
