@@ -9,12 +9,5 @@ get_header();
 $content = get_page($post->ID)->post_content;
 
 ?>
-<div id="div-thanks">
-	<div class="col-md-12 div-thanks highlight-p">
-	   <center>
-	   	<?php echo $content; ?>
-	   </center> 
-<!-- </div> -->
-</div>     
-
+<?php echo $content; ?>
 <?php get_footer(); ?>
