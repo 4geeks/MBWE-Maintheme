@@ -30,7 +30,6 @@ $tour = types_render_field("venue-360-tour");
 $galleryPostId = types_render_field("venue-gallery");
 
 $post = get_post();
-
 $isClubOfKnigth = ($post->post_name == 'club-of-knight');
 
 //Get venue post types to list in dropdown list 

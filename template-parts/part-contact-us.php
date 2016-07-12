@@ -9,7 +9,18 @@
             <p>Or chat with us</p>
         </div>
         <div class="col-md-7 col-xs-12 div-form-contact-us highlight-p">
-            <?php gravity_form( 3, false, false, false, '', true ); ?>           
+        <?php 
+            $gravityForm = null;
+            $postId = $current_post_id;
+            
+            if(isset($postId) and $postId!="" and $postId>0) {
+                $gravityForm = get_post_meta( $postId, 'special_gravity_form', true );
+            }
+
+            if(!empty($gravityForm) and $gravityForm!="" and $gravityForm!=null) gravity_form( $gravityForm, false, false, false, '', true ); 
+            else gravity_form( 3, false, false, false, '', true ); 
+
+            ?>           
         </div>
     <!-- </div> -->
 </div>

@@ -35,7 +35,9 @@ $f = $GLOBALS['BMW_PHONE_NUMBER'];
 ?>
 
 <body <?php body_class(); ?> onload="_googWcmGet('tracking-phone-number', '<?php echo $f ?>')">
-
+<?php
+	set_query_var('current_post_id', get_the_ID());
+?>
 	<!-- wrapper -->
 	<div class="wrapper">
 		<nav id="my-sidebar">
@@ -112,7 +114,8 @@ $f = $GLOBALS['BMW_PHONE_NUMBER'];
                 </div>
                 <div class="modal-content">                    
 		    		<!-- ========== CONTACT US PART ========== -->
-        			<?php get_template_part( 'template-parts/part', 'contact-us' ); ?>
+        			<?php //include( locate_template( 'template-parts/contact-us.php', false, false ) ); ?>
+        			<?php get_template_part( 'template-parts/part', '', 'contact-us' ); ?>
             		<!-- ========== CONTACT US PART ========== -->
                 </div>
             </div>
