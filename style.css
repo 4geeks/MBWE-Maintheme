@@ -105,6 +105,10 @@ input:focus {
 	margin:0 auto;
 	position:relative;
 }
+.div-single-page {
+    min-height: 600px;
+    padding-top: 170px;
+}
 /* header */
 .header {
 	position: fixed;
