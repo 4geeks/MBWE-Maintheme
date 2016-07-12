@@ -1,43 +1,20 @@
-<?php get_header(); ?>
+<?php
+/*
+Template Name: Thanks
+*/
 
-	<main role="main">
-		<!-- section -->
-		<section>
+get_header(); 
 
-			<!--h1><?php the_title(); ?></h1-->
+//Get venue post types to list 
+$content = get_page($post->ID)->post_content;
 
-		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
+?>
+<div id="div-thanks">
+	<div class="col-md-12 div-thanks highlight-p">
+	   <center>
+	   	<?php echo $content; ?>
+	   </center> 
+	</div>
+</div>     
 
-			<!-- article -->
-			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-				<?php the_content(); ?>
-
-				<!--br class="clear"-->
-
-				<?php //edit_post_link(); ?>
-
-			</article>
-			<!-- /article -->
-
-		<?php endwhile; ?>
-
-		<?php else: ?>
-
-			<!-- article -->
-			<article>
-
-				<h2><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h2>
-
-			</article>
-			<!-- /article -->
-
-		<?php endif; ?>
-
-		</section>
-		<!-- /section -->
-	</main>
-
-<?php //get_sidebar(); ?>
-
-<?php //get_footer(); ?>
+<?php get_footer(); ?>
