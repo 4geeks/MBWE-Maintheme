@@ -11,10 +11,9 @@
         <div class="col-md-7 col-xs-12 div-form-contact-us highlight-p">
         <?php 
             $gravityForm = null;
-            $postId = $current_post_id;
             
-            if(isset($postId) and $postId!="" and $postId>0) {
-                $gravityForm = get_post_meta( $postId, 'special_gravity_form', true );
+            if(isset($current_post_id) and $current_post_id!="" and $current_post_id>0) {
+                $gravityForm = get_post_meta( $current_post_id, 'special_gravity_form', true );
             }
 
             if(!empty($gravityForm) and $gravityForm!="" and $gravityForm!=null) gravity_form( $gravityForm, false, false, false, '', true ); 
