@@ -23,6 +23,7 @@ $name = get_post_meta( $_GET['post_id'], 'wpcf-venue-name', false)[0];
 $mainImage = get_post_meta( $_GET['post_id'], 'wpcf-venue-main-image', false)[0];
 $tour = (isset(get_post_meta( $_GET['post_id'], 'wpcf-venue-360-tour', false)[0])?get_post_meta( $_GET['post_id'], 'wpcf-venue-360-tour', false)[0]:null);    
 $blueprint = (isset(get_post_meta( $_GET['post_id'], 'wpcf-venue-blueprint', false)[0])?get_post_meta( $_GET['post_id'], 'wpcf-venue-blueprint', false)[0]:null);    
+$weddings = (isset(get_post_meta( $_GET['post_id'], 'venue-weddings', false)[0])?get_post_meta( $_GET['post_id'], 'venue-weddings', false)[0]:null);    
 
 
 ?>
@@ -34,15 +35,17 @@ $blueprint = (isset(get_post_meta( $_GET['post_id'], 'wpcf-venue-blueprint', fal
         <div class="col-md-7">
             <div class="top-venue-menu not-for-phone">
                 <ul class="ul-menu">
-                    <?php echo "<li><a href='".get_home_url()."/".$postType."/".$post->post_name."'>GENERAL INFO</a>"?>
+                    <?php echo "<li><a href='".get_home_url()."/".$postType."/".$post->post_name."'>INFO & LOCATION</a>"?>
                     <?php if ($blueprint != null)
                             echo "<li><a href='".get_home_url()."/".$postType."/".$post->post_name."#div-venue-blueprint'>AREAS</a>"                        
                     ?>
                     <?php if ($tour != null){ ?>
-                       <li><a id="a-360-tour" href="#animatedModal">360° Tour</a></li>
+                       <li><a id="a-360-tour" href="#animatedModal">360° TOUR</a></li>
                     <?php } ?>
                     <?php echo "<li><a href='#'>PHOTO GALLERY</a></li>";?>
-                    <?php echo "<li><a href='".get_home_url()."/".$postType."/".$post->post_name."#div-venue-location'>LOCATION</a>"?>
+                    <?php if($weddings != ''){?>
+                        <li><a href="<?php echo $weddings; ?>" target="_blank">WEDDINGS</a></li>
+                    <?php } ?>
                 </ul>
             </div>
         </div>
