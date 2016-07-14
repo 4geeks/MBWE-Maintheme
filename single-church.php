@@ -58,8 +58,7 @@ $venues = new WP_Query( $args );
         <div class="col-md-7">
             <div class="top-venue-menu not-for-phone">
                 <ul class="ul-menu">
-                    <li><a href="#primary">GENERAL INFO</a></li>
-                    <li><a href="#div-venue-location">LOCATION</a></li>
+                    <li><a href="#primary">INFO & LOCATION</a></li>
                     <?php if($blueprint != ''){?>
                         <li><a href="#div-venue-blueprint">AREAS</a></li>
                     <?php } ?>
@@ -193,8 +192,7 @@ $venues = new WP_Query( $args );
                     <div class="col-md-12 modal-menu">
                         <div class="top-venue-menu">
                             <ul class="ul-menu">
-                                <li><a class="close-animatedModal" href="#primary">GENERAL INFO</a></li>
-                                <li><a class="close-animatedModal" href="#div-venue-location">LOCATION</a></li>
+                                <li><a class="close-animatedModal" href="#primary">INFO & LOCATION</a></li>
                                 <?php if($blueprint != ''){?>
                                     <li><a class="close-animatedModal" href="#div-venue-blueprint">AREAS</a></li>
                                 <?php } ?>

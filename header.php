@@ -30,6 +30,7 @@ header("Access-Control-Allow-Origin: *");
 $blueprint = types_render_field("venue-blueprint");
 $blueprintImage = types_render_field("venue-blueprint-image",array("url" => "true"));
 $tour = types_render_field("venue-360-tour");
+$weddings = types_render_field("venue-weddings",array("output" => "raw"));
 $f = $GLOBALS['BMW_PHONE_NUMBER'];
 
 ?>
@@ -55,11 +56,14 @@ $f = $GLOBALS['BMW_PHONE_NUMBER'];
 						<div class="for-phone">
 							<ul>
 								<li><a href="#primary">VENUE INFO</a></li>
+								<li><a href="#div-venue-location">VENUE LOCATION</a></li>
 								<?php if($blueprint != ''){?>
 								<li><a href="#div-venue-blueprint">VENUE BLUEPRINT</a></li>
 								<?php } ?>
-								<?php echo "<li><a href='".get_home_url()."/gallery/?post_id=".get_post()->ID."'>GALLERY</a></li>";?>
-								<li><a href="#div-venue-location">VENUE LOCATION</a></li>
+								<?php echo "<li><a href='".get_home_url()."/gallery/?post_id=".get_post()->ID."'>VENUE PHOTOS</a></li>";?>
+			                    <?php if($weddings != ''){?>
+			                        <li><a href="<?php echo $weddings; ?>">VENUE WEDDINGS</a></li>
+			                    <?php } ?>
 							</ul>
 						</div>	
 						<?php } ?>
