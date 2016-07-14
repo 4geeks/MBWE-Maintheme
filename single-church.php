@@ -28,7 +28,7 @@ $latitude = types_render_field("venue-latitude");
 $longitude = types_render_field("venue-longitude");
 $tour = types_render_field("venue-360-tour");
 $galleryPostId = types_render_field("venue-gallery");
-$weddings = types_render_field("venue-weddings");
+$weddings = types_render_field("venue-weddings",array("output" => "raw"));
 
 $post = get_post();
 
