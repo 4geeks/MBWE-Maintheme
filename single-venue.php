@@ -28,6 +28,7 @@ $latitude = types_render_field("venue-latitude");
 $longitude = types_render_field("venue-longitude");
 $tour = types_render_field("venue-360-tour");
 $galleryPostId = types_render_field("venue-gallery");
+$weddings = types_render_field("venue-weddings");
 
 $post = get_post();
 $isClubOfKnigth = ($post->post_name == 'club-of-knight');
@@ -56,14 +57,17 @@ $venues = new WP_Query( $args );
             <div class="top-venue-menu not-for-phone">
                 <ul class="ul-menu">
                     <li><a href="#primary">GENERAL INFO</a></li>
+                    <li><a href="#div-venue-location">LOCATION</a></li>
                     <?php if($blueprint != ''){?>
                         <li><a href="#div-venue-blueprint">AREAS</a></li>
                     <?php } ?>
                     <?php if($tour != ''){?>
                         <li><a id="a-360-tour" href="#animatedModal">360° TOUR</a></li>
                     <?php } ?>
-                    <?php echo "<li><a href='".get_home_url()."/gallery/?post_id=".get_post()->ID."&is_event=false'>PHOTO GALLERY</a></li>";?>
-                    <li><a href="#div-venue-location">LOCATION</a></li>
+                    <?php echo "<li><a href='".get_home_url()."/gallery/?post_id=".get_post()->ID."&is_event=false'>PHOTOS</a></li>";?>
+                    <?php if($weddings != ''){?>
+                        <li><a href="<?php echo $weddings; ?>">WEDDINGS</a></li>
+                    <?php } ?>
                 </ul>
             </div>
         </div>
@@ -188,11 +192,14 @@ $venues = new WP_Query( $args );
                         <div class="top-venue-menu">
                             <ul class="ul-menu">
                                 <li><a class="close-animatedModal" href="#primary">GENERAL INFO</a></li>
+                                <li><a class="close-animatedModal" href="#div-venue-location">LOCATION</a></li>
                                 <?php if($blueprint != ''){?>
                                     <li><a class="close-animatedModal" href="#div-venue-blueprint">AREAS</a></li>
                                 <?php } ?>
-                                <?php echo "<li><a href='".get_home_url()."/gallery/?post_id=".get_post()->ID."'>PHOTO GALLERY</a></li>";?>
-                                <li><a class="close-animatedModal" href="#div-venue-location">LOCATION</a></li>
+                                <?php echo "<li><a href='".get_home_url()."/gallery/?post_id=".get_post()->ID."'>PHOTOS</a></li>";?>
+                                <?php if($weddings != ''){?>
+                                    <li><a href="<?php echo $weddings; ?>">WEDDINGS</a></li>
+                                <?php } ?>
                             </ul>
                             <div class="close-animatedModal btn-close"> 
                                 <span class="glyphicon glyphicon-remove" style="color:white"></span>
