@@ -67,7 +67,7 @@ $venues = new WP_Query( $args );
                     <?php } ?>
                     <?php echo "<li><a href='".get_home_url()."/gallery/?post_id=".get_post()->ID."&is_event=false'>PHOTOS</a></li>";?>
                     <?php if($weddings != ''){?>
-                        <li><a href="<?php echo $weddings; ?>">WEDDINGS</a></li>
+                        <li><a href="<?php echo $weddings; ?>" target="_blank">WEDDINGS</a></li>
                     <?php } ?>
                 </ul>
             </div>
@@ -198,7 +198,7 @@ $venues = new WP_Query( $args );
                                 <?php } ?>
                                 <?php echo "<li><a href='".get_home_url()."/gallery/?post_id=".get_post()->ID."'>PHOTOS</a></li>";?>
                                 <?php if($weddings != ''){?>
-                                    <li><a href="<?php echo $weddings; ?>">WEDDINGS</a></li>
+                                    <li><a href="<?php echo $weddings; ?>" target="_blank">WEDDINGS</a></li>
                                 <?php } ?>
                             </ul>
                             <div class="close-animatedModal btn-close"> 
