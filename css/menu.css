@@ -185,6 +185,11 @@
     overflow: scroll;
     height: 60%;
   }
+
+  #sub-menu li a{
+    padding-left: 10px;
+    font-size: 25px;
+  }
   
 } 
 
