@@ -7,12 +7,15 @@ get_header();
 
 //Get venue post types to list 
 
+$venue_visibility = array('1','2');
+if(isset($_GET["vvisibility"])) $venue_visibility = $_GET["vvisibility"];
+
 $args = array(
     'post_type' => 'venue',
     'meta_query' => array(
         array(
             'key' => 'wpcf-venue-visibility',
-            'value' => array('1', '2'),
+            'value' => $venue_visibility,
             'compare' => 'IN'
         )
     ),
@@ -49,6 +52,14 @@ $content = get_page($post->ID)->post_content;
                         </div>
                     </div>
                <?php }?>
+
+               <?php if(!isset($_GET["vvisibility"])) { ?>
+               <div class="col-md-12 venue-element">
+                    <div class="col-md-12 div-description">
+                        <center><a href="">Click here for a list of the rest of the venues</a></center>
+                    </div>
+               </div>
+               <?php } ?>
             </div>
             <!-- <div class="blue-background"><h2>What our clients say about our venues</h2></div> -->
             <!-- ========== testimonies TOP ========== -->
