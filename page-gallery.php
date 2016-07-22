@@ -11,8 +11,22 @@ $post = get_post($_GET["post_id"]);
 //Get venue post types to list in dropdown list 
 $postType = $post->post_type;
 
-$args = array('post_type' => $postType); 
+
+$args = array(
+    'post_type' => $postType,
+    'meta_query' => array(
+        array(
+            'key' => 'wpcf-venue-visibility',
+            'value' => array('1','2'),
+            'compare' => 'IN'
+        )
+    ),
+    'posts_per_page'=>-1
+    ); 
 $venues = new WP_Query( $args );
+
+
+
 $ids = explode( ",", $gallery['ids'] );
 
 foreach( $ids as $id ) {
