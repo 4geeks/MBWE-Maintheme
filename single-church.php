@@ -73,7 +73,7 @@ $venues = new WP_Query( $args );
             </div>
         </div>
         <div id="menu-desplegable" class="col-md-4">
-            <span class="col-md-11"><?php echo $name ?> &#8203; </span> <span id="icon-dropdown" class="glyphicon glyphicon-collapse-down"></span>
+            <span class="col-md-11"><?php echo substr($name,0,14); ?> &#8203; </span> <span id="icon-dropdown" class="glyphicon glyphicon-collapse-down"></span>
             <ul id="sub-menu" class="style-scroll-1 scrollbar">
             <?php
                 //list all venues in post types
