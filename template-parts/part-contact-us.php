@@ -14,6 +14,7 @@
             
             if(isset($current_post_id) and $current_post_id!="" and $current_post_id>0) {
                 $gravityForm = get_post_meta( $current_post_id, 'special_gravity_form', true );
+                if(empty($gravityForm)) $gravityForm = get_post_meta( $current_post_id, 'wpcf-special_gravity_form', true );
             }
 
             if(!empty($gravityForm) and $gravityForm!="" and $gravityForm!=null) gravity_form( $gravityForm, false, false, false, '', true ); 
