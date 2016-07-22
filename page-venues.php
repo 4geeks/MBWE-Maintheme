@@ -36,16 +36,16 @@ $content = get_page($post->ID)->post_content;
             <div id="list-content" class="row">                    
                 <?php foreach ($venues->posts as $venue) {
                     ?>
-                    <div class="col-md-4 venue-element">
-                        <div class="col-md-12 inner-venue-element">
-                            <div class="col-md-12 div-venue-image linkeable highlight-element" style="background-image: url('<?php echo get_post_meta( $venue->ID, 'wpcf-venue-main-image', false)[0]; ?>')">
+                    <div class="col-sm-12 col-md-6 col-lg-4  venue-element">
+                        <div class="col-sm-12 inner-venue-element">
+                            <div class="col-sm-12 div-venue-image linkeable highlight-element" style="background-image: url('<?php echo get_post_meta( $venue->ID, 'wpcf-venue-main-image', false)[0]; ?>')">
                             </div>
-                            <div class="col-md-12 div-description">
+                            <div class="col-sm-12 div-description">
                                 <center><h2><?php echo get_post_meta( $venue->ID, 'wpcf-venue-name', false)[0]; ?></h2></center>
-                                <div class="col-md-12">
+                                <div class="col-sm-12">
                                     <h4><?php echo get_post_meta( $venue->ID, 'wpcf-venue-direction', false)[0]; ?></h4>
                                 </div>
-                                <div class="col-md-12">
+                                <div class="col-sm-12">
                                     <a href="<?php echo get_home_url()."/venue/".$venue->post_name ?>" class="btn btn-info btn-sm">Read more</a>
                                 </div>
                             </div>
@@ -54,8 +54,8 @@ $content = get_page($post->ID)->post_content;
                <?php }?>
 
                <?php if(!isset($_GET["vvisibility"])) { ?>
-               <div id="extra-venues" class="col-md-12 venue-element">
-                    <div class="col-md-12 div-description">
+               <div id="extra-venues" class="col-sm-12 venue-element">
+                    <div class="col-sm-12 div-description">
                         <center><a href="/wedding-venues-locations/?vvisibility[]=3">Click here to review some additional venues</a></center>
                     </div>
                </div>
