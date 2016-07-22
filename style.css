@@ -381,13 +381,6 @@ a img.aligncenter {
 	line-height: 20px;
 }
 
-.ellipsis {  
-    white-space: nowrap;  
-    overflow: hidden;  
-    text-overflow: ellipsis;  
-    -o-text-overflow: ellipsis;  
-} 
-
 /*END CUSTOM FONT*/
 
 /*FOR TESTIMONIES*/
