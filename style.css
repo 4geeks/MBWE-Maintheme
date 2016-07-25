@@ -304,6 +304,7 @@ a img.aligncenter {
 
 }
 
+.stButton .stFb, .stButton .stTwbutton, .stButton .stMainServices,.stButton .stButton_gradient{height: auto !important; line-height: auto !important; }
 /*------------------------------------*\
     PRINT
 \*------------------------------------*/
@@ -357,6 +358,8 @@ a img.aligncenter {
 		page-break-after:avoid;
 	}
 }
+
+#downloadable-content{margin-bottom: 30px;}
 
 /*CUSTOM FONT*/
 

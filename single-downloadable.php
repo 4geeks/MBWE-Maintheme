@@ -20,7 +20,7 @@ $post = get_post();
 	<!-- ========== MENU TOP ========== -->
     <?php get_template_part( 'template-parts/menu', 'top' ); ?>
     <!-- ========== MENU TOP ========== -->
-	<div class="container">
+	<div id="downloadable-content" class="container">
         <!-- First Featurette -->
         <div class="row">
             <div class="col-md-6">
@@ -49,15 +49,15 @@ $post = get_post();
             </div>
         </div>
         <hr class="featurette-divider">
-        <div class="row">
+        <div class="row text-center">
         	<h2>FREQUENTLY ASKED QUESTIONS</h2>
     	</div>
-        <div class="row">
+        <div class="row text-center">
         	<div class="col-md-12">
             	<?php the_content(); ?>
         	</div>
         </div>
-        <div class="row">
+        <div class="row text-center">
         	<div class="col-md-12">
 				<span class='st_facebook_hcount' displayText='Facebook'></span>
 				<span class='st_twitter_hcount' displayText='Tweet'></span>
@@ -68,10 +68,10 @@ $post = get_post();
         	</div>
         </div>
         <hr class="featurette-divider">
-        <div class="row">
+        <div class="row text-center">
         	<h2>FREQUENTLY ASKED QUESTIONS</h2>
     	</div>
-        <div class="row">
+        <div class="row text-center">
         	<div class="col-md-6">
         		<h4>Why do I need to fill out the information requested?</h4>
         		<p>We will always keep your personal information safe. We ask for your information in exchange for a valuable resource in order to (a) improve your browsing experience by personalizing the HubSpot site to your needs; (b) send information to you that we think may be of interest to you by email or other means; (c) send you marketing communications that we think may be of value to you. </p>
