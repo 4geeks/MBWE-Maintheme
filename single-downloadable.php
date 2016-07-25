@@ -9,6 +9,7 @@ get_header();
 
 $primary_class = 'full-width-page no-sidebar';
 $name = types_render_field("downloadable-title");
+$post_content = get_the_content();
 $dexcerpt = types_render_field("downloadable-excerpt");
 $fileSlug = types_render_field("downloadable-slug");
 $mainImage = types_render_field("downloadable-image",array("url" => "true"));
@@ -49,14 +50,16 @@ $post = get_post();
             </div>
         </div>
         <hr class="featurette-divider">
-        <div class="row text-center">
-        	<h2>WHAT YOU WILL FIND INSIDE OF THIS DOCUMENT</h2>
-    	</div>
-        <div class="row text-center">
-        	<div class="col-md-12">
-            	<?php the_content(); ?>
-        	</div>
-        </div>
+        <?php if($post_content and $post_content!=""){ ?>
+	        <div class="row text-center">
+	        	<h2>WHAT YOU WILL FIND INSIDE OF THIS DOCUMENT</h2>
+	    	</div>
+	        <div class="row text-center">
+	        	<div class="col-md-12">
+	            	<?php echo $post_content; ?>
+	        	</div>
+	        </div>
+        <?php } ?>
         <div class="row text-center">
         	<div class="col-md-12">
 				<span class='st_facebook_hcount' displayText='Facebook'></span>
@@ -74,7 +77,7 @@ $post = get_post();
         <div class="row text-center">
         	<div class="col-md-6">
         		<h4>Why do I need to fill out the information requested?</h4>
-        		<p>We will always keep your personal information safe. We ask for your information in exchange for a valuable resource in order to (a) improve your browsing experience by personalizing the HubSpot site to your needs; (b) send information to you that we think may be of interest to you by email or other means; (c) send you marketing communications that we think may be of value to you. </p>
+        		<p>We will always keep your personal information safe. We ask for your information in exchange for a valuable resource in order to (a) improve your browsing experience by personalizing the site to your needs; (b) send information to you that we think may be of interest to you by email or other means; (c) send you marketing communications that we think may be of value to you. </p>
         	</div>
         	<div class="col-md-6">
         		<h4>Is this really free?</h4>
