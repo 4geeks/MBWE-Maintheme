@@ -46,7 +46,7 @@ $post = get_post();
 			            ?>  
 	        </div>
         	<div class="col-md-6">
-            	<img class="img-responsive pull-right" src="<?php echo $mainImage; ?>">
+            	<img class="img-responsive pull-right" style="max-height: 450px;" src="<?php echo $mainImage; ?>">
             </div>
         </div>
         <hr class="featurette-divider">
