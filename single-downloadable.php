@@ -9,6 +9,7 @@ get_header();
 
 $primary_class = 'full-width-page no-sidebar';
 $name = types_render_field("downloadable-title");
+$dexcerpt = types_render_field("downloadable-excerpt");
 $fileSlug = types_render_field("downloadable-slug");
 $mainImage = types_render_field("downloadable-image",array("url" => "true"));
 $mainFile = types_render_field("downloadable-file",array("url" => "true"));
@@ -23,11 +24,12 @@ $post = get_post();
         <!-- First Featurette -->
         <div class="row">
             <div class="col-md-6">
-	            <h2 class="featurette-heading">
+	            <h1>
 	            	<?php  echo $name;?>
-	            </h2>
-	            <p class="lead">
-	            	<?php the_content(); ?>
+	            </h1>
+	            <p>
+	            	<?php echo $dexcerpt; ?>
+	            </p>
 			        <?php 
 			            $gravityForm = null;
 			            
@@ -41,12 +43,43 @@ $post = get_post();
 			                gravity_form( 9, false, false, true, array('downloadable-slug' => $fileSlug), true ); 
 
 			            ?>  
-	            </p>
 	        </div>
         	<div class="col-md-6">
             	<img class="img-circle img-responsive pull-right" src="<?php echo $mainImage; ?>">
             </div>
         </div>
         <hr class="featurette-divider">
+        <div class="row">
+        	<h2>FREQUENTLY ASKED QUESTIONS</h2>
+    	</div>
+        <div class="row">
+        	<div class="col-md-12">
+            	<?php the_content(); ?>
+        	</div>
+        </div>
+        <div class="row">
+        	<div class="col-md-12">
+				<span class='st_facebook_hcount' displayText='Facebook'></span>
+				<span class='st_twitter_hcount' displayText='Tweet'></span>
+				<span class='st_pinterest_hcount' displayText='Pinterest'></span>
+				<span class='st_linkedin_hcount' displayText='LinkedIn'></span>
+				<span class='st_googleplus_hcount' displayText='Google +'></span>
+				<span class='st__hcount' displayText=''></span>
+        	</div>
+        </div>
+        <hr class="featurette-divider">
+        <div class="row">
+        	<h2>FREQUENTLY ASKED QUESTIONS</h2>
+    	</div>
+        <div class="row">
+        	<div class="col-md-6">
+        		<h4>Why do I need to fill out the information requested?</h4>
+        		<p>We will always keep your personal information safe. We ask for your information in exchange for a valuable resource in order to (a) improve your browsing experience by personalizing the HubSpot site to your needs; (b) send information to you that we think may be of interest to you by email or other means; (c) send you marketing communications that we think may be of value to you. </p>
+        	</div>
+        	<div class="col-md-6">
+        		<h4>Is this really free?</h4>
+        		<p>Absolutely. Just sharing some free knowledge that we hope you’ll find useful. Keep us in mind next time you have marketing questions!</p>
+        	</div>
+        </div>
     </div>
 <?php get_footer(); ?>

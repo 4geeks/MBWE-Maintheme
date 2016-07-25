@@ -24,6 +24,9 @@ header("Access-Control-Allow-Origin: *");
         });
     </script>
 
+	<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+	<script type="text/javascript">stLight.options({publisher: "6bd32747-7619-46d4-b054-5aa58b166233-051c", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+
 </head>
 
 <?php 
