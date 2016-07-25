@@ -26,21 +26,23 @@ $post = get_post();
             <h2 class="featurette-heading">
             	<?php  echo $name;?>
             </h2>
-            <p class="lead"><?php the_content(); ?></p>
+            <p class="lead">
+            	<?php the_content(); ?>
+		        <?php 
+		            $gravityForm = null;
+		            
+		            if(isset($current_post_id) and $current_post_id!="" and $current_post_id>0) {
+		                $gravityForm = get_post_meta( $current_post_id, 'downloadable-gravity-form', true );
+		                if(empty($gravityForm)) $gravityForm = get_post_meta( $current_post_id, 'wpcf-downloadable-gravity-form', true );
+		            }
+
+		            if(!empty($gravityForm) and $gravityForm!="" and $gravityForm!=null) gravity_form( $gravityForm, false, false, true, "array('downloadable-slug' => '".$fileSlug."')", true ); 
+		            else
+		                gravity_form( 3, false, false, true, array('downloadable-slug' => $fileSlug), true ); 
+
+		            ?>  
+            </p>
         </div>
         <hr class="featurette-divider">
     </div>
-        <?php 
-            $gravityForm = null;
-            
-            if(isset($current_post_id) and $current_post_id!="" and $current_post_id>0) {
-                $gravityForm = get_post_meta( $current_post_id, 'downloadable-gravity-form', true );
-                if(empty($gravityForm)) $gravityForm = get_post_meta( $current_post_id, 'wpcf-downloadable-gravity-form', true );
-            }
-
-            if(!empty($gravityForm) and $gravityForm!="" and $gravityForm!=null) gravity_form( $gravityForm, false, false, true, "array('downloadable-slug' => '".$fileSlug."')", true ); 
-            else
-                gravity_form( 3, false, false, true, array('downloadable-slug' => $fileSlug), true ); 
-
-            ?>  
 <?php get_footer(); ?>
