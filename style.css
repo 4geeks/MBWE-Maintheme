@@ -305,7 +305,7 @@ a img.aligncenter {
 }
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{font-weight: 900;}
 h4, h5, h6{font-size: 24px;}
-.featurette-divider{margin: 20px 0px;}
+.featurette-divider{margin: 40px 0px;}
 .stButton .stFb, .stButton .stTwbutton, .stButton .stMainServices,.stButton .stButton_gradient{height: auto !important; line-height: auto !important; }
 /*------------------------------------*\
     PRINT
@@ -361,7 +361,7 @@ h4, h5, h6{font-size: 24px;}
 	}
 }
 
-#downloadable-content{margin-bottom: 50px;}
+#downloadable-content{margin: 100px; }
 
 /*CUSTOM FONT*/
 

@@ -45,12 +45,12 @@ $post = get_post();
 			            ?>  
 	        </div>
         	<div class="col-md-6">
-            	<img class="img-circle img-responsive pull-right" src="<?php echo $mainImage; ?>">
+            	<img class="img-responsive pull-right" src="<?php echo $mainImage; ?>">
             </div>
         </div>
         <hr class="featurette-divider">
         <div class="row text-center">
-        	<h2>FREQUENTLY ASKED QUESTIONS</h2>
+        	<h2>WHAT YOU WILL FIND INSIDE OF THIS DOCUMENT</h2>
     	</div>
         <div class="row text-center">
         	<div class="col-md-12">
