@@ -59,7 +59,13 @@ $post = get_post();
 	            	<?php echo $post_content; ?>
 	        	</div>
 	        </div>
+        	<hr class="featurette-divider">
         <?php } ?>
+        <div class="row text-center">
+        	<div class="col-md-12">
+        		<h2>SHARE THIS ON YOUR SOCIAL MEDIA</h2>
+    		</div>
+    	</div>
         <div class="row text-center">
         	<div class="col-md-12">
 				<span class='st_facebook_hcount' displayText='Facebook'></span>
