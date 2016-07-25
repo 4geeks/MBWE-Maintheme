@@ -39,7 +39,7 @@ $post = get_post();
 
 		            if(!empty($gravityForm) and $gravityForm!="" and $gravityForm!=null) gravity_form( $gravityForm, false, false, true, "array('downloadable-slug' => '".$fileSlug."')", true ); 
 		            else
-		                gravity_form( 3, false, false, true, array('downloadable-slug' => $fileSlug), true ); 
+		                gravity_form( 9, false, false, true, array('downloadable-slug' => $fileSlug), true ); 
 
 		            ?>  
             </p>
