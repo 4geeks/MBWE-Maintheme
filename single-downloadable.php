@@ -20,29 +20,32 @@ $post = get_post();
     <?php get_template_part( 'template-parts/menu', 'top' ); ?>
     <!-- ========== MENU TOP ========== -->
 	<div class="container">
-        <hr class="featurette-divider">
         <!-- First Featurette -->
-        <div class="featurette" id="about">
-            <img class="featurette-image img-circle img-responsive pull-right" src="<?php echo $mainImage; ?>">
-            <h2 class="featurette-heading">
-            	<?php  echo $name;?>
-            </h2>
-            <p class="lead">
-            	<?php the_content(); ?>
-		        <?php 
-		            $gravityForm = null;
-		            
-		            if(isset($current_post_id) and $current_post_id!="" and $current_post_id>0) {
-		                $gravityForm = get_post_meta( $current_post_id, 'downloadable-gravity-form', true );
-		                if(empty($gravityForm)) $gravityForm = get_post_meta( $current_post_id, 'wpcf-downloadable-gravity-form', true );
-		            }
+        <div class="row">
+            <div class="col-md-6">
+	            <h2 class="featurette-heading">
+	            	<?php  echo $name;?>
+	            </h2>
+	            <p class="lead">
+	            	<?php the_content(); ?>
+			        <?php 
+			            $gravityForm = null;
+			            
+			            if(isset($current_post_id) and $current_post_id!="" and $current_post_id>0) {
+			                $gravityForm = get_post_meta( $current_post_id, 'downloadable-gravity-form', true );
+			                if(empty($gravityForm)) $gravityForm = get_post_meta( $current_post_id, 'wpcf-downloadable-gravity-form', true );
+			            }
 
-		            if(!empty($gravityForm) and $gravityForm!="" and $gravityForm!=null) gravity_form( $gravityForm, false, false, true, "array('downloadable-slug' => '".$fileSlug."')", true ); 
-		            else
-		                gravity_form( 9, false, false, true, array('downloadable-slug' => $fileSlug), true ); 
+			            if(!empty($gravityForm) and $gravityForm!="" and $gravityForm!=null) gravity_form( $gravityForm, false, false, true, "array('downloadable-slug' => '".$fileSlug."')", true ); 
+			            else
+			                gravity_form( 9, false, false, true, array('downloadable-slug' => $fileSlug), true ); 
 
-		            ?>  
-            </p>
+			            ?>  
+	            </p>
+	        </div>
+        	<div class="col-md-6">
+            	<img class="img-circle img-responsive pull-right" src="<?php echo $mainImage; ?>">
+            </div>
         </div>
         <hr class="featurette-divider">
     </div>
