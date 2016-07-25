@@ -11,6 +11,7 @@ $primary_class = 'full-width-page no-sidebar';
 $name = types_render_field("downloadable-title");
 $fileSlug = types_render_field("downloadable-slug");
 $mainImage = types_render_field("downloadable-image",array("url" => "true"));
+$mainFile = types_render_field("downloadable-file",array("url" => "true"));
 
 $post = get_post();
 
