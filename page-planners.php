@@ -15,6 +15,17 @@ $testimonies = new WP_Query( $args );
 
 $content = get_page($post->ID)->post_content;
 
+function getYoutubeID($url = '')
+{
+    $video_id = null;
+
+    if (preg_match('%(?:youtube(?:-nocookie)?\.com/(?:[^/]+/.+/|(?:v|e(?:mbed)?)/|.*[?&]v=)|youtu\.be/)([^"&?/ ]{11})%i', $url, $match)) {
+        $video_id = $match[1];
+    }
+
+    return $video_id;
+}
+
 ?>
 	<!-- ========== MENU TOP ========== -->
     <?php get_template_part( 'template-parts/menu', 'top' ); ?>
@@ -34,12 +45,7 @@ $content = get_page($post->ID)->post_content;
                     $plannerExperience = get_post_meta( $planner->ID, 'wpcf-planner-experience', false)[0];
                     
                     $plannerVideo = get_post_meta( $planner->ID, 'wpcf-planner-video', false)[0];
-                    if($plannerVideo and $plannerVideo!='')
-                    {
-                        $videoArray = array();
-                        parse_str( parse_url( $url, PHP_URL_QUERY ), $videoArray );
-                        $plannerVideo = $videoArray['v'];  
-                    }
+                    if($plannerVideo and $plannerVideo!='') $plannerVideo = getYoutubeID($plannerVideo);  
                     else $plannerVideo = null;
                 ?>                        
                     <div class="col-sm-6 col-md-4 planner-element">
