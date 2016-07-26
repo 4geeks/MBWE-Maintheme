@@ -36,14 +36,18 @@ $content = get_page($post->ID)->post_content;
                     $plannerVideo = get_post_meta( $planner->ID, 'wpcf-planner-video', false)[0];
                     if($plannerVideo and $plannerVideo!='')
                     {
-                        $videoArray = parse_str( parse_url( $url, PHP_URL_QUERY ), $my_array_of_vars );
+                        $videoArray = array();
+                        parse_str( parse_url( $url, PHP_URL_QUERY ), $videoArray );
                         $plannerVideo = $videoArray['v'];  
                     }
                     else $plannerVideo = null;
                 ?>                        
                     <div class="col-sm-6 col-md-4 planner-element">
                         <div class="div-planner-image" style="background-image: url('<?php echo get_post_meta( $planner->ID, 'wpcf-planner-photo', false)[0]; ?>')">                                
-                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/<?php echo $plannerVideo; ?>?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                            <?php if($plannerVideo){ 
+                                if(function_exists('lyte_preparse')) { echo lyte_preparse($plannerVideo); }
+                                else echo '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/<?php echo $plannerVideo; ?>?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>';
+                            } ?>
                         </div>
                         <h3><?php echo get_post_meta( $planner->ID, 'wpcf-planner-full-name', false)[0]; ?></h3>
                         <small><?php echo $serviceArea; ?></small>
