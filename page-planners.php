@@ -38,6 +38,9 @@ $content = get_page($post->ID)->post_content;
                 ?>                        
                     <div class="col-sm-6 col-md-4 planner-element">
                         <div class="div-planner-image" style="background-image: url('<?php echo get_post_meta( $planner->ID, 'wpcf-planner-photo', false)[0]; ?>')">                                
+                            <?php if($plannerVideo){ ?>
+                                <iframe width="100%" height="100%" src="<?php echo $plannerVideo; ?>?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                            <?php }?>
                         </div>
                         <h3><?php echo get_post_meta( $planner->ID, 'wpcf-planner-full-name', false)[0]; ?></h3>
                         <small><?php echo $serviceArea; ?></small>
@@ -48,11 +51,7 @@ $content = get_page($post->ID)->post_content;
                         <?php if($certified) { ?>                               
                         <div class="div-planner-certified row">
                             <div class="col-xs-4 col-sm-2"> 
-                                <?php if($plannerVideo){ ?>
-                                <iframe width="100%" height="100%" src="<?php echo $plannerVideo; ?>?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-                                <?php } else { ?>
                                 <img class="certification-badge" src="<?php bloginfo('template_url'); ?>/img/aw4.png" alt="Miami Wedding Planner Certificate Badge" class="pull-left logo" />
-                                <?php }?>
                             </div>
                             <div class="col-xs-8 col-sm-10"> 
                                 <p><?php echo $certified; ?></p>
