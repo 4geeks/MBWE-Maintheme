@@ -22,7 +22,8 @@ $content = get_page($post->ID)->post_content;
 	<div id="primary" class="full-width-page no-sidebar">
 		<main id="main">
             <?php echo $content; ?>
-            <div id="list-content" class="row">                    
+            <div id="list-content" class="container">
+                <div class="row">               
                 <?php foreach ($planners->posts as $planner) {
                     $serviceArea = get_post_meta( $planner->ID, 'wpcf-planner-service-area', false)[0];
                     if(!$serviceArea or $serviceArea=='') $serviceArea = "Miami / Fort Lauderdale area.";
@@ -42,6 +43,7 @@ $content = get_page($post->ID)->post_content;
                         </div>
                     </div>
                <?php }?>
+                </div>
             </div>         
             <div class="blue-background"><h2>What our clients say about our planners</h2></div>   
             <!-- ========== MENU TOP ========== -->
