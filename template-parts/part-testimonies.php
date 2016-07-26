@@ -16,18 +16,16 @@ foreach ($testimonies->posts as $testimonie) {
 }?>
 
 <div id="testimonies" class="container">
-    <div class="container">
+    <div class="row">
         <?php foreach ($customTestimonies as $ct) {?>
             <div class="col-md-6 item-testimonie">
                 <?php if (isset($ct['wpcf-testimonies-photo'][0])){ ?>
-                    <div class="col-md-12">
-                        <div class="img-avatar" style="background-image:url('<?php echo $ct['wpcf-testimonies-photo'][0] ?>');"></div>
+                    <div class="img-avatar" style="background-image:url('<?php echo $ct['wpcf-testimonies-photo'][0] ?>');"></div>
+                    <div class="p-testimonie">
+                        <p><?php echo $ct['wpcf-testimonies-testimonie'][0]; ?></p>
+                        <p><?php echo $ct['wpcf-testimonies-author'][0]?></p>
                     </div>
                <?php } ?>
-                <div class="col-md-12 p-testimonie">
-                    <p><?php echo $ct['wpcf-testimonies-testimonie'][0]; ?></p>
-                    <p><?php echo $ct['wpcf-testimonies-author'][0]?></p>
-                </div>
             </div>                    
         <?php } ?>                    
     </div>
