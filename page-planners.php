@@ -28,19 +28,25 @@ $content = get_page($post->ID)->post_content;
                     if(!$serviceArea or $serviceArea=='') $serviceArea = "Miami / Fort Lauderdale area.";
                 ?>                        
                     <div class="col-md-4 planner-element">
-                        <div class="col-md-12 inner-planner-element">
-                            <div class="col-md-12 div-planner-image" style="background-image: url('<?php echo get_post_meta( $planner->ID, 'wpcf-planner-photo', false)[0]; ?>')">                                
-                            </div>
-                            <div class="col-md-12">
-                                <h3><?php echo get_post_meta( $planner->ID, 'wpcf-planner-full-name', false)[0]; ?></h3>
-                                <small><?php echo $serviceArea; ?></small>
-                                <div class="col-md-12 div-planner-experience">
-                                    <?php echo get_post_meta( $planner->ID, 'wpcf-planner-experience', false)[0]; ?>
-                                </div>                                
-                                <br></br>
-                                <div class="col-md-12 div-planner-certified">
-                                    <br />
-                                    <?php echo get_post_meta( $planner->ID, 'wpcf-planner-certified', false)[0]; ?>
+                        <div class="row">
+                            <div class="col-md-12 inner-planner-element">
+                                <div class="row">
+                                    <div class="col-md-12 div-planner-image" style="background-image: url('<?php echo get_post_meta( $planner->ID, 'wpcf-planner-photo', false)[0]; ?>')">                                
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h3><?php echo get_post_meta( $planner->ID, 'wpcf-planner-full-name', false)[0]; ?></h3>
+                                        <small><?php echo $serviceArea; ?></small>
+                                        <div class="div-planner-experience">
+                                            <?php echo get_post_meta( $planner->ID, 'wpcf-planner-experience', false)[0]; ?>
+                                        </div>                                
+                                        <br></br>
+                                        <div class="div-planner-certified">
+                                            <br />
+                                            <?php echo get_post_meta( $planner->ID, 'wpcf-planner-certified', false)[0]; ?>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
