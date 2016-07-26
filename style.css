@@ -427,10 +427,12 @@ h4, h5, h6{font-size: 24px;}
 }
 
 .p-testimonie{
-	font-family: content_font_light;
-	font-size: 17px;
-	text-align: left;
-	padding: 20px 75px 10px;
+    text-align: left;
+    padding: 20px 75px 10px;
+}
+.p-testimonie p{
+    font-family: content_font_light;
+    font-size: 17px;
 }
 .item-testimonie {
 	margin-top: 40px;
@@ -1155,10 +1157,13 @@ li.col1 {
 	}
 
 	.p-testimonie {
+        font-size: 1em;
+        padding: 15px 110px 10px;
+        text-align: left;
+    }
+    .p-testimonie p{
 		font-size: 1em;
-		padding: 15px 110px 10px;
-		text-align: left;
-	}
+    }
 
 	#why-fetes-events {
 		height: 680px;
@@ -1200,6 +1205,9 @@ li.col1 {
 		font-size: 0.8em;
 		line-height: 22px;
 	}
+    .p-testimonie p{
+        font-size: 0.8em;
+    }
 
     .with-font-title {
         font-size: 65px;
