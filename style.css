@@ -1202,6 +1202,11 @@ li.col1 {
 		line-height: 22px;
 	}
 
+    .with-font-title {
+        font-size: 65px;
+        line-height: 0.9em; 
+    }
+
 	#why-fetes-events {
 		height: 510px;
 	}
