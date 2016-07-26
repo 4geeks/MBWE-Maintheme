@@ -44,7 +44,7 @@ $content = get_page($post->ID)->post_content;
                                 <img class="certification-badge" src="<?php bloginfo('template_url'); ?>/img/aw4.png" alt="Miami Wedding Planner Certificate Badge" class="pull-left logo" />
                             </div>
                             <div class="col-sm-10"> 
-                                <?php echo $certified; ?>
+                                <p><?php echo $certified; ?></p>
                             </div>
                         </div>
                         <?php }?>

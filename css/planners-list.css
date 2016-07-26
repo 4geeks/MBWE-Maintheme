@@ -43,6 +43,12 @@
 }
 
 .div-planner-certified{
+    background: grey;
+    color: white;
+    padding: 5px 5px;
+    margin-top: 15px;
+}
+.div-planner-certified p{
 	font-size: 17px;
 }
 .planner-element h3{
