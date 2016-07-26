@@ -31,7 +31,7 @@ $content = get_page($post->ID)->post_content;
                     if(!$certified or $certified=='') $certified = null;
 
                     $plannerExperience = null;
-                    $plannerExperience = get_post_meta( $planner->ID, 'wpcf-planner-experience', false)[0]
+                    $plannerExperience = get_post_meta( $planner->ID, 'wpcf-planner-experience', false)[0];
                     
                     $plannerVideo = get_post_meta( $planner->ID, 'wpcf-planner-video', false)[0];
                     if(!$plannerVideo or $plannerVideo=='') $plannerVideo = null;
