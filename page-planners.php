@@ -40,10 +40,10 @@ $content = get_page($post->ID)->post_content;
                         </div> 
                         <?php if($certified) { ?>                               
                         <div class="div-planner-certified row">
-                            <div class="col-sm-4"> 
+                            <div class="col-sm-2"> 
                                 <img class="certification-badge" src="<?php bloginfo('template_url'); ?>/img/aw4.png" alt="Miami Wedding Planner Certificate Badge" class="pull-left logo" />
                             </div>
-                            <div class="col-sm-8"> 
+                            <div class="col-sm-10"> 
                                 <?php echo $certified; ?>
                             </div>
                         </div>
