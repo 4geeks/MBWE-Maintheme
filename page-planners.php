@@ -26,6 +26,9 @@ $content = get_page($post->ID)->post_content;
                 <?php foreach ($planners->posts as $planner) {
                     $serviceArea = get_post_meta( $planner->ID, 'wpcf-planner-service-area', false)[0];
                     if(!$serviceArea or $serviceArea=='') $serviceArea = "Miami / Fort Lauderdale area.";
+
+                    $certified = get_post_meta( $planner->ID, 'wpcf-planner-certified', false)[0];
+                    if(!$certified or $certified=='') $certified = null;
                 ?>                        
                     <div class="col-sm-6 col-md-4 planner-element">
                         <div class="div-planner-image" style="background-image: url('<?php echo get_post_meta( $planner->ID, 'wpcf-planner-photo', false)[0]; ?>')">                                
@@ -34,12 +37,13 @@ $content = get_page($post->ID)->post_content;
                         <small><?php echo $serviceArea; ?></small>
                         <div class="div-planner-experience">
                             <?php echo get_post_meta( $planner->ID, 'wpcf-planner-experience', false)[0]; ?>
-                        </div>                                
-                        <br></br>
+                        </div> 
+                        <?php if($certified) { ?>                               
                         <div class="div-planner-certified">
-                            <br />
-                            <?php echo get_post_meta( $planner->ID, 'wpcf-planner-certified', false)[0]; ?>
+                            <img src="<?php bloginfo('template_url'); ?>/img/aw4.png" alt="Miami Wedding Planner Certificate Badge" class="pull-left logo" />
+                            <?php echo $certified; ?>
                         </div>
+                        <?php }?>
                     </div>
                <?php }?>
             </div>         
