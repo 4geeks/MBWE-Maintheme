@@ -40,6 +40,7 @@
 	height: 100%;
 	margin: 1px solid black;
 	color:#808080;
+	padding-bottom: 30px;
 }
 .planner-element h3{
 	font-size: 30px;
@@ -127,20 +128,22 @@
 /* ONLY FOR TABLETS IN LANDSCAPE */
 @media screen and (orientation: landscape) and (min-width: 768px) and (max-width: 1024px) { 
 	
-	
+	#content-header{
+		height: 400px;
+	}
 }
 
 
 /* UNTIL SCREEN RESOLUTION 1366PX */
 @media screen and (min-width: 1025px) {
 	#content-header{
-		height: 400px;
+		height: 600px;
 	}
 }
 
 /* STARTING FROM SCREEN RESOLUTION 1366PX */
 @media screen and (min-width: 1920px){
 	#content-header{
-		height: 600px;
+		height: 700px;
 	}
 }
