@@ -27,7 +27,7 @@ $content = get_page($post->ID)->post_content;
                     $serviceArea = get_post_meta( $planner->ID, 'wpcf-planner-service-area', false)[0];
                     if(!$serviceArea or $serviceArea=='') $serviceArea = "Miami / Fort Lauderdale area.";
                 ?>                        
-                    <div class="col-md-4 planner-element">
+                    <div class="col-sm-6 col-md-4 planner-element">
                         <div class="div-planner-image" style="background-image: url('<?php echo get_post_meta( $planner->ID, 'wpcf-planner-photo', false)[0]; ?>')">                                
                         </div>
                         <h3><?php echo get_post_meta( $planner->ID, 'wpcf-planner-full-name', false)[0]; ?></h3>
