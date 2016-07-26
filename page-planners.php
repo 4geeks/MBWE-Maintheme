@@ -39,9 +39,13 @@ $content = get_page($post->ID)->post_content;
                             <?php echo get_post_meta( $planner->ID, 'wpcf-planner-experience', false)[0]; ?>
                         </div> 
                         <?php if($certified) { ?>                               
-                        <div class="div-planner-certified">
-                            <?php echo $certified; ?>
-                            <img class="certification-badge" src="<?php bloginfo('template_url'); ?>/img/aw4.png" alt="Miami Wedding Planner Certificate Badge" class="pull-left logo" />
+                        <div class="div-planner-certified row">
+                            <div class="col-sm-4"> 
+                                <img class="certification-badge" src="<?php bloginfo('template_url'); ?>/img/aw4.png" alt="Miami Wedding Planner Certificate Badge" class="pull-left logo" />
+                            </div>
+                            <div class="col-sm-8"> 
+                                <?php echo $certified; ?>
+                            </div>
                         </div>
                         <?php }?>
                     </div>
