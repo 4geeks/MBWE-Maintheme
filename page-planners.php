@@ -29,6 +29,9 @@ $content = get_page($post->ID)->post_content;
 
                     $certified = get_post_meta( $planner->ID, 'wpcf-planner-certified', false)[0];
                     if(!$certified or $certified=='') $certified = null;
+
+                    $plannerExperience = null;
+                    $plannerExperience = get_post_meta( $planner->ID, 'wpcf-planner-experience', false)[0]
                 ?>                        
                     <div class="col-sm-6 col-md-4 planner-element">
                         <div class="div-planner-image" style="background-image: url('<?php echo get_post_meta( $planner->ID, 'wpcf-planner-photo', false)[0]; ?>')">                                
@@ -36,14 +39,15 @@ $content = get_page($post->ID)->post_content;
                         <h3><?php echo get_post_meta( $planner->ID, 'wpcf-planner-full-name', false)[0]; ?></h3>
                         <small><?php echo $serviceArea; ?></small>
                         <div class="div-planner-experience">
-                            <?php echo get_post_meta( $planner->ID, 'wpcf-planner-experience', false)[0]; ?>
+                            <?php echo substr($plannerExperience,0,450); ?>
+                            <?php if($plannerExperience and strlen($plannerExperience)>450) echo "..."; ?>
                         </div> 
                         <?php if($certified) { ?>                               
                         <div class="div-planner-certified row">
-                            <div class="col-sm-2"> 
+                            <div class="col-xs-2"> 
                                 <img class="certification-badge" src="<?php bloginfo('template_url'); ?>/img/aw4.png" alt="Miami Wedding Planner Certificate Badge" class="pull-left logo" />
                             </div>
-                            <div class="col-sm-10"> 
+                            <div class="col-xs-10"> 
                                 <p><?php echo $certified; ?></p>
                             </div>
                         </div>
