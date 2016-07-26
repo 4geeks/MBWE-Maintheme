@@ -41,6 +41,10 @@
 	color:#808080;
 	padding-bottom: 30px;
 }
+
+.certification-badge{
+	max-height: 100px;
+}
 .planner-element h3{
 	font-size: 30px;
     font-weight: bold;
