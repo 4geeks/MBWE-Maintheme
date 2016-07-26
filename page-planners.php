@@ -52,7 +52,7 @@ function getYoutubeID($url = '')
                         <div class="div-planner-image" style="background-image: url('<?php echo get_post_meta( $planner->ID, 'wpcf-planner-photo', false)[0]; ?>')">                                
                             <?php if($plannerVideo){ 
                                 if(function_exists('lyte_preparse')) { echo lyte_preparse($plannerVideo); }
-                                else echo '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/'.$plannerVideo.'?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>';
+                                else echo '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/'.$plannerVideo.'?rel=0&amp;&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>';
                             } ?>
                         </div>
                         <h3><?php echo get_post_meta( $planner->ID, 'wpcf-planner-full-name', false)[0]; ?></h3>
