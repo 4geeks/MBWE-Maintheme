@@ -24,9 +24,9 @@ foreach ($testimonies->posts as $testimonie) {
                         <div class="img-avatar" style="background-image:url('<?php echo $ct['wpcf-testimonies-photo'][0] ?>');"></div>
                     </div>
                <?php } ?>
-                <div class="col-md-12">
-                    <p class="p-testimonie"><?php echo $ct['wpcf-testimonies-testimonie'][0]; ?></p>
-                    <p class="p-testimonie"><?php echo $ct['wpcf-testimonies-author'][0]?></p>
+                <div class="col-md-12 p-testimonie">
+                    <p><?php echo $ct['wpcf-testimonies-testimonie'][0]; ?></p>
+                    <p><?php echo $ct['wpcf-testimonies-author'][0]?></p>
                 </div>
             </div>                    
         <?php } ?>                    

@@ -430,8 +430,7 @@ h4, h5, h6{font-size: 24px;}
 	font-family: content_font_light;
 	font-size: 17px;
 	text-align: left;
-	margin: 20px 75px 10px;
-	line-height: 2;
+	padding: 20px 75px 10px;
 }
 .item-testimonie {
 	margin-top: 40px;
@@ -1037,7 +1036,7 @@ li.col1 {
 	}
 
 	.p-testimonie {
-		margin: 15px 0px 10px;
+		padding: 15px 0px 10px;
 		text-align: center;
 	}
 
@@ -1157,7 +1156,7 @@ li.col1 {
 
 	.p-testimonie {
 		font-size: 1em;
-		margin: 15px 110px 10px;
+		padding: 15px 110px 10px;
 		text-align: left;
 	}
 
