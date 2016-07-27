@@ -3,7 +3,8 @@
     background-position-x: 50%;
     background-position-y: 60%;
     background-attachment: fixed;
-    height: 400px;
+    height: 600px;
+    margin-top: -20px;
 }
 .div-news {
     height: 400px;
