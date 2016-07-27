@@ -44,7 +44,7 @@ $weddings = (isset(get_post_meta( $_GET['post_id'], 'venue-weddings', false)[0])
 	<div id="div-blur-background">
         <img src="<?php echo $mainImage; ?>" id="img-fondo" data-adaptive-background='1'>
     </div>
-    <div id="div-top-menu" class="row">
+    <div id="div-top-menu" class="row" style="background: #474747;">
         <div class="col-md-1"></div>
         <div class="col-md-7">
             <div class="top-venue-menu not-for-phone">
