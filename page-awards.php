@@ -11,6 +11,10 @@ $args = array('post_type' => 'award','posts_per_page'=>-1);
 $awards = new WP_Query( $args );
 
 ?>
+
+<!-- ========== MENU TOP ========== -->
+<?php get_template_part( 'template-parts/menu', 'top' ); ?>
+    
 <div id="div-top-menu-background-awards"></div>
 <?php echo $content; ?>
 
