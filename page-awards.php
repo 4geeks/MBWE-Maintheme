@@ -15,7 +15,6 @@ $awards = new WP_Query( $args );
 <!-- ========== MENU TOP ========== -->
 <?php get_template_part( 'template-parts/menu', 'top' ); ?>
     
-<div id="div-top-menu-background-awards"></div>
 <?php echo $content; ?>
 
 <div id="div-carousel" class="row">
