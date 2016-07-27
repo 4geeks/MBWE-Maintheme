@@ -176,7 +176,7 @@ function html5blank_styles()
         wp_enqueue_style('venueslistcss');        
     }
 
-    if (is_page('wedding-planners')){
+    if (is_page('wedding-planners') || is_page('miami-wedding-planners')){
         wp_register_style('plannerslistcss', get_template_directory_uri() . '/css/planners-list.css', false, '1.1', 'all');
         wp_enqueue_style('plannerslistcss');        
     }
