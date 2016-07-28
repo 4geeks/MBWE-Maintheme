@@ -50,7 +50,7 @@
 			event.preventDefault();
 			//fire the href brother element
 			// console.log($('#animatedModal').html());
-			$(this).find("a").click();
+			$(this).children("a").click();
 		})
 
 		$('#aa-360-tour').on('click',function(){
