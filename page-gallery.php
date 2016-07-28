@@ -79,9 +79,9 @@ $weddings = (isset(get_post_meta( $_GET['post_id'], 'venue-weddings', false)[0])
 		<main id="main">
 			<div class="venuegallery">
                 <?php foreach( $imgs as $img ) { ?>
-                    <li data-thumb="<?php echo $img[0]; ?>" data-src="<?php echo $img[0]; ?>">
+                    <a href="<?php echo $img[0]; ?>">
                         <img src="<?php echo $img[0]; ?>" />
-                    </li>
+                    </a>
                 <?php } ?>
 			</div>
 			<div id="animatedModal">

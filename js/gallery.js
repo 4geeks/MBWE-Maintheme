@@ -27,20 +27,9 @@
 			}
  		});
 
-	    $('#venuegallery').lightGallery({
-	        gallery:true,
-	        item:1,
-	        loop:true,
-	        thumbItem:9,
-	        slideMargin:0,
-	        enableDrag: true,
-	        currentPagerPosition:'left',
-	        onSliderLoad: function(el) {
-	            el.lightGallery({
-	                selector: '#venuegallery .lslide'
-	            });
-	        }   
-	    }); 
+		$('#venuegallery').lightGallery({
+		    thumbnail:true
+		}); 
 
     });
 })(jQuery, this);
