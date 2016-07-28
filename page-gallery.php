@@ -88,8 +88,8 @@ $weddings = (isset(get_post_meta( $_GET['post_id'], 'venue-weddings', false)[0])
 
 					foreach( $imgs as $img ) {
 						echo "<div class='div-image' data-imgid='".$img['id']."' data-img=".$img['thumbnail'][0]." data-width=".$img['thumbnail'][1]." data-height=".$img['thumbnail'][2].">";
-                            echo "<a id='img".$img['id']."' class='detail-image' href='".$img['default'][0]."'><img class='img-to-slideshow' src='".$img['thumbnail'][0]."' /></a>";
                         echo "</div>";
+                            echo "<a id='img".$img['id']."' class='detail-image' href='".$img['default'][0]."'><img class='img-to-slideshow' src='".$img['thumbnail'][0]."' /></a>";
 					}
 				?>
 			</div>
