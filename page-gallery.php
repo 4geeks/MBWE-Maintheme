@@ -32,8 +32,8 @@ $ids = explode( ",", $gallery['ids'] );
 foreach( $ids as $id ) {
 
     $newImg = array(
-        'thumbnail' => wp_get_attachment_image_src( $id ,'thumbnail'), 
-        'medium' => wp_get_attachment_image_src( $id ,'medium'), 
+        'Medium' => wp_get_attachment_image_src( $id ,'Medium'), 
+        'default' => wp_get_attachment_image_src( $id), 
         );
     $imgs[] = $newImg;
 } 
@@ -82,12 +82,18 @@ $weddings = (isset(get_post_meta( $_GET['post_id'], 'venue-weddings', false)[0])
     </div>
 	<div id="primary" class="full-width-page no-sidebar">
 		<main id="main">
-			<div id="venuegallery">
-                <?php foreach( $imgs as $img ) { ?>
-                    <a href="<?php echo $img['medium'][0]; ?>">
-                        <img src="<?php echo $img['thumbnail'][0]; ?>" />
-                    </a>
-                <?php } ?>
+			<div class="grid">
+				<?php 
+
+					foreach( $imgs as $img ) {
+						echo "<div class='div-image' data-img=".$img['Medium'][0]." data-width=".$img['Medium'][1]." data-height=".$img['Medium'][2].">
+								
+							</div>";
+						echo "<a class='detail-image' data-img=".$img['default'][0]." href='#imgAnimatedModal'> 
+								
+							</a>";
+					}
+				?>
 			</div>
 			<div id="animatedModal">
                 <div class="col-md-12 modal-menu">
@@ -117,30 +123,5 @@ $weddings = (isset(get_post_meta( $_GET['post_id'], 'venue-weddings', false)[0])
                 </div>
             </div>
 
-			<div id="imgAnimatedModal">
-                <div class="col-md-12 modal-menu">
-                    <div class="top-venue-menu">
-                        <ul class="ul-menu">
-                            <?php echo "<li><a href='".get_home_url()."/".$postType."/".$post->post_name."'>GENERAL INFO</a>"?>
-                            <?php if ($blueprint != null)
-                                echo "<li><a href='".get_home_url()."/".$postType."/".$post->post_name."#div-venue-blueprint'>BLUEPRINT</a>"                        
-                            ?>
-                            <?php if ($tour != null){ ?>
-	   		                      <li><a id="aa-360-tour" href="#">360° Tour</a></li>
-                            <?php } ?>
-			                <?php echo "<li><a href='".get_home_url()."/gallery/?post_id=".get_post()->ID."'>PHOTO GALLERY</a></li>";?>
-			                <?php echo "<li><a href='".get_home_url()."/".$postType."/".$post->post_name."#div-venue-location'>LOCATION</a>"?>
-                        </ul>
-                    </div> 
-                    <div class="close-imgAnimatedModal btn-close"> 
-                        <span class="glyphicon glyphicon-remove" style="color:white"></span>
-                    </div>                    
-                </div>
-                <div class="modal-content">
-                   <div id='imageGallery'>
-
-                   </div>
-                </div>
-            </div>
 		</main>
 	</div>
