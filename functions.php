@@ -120,14 +120,13 @@ function html5blank_conditional_scripts()
         wp_register_script('masonryjs', 'http://masonry.desandro.com/masonry.pkgd.js', array(), '2.7.1'); // Modernizr
         wp_enqueue_script('masonryjs'); // Enqueue it!        
         wp_register_script('galleryjs', get_template_directory_uri() . '/js/gallery.js', array('jquery'), '1.0'); // Modernizr
-        wp_enqueue_script('galleryjs'); // Enqueue it!     
-
+        wp_enqueue_script('galleryjs'); // Enqueue it!           
+        wp_register_script('lightsliderjs', get_template_directory_uri() . '/js/lightslider.min.js', array('jquery'), '1.0'); // Modernizr
+        wp_enqueue_script('lightsliderjs'); // Enqueue it!        
 
         wp_register_script('lightgalleryjs', get_template_directory_uri() . '/js/lightgallery.min.js', array('jquery'), '1.0'); // Modernizr
         wp_enqueue_script('lightgalleryjs'); // Enqueue it!        
 
-        wp_register_script('lg-thumbnailjs', get_template_directory_uri() . '/js/lg-thumbnail.min.js', array('lightgalleryjs'), '1.0'); // Modernizr
-        wp_enqueue_script('lg-thumbnailjs'); // Enqueue it!        
     }
 
     if (is_page("about-us")){
@@ -174,7 +173,10 @@ function html5blank_styles()
 
     if (is_page('gallery') || is_page('gallery-event')){
         wp_register_style('masonrycss', get_template_directory_uri() . '/css/masonrygallery.css', false, '1.1', 'all');
-        wp_enqueue_style('masonrycss');   
+        wp_enqueue_style('masonrycss'); 
+          
+        wp_register_style('lightslidercss', get_template_directory_uri() . '/css/lightslider.min.css', false, '1.1', 'all');
+        wp_enqueue_style('lightslidercss'); 
 
         wp_register_style('lightgallerycss', get_template_directory_uri() . '/css/lightgallery.min.css', false, '1.1', 'all');
         wp_enqueue_style('lightgallerycss');        

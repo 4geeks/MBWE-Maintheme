@@ -140,9 +140,9 @@ $weddings = (isset(get_post_meta( $_GET['post_id'], 'venue-weddings', false)[0])
                 <div class="modal-content">
                    <div id='imageGallery'>
                         <?php foreach( $imgs as $img ) { ?>
-                            <a href="<?php echo $img[0]; ?>">
+                            <li data-thumb="<?php echo $img[0]; ?>" data-src="<?php echo $img[0]; ?>">
                                 <img src="<?php echo $img[0]; ?>" />
-                            </a>
+                            </li>
                         <?php } ?>
                    </div>
                 </div>
