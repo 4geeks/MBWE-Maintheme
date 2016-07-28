@@ -33,7 +33,7 @@ foreach( $ids as $id ) {
 
     $newImg = array(
         'id' => $id, 
-        'thumbnail' => wp_get_attachment_image_src( $id ,'medium'), 
+        'thumbnail' => wp_get_attachment_image_src( $id ,'large'), 
         'default' => wp_get_attachment_image_src( $id, 'full'), 
         );
     $imgs[] = $newImg;
