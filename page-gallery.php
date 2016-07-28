@@ -78,17 +78,11 @@ $weddings = (isset(get_post_meta( $_GET['post_id'], 'venue-weddings', false)[0])
 	<div id="primary" class="full-width-page no-sidebar">
 		<main id="main">
 			<div class="grid">
-				<?php 
-
-					foreach( $imgs as $img ) {
-						echo "<div class='div-image' data-img=".$img[0]." data-width=".$img[1]." data-height=".$img[2].">
-								
-							</div>";
-						echo "<a class='detail-image' data-img=".$img[0]." href='#imgAnimatedModal'> 
-								
-							</a>";
-					}
-				?>
+                <?php foreach( $imgs as $img ) { ?>
+                    <li data-thumb="<?php echo $img[0]; ?>" data-src="<?php echo $img[0]; ?>">
+                        <img src="<?php echo $img[0]; ?>" />
+                    </li>
+                <?php } ?>
 			</div>
 			<div id="animatedModal">
                 <div class="col-md-12 modal-menu">
@@ -139,11 +133,7 @@ $weddings = (isset(get_post_meta( $_GET['post_id'], 'venue-weddings', false)[0])
                 </div>
                 <div class="modal-content">
                    <div id='imageGallery'>
-                        <?php foreach( $imgs as $img ) { ?>
-                            <li data-thumb="<?php echo $img[0]; ?>" data-src="<?php echo $img[0]; ?>">
-                                <img src="<?php echo $img[0]; ?>" />
-                            </li>
-                        <?php } ?>
+
                    </div>
                 </div>
             </div>
