@@ -30,7 +30,7 @@ $venues = new WP_Query( $args );
 $ids = explode( ",", $gallery['ids'] );
 
 foreach( $ids as $id ) {
-   $imgs[] = wp_get_attachment_image_src( $id ,'Medium');
+   $imgs[] = wp_get_attachment_image_src( $id ,'thumbnail');
 } 
 
 $name = get_post_meta( $_GET['post_id'], 'wpcf-venue-name', false)[0];
