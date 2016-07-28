@@ -46,12 +46,14 @@
 				  columnWidth: 320,
 				  isFitWidth: true
 				});
+		/*
 		$('.div-image').on('click',function(event){
 			event.preventDefault();
 			//fire the href brother element
 			// console.log($('#animatedModal').html());
 			$(this).next().click();
 		})
+		*/
 
 		$('#aa-360-tour').on('click',function(){
 			console.log(nuevoContenido);
@@ -81,7 +83,7 @@
 
 		$('#venuegallery').lightGallery({
 		    thumbnail:true,
-		    selector:'.img-to-slideshow'
+		    selector:'.div-image'
 		}); 
 
     });
