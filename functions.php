@@ -124,6 +124,9 @@ function html5blank_conditional_scripts()
         wp_register_script('lightsliderjs', get_template_directory_uri() . '/js/lightslider.min.js', array('jquery'), '1.0'); // Modernizr
         wp_enqueue_script('lightsliderjs'); // Enqueue it!        
 
+        wp_register_script('lightgalleryjs', get_template_directory_uri() . '/js/lightgallery.min.js', array('jquery'), '1.0'); // Modernizr
+        wp_enqueue_script('lightgalleryjs'); // Enqueue it!        
+
     }
 
     if (is_page("about-us")){
@@ -172,7 +175,10 @@ function html5blank_styles()
         wp_register_style('masonrycss', get_template_directory_uri() . '/css/masonrygallery.css', false, '1.1', 'all');
         wp_enqueue_style('masonrycss');   
         wp_register_style('lightslidercss', get_template_directory_uri() . '/css/lightslider.min.css', false, '1.1', 'all');
-        wp_enqueue_style('lightslidercss');        
+        wp_enqueue_style('lightslidercss'); 
+
+        wp_register_style('lightgallerycss', get_template_directory_uri() . '/css/lightgallery.min.css', false, '1.1', 'all');
+        wp_enqueue_style('lightgallerycss');        
     }
 
     if (is_page('wedding-venues-locations') || is_page('wedding-churches-in-miami')){

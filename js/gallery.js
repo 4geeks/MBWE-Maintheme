@@ -118,7 +118,7 @@
 	        loop:true,
 	        thumbItem:9,
 	        slideMargin:0,
-	        enableDrag: false,
+	        enableDrag: true,
 	        currentPagerPosition:'left',
 	        onSliderLoad: function(el) {
 	            el.lightGallery({
