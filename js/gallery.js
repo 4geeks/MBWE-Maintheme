@@ -49,7 +49,7 @@
 		$('.div-image').on('click',function(event){
 			event.preventDefault();
 			//fire the href brother element
-			// console.log($('#animatedModal').html());
+			 console.log($(this));
 			$(this).children(".detail-image").click();
 		})
 
