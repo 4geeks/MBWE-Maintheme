@@ -32,8 +32,8 @@ $ids = explode( ",", $gallery['ids'] );
 foreach( $ids as $id ) {
 
     $newImg = array(
-        'thumbnail' => wp_get_attachment_image_src( $id ,'thumbnail'), 
-        'default' => wp_get_attachment_image_src( $id, 'medium'), 
+        'thumbnail' => wp_get_attachment_image_src( $id ,'medium'), 
+        'default' => wp_get_attachment_image_src( $id, 'full'), 
         );
     $imgs[] = $newImg;
 } 
