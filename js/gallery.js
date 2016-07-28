@@ -27,7 +27,7 @@
 			}
  		});
 
-	    $('#grid').lightGallery({
+	    $('#venuegallery').lightGallery({
 	        gallery:true,
 	        item:1,
 	        loop:true,
@@ -37,7 +37,7 @@
 	        currentPagerPosition:'left',
 	        onSliderLoad: function(el) {
 	            el.lightGallery({
-	                selector: '#imageGallery .lslide'
+	                selector: '#venuegallery .lslide'
 	            });
 	        }   
 	    }); 

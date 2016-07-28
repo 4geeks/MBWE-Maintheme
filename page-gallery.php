@@ -77,7 +77,7 @@ $weddings = (isset(get_post_meta( $_GET['post_id'], 'venue-weddings', false)[0])
     </div>
 	<div id="primary" class="full-width-page no-sidebar">
 		<main id="main">
-			<div class="grid">
+			<div class="venuegallery">
                 <?php foreach( $imgs as $img ) { ?>
                     <li data-thumb="<?php echo $img[0]; ?>" data-src="<?php echo $img[0]; ?>">
                         <img src="<?php echo $img[0]; ?>" />
