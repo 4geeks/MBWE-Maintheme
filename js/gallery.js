@@ -47,10 +47,10 @@
 				  isFitWidth: true
 				});
 		$('.div-image').on('click',function(event){
-			var imgId = $( this ).data("imgid");
+			event.preventDefault();
 			//fire the href brother element
-			console.log(imgId);
-			$("#img"+imgId).click();
+			// console.log($('#animatedModal').html());
+			$(this).next().click();
 		})
 
 		$('#aa-360-tour').on('click',function(){
