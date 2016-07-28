@@ -78,40 +78,6 @@
 			}
  		});
 
-		$(".detail-image").animatedModal({
- 			animatedIn: 'bounceInUp',
- 			animatedOut: 'bounceOutDown',
- 			overflow:'hidden',
- 			modalTarget: 'imgAnimatedModal',
- 			beforeOpen: function(e){
- 				$(".top-venue-menu").removeClass("scrollingMenu");
-		        $(".top-venue-menu").addClass("noScrollingMenu");
- 				var img = $(e).data("img");
-
- 				$("#detail-modal-content").css( "width", "100%" );
- 				$("#detail-modal-content").css( "height", "100%" );
-
- 				$("#detail-modal-content").css( "position", "relative" );
-				$("#detail-modal-content").css( "background-position","center");
-				$("#detail-modal-content").css( "background-image", "url("+img+")");
-				$("#detail-modal-content").css( "background-size","contain");
-				$("#detail-modal-content").css( "background-repeat","no-repeat");
-				 
-
- 			},
-			afterOpen: function() {
-				$(".modal-menu").slideDown("slow");
-
-			},
-			beforeClose: function() {
-				$(".top-venue-menu").addClass("scrollingMenu");
-		        $(".top-venue-menu").removeClass("noScrollingMenu");
-			},
-			afterClose: function(){
-				$(".modal-menu").css('display','none');
-			}
- 		});
-
 		$('#venuegallery').lightGallery({
 		    thumbnail:true
 		}); 
