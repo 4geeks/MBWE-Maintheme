@@ -50,7 +50,7 @@
 			event.preventDefault();
 			//fire the href brother element
 			// console.log($('#animatedModal').html());
-			$(this).next().click()
+			$(this).find("a").click();
 		})
 
 		$('#aa-360-tour').on('click',function(){
@@ -80,7 +80,8 @@
  		});
 
 		$('#venuegallery').lightGallery({
-		    thumbnail:true
+		    thumbnail:true,
+		    selector:'.img-to-slideshow'
 		}); 
 
     });
