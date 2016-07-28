@@ -30,7 +30,12 @@ $venues = new WP_Query( $args );
 $ids = explode( ",", $gallery['ids'] );
 
 foreach( $ids as $id ) {
-   $imgs[] = wp_get_attachment_image_src( $id ,'thumbnail');
+
+    $newImg = array(
+        'thumbnail' => wp_get_attachment_image_src( $id ,'thumbnail'), 
+        'medium' => wp_get_attachment_image_src( $id ,'medium'), 
+        );
+    $imgs[] = $newImg;
 } 
 
 $name = get_post_meta( $_GET['post_id'], 'wpcf-venue-name', false)[0];
@@ -79,8 +84,8 @@ $weddings = (isset(get_post_meta( $_GET['post_id'], 'venue-weddings', false)[0])
 		<main id="main">
 			<div class="venuegallery">
                 <?php foreach( $imgs as $img ) { ?>
-                    <a href="<?php echo $img[0]; ?>">
-                        <img src="<?php echo $img[0]; ?>" />
+                    <a href="<?php echo $img['medium'][0]; ?>">
+                        <img src="<?php echo $img['thumbnail'][0]; ?>" />
                     </a>
                 <?php } ?>
 			</div>
