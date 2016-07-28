@@ -82,7 +82,7 @@ $weddings = (isset(get_post_meta( $_GET['post_id'], 'venue-weddings', false)[0])
     </div>
 	<div id="primary" class="full-width-page no-sidebar">
 		<main id="main">
-			<div class="grid">
+			<div class="grid" id="venuegallery">
 				<?php 
 
 					foreach( $imgs as $img ) {
