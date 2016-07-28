@@ -101,10 +101,6 @@
  			},
 			afterOpen: function() {
 				$(".modal-menu").slideDown("slow");
-
-			    $('#imageGallery').lightGallery({
-			    	thumbnail:true
-			    });  
 			},
 			beforeClose: function() {
 				$(".top-venue-menu").addClass("scrollingMenu");
@@ -114,6 +110,10 @@
 				$(".modal-menu").css('display','none');
 			}
  		});
+
+	    $('#imageGallery').lightGallery({
+	    	thumbnail:true
+	    });  
 
     });
 })(jQuery, this);
