@@ -32,7 +32,7 @@ $ids = explode( ",", $gallery['ids'] );
 foreach( $ids as $id ) {
 
     $newImg = array(
-        'Medium' => wp_get_attachment_image_src( $id ,'Medium'), 
+        'thumbnail' => wp_get_attachment_image_src( $id ,'thumbnail'), 
         'default' => wp_get_attachment_image_src( $id), 
         );
     $imgs[] = $newImg;
@@ -87,7 +87,7 @@ $weddings = (isset(get_post_meta( $_GET['post_id'], 'venue-weddings', false)[0])
 
 					foreach( $imgs as $img ) {
 						//echo "<div class='div-image' data-img=".$img['Medium'][0]." data-width=".$img['Medium'][1]." data-height=".$img['Medium'][2]."></div>";
-						echo "<a class='detail-image' href='".$img['Medium'][0]."'><img src='".$img['default'][0]."' /></a>";
+						echo "<a class='detail-image' href='".$img['default'][0]."'><img src='".$img['thumbnail'][0]."' /></a>";
 					}
 				?>
 			</div>
