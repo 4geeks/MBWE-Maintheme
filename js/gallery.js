@@ -101,21 +101,6 @@
  			},
 			afterOpen: function() {
 				$(".modal-menu").slideDown("slow");
-
-			    $('#imageGallery').lightGallery({
-			        gallery:true,
-			        item:1,
-			        loop:true,
-			        thumbItem:9,
-			        slideMargin:0,
-			        enableDrag: true,
-			        currentPagerPosition:'left',
-			        onSliderLoad: function(el) {
-			            el.lightGallery({
-			                selector: '#imageGallery .lslide'
-			            });
-			        }   
-			    });  
 			},
 			beforeClose: function() {
 				$(".top-venue-menu").addClass("scrollingMenu");
@@ -125,6 +110,21 @@
 				$(".modal-menu").css('display','none');
 			}
  		});
+
+	    $('#imageGallery').lightGallery({
+	        gallery:true,
+	        item:1,
+	        loop:true,
+	        thumbItem:9,
+	        slideMargin:0,
+	        enableDrag: true,
+	        currentPagerPosition:'left',
+	        onSliderLoad: function(el) {
+	            el.lightGallery({
+	                selector: '#imageGallery .lslide'
+	            });
+	        }   
+	    }); 
 
     });
 })(jQuery, this);
