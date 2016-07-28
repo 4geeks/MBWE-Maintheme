@@ -46,7 +46,8 @@
 				  columnWidth: 320,
 				  isFitWidth: true
 				});
-		$('.div-image').on('click',function(){
+		$('.div-image').on('click',function(event){
+			event.preventDefault();
 			//fire the href brother element
 			// console.log($('#animatedModal').html());
 			$(this).next().click()
