@@ -102,19 +102,8 @@
 			afterOpen: function() {
 				$(".modal-menu").slideDown("slow");
 
-			    $('#imageGallery').lightSlider({
-			        gallery:true,
-			        item:1,
-			        loop:true,
-			        thumbItem:9,
-			        slideMargin:0,
-			        enableDrag: true,
-			        currentPagerPosition:'left',
-			        onSliderLoad: function(el) {
-			            el.lightGallery({
-			                selector: '#imageGallery .lslide'
-			            });
-			        }   
+			    $('#imageGallery').lightGallery({
+			    	thumbnail:true
 			    });  
 			},
 			beforeClose: function() {
