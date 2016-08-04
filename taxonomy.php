@@ -39,11 +39,17 @@ get_post();
 				<div class="col-md-12 div-schedule">
 					<a class="btn btn-warning modalContact" href="#animatedModalContact">Get a fast a quote</a><span class="black-background">or call now! <span class="tracking-phone-number">(305) 662-4742</span></span>
 				</div>
-				</div>
-					<div class="content-header-description">
+			</div>
+			<div class="content-header-description">
 					<div class="container">
-					<?php the_content(); ?>
-				</div>
+				          <?php
+				            // Show an optional term description.
+				            $term_description = term_description();
+				            if ( ! empty( $term_description ) ) :
+				              printf( '<div class="taxonomy-description">%s</div>', $term_description );
+				            endif;
+				          ?>
+					</div>
 			</div>
             <div id="list-content" class="row">                    
                 <?php foreach ($venues->posts as $venue) {
