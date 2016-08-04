@@ -34,7 +34,7 @@ get_post();
 		<main id="main">
 			<div id="content-header" class="container" style="background-image: url('http://new.bestmiamiweddings.com/wp-content/uploads/sites/3/2016/05/Vizcaya.png');">
 				<div class="col-md-12">
-					<h1 class="with-font-title"><?php the_title(); ?></h1>
+					<h1 class="with-font-title"><?php printf(single_cat_title( '', false ) . '' ); ?></h1>
 				</div>
 				<div class="col-md-12 div-schedule">
 					<a class="btn btn-warning modalContact" href="#animatedModalContact">Get a fast a quote</a><span class="black-background">or call now! <span class="tracking-phone-number">(305) 662-4742</span></span>
