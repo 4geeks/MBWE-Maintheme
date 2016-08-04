@@ -23,7 +23,7 @@ $args = array(
     ); 
 $venues = new WP_Query( $args );
 
-$content = get_page($post->ID)->post_content;
+get_post();
 
 ?>
     <!-- ========== MENU TOP ========== -->
