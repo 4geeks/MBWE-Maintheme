@@ -878,6 +878,8 @@ h4, h5, h6{font-size: 24px;}
     padding-right: 0px;
 }
 
+.gform_hidden{display: none;}
+.ginput_counter{color: white;}
 .gform_confirmation_message_1 {
 	background-color: rgba(109, 255, 107, 0.5) !important;
 	padding: 5px !important;

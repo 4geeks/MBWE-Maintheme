@@ -48,17 +48,7 @@ get_post();
 				            endif;
 				          ?>
 					        <?php 
-					            $gravityForm = null;
-					            
-					            if(isset($current_post_id) and $current_post_id!="" and $current_post_id>0) {
-					                $gravityForm = get_post_meta( $current_post_id, 'downloadable-gravity-form', true );
-					                if(empty($gravityForm)) $gravityForm = get_post_meta( $current_post_id, 'wpcf-downloadable-gravity-form', true );
-					            }
-
-					            if(!empty($gravityForm) and $gravityForm!="" and $gravityForm!=null) gravity_form( $gravityForm, false, false, true, "array('downloadable-slug' => '".$fileSlug."')", true ); 
-					            else
-					                gravity_form( 9, false, false, true, array('downloadable-slug' => $fileSlug), true ); 
-
+					                gravity_form( 'Venue Simple Contact Us', false, false, true, null, true ); 
 					            ?>  
 			        </div>
 		        </div>
