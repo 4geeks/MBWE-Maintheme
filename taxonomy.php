@@ -42,7 +42,7 @@ get_post();
 		        	<div class=" col-md-2 hidden-xs">
 		        	</div>
 		            <div class=" col-md-8">
-		            	<div class="row">
+		            	<div class="row template-form">
 				            <div class=" col-md-6">
 						          <?php
 						            // Show an optional term description.
