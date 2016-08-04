@@ -33,15 +33,13 @@ get_post();
 	<div id="primary" class="full-width-page no-sidebar">
 		<main id="main">
 			<div id="content-header" class="container" style="background-image: url('http://new.bestmiamiweddings.com/wp-content/uploads/sites/3/2016/05/Vizcaya.png');">
-				<div class="col-md-12">
-					<h1 class="with-font-title"><?php printf(single_cat_title( '', false ) . '' ); ?></h1>
+		        <div class="row">
+					<div class="col-md-12">
+						<h1 class="with-font-title"><?php printf(single_cat_title( '', false ) . '' ); ?></h1>
+					</div>
 				</div>
-				<div class="col-md-12 div-schedule">
-					<a class="btn btn-warning modalContact" href="#animatedModalContact">Get a fast a quote</a><span class="black-background">or call now! <span class="tracking-phone-number">(305) 662-4742</span></span>
-				</div>
-			</div>
-			<div class="content-header-description">
-					<div class="container">
+		        <div class="row">
+		            <div class="col-md-6 col-md-offset-6">
 				          <?php
 				            // Show an optional term description.
 				            $term_description = term_description();
@@ -49,7 +47,21 @@ get_post();
 				              printf( '<div class="taxonomy-description">%s</div>', $term_description );
 				            endif;
 				          ?>
-					</div>
+					        <?php 
+					            $gravityForm = null;
+					            
+					            if(isset($current_post_id) and $current_post_id!="" and $current_post_id>0) {
+					                $gravityForm = get_post_meta( $current_post_id, 'downloadable-gravity-form', true );
+					                if(empty($gravityForm)) $gravityForm = get_post_meta( $current_post_id, 'wpcf-downloadable-gravity-form', true );
+					            }
+
+					            if(!empty($gravityForm) and $gravityForm!="" and $gravityForm!=null) gravity_form( $gravityForm, false, false, true, "array('downloadable-slug' => '".$fileSlug."')", true ); 
+					            else
+					                gravity_form( 9, false, false, true, array('downloadable-slug' => $fileSlug), true ); 
+
+					            ?>  
+			        </div>
+		        </div>
 			</div>
             <div id="list-content" class="row">                    
                 <?php foreach ($venues->posts as $venue) {
