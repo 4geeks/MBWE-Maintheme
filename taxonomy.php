@@ -38,8 +38,8 @@ get_post();
 						<h1 class="with-font-title"><?php printf(single_cat_title( '', false ) . '' ); ?></h1>
 					</div>
 				</div>
-		        <div class="row">
-		            <div class="template-form col-md-4">
+		        <div class="row template-form">
+		            <div class=" col-md-4 col-md-offset-1">
 				          <?php
 				            // Show an optional term description.
 				            $term_description = term_description();
@@ -48,7 +48,7 @@ get_post();
 				            endif;
 				          ?>
 			        </div>
-		            <div class="template-form col-md-4 col-md-offset-1">
+		            <div class="col-md-4">
 					        <?php 
 					                gravity_form( 'Venue Simple Contact Us', false, false, true, null, true ); 
 					            ?>  
