@@ -49,9 +49,9 @@ $category = get_post();
 			</div>
             <div id="list-content" class="row">   
             <?php                  
-	            while ( have_posts() ) {
-	             the_post();
-	             $venue = get_the_post();
+				// Modify get_posts args for your needs
+				$venues = get_posts();
+			    foreach ( $venues as $venue ) {
 	        ?>
                     <div class="col-sm-12 col-md-6 col-lg-4  venue-element">
                         <div class="col-sm-12 inner-venue-element">
