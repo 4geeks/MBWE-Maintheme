@@ -373,7 +373,7 @@ h4, h5, h6{font-size: 24px;}
 }
 .template-form{
     background: rgba(255, 255, 255, 0.8);
-
+    padding: 5px 15px;
 }
 
 /*CUSTOM FONT*/
@@ -978,7 +978,7 @@ li.col1 {
     background-image: none !important;
     border: 1px solid transparent !important;
     border-radius: 0px !important;
-    width: 90% !important;
+    width: 100% !important;
 }
 
 /*Message validation*/
