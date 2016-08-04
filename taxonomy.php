@@ -39,7 +39,7 @@ get_post();
 					</div>
 				</div>
 		        <div class="row">
-		            <div class="template-form col-md-4 col-md-offset-6">
+		            <div class="template-form col-md-4">
 				          <?php
 				            // Show an optional term description.
 				            $term_description = term_description();
@@ -47,6 +47,8 @@ get_post();
 				              printf( '<div class="taxonomy-description">%s</div>', $term_description );
 				            endif;
 				          ?>
+			        </div>
+		            <div class="template-form col-md-4 col-md-offset-1">
 					        <?php 
 					                gravity_form( 'Venue Simple Contact Us', false, false, true, null, true ); 
 					            ?>  

@@ -369,7 +369,6 @@ h4, h5, h6{font-size: 24px;}
 .landing-with-form{
     padding-bottom: 40px;
     padding: 5px 30px;
-    margin-top: 40px;
 }
 .template-form{
     background: rgba(255, 255, 255, 0.8);
@@ -978,7 +977,7 @@ li.col1 {
     background-image: none !important;
     border: 1px solid transparent !important;
     border-radius: 0px !important;
-    width: 100% !important;
+    width: 97.5% !important;
 }
 
 /*Message validation*/
