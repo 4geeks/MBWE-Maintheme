@@ -32,14 +32,14 @@ get_post();
 	
 	<div id="primary" class="full-width-page no-sidebar">
 		<main id="main">
-			<div class="container-fluid" style="background-image: url('http://new.bestmiamiweddings.com/wp-content/uploads/sites/3/2016/05/Vizcaya.png');">
+			<div class="container-fluid landing-with-form" style="background-image: url('http://new.bestmiamiweddings.com/wp-content/uploads/sites/3/2016/05/Vizcaya.png');">
 		        <div class="row">
 					<div class="col-md-12">
 						<h1 class="with-font-title"><?php printf(single_cat_title( '', false ) . '' ); ?></h1>
 					</div>
 				</div>
 		        <div class="row">
-		            <div class="col-md-4 col-md-offset-6">
+		            <div class="template-form col-md-4 col-md-offset-6">
 				          <?php
 				            // Show an optional term description.
 				            $term_description = term_description();

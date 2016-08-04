@@ -366,6 +366,13 @@ h4, h5, h6{font-size: 24px;}
 
 #downloadable-content{margin-top: 100px; margin-bottom: 80px; }
 
+.landing-with-form{
+    padding-bottom: 40px;
+}
+.template-form{
+    background: white;
+}
+
 /*CUSTOM FONT*/
 
 
