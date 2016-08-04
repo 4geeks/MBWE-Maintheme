@@ -38,21 +38,27 @@ get_post();
 						<h1 class="with-font-title"><?php printf(single_cat_title( '', false ) . '' ); ?></h1>
 					</div>
 				</div>
-		        <div class="row template-form">
-		            <div class=" col-md-4 col-md-offset-1">
-				          <?php
-				            // Show an optional term description.
-				            $term_description = term_description();
-				            if ( ! empty( $term_description ) ) :
-				              printf( '<div class="taxonomy-description">%s</div>', $term_description );
-				            endif;
-				          ?>
-			        </div>
-		            <div class="col-md-4">
-					        <?php 
-					                gravity_form( 'Venue Simple Contact Us', false, false, true, null, true ); 
-					            ?>  
-			        </div>
+		        <div class="row">
+		        	<div class=" col-md-2 hidden-xs">
+		        	</div>
+		            <div class=" col-md-8">
+		            	<div class="row">
+				            <div class=" col-md-6">
+						          <?php
+						            // Show an optional term description.
+						            $term_description = term_description();
+						            if ( ! empty( $term_description ) ) :
+						              printf( '<div class="taxonomy-description">%s</div>', $term_description );
+						            endif;
+						          ?>
+					        </div>
+				            <div class="col-md-6">
+							        <?php 
+							                gravity_form( 'Venue Simple Contact Us', false, false, true, null, true ); 
+							            ?>  
+					        </div>
+				    	</div>
+				    </div>
 		        </div>
 			</div>
             <div id="list-content" class="row">                    
