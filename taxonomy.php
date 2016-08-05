@@ -8,7 +8,7 @@ get_header();
 //Get venue post types to list 
 
 $this_category = get_the_category();
-die($this_category->category_nicename);
+die($this_category->category_nicename.'->pupu');
 ?>
     <!-- ========== MENU TOP ========== -->
     <?php get_template_part( 'template-parts/menu', 'top' ); ?>
