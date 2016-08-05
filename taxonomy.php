@@ -7,6 +7,10 @@ get_header();
 
 //Get venue post types to list 
 
+$headline = the_field('wpcf-sub-headline');
+$bgImageURL = the_field('taxonomy-background-image');
+$bgVideoURL = the_field('taxonomy-background-video');
+
 ?>
     <!-- ========== MENU TOP ========== -->
     <?php get_template_part( 'template-parts/menu', 'top' ); ?>
@@ -14,10 +18,15 @@ get_header();
 	
 	<div id="primary" class="full-width-page no-sidebar">
 		<main id="main">
+		<?php if($bgImageURL and $bgImageURL!=''){ ?>
+			<div class="container-fluid landing-with-form" style="background-image: url($bgImageURL);">
+		<?php } else { ?>
 			<div class="container-fluid landing-with-form" style="background-image: url('http://new.bestmiamiweddings.com/wp-content/uploads/sites/3/2016/05/Vizcaya.png');">
+		<?php } ?>
 		        <div class="row">
 					<div class="col-md-12">
 						<h1 class="with-font-title"><?php printf(single_cat_title( '', false ) . '' ); ?></h1>
+						<p><?php echo $headline; ?></p>
 					</div>
 				</div>
 		        <div class="row">
