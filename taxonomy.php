@@ -11,11 +11,11 @@ get_header();
 $queried_object = get_queried_object(); 
 $taxonomy = $queried_object->taxonomy;
 $term_id = $queried_object->term_id;  
-//die(get_post_meta( $taxonomy.'_'.$term_id, 'wpcf-sub-headline', true).'----');
+$term_meta = get_option($taxonomy.'_'.$term_id);
 
-$headline = get_field('wpcf-tax-sub-headline',$taxonomy.'_'.$term_id);
-$bgImageURL = get_field('wpcf-tax-background-image',$taxonomy.'_'.$term_id);
-$bgVideoURL = get_field('wpcf-tax-background-video',$queried_object);
+$headline = $term_meta['wpcf-tax-sub-headline'];
+$bgImageURL = $term_meta['wpcf-tax-background-image'];
+$bgVideoURL = $term_meta['wpcf-tax-background-video'];
 
 ?>
     <!-- ========== MENU TOP ========== -->
