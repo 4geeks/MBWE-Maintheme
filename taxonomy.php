@@ -14,6 +14,7 @@ $term_id = $queried_object->term_id;
 
 $headline = types_render_termmeta( "tax-sub-headline");
 $gravity_form_id = types_render_termmeta( "tax-gravity-form-slug");
+$bgvalignment = types_render_termmeta( "tax-background-image-valign");
 $bgImageURL = types_render_termmeta("tax-background-image",array("url" => "true"));
 //$bgVideoURL = types_render_termmeta('wpcf-tax-background-video',array("url" => "true"));
 
@@ -25,7 +26,7 @@ $bgImageURL = types_render_termmeta("tax-background-image",array("url" => "true"
 	<div id="primary" class="full-width-page no-sidebar">
 		<main id="main">
 		<?php if($bgImageURL and $bgImageURL!=''){ ?>
-			<div class="container-fluid landing-with-form" style="background-image: url('<?php echo $bgImageURL; ?>');">
+			<div class="container-fluid landing-with-form" style="background-image: url('<?php echo $bgImageURL; ?>'); background-position: <?php echo $bgvalignment; ?> center;">
 		<?php } else { ?>
 			<div class="container-fluid landing-with-form" style="background-image: url('http://new.bestmiamiweddings.com/wp-content/uploads/sites/3/2016/05/Vizcaya.png');">
 		<?php } ?>
