@@ -13,8 +13,8 @@ $taxonomy = $queried_object->taxonomy;
 $term_id = $queried_object->term_id;  
 
 $headline = types_render_termmeta( "tax-sub-headline");
-$bgImageURL = types_render_termmeta("tax-background-image");
-//$bgVideoURL = types_render_termmeta('wpcf-tax-background-video');
+$bgImageURL = types_render_termmeta("tax-background-image",array("url" => "true"));
+//$bgVideoURL = types_render_termmeta('wpcf-tax-background-video',array("url" => "true"));
 
 ?>
     <!-- ========== MENU TOP ========== -->
@@ -32,7 +32,7 @@ $bgImageURL = types_render_termmeta("tax-background-image");
 					<div class="col-md-12">
 						<h1 class="with-font-title"><?php printf(single_cat_title( '', false ) . '' ); ?> </h1>
 						<?php if($headline and $headline!=''){ ?>
-							<p><?php echo $headline; ?></p>
+							<p class="landing-headline"><?php echo $headline; ?></p>
 						<?php } ?>				
 					</div>
 				</div>
