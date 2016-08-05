@@ -64,7 +64,7 @@ $bgImageURL = types_render_termmeta("tax-background-image",array("url" => "true"
 			</div>
 			<div class="content-header-description">
 				<div class="container">
-					<h3>Click on any of the following venues for more details: Photos, Capacity, Blueprints, Map Address, 360 Tour and more.</h3>
+					<h3>Click on any of the following venues for more details: Photos, Capacity, Blueprints, Map Address, 360° Tour and more.</h3>
 				</div>
 			</div>
             <div id="list-content" class="row">   
