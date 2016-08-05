@@ -12,7 +12,7 @@ $queried_object = get_queried_object();
 $taxonomy = $queried_object->taxonomy;
 $term_id = $queried_object->term_id;  
 
-
+die(get_post_meta( $taxonomy.'_'.$term_id, 'wpcf-sub-headline', true).'----');
 //$headline = get_field('wpcf-sub-headline',$taxonomy.'_'.$term_id);
 //$bgImageURL = get_field('taxonomy-background-image',$taxonomy.'_'.$term_id);
 //$bgVideoURL = get_field('taxonomy-background-video',$queried_object);
