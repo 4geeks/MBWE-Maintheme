@@ -13,8 +13,8 @@ $taxonomy = $queried_object->taxonomy;
 $term_id = $queried_object->term_id;  
 
 
-$headline = get_field('wpcf-sub-headline',$queried_object);
-$bgImageURL = get_field('taxonomy-background-image',$queried_object);
+$headline = get_field('wpcf-sub-headline',$taxonomy.'_'.$term_id);
+$bgImageURL = get_field('taxonomy-background-image',$taxonomy.'_'.$term_id);
 //$bgVideoURL = get_field('taxonomy-background-video',$queried_object);
 
 ?>
