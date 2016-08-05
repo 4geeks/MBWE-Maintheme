@@ -13,8 +13,8 @@ $taxonomy = $queried_object->taxonomy;
 $term_id = $queried_object->term_id;  
 
 
-$headline = get_field('wpcf-sub-headline',$taxonomy.'_'.$term_id);
-$bgImageURL = get_field('taxonomy-background-image',$taxonomy.'_'.$term_id);
+//$headline = get_field('wpcf-sub-headline',$taxonomy.'_'.$term_id);
+//$bgImageURL = get_field('taxonomy-background-image',$taxonomy.'_'.$term_id);
 //$bgVideoURL = get_field('taxonomy-background-video',$queried_object);
 
 ?>
@@ -25,7 +25,7 @@ $bgImageURL = get_field('taxonomy-background-image',$taxonomy.'_'.$term_id);
 	<div id="primary" class="full-width-page no-sidebar">
 		<main id="main">
 		<?php if($bgImageURL and $bgImageURL!=''){ ?>
-			<div class="container-fluid landing-with-form" style="background-image: url(<?php echo $bgImageURL; ?>);">
+			<div class="container-fluid landing-with-form" style="background-image: url('<?php echo $bgImageURL; ?>');">
 		<?php } else { ?>
 			<div class="container-fluid landing-with-form" style="background-image: url('http://new.bestmiamiweddings.com/wp-content/uploads/sites/3/2016/05/Vizcaya.png');">
 		<?php } ?>
