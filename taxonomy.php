@@ -12,11 +12,9 @@ $queried_object = get_queried_object();
 $taxonomy = $queried_object->taxonomy;
 $term_id = $queried_object->term_id;  
 
-//$headline = get_field('wpcf-tax-sub-headline',$taxonomy.'_'.$term_id);
-//$bgImageURL = get_field('wpcf-tax-background-image',$taxonomy.'_'.$term_id);
-echo types_render_termmeta( "tax-sub-headline");
-echo types_render_termmeta("tax-background-image");
-//$bgVideoURL = get_field('wpcf-tax-background-video',$queried_object);
+$headline = types_render_termmeta( "tax-sub-headline");
+$bgImageURL = types_render_termmeta("tax-background-image");
+//$bgVideoURL = types_render_termmeta('wpcf-tax-background-video');
 
 ?>
     <!-- ========== MENU TOP ========== -->
