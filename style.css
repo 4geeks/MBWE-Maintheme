@@ -378,7 +378,7 @@ h4, h5, h6{font-size: 24px;}
     font-weight: 900;
     font-size: 30px;
     text-shadow: 1px 1px grey;
-    color: white;
+    color: #d6d6d6;
 }
 
 .template-form{
@@ -1056,7 +1056,7 @@ li.col1 {
 @media screen and (max-width: 767px) {
 	
 	.with-font-title {
-		font-size: 55px;
+		font-size: 45px;
 		line-height: 1em;
 	}
 
@@ -1174,7 +1174,7 @@ li.col1 {
     #divFooter1 .fa{
         font-size: 20px;
     }
-    .template-form {margin-top: 170px;}
+    .template-form {margin-top: 60px;}
 }
 
 /* ONLY FOR TABLETS IN PORTRAIT */
