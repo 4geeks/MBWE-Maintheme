@@ -180,7 +180,7 @@ function html5blank_styles()
         wp_enqueue_style('lightgallerycss');        
     }
 
-    if (is_page('wedding-venues-locations') || is_page('wedding-churches-in-miami') || is_tax('location')){
+    if (is_page('wedding-venues-locations') || is_page('wedding-churches-in-miami') || is_tax()){
         wp_register_style('venueslistcss', get_template_directory_uri() . '/css/venues-list.css', false, '1.1', 'all');
         wp_enqueue_style('venueslistcss');        
     }
