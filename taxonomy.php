@@ -31,7 +31,7 @@ $bgVideoURL = $term_meta['wpcf-tax-background-video'];
 		<?php } ?>
 		        <div class="row">
 					<div class="col-md-12">
-						<h1 class="with-font-title"><?php printf(single_cat_title( '', false ) . '' ); the_field('field_name', $term); ?> </h1>
+						<h1 class="with-font-title"><?php printf(single_cat_title( '', false ) . '' ); ?> </h1>
 						<?php if(isset($headline) and $headline!=''){ ?>
 							<p><?php echo $headline; ?></p>
 						<?php } ?>				
