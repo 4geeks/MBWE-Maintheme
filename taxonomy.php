@@ -45,20 +45,21 @@ get_header();
 			</div>
             <div id="list-content" class="row">   
             <?php                  
-				$venues = get_posts();
-			    foreach ( $venues as $venue ) {
+				while ( have_posts() ) {
+				the_post();
+				$venueId = get_the_ID();
 	        ?>
                     <div class="col-sm-12 col-md-6 col-lg-4  venue-element">
                         <div class="col-sm-12 inner-venue-element">
-                            <div class="col-sm-12 div-venue-image linkeable highlight-element" style="background-image: url('<?php echo get_post_meta( $venue->ID, 'wpcf-venue-main-image', true); ?>')">
+                            <div class="col-sm-12 div-venue-image linkeable highlight-element" style="background-image: url('<?php echo get_post_meta( $venueId, 'wpcf-venue-main-image', true); ?>')">
                             </div>
                             <div class="col-sm-12 div-description">
-                                <center><h2><?php echo get_post_meta( $venue->ID, 'wpcf-venue-name', true); ?></h2></center>
+                                <center><h2><?php echo get_post_meta( $venueId, 'wpcf-venue-name', true); ?></h2></center>
                                 <div class="col-sm-12">
-                                    <h4><?php echo get_post_meta( $venue->ID, 'wpcf-venue-direction', true); ?></h4>
+                                    <h4><?php echo get_post_meta( $venueId, 'wpcf-venue-direction', true); ?></h4>
                                 </div>
                                 <div class="col-sm-12">
-                                    <a href="<?php echo get_home_url()."/venue/".$venue->post_name ?>" class="btn btn-info btn-sm">Read more</a>
+                                    <a href="<?php echo get_permalink(); ?>" class="btn btn-info btn-sm">Read more</a>
                                 </div>
                             </div>
                         </div>
