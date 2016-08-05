@@ -368,7 +368,7 @@ h4, h5, h6{font-size: 24px;}
 
 .landing-with-form{
     padding-bottom: 40px;
-    padding: 5px 30px;
+    padding: 5px 30px 0px 30px;
     background-size: cover;
     background-position: center center;
 }
@@ -383,7 +383,7 @@ h4, h5, h6{font-size: 24px;}
 
 .template-form{
     margin-top: 170px;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.7);
     padding: 5px 15px;
 }
 
