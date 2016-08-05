@@ -13,6 +13,7 @@ $taxonomy = $queried_object->taxonomy;
 $term_id = $queried_object->term_id;  
 
 $headline = types_render_termmeta( "tax-sub-headline");
+$gravity_form_id = types_render_termmeta( "tax-gravity-form-slug");
 $bgImageURL = types_render_termmeta("tax-background-image",array("url" => "true"));
 //$bgVideoURL = types_render_termmeta('wpcf-tax-background-video',array("url" => "true"));
 
@@ -52,7 +53,8 @@ $bgImageURL = types_render_termmeta("tax-background-image",array("url" => "true"
 					        </div>
 				            <div class="col-md-6">
 							        <?php 
-							                gravity_form( 'Venue Simple Contact Us', false, false, true, null, true ); 
+							        	if($gravity_form_id and $gravity_form_id!='') gravity_form( $gravity_form_id, false, false, true, null, true ); 
+							        	else gravity_form( 'Venue Simple Contact Us', false, false, true, null, true ); 
 							            ?>  
 					        </div>
 				    	</div>
