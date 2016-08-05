@@ -11,11 +11,10 @@ get_header();
 $queried_object = get_queried_object(); 
 $taxonomy = $queried_object->taxonomy;
 $term_id = $queried_object->term_id;  
-$term_meta = get_option($taxonomy.'_'.$term_id);
 
-$headline = $term_meta['wpcf-tax-sub-headline'];
-$bgImageURL = $term_meta['wpcf-tax-background-image'];
-$bgVideoURL = $term_meta['wpcf-tax-background-video'];
+$headline = get_field('wpcf-tax-sub-headline',$taxonomy.'_'.$term_id);
+$bgImageURL = get_field('wpcf-tax-background-image',$taxonomy.'_'.$term_id);
+//$bgVideoURL = get_field('wpcf-tax-background-video',$queried_object);
 
 ?>
     <!-- ========== MENU TOP ========== -->
@@ -24,15 +23,15 @@ $bgVideoURL = $term_meta['wpcf-tax-background-video'];
 	
 	<div id="primary" class="full-width-page no-sidebar">
 		<main id="main">
-		<?php if(isset($bgImageURL) and $bgImageURL!=''){ ?>
+		<?php if($bgImageURL and $bgImageURL!=''){ ?>
 			<div class="container-fluid landing-with-form" style="background-image: url('<?php echo $bgImageURL; ?>');">
 		<?php } else { ?>
-			<div class="container-fluid landing-with-form" style="background-image: url('http://new.bestmiamiweddings.com/wp-content/uploads/sites/3/2016/05/Vizcarya.png');">
+			<div class="container-fluid landing-with-form" style="background-image: url('http://new.bestmiamiweddings.com/wp-content/uploads/sites/3/2016/05/Vizcaya.png');">
 		<?php } ?>
 		        <div class="row">
 					<div class="col-md-12">
 						<h1 class="with-font-title"><?php printf(single_cat_title( '', false ) . '' ); ?> </h1>
-						<?php if(isset($headline) and $headline!=''){ ?>
+						<?php if($headline and $headline!=''){ ?>
 							<p><?php echo $headline; ?></p>
 						<?php } ?>				
 					</div>
