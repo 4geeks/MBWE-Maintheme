@@ -7,9 +7,14 @@ get_header();
 
 //Get venue post types to list 
 
-$headline = get_field('wpcf-sub-headline');
-$bgImageURL = get_field('taxonomy-background-image');
-$bgVideoURL = get_field('taxonomy-background-video');
+// vars
+$queried_object = get_queried_object(); 
+$taxonomy = $queried_object->taxonomy;
+$term_id = $queried_object->term_id;  
+
+$headline = get_field('wpcf-sub-headline',$queried_object);
+$bgImageURL = get_field('taxonomy-background-image',$queried_object);
+$bgVideoURL = get_field('taxonomy-background-video',$queried_object);
 
 ?>
     <!-- ========== MENU TOP ========== -->
