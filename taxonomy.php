@@ -11,8 +11,9 @@ get_header();
 $queried_object = get_queried_object(); 
 $taxonomy = $queried_object->taxonomy;
 $term_id = $queried_object->term_id;  
+die($taxonomy.'_'.$term_id);
+//die(get_post_meta( $taxonomy.'_'.$term_id, 'wpcf-sub-headline', true).'----');
 
-die(get_post_meta( $taxonomy.'_'.$term_id, 'wpcf-sub-headline', true).'----');
 //$headline = get_field('wpcf-sub-headline',$taxonomy.'_'.$term_id);
 //$bgImageURL = get_field('taxonomy-background-image',$taxonomy.'_'.$term_id);
 //$bgVideoURL = get_field('taxonomy-background-video',$queried_object);
@@ -31,7 +32,7 @@ die(get_post_meta( $taxonomy.'_'.$term_id, 'wpcf-sub-headline', true).'----');
 		<?php } ?>
 		        <div class="row">
 					<div class="col-md-12">
-						<h1 class="with-font-title"><?php printf(single_cat_title( '', false ) . '' ); ?></h1>
+						<h1 class="with-font-title"><?php printf(single_cat_title( '', false ) . '' ); the_field('field_name', $term); ?> </h1>
 						<?php if($headline and $headline!=''){ ?>
 							<p><?php echo $headline; ?></p>
 						<?php } ?>				
