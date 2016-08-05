@@ -12,11 +12,10 @@ $queried_object = get_queried_object();
 $taxonomy = $queried_object->taxonomy;
 $term_id = $queried_object->term_id;  
 
-die('--->'.$taxonomy);
 
 $headline = get_field('wpcf-sub-headline',$queried_object);
 $bgImageURL = get_field('taxonomy-background-image',$queried_object);
-$bgVideoURL = get_field('taxonomy-background-video',$queried_object);
+//$bgVideoURL = get_field('taxonomy-background-video',$queried_object);
 
 ?>
     <!-- ========== MENU TOP ========== -->
@@ -33,7 +32,9 @@ $bgVideoURL = get_field('taxonomy-background-video',$queried_object);
 		        <div class="row">
 					<div class="col-md-12">
 						<h1 class="with-font-title"><?php printf(single_cat_title( '', false ) . '' ); ?></h1>
-						<p><?php echo $headline; ?></p>
+						<?php if($headline and $headline!=''){ ?>
+							<p><?php echo $headline; ?></p>
+						<?php } ?>				
 					</div>
 				</div>
 		        <div class="row">
