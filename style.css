@@ -889,7 +889,7 @@ h4, h5, h6{font-size: 24px;}
     padding-right: 0px;
 }
 
-.gformHiddenLabels label{display: none;}
+.gformHiddenLabels label{display: none !important;}
 .gform_hidden{display: none;}
 .ginput_counter{color: white;}
 .gform_confirmation_message_1 {
