@@ -1258,6 +1258,7 @@ li.col1 {
 	.newsletter ._form-title{
 		padding-bottom: 10px;
 	}
+    .landing-with-form{min-height: 600px;}
 }
 
 @media screen and (min-width: 1920px){

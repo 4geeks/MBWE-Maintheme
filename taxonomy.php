@@ -65,14 +65,6 @@ get_header();
                         </div>
                     </div>
                <?php }?>
-
-               <?php if(!isset($_GET["vvisibility"])) { ?>
-               <div id="extra-venues" class="col-sm-12 venue-element">
-                    <div class="col-sm-12 div-description">
-                        <center><a href="/wedding-venues-locations/?vvisibility[]=3">Click here to review some additional venues</a></center>
-                    </div>
-               </div>
-               <?php } ?>
             </div>
             <!-- <div class="blue-background"><h2>What our clients say about our venues</h2></div> -->
             <!-- ========== testimonies TOP ========== -->
