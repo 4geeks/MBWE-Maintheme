@@ -24,15 +24,15 @@ $bgVideoURL = $term_meta['wpcf-tax-background-video'];
 	
 	<div id="primary" class="full-width-page no-sidebar">
 		<main id="main">
-		<?php if($bgImageURL and $bgImageURL!=''){ ?>
+		<?php if(isset($bgImageURL) and $bgImageURL!=''){ ?>
 			<div class="container-fluid landing-with-form" style="background-image: url('<?php echo $bgImageURL; ?>');">
 		<?php } else { ?>
-			<div class="container-fluid landing-with-form" style="background-image: url('http://new.bestmiamiweddings.com/wp-content/uploads/sites/3/2016/05/Vizcaya.png');">
+			<div class="container-fluid landing-with-form" style="background-image: url('http://new.bestmiamiweddings.com/wp-content/uploads/sites/3/2016/05/Vizcarya.png');">
 		<?php } ?>
 		        <div class="row">
 					<div class="col-md-12">
 						<h1 class="with-font-title"><?php printf(single_cat_title( '', false ) . '' ); the_field('field_name', $term); ?> </h1>
-						<?php if($headline and $headline!=''){ ?>
+						<?php if(isset($headline) and $headline!=''){ ?>
 							<p><?php echo $headline; ?></p>
 						<?php } ?>				
 					</div>
