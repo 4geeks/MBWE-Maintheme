@@ -382,11 +382,10 @@ h4, h5, h6{font-size: 24px;}
 }
 
 .template-form{
-    margin-top: 50px;
+    margin-top: 170px;
     background: rgba(255, 255, 255, 0.8);
     padding: 5px 15px;
 }
-.landing-with-form{min-height: 700px;}
 
 /*CUSTOM FONT*/
 
@@ -1175,7 +1174,7 @@ li.col1 {
     #divFooter1 .fa{
         font-size: 20px;
     }
-    .landing-with-form{min-height: none;}
+    .template-form {margin-top: 170px;}
 }
 
 /* ONLY FOR TABLETS IN PORTRAIT */
