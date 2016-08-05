@@ -7,10 +7,6 @@ get_header();
 
 //Get venue post types to list 
 
-$category = get_post();
-$termid = get_the_ID();
-$this_category = get_the_category();
-die(print_r($category));
 ?>
     <!-- ========== MENU TOP ========== -->
     <?php get_template_part( 'template-parts/menu', 'top' ); ?>
@@ -49,18 +45,6 @@ die(print_r($category));
 			</div>
             <div id="list-content" class="row">   
             <?php                  
-				// Modify get_posts args for your needs
-				$args = array(
-				    'post_type' => 'venue',
-					'tax_query' => array(
-						array(
-							'taxonomy' => 'categories', //or tag or custom taxonomy
-							'field' => 'term_id',
-							'terms' => $termid
-						)
-					),
-				    'posts_per_page'=>-1
-				    ); 
 				$venues = get_posts();
 			    foreach ( $venues as $venue ) {
 	        ?>
