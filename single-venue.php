@@ -172,12 +172,14 @@ $venues = new WP_Query( $args );
                     </div>
                 </div>
             </div>
-            <?php if($blueprint != ''){ ?>
+            <?php if($blueprint != '' or $blueprintImage !=''){ ?>
                 <div id="div-venue-blueprint" class="row">
+                    <?php if($blueprint != '') {?>
                     <div class="p-location">
                         <h2>Areas and distribution of <?php  echo $name;?></h2>
                         <?php echo $blueprint?>
                     </div>
+                    <?php } ?>
                     <?php if($blueprintImage != '') {?>
                         <div class="container">
                             <?php echo "<div class='blueprint-image'  style='background-image: url(".$blueprintImage." )'></div>";?>
