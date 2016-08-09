@@ -34,7 +34,7 @@ $bgImageURL = types_render_termmeta("tax-background-image",array("url" => "true"
 					<div class="col-md-12">
 						<h1 class="with-font-title"><?php printf(single_cat_title( '', false ) . '' ); ?> </h1>
 						<?php if($headline and $headline!=''){ ?>
-							<p class="landing-headline"><?php echo $headline; ?></p>
+							<p class="landing-headline"><?php echo $headline; ?>-planner</p>
 						<?php } ?>				
 					</div>
 				</div>
