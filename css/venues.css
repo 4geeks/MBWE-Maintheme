@@ -563,9 +563,9 @@ Saved: Apr 18 2016 | 16:49:53 */
     }
 }
 
-@media screen and (min-width: 1920px){
+@media screen and (min-width: 1500px){
     #div-venue-image{
-        height: 980px;
+        height: 900px;
     }
 }
 
