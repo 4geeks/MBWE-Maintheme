@@ -205,6 +205,11 @@ function html5blank_styles()
         wp_enqueue_style('awardscss');        
     }
 
+    if (get_post_type()=='planner'){
+        wp_register_style('plannercss', get_template_directory_uri() . '/css/planner.css', false, '1.1', 'all');
+        wp_enqueue_style('plannercss');        
+    }
+
     if (is_page('venue-event') || is_page('gallery-event')){
         wp_register_style('venueeventcss', get_template_directory_uri() . '/css/venue-event.css', false, '1.1', 'all');
         wp_enqueue_style('venueeventcss');        

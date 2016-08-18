@@ -426,7 +426,7 @@ h4, h5, h6{font-size: 24px;}
 	text-align: center;
 	background-color: #ffffff;
 }
-
+#testimonies h2{margin-bottom: 0;}
 .img-avatar {
 	position: relative;
 	width: 150px;
@@ -461,7 +461,7 @@ h4, h5, h6{font-size: 24px;}
     font-size: 17px;
 }
 .item-testimonie {
-	margin-top: 40px;
+	margin-top: 20px;
 }
 
 
@@ -626,6 +626,9 @@ h4, h5, h6{font-size: 24px;}
 }
 #divFooter1 .newsletter ._form-title{
 	padding-bottom: 5px;
+}
+.gform_wrapper .top_label .gfield_label{
+    font-size: 24px;
 }
 #divFooter1 .newsletter span{
     font-family: content_font_light;

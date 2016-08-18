@@ -1,32 +1,30 @@
 <?php 
-$args = array('post_type' => 'testimonie');
-$testimonies = new WP_Query( $args );
 
-$customTestimonies = [];
-foreach ($testimonies->posts as $testimonie) {
-    $customTestimonie = get_post_meta( $testimonie->ID);
-    if ($customTestimonie['_wpcf_belongs_page_id'][0] == get_the_ID()){
-        if (count($testimonies) > 2){
-            if ($customTestimonie['_wpcf-testimonies-outstandin'][0] == 1)
-                $customTestimonies[] = $customTestimonie;
-        }else{
-            $customTestimonies[] = $customTestimonie;
-        }
-    }
-}?>
+$testimonies = types_child_posts('testimonie');
 
+?>
 <div id="testimonies" class="container">
     <div class="row">
-        <?php foreach ($customTestimonies as $ct) {?>
+        <div class="col-md-12">
+            <h2>Some client's testimonies</h2>
+        </div>
+    </div>
+    <div class="row">
+        <?php foreach ($testimonies as $t) { ?>
             <div class="col-md-6 item-testimonie">
-                    <?php if (isset($ct['wpcf-testimonies-photo'][0])){ ?>
-                        <div class="img-avatar" style="background-image:url('<?php echo $ct['wpcf-testimonies-photo'][0] ?>');"></div>
+                    <?php if (isset($t->fields['testimonies-photo']) and $t->fields['testimonies-photo']!=''){ ?>
+                        <div class="img-avatar" style="background-image:url('<?php echo $t->fields['wpcf-testimonies-photo']; ?>');"></div>
                     <?php } ?>
                     <div class="p-testimonie">
-                        <p><?php echo $ct['wpcf-testimonies-testimonie'][0]; ?></p>
-                        <p><?php echo $ct['wpcf-testimonies-author'][0]?></p>
+                        <p><?php echo $t->fields['testimonies-testimonie']; ?></p>
+                        <p><?php echo $t->fields['testimonies-author']; ?></p>
                     </div>
             </div>                    
-        <?php } ?>                    
+        <?php } ?> 
+        <?php if(count($testimonies)==0) { ?>                   
+            <div class="col-md-12">
+                There are no testimonies about this.
+            </div>                    
+        <?php } ?> 
     </div>
 </div>

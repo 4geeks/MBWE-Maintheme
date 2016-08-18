@@ -28,16 +28,8 @@ $content = get_page($post->ID)->post_content;
 
 //print_r($content);
 
-echo $content;
 ?>
-	<div class="row">
-		<div class="bmwe-menu">
-			<?php wp_nav_menu(array('menu' => 'sub-menu', 'menu_class' => 'ul-menu')); ?>
-		</div>
-		<center class="not-for-mobile">
-			<div id="arrow-down-home"><span class="glyphicon glyphicon-chevron-down"></span></div>
-		</center>
-	</div>
+<?php putRevSlider('home-slider'); ?>
 </div>
 <div id="div-ourServices" class="row margin-top-ourServices">
 	<div class="col-md-12">
