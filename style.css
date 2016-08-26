@@ -892,6 +892,7 @@ h4, h5, h6{font-size: 24px;}
     padding-right: 0px;
 }
 
+.plannersAppointmentForm{margin-top: 0;}
 .gformHiddenLabels label{display: none !important;}
 .gform_hidden{display: none;}
 .ginput_counter{color: white;}
@@ -1067,6 +1068,13 @@ li.col1 {
 	h3 {
 		font-size: 18px;		
 	}
+    .h2, h2 {
+        font-size: 80%;
+    }
+
+    .gform_wrapper input[type=email], .gform_wrapper input[type=submit], .gform_wrapper input[type=number], .gform_wrapper input[type=password], .gform_wrapper input[type=tel], .gform_wrapper input[type=text], .gform_wrapper input[type=url]{
+        font-size: 80% !important;
+    }
 
 	.blue-background {
 		padding-top: 1px;
