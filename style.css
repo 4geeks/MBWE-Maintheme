@@ -538,6 +538,8 @@ h4, h5, h6{font-size: 24px;}
 	color: #fff;
 }
 
+.services-content, #divTextAwards{ font-weight: 800; }
+
 .img-logo{
     background-image: url(img/logo.png);
     background-repeat: no-repeat;
@@ -550,6 +552,7 @@ h4, h5, h6{font-size: 24px;}
     background-position: center center;
     background-size: 110px 68px;
     height: 68px;
+    margin-bottom: 20px;
 }
 .img-aw1{
     background-image: url(img/aw1.png);
