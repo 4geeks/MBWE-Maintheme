@@ -1,4 +1,7 @@
 <?php 
+/*
+Template Name: Manual Lead Input
+*/
 get_header(); 
 ?>
 
