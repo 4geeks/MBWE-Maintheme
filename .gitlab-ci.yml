@@ -1,27 +1,28 @@
-deploy master:
-  script:
-  - "#Se setea el home (estaba dando error)"
-  - export HOME=/root
-  - "#Se crea .capistrano/metrics para que no pregunte si desea guardar estadisticas"
-  - mkdir .capistrano
-  - touch .capistrano/metrics
-  - cd config/capistrano
-  - cap master deploy;
-  type: deploy
-  tags: 
-  only:
-  - master
+image: docker:git
+services:
+- docker:dind
+
+stages:
+- deploy
+
 deploy development:
+  image: gitlab.services4geeks.co:4567/devops/runner4runer:capistrano
   script:
-  - "#Se setea el home (estaba dando error)"
-  - export HOME=/root
-  - "#Se crea .capistrano/metrics para que no pregunte si desea guardar estadisticas"
-  - mkdir .capistrano
-  - touch .capistrano/metrics
   - cd config/capistrano
-  - cap development deploy;
-  type: deploy
+  - cap development deploy
   tags:
+  - deploy
   only:
   - development
+  stage: deploy
 
+deploy master:
+  image: gitlab.services4geeks.co:4567/devops/runner4runer:capistrano
+  script:
+  - cd config/capistrano
+  - cap master deploy
+  tags:
+  - deploy
+  only:
+  - master
+  stage: deploy
