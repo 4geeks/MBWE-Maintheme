@@ -98,16 +98,16 @@ function getYoutubeID($url = '')
                 if($plannerVideo and $plannerVideo!='') $plannerVideo = getYoutubeID($plannerVideo);  
                 else $plannerVideo = null;
 
-				$nickname = get_post_meta("planner-nickname", true);
+				$nickname = get_post_meta("wpcf-planner-nickname", true);
 				if(!$nickname)
 				{
 				    $names = split(" ", $fullname);
 				    if(count($names)>0) $nickname = $names[0];
 				}
 
-				$number_years = get_post_meta("planner-weddings-a-year", true);
+				$number_years = get_post_meta($plannerId, "wpcf-planner-weddings-a-year", true);
 				if(!$number_years or $number_years=="") $number_years = "0";
-				$number_weddings_year = get_post_meta("planner-years-of-experience", true);
+				$number_weddings_year = get_post_meta($plannerId, "wpcf-planner-years-of-experience", true);
 				if(!$number_weddings_year or $number_weddings_year=="") $number_weddings_year = "0";
 	        ?>
                     <div class="col-sm-6 col-md-4 planner-element">

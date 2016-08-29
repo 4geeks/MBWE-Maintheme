@@ -77,8 +77,11 @@ img {
 	vertical-align:bottom;
 }
 a {
-	text-decoration:underline;
+    text-decoration:underline;
     font-weight: 500;
+}
+.btn a {
+    text-decoration:none;
 }
 a:hover {
 	color:#444;
