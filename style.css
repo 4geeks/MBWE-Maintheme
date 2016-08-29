@@ -1063,6 +1063,8 @@ li.col1 {
 
 /*END GRAVITY FORM CUSTOM CONTACT US*/
 
+#phone-number-header{font-weight: 900;}
+
 /*Only for smartphones*/
 @media screen and (max-width: 767px) {
 	
