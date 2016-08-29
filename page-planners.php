@@ -7,7 +7,7 @@ get_header();
 
 //Get venue post types to list 
 
-$args = array('post_type' => 'planner');
+$args = array('post_type' => 'wedding-planner');
 $planners = new WP_Query( $args );
 
 $args = array('post_type' => 'testimonie');

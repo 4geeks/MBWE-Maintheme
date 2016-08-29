@@ -205,7 +205,7 @@ function html5blank_styles()
         wp_enqueue_style('awardscss');        
     }
 
-    if (get_post_type()=='planner'){
+    if (get_post_type()=='wedding-planner'){
         wp_register_style('plannercss', get_template_directory_uri() . '/css/planner.css', false, '1.1', 'all');
         wp_enqueue_style('plannercss');        
     }

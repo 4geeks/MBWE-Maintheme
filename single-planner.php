@@ -42,20 +42,6 @@ if(!$revslider or $revslider=='') $revslider = 'planner-bio';
 
 $weddings = types_render_field("venue-weddings",array("output" => "raw"));
 
-//Get venue post types to list in dropdown list 
-$args = array(
-    'post_type' => 'venue',
-    'meta_query' => array(
-        array(
-            'key' => 'wpcf-venue-visibility',
-            'value' => array('1', '2'),
-            'compare' => 'IN'
-        )
-    ),
-    'posts_per_page'=>-1
-    ); 
-$venues = new WP_Query( $args );
-
 ?>  
     <!-- ========== MENU TOP ========== -->
     <?php get_template_part( 'template-parts/menu', 'top' ); ?>
