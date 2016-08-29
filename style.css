@@ -77,8 +77,8 @@ img {
 	vertical-align:bottom;
 }
 a {
-	color:#000;
-	text-decoration:none;
+	text-decoration:underline;
+    font-weight: 500;
 }
 a:hover {
 	color:#444;

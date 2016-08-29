@@ -80,7 +80,7 @@ $venues = new WP_Query( $args );
                             <h2>What makes <?php echo $nickname; ?> unique?</h2>
                             <?php echo $uniqueness; ?>
                             <?php if($plannerBlog){ ?>
-                                <a href="#">Read more about <?php echo $nickname ?> here.</a>
+                                <a href="<?php echo $plannerBlog; ?>">Read more about <?php echo $nickname ?> here.</a>
                             <?php } ?>
                         </div>
                     </div>

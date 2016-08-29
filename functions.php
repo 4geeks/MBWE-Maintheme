@@ -180,12 +180,12 @@ function html5blank_styles()
         wp_enqueue_style('lightgallerycss');        
     }
 
-    if (is_page('wedding-venues-locations') || is_page('wedding-churches-in-miami') || is_tax()){
+    if (is_page('wedding-venues-locations') || is_page('wedding-churches-in-miami') || is_tax('venue-address') || is_tax('venue-type')){
         wp_register_style('venueslistcss', get_template_directory_uri() . '/css/venues-list.css', false, '1.1', 'all');
         wp_enqueue_style('venueslistcss');        
     }
 
-    if (is_page('wedding-planners') || is_page('miami-wedding-planners')){
+    if (is_page('wedding-planners') || is_page('miami-wedding-planners') || is_tax('browse-planner')){
         wp_register_style('plannerslistcss', get_template_directory_uri() . '/css/planners-list.css', false, '1.1', 'all');
         wp_enqueue_style('plannerslistcss');        
     }
