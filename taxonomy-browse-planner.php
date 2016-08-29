@@ -105,10 +105,10 @@ function getYoutubeID($url = '')
 				    if(count($names)>0) $nickname = $names[0];
 				}
 
-				$number_years = get_post_meta($plannerId, "wpcf-planner-weddings-a-year", true);
+				$total_weddings = get_post_meta($plannerId, "wpcf-planner-total-weddings", true);
+				if(!$total_weddings or $total_weddings=="") $total_weddings = "0";
+				$number_years = get_post_meta($plannerId, "wpcf-planner-years-of-experience", true);
 				if(!$number_years or $number_years=="") $number_years = "0";
-				$number_weddings_year = get_post_meta($plannerId, "wpcf-planner-years-of-experience", true);
-				if(!$number_weddings_year or $number_weddings_year=="") $number_weddings_year = "0";
 	        ?>
                     <div class="col-sm-6 col-md-4 planner-element">
                         <div class="div-planner-image" style="background-image: url('<?php echo get_post_meta( $plannerId, 'wpcf-planner-photo', false)[0]; ?>')">                                
@@ -121,7 +121,7 @@ function getYoutubeID($url = '')
                         <small><?php echo $serviceArea; ?></small>
                         <div class="row">
                             <div class="col-xs-7"> 
-                            	<h5><?php echo $number_weddings_year; ?> weddings successfully planned.</h5>
+                            	<h5><?php echo $total_weddings; ?> weddings successfully planned.</h5>
                             </div>
                             <div class="col-xs-5"> 
                             	<h5><?php echo $number_years; ?> years in the industry.</h5>
