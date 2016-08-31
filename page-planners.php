@@ -26,6 +26,19 @@ function getYoutubeID($url = '')
     return $video_id;
 }
 
+function getNickname($plannerId = 0)
+{
+    $nickname = get_post_meta($plannerId, "wpcf-planner-nickname", true);
+    if(!$nickname)
+    {
+        $fullname = get_post_meta( $plannerId, 'wpcf-planner-full-name', true);
+        $names = split(" ", $fullname);
+        if(count($names)>0) $nickname = $names[0];
+    }
+
+    return $nickname;
+}
+
 ?>
 	<!-- ========== MENU TOP ========== -->
     <?php get_template_part( 'template-parts/menu', 'top' ); ?>
@@ -72,7 +85,7 @@ function getYoutubeID($url = '')
                         </div>
                         <div class="div-planner-experience">
                             <?php echo substr($plannerExperience,0,430); ?>
-                            <?php if($plannerExperience and strlen($plannerExperience)>450) echo "..."; ?> <a href="<?php echo get_permalink(); ?>">Learn more about <?php echo $nickname; ?></a>
+                            <?php if($plannerExperience and strlen($plannerExperience)>450) echo "..."; ?> <a href="<?php echo get_permalink($planner->ID); ?>">Learn more about <?php echo getNickname($planner->ID); ?></a>
                         </div> 
                         <?php if($certified) { ?>  
                         <!--                             
