@@ -5,6 +5,6 @@
 .planner-fact li{margin: 0; padding: 0;list-style-type: none;}
 .planner-fact ul{margin: 0; padding: 0;}
 .planner-section{padding-top:30px; padding-bottom:40px; text-align: center; }
-.planner-price-fact{padding-top:30px; padding-bottom:50px; text-align: center; color: white; background: url('../img/aw_content.jpeg') center center;}
+.planner-price-fact{padding-top:30px; padding-bottom:50px; text-align: center; color: white; background: #BDBDBD;}
 .main-planner-content{padding-bottom: 40px; padding-top: 40px;}
 .planner-fact-data{font-weight: 900; font-size: 40px;}

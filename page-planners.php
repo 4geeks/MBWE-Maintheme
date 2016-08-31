@@ -47,6 +47,11 @@ function getYoutubeID($url = '')
                     $plannerVideo = get_post_meta( $planner->ID, 'wpcf-planner-video', false)[0];
                     if($plannerVideo and $plannerVideo!='') $plannerVideo = getYoutubeID($plannerVideo);  
                     else $plannerVideo = null;
+
+                    $total_weddings = get_post_meta($planner->ID, "wpcf-planner-total-weddings", true);
+                    if(!$total_weddings or $total_weddings=="") $total_weddings = "0";
+                    $number_years = get_post_meta($planner->ID, "wpcf-planner-years-of-experience", true);
+                    if(!$number_years or $number_years=="") $number_years = "0";
                 ?>                        
                     <div class="col-sm-6 col-md-4 planner-element">
                         <div class="div-planner-image" style="background-image: url('<?php echo get_post_meta( $planner->ID, 'wpcf-planner-photo', false)[0]; ?>')">                                
@@ -57,12 +62,21 @@ function getYoutubeID($url = '')
                         </div>
                         <h3><?php echo get_post_meta( $planner->ID, 'wpcf-planner-full-name', false)[0]; ?></h3>
                         <small><?php echo $serviceArea; ?></small>
+                        <div class="row">
+                            <div class="col-xs-7"> 
+                                <h5><?php echo $total_weddings; ?> weddings successfully planned.</h5>
+                            </div>
+                            <div class="col-xs-5"> 
+                                <h5><?php echo $number_years; ?> years in the industry.</h5>
+                            </div>
+                        </div>
                         <div class="div-planner-experience">
-                            <?php echo substr($plannerExperience,0,450); ?>
-                            <?php if($plannerExperience and strlen($plannerExperience)>450) echo "..."; ?>
+                            <?php echo substr($plannerExperience,0,430); ?>
+                            <?php if($plannerExperience and strlen($plannerExperience)>450) echo "..."; ?> <a href="<?php echo get_permalink(); ?>">Learn more about <?php echo $nickname; ?></a>
                         </div> 
-                        <?php if($certified) { ?>                               
-                        <div class="div-planner-certified row">
+                        <?php if($certified) { ?>  
+                        <!--                             
+                        <div class="div-planner-certified">
                             <div class="col-xs-4 col-sm-2"> 
                                 <img class="certification-badge" src="<?php bloginfo('template_url'); ?>/img/aw4.png" alt="Miami Wedding Planner Certificate Badge" class="pull-left logo" />
                             </div>
@@ -70,6 +84,7 @@ function getYoutubeID($url = '')
                                 <p><?php echo $certified; ?></p>
                             </div>
                         </div>
+                        -->
                         <?php }?>
                     </div>
                <?php }?>
