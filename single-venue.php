@@ -47,13 +47,19 @@ $args = array(
     ); 
 $venues = new WP_Query( $args );
 
+function shrinkText($texto='', $maxsize = 20)
+{
+    if(strlen($texto)>$maxsize) return substr($texto,0,20) . '...';
+    else return $texto;
+}
+
 ?>  
     <div id="div-blur-background">
         <img src="<?php echo $mainImage; ?>" id="img-fondo" data-adaptive-background='1'>
     </div>
     <div id="div-top-menu" class="row">    
-        <div class="col-md-1"></div>
-        <div class="col-md-7">
+        <div class="col-sm-1"></div>
+        <div class="hidden-xs col-sm-7">
             <div class="top-venue-menu not-for-phone">
                 <ul class="ul-menu">
                     <li><a href="#primary">INFO & LOCATION</a></li>
@@ -70,14 +76,18 @@ $venues = new WP_Query( $args );
                 </ul>
             </div>
         </div>
-        <div id="menu-desplegable" class="col-md-4">
-            <span class="col-md-11"><?php echo substr($name,0,20); ?> &#8203; </span> <span id="icon-dropdown" class="glyphicon glyphicon-collapse-down"></span>
+        <div id="menu-desplegable" class="col-xs-8 col-sm-4">
+            <span class="pull-left hidden-xs"><?php echo shrinkText($name,20) ?> &#8203; </span> 
+            <span class="pull-left visible-xs">&nbsp;See other venues: &#8203; </span> 
+            <span id="icon-dropdown" class="glyphicon glyphicon-collapse-down pull-right"></span>
             <ul id="sub-menu" class="style-scroll-1 scrollbar">
             <?php
                 //list all venues in post types
                 foreach ($venues->posts as $venue) {
                     if (get_post()->ID != $venue->ID) {
-                        echo "<li style='background-image: url(". get_post_meta( $venue->ID, 'wpcf-venue-small-image', false)[0].")'><a class='with-font-sub-title' href='".get_home_url()."/venue/".$venue->post_name."'>".$venue->post_title."</a></li>";
+                        echo "<li style='background-image: url(". get_post_meta( $venue->ID, 'wpcf-venue-small-image', false)[0].")'>";
+                            echo "<a class='with-font-sub-title' href='".get_home_url()."/venue/".$venue->post_name."'>".$venue->post_title."</a>";
+                        echo "</li>";
                     }
                 }
             ?>

@@ -46,13 +46,14 @@ $weddings = types_render_field("venue-weddings",array("output" => "raw"));
     <!-- ========== MENU TOP ========== -->
     <?php get_template_part( 'template-parts/menu', 'top' ); ?>
 
+    <div class="blackspace-bar visible-xs"></div>
     <?php putRevSlider($revslider); ?>
 
     <!-- ========== MENU TOP ========== -->
     <div id="primary" class="<?php echo $primary_class; ?>">
         <main id="main">
             <div id="div-venue-description" class="row">                
-                <div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 container">
+                <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 container">
                     <h2 class="text-center">Call now! <span class="tracking-phone-number">(305) 662-4742</span> to schedule an appointment with <?php echo $nickname; ?>,<br /> or fill the following form and we will email you with availability:</h2>
                     <?php 
                         gravity_form( 'Planner Appointment', false, false, true, array('planner-slug' => $post->slug), true ); 

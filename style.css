@@ -122,7 +122,9 @@ b, strong {
     left: 0;
     z-index: 999;
 }
+.blackspace-bar{height: 60px; background: #808080;}
 /* logo */
+#logo-header{margin: 5px 0 5px 0;}
 div.menu.active .logo {
 	background-image: url('img/logo.png');
     height: 157px;
