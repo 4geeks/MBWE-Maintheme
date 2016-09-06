@@ -868,7 +868,7 @@ h4, h5, h6{font-size: 24px;}
 	height: auto;
 	background-color: #ffffff;
 	color: #ffffff;
-	background-image: url(img/torta.png);
+	background-image: url(img/torta.jpg);
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -893,11 +893,19 @@ h4, h5, h6{font-size: 24px;}
 
 .contact-call-us p{
     margin-top: 25px;
+    text-align: center;
 }
 
 .contact-call-us h1{
 	padding-left:40px;
     font-weight: bold;
+}
+
+.contact-call-us{
+    text-align: center;
+}
+.contact-call-us .tracking-phone-number{
+    margin-top: -20px;
 }
 
 #page-contact-us {
@@ -1119,7 +1127,7 @@ li.col1 {
     height: 100%;
 	background-color: #ffffff;
 	color: #ffffff;
-	background-image: url(img/torta.png);
+	background-image: url(img/torta.jpg);
 	background-position: center;
 	background-size: cover;
 
@@ -1149,13 +1157,19 @@ li.col1 {
 
 	.gform_wrapper {
 	    overflow: inherit !important;
-	    margin: 1em 0.5em !important;
+	    margin: 0em 0.5em 1em 0.5em !important;
 	    max-width: 98% !important;
 	}
 
+    .gform_wrapper div.charleft{
+        font-weight: 700;
+        color: white;
+        font-size: 0.5em
+    }
+
     .gform_wrapper .top_label .gfield_label {
         line-height: .8;
-        font-size: 0.8em;
+        font-size: .5em;
     }
 
 	.contact-call-us {
