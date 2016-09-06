@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Venues
+Template Name: Planner Taxonomy
 */
 
 get_header(); 

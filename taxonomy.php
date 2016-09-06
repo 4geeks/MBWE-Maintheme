@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Venues
+Template Name: Venues Taxonomy
 */
 
 get_header(); 

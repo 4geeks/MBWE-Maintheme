@@ -33,6 +33,7 @@ $content = get_page($post->ID)->post_content;
 	<div id="primary" class="full-width-page no-sidebar">
 		<main id="main">
             <?php echo $content; ?>
+            <p>ppupupup</p>
             <div id="list-content" class="row">                    
                 <?php foreach ($venues->posts as $venue) {
                     ?>

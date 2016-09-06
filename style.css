@@ -155,7 +155,7 @@ div.menu.active .logo {
     color: white;
     font-weight: 900;
 }
-.tracking-phone-number:hover {
+.tracking-phone-number:hover, .tracking-phone-number:visited {
     text-decoration: none;
     color: white;
 }
