@@ -13,7 +13,7 @@ get_header();
     <div id="page-contact-us">
     	<div class="contact-us">
 		<div class="col-md-12 contact-title highlight-p">
-		   <center><p>Responsiveness is one of our main values, <br /> we guaranty you a response in less than 10min</p></center>       
+		   <center><p>Responsiveness is one of our main values, <br /> we guarantee you a response in less than 10min</p></center>       
 		</div>
 		<!-- <div class="row"> -->
 		    <div class="col-md-5 col-xs-12 contact-call-us">

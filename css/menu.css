@@ -1,3 +1,9 @@
+#div-top-menu-background{
+    position: relative;
+    width: 102%;
+    height: 58px;
+}
+
 #my-sidebar-toggle {
   position: fixed;
   height: 60px;

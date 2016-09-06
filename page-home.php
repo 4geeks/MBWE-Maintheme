@@ -39,7 +39,7 @@ $content = get_page($post->ID)->post_content;
 		<div class="col-md-6 col-xs-12 col-sm-6 img-venues highlight-element-services services-venues">
 				<div class="col-md-12"><p class="services-title">Wedding Venues</p></div>
 			<div id="divServicesContent-venues" class="col-md-12 center">
-				<div class="col-md-12"><p class="services-content">Picking a date should be the first step of every wedding, that's why the first thing you should do is booking you venue on a specific date. We have a selection of more than 25 spectacular locations.</p></div>
+				<div class="col-md-12"><p class="services-content">Picking a date should be the first step of every wedding, that's why the first thing you should do is booking your venue on a specific date. We have a selection of more than 25 spectacular locations.</p></div>
 				<div class="col-md-12"><a class="btn btn-lg btn-warning" href="<?php echo get_home_url().'/wedding-venues-locations' ?>">Take a look at our venues</a></div>
 			</div>
 		</div>
