@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Venues
+Template Name: Venue List
 */
 
 get_header(); 
