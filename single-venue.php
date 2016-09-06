@@ -77,8 +77,8 @@ function shrinkText($texto='', $maxsize = 20)
             </div>
         </div>
         <div id="menu-desplegable" class="col-xs-8 col-sm-4">
-            <span class="pull-left hidden-xs"><?php echo shrinkText($name,20) ?> &#8203; </span> 
-            <span class="pull-left visible-xs" style="font-size: 18px; text-align: right;">&nbsp;Other venues: &#8203; </span> 
+            <p class="pull-left hidden-xs"><?php echo shrinkText($name,20) ?> &#8203; </p> 
+            <p class="pull-left visible-xs" style="font-size: 18px; text-align: right;">&nbsp;Other venues: &#8203; </p> 
             <span id="icon-dropdown" class="glyphicon glyphicon-collapse-down pull-right"></span>
             <ul id="sub-menu" class="style-scroll-1 scrollbar">
             <?php
