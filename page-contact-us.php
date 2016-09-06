@@ -19,8 +19,7 @@ get_header();
 		<!-- <div class="row"> -->
 		    <div class="col-md-5 col-xs-12 contact-call-us">
 		        <p>Call us now!</p>
-		        <p class="highlight-p with-font-sub-title tracking-phone-number"><?php echo $GLOBALS['BMW_PHONE_NUMBER']; ?></p>
-		        <p>Or chat with us</p>
+		        <a href="tel:<?php echo $GLOBALS['BMW_PHONE_NUMBER']; ?>" class="highlight-p with-font-sub-title tracking-phone-number"><?php echo $GLOBALS['BMW_PHONE_NUMBER']; ?></a>
 		    </div>
 		    <div class="col-md-7 col-xs-12 div-form-contact-us highlight-p">
 		        <?php gravity_form( 4, false, false, false, '', true ); ?>           

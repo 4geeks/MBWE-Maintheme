@@ -150,6 +150,16 @@ div.menu.active .logo {
 	padding-right: 0px;
 }
 
+.tracking-phone-number {
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+}
+.tracking-phone-number:hover {
+    text-decoration: none;
+    color: white;
+}
+
 /*------------------------------------*\
     PAGES
 \*------------------------------------*/
@@ -412,6 +422,8 @@ h4, h5, h6{font-size: 24px;}
   font-family: content_font_bold;
   font-size: 60px;
   text-shadow: 1px 1px grey;
+  line-height: 2;
+  text-align: center;
 }
 
 * {
