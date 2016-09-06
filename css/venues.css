@@ -467,6 +467,11 @@ Saved: Apr 18 2016 | 16:49:53 */
     #div-venue-button p {
         font-size: 22px;
         font-weight: bold;
+        top: 50%;
+    }
+
+    #div-venue-name {
+        top: 20%;
     }
 
     #div-venue-image, .fullscreen-bg__video{
