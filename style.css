@@ -944,7 +944,6 @@ h4, h5, h6{font-size: 24px;}
 
 
 .gform_wrapper ul li.gfield{
-    margin-bottom: 10px !important;
     vertical-align: middle;
 }
 
@@ -991,8 +990,14 @@ li.col1 {
     padding: 0 0 0 0 !important;
     color: #000000;
 }
+.gfield_select {
+    background: white;
+    border: 1px grey !important;
+    border-radius: 0 !important;
+    font-size: 80%;
+}
 .gform_wrapper .top_label select.large {
-	width: 95% !important;
+    width: 95% !important;
 }
 .gform_button button {
     width: 90% !important;
@@ -1102,7 +1107,7 @@ li.col1 {
         font-size: 80%;
     }
 
-    .gform_wrapper input[type=email], .gform_wrapper input[type=submit], .gform_wrapper input[type=number], .gform_wrapper input[type=password], .gform_wrapper input[type=tel], .gform_wrapper input[type=text], .gform_wrapper input[type=url]{
+    .gform_wrapper input[type=email], .gform_wrapper select, .gform_wrapper input[type=submit], .gform_wrapper input[type=number], .gform_wrapper input[type=password], .gform_wrapper input[type=tel], .gform_wrapper input[type=text], .gform_wrapper input[type=url]{
         font-size: 80% !important;
     }
 
@@ -1170,6 +1175,10 @@ li.col1 {
     .gform_wrapper .top_label .gfield_label {
         line-height: .8;
         font-size: .5em;
+    }
+
+    .gform_wrapper ul li.gfield{
+        margin-bottom: 0 !important;
     }
 
 	.contact-call-us {
