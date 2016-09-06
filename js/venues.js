@@ -51,6 +51,7 @@
 							zoomControl: false,
 							scaleControl: false,
 							scrollwheel: false,
+							draggable: false,
 							disableDoubleClickZoom: true
 						};
 	    	var map = new google.maps.Map(document.getElementById("div-venue-maps"), options);

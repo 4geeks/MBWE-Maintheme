@@ -78,7 +78,7 @@ function shrinkText($texto='', $maxsize = 20)
         </div>
         <div id="menu-desplegable" class="col-xs-8 col-sm-4">
             <span class="pull-left hidden-xs"><?php echo shrinkText($name,20) ?> &#8203; </span> 
-            <span class="pull-left visible-xs">&nbsp;Other venues: &#8203; </span> 
+            <span class="pull-left visible-xs" style="font-size: 18px; text-align: right;">&nbsp;Other venues: &#8203; </span> 
             <span id="icon-dropdown" class="glyphicon glyphicon-collapse-down pull-right"></span>
             <ul id="sub-menu" class="style-scroll-1 scrollbar">
             <?php
@@ -185,7 +185,7 @@ function shrinkText($texto='', $maxsize = 20)
             <?php if($blueprint != '' or $blueprintImage !=''){ ?>
                 <div id="div-venue-blueprint" class="row">
                     <?php if($blueprint != '') {?>
-                    <div class="p-location">
+                    <div class="p-location hidden-xs">
                         <h2>Areas and distribution of <?php  echo $name;?></h2>
                         <?php echo $blueprint?>
                     </div>

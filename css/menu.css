@@ -7,7 +7,6 @@
 #my-sidebar-toggle {
   position: fixed;
   height: 60px;
-  width: 130px;
   padding-top:13px;
   left: 15px;
   z-index: 101;
