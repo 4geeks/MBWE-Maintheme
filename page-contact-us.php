@@ -10,6 +10,7 @@ get_header();
 	<!-- ========== MENU TOP ========== -->
     <?php get_template_part( 'template-parts/menu', 'top' ); ?>
     <!-- ========== MENU TOP ========== -->
+    <div class="blackspace-bar"></div>
     <div id="page-contact-us">
     	<div class="contact-us">
 		<div class="col-md-12 contact-title highlight-p">
