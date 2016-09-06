@@ -367,7 +367,7 @@ Saved: Apr 18 2016 | 16:49:53 */
     background-position: center center;
     background-size: cover;
     -webkit-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-    padding-left: 25px;    
+    padding-left: 25px; 
 }
 
 #sub-menu li a{
@@ -377,16 +377,21 @@ Saved: Apr 18 2016 | 16:49:53 */
     top: 37%;
     font-size: 40px;
     font-weight: bold;
-    text-shadow: 1px 1px black;
+    text-shadow: 3px 2px black;
 }
 /* Se contfigura cada elemento cuando se activa el estado hover*/
-#sub-menu li:hover{
-    margin-left:-15px;
+#sub-menu li{
     -webkit-box-shadow: inset 0px -53px 81px 5px rgba(0,0,0,0.47);
     -moz-box-shadow: inset 0px -53px 81px 5px rgba(0,0,0,0.47);
     box-shadow: inset 0px -53px 81px 5px rgba(0,0,0,0.47);
 }
 
+#sub-menu li:hover{
+    margin-left:-15px;
+    -webkit-box-shadow: inset 0px -53px 81px 5px rgba(0,0,0,0.1);
+    -moz-box-shadow: inset 0px -53px 81px 5px rgba(0,0,0,0.1);
+    box-shadow: inset 0px -53px 81px 5px rgba(0,0,0,0.1);
+}
 
 .scrollbar
 {

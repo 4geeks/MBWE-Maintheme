@@ -85,7 +85,7 @@ function shrinkText($texto='', $maxsize = 20)
                 //list all venues in post types
                 foreach ($venues->posts as $venue) {
                     if (get_post()->ID != $venue->ID) {
-                        echo "<li style='background-image: url(". get_post_meta( $venue->ID, 'wpcf-venue-small-image', false)[0].")'>";
+                        echo "<li class='mansonry-hover' style='background-image: url(". get_post_meta( $venue->ID, 'wpcf-venue-small-image', false)[0].")'>";
                             echo "<a class='with-font-sub-title' href='".get_home_url()."/venue/".$venue->post_name."'>".$venue->post_title."</a>";
                         echo "</li>";
                     }
