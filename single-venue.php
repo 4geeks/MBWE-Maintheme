@@ -109,7 +109,7 @@ function shrinkText($texto='', $maxsize = 20)
                 </div>
                 <div id="div-venue-button">
                     <a class="btn btn-warning modalContact" href="#animatedModalContact">Request a quote</a>
-                    <p class="highlight-p">or call now! <span class="tracking-phone-number"><?php echo $GLOBALS['BMW_PHONE_NUMBER']; ?></span></p> 
+                    <p class="highlight-p">or call now! <a href="tel:<?php echo $GLOBALS['BMW_PHONE_NUMBER']; ?>" class="tracking-phone-number"><?php echo $GLOBALS['BMW_PHONE_NUMBER']; ?></a></p> 
                 </div>
                 <div id="arrow-down" class="not-for-mobile"><span class="glyphicon glyphicon-chevron-down"></span></div>     
             </div>

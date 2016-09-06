@@ -5,7 +5,7 @@
  *  Custom functions, support, custom post types and more.
  */
 
-$GLOBALS['BMW_PHONE_NUMBER'] = "(305) 662-4742";
+$GLOBALS['BMW_PHONE_NUMBER'] = "305-662-4742";
 
 /*------------------------------------*\
 	External Modules/Files
