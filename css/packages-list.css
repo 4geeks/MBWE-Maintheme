@@ -3,12 +3,9 @@
 	width: 100%;
 	padding-top: 120px;
     padding-bottom: 60px;
-    height: 400px;
+    height: 600px;
     text-align: center;
     background-size: cover;
-    background-position-x: 50%;
-    background-position-y: 189%;
-    background-attachment: fixed;
     color: #ffffff;
 }
 
@@ -85,9 +82,6 @@
   #content-header {
   	height: 430px;
   	padding-top: 70px;
-  	background-size: 759px;
-    background-position-y: -55%;
-   	background-attachment: fixed;
   }
 
   .inner-package-element {
@@ -108,10 +102,7 @@
 	
 	#content-header {
 		padding-top: 190px;
-		height: 600px;
-		background-size: 911px;
-    	background-position-y: 0%;    	
-    	background-attachment: fixed;
+		height: 500px;
 	}
 
 	.content-header-description {
@@ -130,9 +121,7 @@
 /* ONLY FOR TABLETS IN LANDSCAPE */
 @media screen and (orientation: landscape) and (min-width: 768px) and (max-width: 1024px) { 
 	#content-header{
-		background-size: 1030px;
-    	background-position-y: -200%;
-    	background-attachment: fixed; 
+		height: 500px;
 	}
 	#content-header h2 {
 		padding-top: 20px;
@@ -165,8 +154,5 @@
 @media screen and (min-width: 1920px){
 	#content-header{
 		height: 600px;
-		background-size: 1910px;
-    	background-position-x: 50%;
-    	background-position-y: 335%;
 	}
 }

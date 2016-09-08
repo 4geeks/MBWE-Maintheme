@@ -51,7 +51,6 @@ $content = get_page($post->ID)->post_content;
                 </div>
             </div>
             <div class="modal-content">
-                adasdas
             </div>
         </div>
 	</div>
