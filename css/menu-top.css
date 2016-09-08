@@ -1,3 +1,24 @@
 #sub-menu{   
     top: 14px;
 }
+
+ #div-top-menu {
+ 	position: fixed;
+     left: 0px;
+     right: 0px;
+     height: 70px;
+     color: #ffffff;
+     top: 0px;
+     width: 100%;
+ }
+ 
+ #div-top-menu-background {
+ 	position: fixed;
+     left: 0px;
+     right: 0px;
+     top: 0px;
+     width: 100%;	
+     background-color: #000000;
+     opacity: 0.5;
+     z-index: 3;
+}
