@@ -116,6 +116,7 @@ Saved: Apr 17 2016 | 20:42:27 */
     font-size: 25px;
     margin-top: 14px;
     padding-bottom: 5px;
+    min-width: 280px;
 }
 
 
@@ -311,12 +312,19 @@ Saved: Apr 18 2016 | 16:49:53 */
 
 /* Se contfigura la capa principal*/
 #menu-desplegable{
+    position: relative;
     background: transparent;
     color: white;
     cursor: pointer;
-    margin: 15px 0px 0px 0px;
+    top: 0;
+    right: 15px;
+    padding: 15px 10px 10px 10px;
+    text-shadow: 1px 1px #333333;
     font-weight: bolder;
     font-size: 25px;
+}
+#menu-desplegable:hover{
+    background: black;
 }
 /* Se contfigura el submenu de opciones*/
 #sub-menu{    
@@ -324,16 +332,17 @@ Saved: Apr 18 2016 | 16:49:53 */
     display: none;
     font-weight: lighter;
     padding: 0;
-    margin: 45px 0px 0px;
+    margin: 40px 0px 0px;
     position: fixed;
-    right: 2px;
+    right: 4px;
     max-height: 500px;
     overflow-y: auto;
     opacity:0;
-    border-left: 2px solid white;
-    border-right: 2px solid white;
-    border-bottom: 2px solid white;
-    background:rgba(255,255,255, 0.7);
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    background:rgba(0,0,0, 0.7);
 }
 
 .venue-selected {
@@ -450,7 +459,6 @@ Saved: Apr 18 2016 | 16:49:53 */
         display: none;
     }   
   #menu-desplegable{
-    margin: 16px 0px 0px 0px;
     font-size: 14px;
     float: right;
   }
@@ -519,9 +527,9 @@ Saved: Apr 18 2016 | 16:49:53 */
 
 @media screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1024px){
     #menu-desplegable{
-        margin: 12px 30px 0px 0px;        
         float: right;
         padding-left: 0px;
+        right: 0px;
     }
     #sub-menu{
         width: 50% !important;
@@ -550,6 +558,7 @@ Saved: Apr 18 2016 | 16:49:53 */
     #menu-desplegable{
         margin: 20px 0px 0px -30px;
         font-size: 19px;
+        right:-10px;
     }
     .top-venue-menu{
         margin-left: 0px;
