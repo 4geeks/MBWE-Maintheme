@@ -124,7 +124,7 @@ b, strong {
 }
 .blackspace-bar{height: 60px; background: #808080;}
 /* logo */
-#logo-header{margin: 5px 0 5px 0;}
+#logo-header{margin: 5px 0 5px 0; max-width: 73px; max-height: 50px;}
 div.menu.active .logo {
 	background-image: url('img/logo.png');
     height: 157px;
