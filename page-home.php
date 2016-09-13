@@ -27,9 +27,12 @@ $content = get_page($post->ID)->post_content;
 // echo"</pre>";
 
 //print_r($content);
+$revslider = get_post_meta($post->ID,"slide_template",true);
+if(!$revslider or $revslider=='') $revslider = 'home-slider';
+
+putRevSlider($revslider);
 
 ?>
-<?php putRevSlider('home-slider'); ?>
 </div>
 <div id="div-ourServices" class="row margin-top-ourServices">
 	<div class="col-md-12">
