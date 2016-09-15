@@ -17,7 +17,7 @@ $post = get_post();
 $catering = types_render_field("package-catering-experience");
 $cateringImage = types_render_field("package-catering-image",array("url" => "true"));
 $afterdinner = types_render_field("package-after-dinner-experience");
-$afterdinnerImage = types_render_field("package-afterdinner-image",array("url" => "true"));
+$afterdinnerImage = types_render_field("package-after-dinner-image",array("url" => "true"));
 $design = types_render_field("package-design-experience");
 $designImage = types_render_field("package-design-image",array("url" => "true"));
 $beverage = types_render_field("package-beverage-experience");
@@ -44,12 +44,12 @@ if(!$revslider or $revslider=='') $revslider = 'package-slider';
                         ?>   
                 </div>
             </div>
-	        <div class="row catering-experience">
+	        <div class="row package-section">
 				<div class="section half-section-left">
 					<div class="section-bg hidden-xs img-bg" data-bg="<?php echo $cateringImage; ?>" style="background: url(<?php echo $cateringImage; ?>);">&nbsp;</div>
 					<div class="container">
 						<div class="row">
-							<div class="col-sm-offset-6 col-sm-6 col-xs-12">
+							<div class="col-sm-offset-6 col-sm-6 col-xs-12 package-section-content">
 				        		<h1>Catering Experience</h1>
 	        					<?php echo $catering; ?>
 							</div>
@@ -57,7 +57,7 @@ if(!$revslider or $revslider=='') $revslider = 'package-slider';
 					</div>
 				</div>
 	        </div>
-	        <div class="row catering-experience">
+	        <div class="row package-section">
 				<div class="section half-section-right">
 					<div class="container">
 						<div class="row after-dinner-content">
@@ -69,7 +69,7 @@ if(!$revslider or $revslider=='') $revslider = 'package-slider';
 					<div class="section-bg hidden-xs img-bg" data-bg="<?php echo $beverageImage; ?>" style="background: url(<?php echo $beverageImage; ?>);">&nbsp;</div>
 				</div>
 	        </div>
-	        <div class="row catering-experience">
+	        <div class="row package-section">
 				<div class="section half-section-left">
 					<div class="section-bg hidden-xs img-bg" data-bg="<?php echo $afterdinnerImage; ?>" style="background: url(<?php echo $afterdinnerImage; ?>);">&nbsp;</div>
 					<div class="container ">
@@ -81,7 +81,7 @@ if(!$revslider or $revslider=='') $revslider = 'package-slider';
 					</div>
 				</div>
 	        </div>
-	        <div class="row catering-experience">
+	        <div class="row package-section">
 				<div class="section half-section-right">
 					<div class="container">
 						<div class="row after-dinner-content">
