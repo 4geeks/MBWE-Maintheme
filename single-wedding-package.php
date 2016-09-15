@@ -20,6 +20,8 @@ $afterdinner = types_render_field("package-after-dinner-experience");
 $afterdinnerImage = types_render_field("package-afterdinner-image",array("url" => "true"));
 $design = types_render_field("package-design-experience");
 $designImage = types_render_field("package-design-image",array("url" => "true"));
+$beverage = types_render_field("package-beverage-experience");
+$beverageImage = types_render_field("package-beverage-image",array("url" => "true"));
 
 $revslider = types_render_field("package-revslider");
 if(!$revslider or $revslider=='') $revslider = 'package-slider';
@@ -52,12 +54,11 @@ if(!$revslider or $revslider=='') $revslider = 'package-slider';
 					<div class="container">
 						<div class="row after-dinner-content">
 							<div class="col-sm-6 col-xs-12">
-				        		<h1>After Dinner Experience</h1>
-	        					<?php echo $afterdinner; ?>
+	        					<?php echo $beverage; ?>
 							</div>
 						</div>
 					</div>
-					<div class="section-bg hidden-xs img-bg" data-bg="<?php echo $afterdinnerImage; ?>" style="background: url(<?php echo $cateringImage; ?>);">&nbsp;</div>
+					<div class="section-bg hidden-xs img-bg" data-bg="<?php echo $beverageImage; ?>" style="background: url(<?php echo $beverageImage; ?>);">&nbsp;</div>
 				</div>
 	        </div>
 	        <div class="row catering-experience">
@@ -66,12 +67,26 @@ if(!$revslider or $revslider=='') $revslider = 'package-slider';
 					<div class="container ">
 						<div class="row">
 							<div class="col-sm-offset-6 col-sm-6 col-xs-12">
-				        		<h1>Design Experience</h1>
-	        					<?php echo $design; ?>
+	        					<?php echo $afterdinner; ?>
 							</div>
 						</div>
 					</div>
 				</div>
+	        </div>
+	        <div class="row catering-experience">
+				<div class="section half-section-right">
+					<div class="container">
+						<div class="row after-dinner-content">
+							<div class="col-sm-6 col-xs-12">
+	        					<?php echo $design; ?>
+							</div>
+						</div>
+					</div>
+					<div class="section-bg hidden-xs img-bg" data-bg="<?php echo $afterdinnerImage; ?>" style="background: url(<?php echo $cateringImage; ?>);">&nbsp;</div>
+				</div>
+	        </div>
+	        <div class="row entretainment-services">
+	        	<p>Entretainment Services available upon request</p>
 	        </div>
             <?php get_template_part( 'template-parts/part', 'testimonies' ); ?>
             <?php if($tour != ''){ ?>
