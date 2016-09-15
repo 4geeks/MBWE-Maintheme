@@ -1,0 +1,27 @@
+.catering-experience h1{text-align: center;}
+.experience-content{padding: 10px;}
+.after-dinner-content{text-align: right;}
+
+.half-section-left, .half-section-right, .one-third-section-left, .one-third-section-right {
+    position: relative;
+}
+
+.half-section-left .section-bg, .one-third-section-left .section-bg {
+    right: auto;
+    left: 0;
+}
+.half-section-right .section-bg, .one-third-section-right .section-bg {
+    left: auto;
+    right: 0;
+}
+
+.half-section-left .section-bg, .half-section-right .section-bg, .one-third-section-left .section-bg, .one-third-section-right .section-bg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center center !important;
+}

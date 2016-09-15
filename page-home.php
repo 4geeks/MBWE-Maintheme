@@ -27,12 +27,16 @@ $content = get_page($post->ID)->post_content;
 // echo"</pre>";
 
 //print_r($content);
-$revslider = get_post_meta($post->ID,"slide_template",true);
+$revslider = get_post_meta($post->ID, "slide_template", true);
 if(!$revslider or $revslider=='') $revslider = 'home-slider';
 
-putRevSlider($revslider);
+$revslider = get_post_meta($post->ID, "wedding-packages-description", true);
 
 ?>
+
+
+
+<?php putRevSlider($revslider); ?>
 </div>
 <div id="div-ourServices" class="row margin-top-ourServices">
 	<div class="col-md-12">

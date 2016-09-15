@@ -209,6 +209,10 @@ function html5blank_styles()
         wp_register_style('plannercss', get_template_directory_uri() . '/css/planner.css', false, '1.1', 'all');
         wp_enqueue_style('plannercss');        
     }
+    if (get_post_type()=='wedding-package'){
+        wp_register_style('packagecss', get_template_directory_uri() . '/css/package.css', false, '1.1', 'all');
+        wp_enqueue_style('packagecss');        
+    }
 
     if (is_page('venue-event') || is_page('gallery-event')){
         wp_register_style('venueeventcss', get_template_directory_uri() . '/css/venue-event.css', false, '1.1', 'all');
