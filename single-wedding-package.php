@@ -71,7 +71,7 @@ if(!$revslider or $revslider=='') $revslider = 'package-slider';
 	        </div>
 	        <div class="row catering-experience">
 				<div class="section half-section-left">
-					<div class="section-bg hidden-xs img-bg" data-bg="<?php echo $designImage; ?>" style="background: url(<?php echo $cateringImage; ?>);">&nbsp;</div>
+					<div class="section-bg hidden-xs img-bg" data-bg="<?php echo $designImage; ?>" style="background: url(<?php echo $designImage; ?>);">&nbsp;</div>
 					<div class="container ">
 						<div class="row">
 							<div class="col-sm-offset-6 col-sm-6 col-xs-12">
@@ -90,7 +90,7 @@ if(!$revslider or $revslider=='') $revslider = 'package-slider';
 							</div>
 						</div>
 					</div>
-					<div class="section-bg hidden-xs img-bg" data-bg="<?php echo $afterdinnerImage; ?>" style="background: url(<?php echo $cateringImage; ?>);">&nbsp;</div>
+					<div class="section-bg hidden-xs img-bg" data-bg="<?php echo $afterdinnerImage; ?>" style="background: url(<?php echo $afterdinnerImage; ?>);">&nbsp;</div>
 				</div>
 	        </div>
 	        <div class="row entretainment-services">
