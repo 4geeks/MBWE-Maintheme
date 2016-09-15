@@ -36,6 +36,14 @@ if(!$revslider or $revslider=='') $revslider = 'package-slider';
     <!-- ========== MENU TOP ========== -->
     <div id="primary" class="<?php echo $primary_class; ?>">
         <main id="main">
+            <div class="row pricing-form-content">                
+                <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 container">
+                    <h2 class="text-center">Call now! <a href="tel:<?php echo $GLOBALS['BMW_PHONE_NUMBER']; ?>" class="tracking-phone-number"><?php echo $GLOBALS['BMW_PHONE_NUMBER']; ?></a> to request pricing <br /> or fill the following form:</h2>
+                    <?php 
+                        gravity_form( 'Package Appointment', false, false, true, array('planner-slug' => $post->slug), true ); 
+                        ?>   
+                </div>
+            </div>
 	        <div class="row catering-experience">
 				<div class="section half-section-left">
 					<div class="section-bg hidden-xs img-bg" data-bg="<?php echo $cateringImage; ?>" style="background: url(<?php echo $cateringImage; ?>);">&nbsp;</div>
