@@ -30,8 +30,6 @@ $content = get_page($post->ID)->post_content;
 $revslider = types_render_field("page-slider");
 if(!$revslider or $revslider=='') $revslider = 'home-slider';
 
-$revslider = get_post_meta($post->ID, "wedding-packages-description", true);
-
 ?>
 
 
