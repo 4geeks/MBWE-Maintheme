@@ -27,13 +27,12 @@ $content = get_page($post->ID)->post_content;
 // echo"</pre>";
 
 //print_r($content);
-$revslider = get_post_meta($post->ID, "slide_template", true);
+$revslider = types_render_field("page-slider");
 if(!$revslider or $revslider=='') $revslider = 'home-slider';
 
 $revslider = get_post_meta($post->ID, "wedding-packages-description", true);
 
 ?>
-
 
 
 <?php putRevSlider($revslider); ?>
