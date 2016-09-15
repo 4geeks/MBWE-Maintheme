@@ -40,7 +40,7 @@ if(!$revslider or $revslider=='') $revslider = 'package-slider';
                 <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 container">
                     <h2 class="text-center">Call now! <a href="tel:<?php echo $GLOBALS['BMW_PHONE_NUMBER']; ?>" class="tracking-phone-number"><?php echo $GLOBALS['BMW_PHONE_NUMBER']; ?></a> to request pricing <br /> or fill the following form:</h2>
                     <?php 
-                        gravity_form( 'Package Appointment', false, false, true, array('planner-slug' => $post->slug), true ); 
+                        gravity_form( 'Package Pricing Request', false, false, true, array('planner-slug' => $post->slug), true ); 
                         ?>   
                 </div>
             </div>
