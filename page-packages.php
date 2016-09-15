@@ -7,7 +7,7 @@ get_header();
 
 //Get venue post types to list 
 
-$args = array('post_type' => 'package'); 
+$args = array('post_type' => 'wedding-package'); 
 $packages = new WP_Query( $args );
 $content = get_page($post->ID)->post_content;
 ?>
