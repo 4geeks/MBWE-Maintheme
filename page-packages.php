@@ -28,7 +28,7 @@ $content = get_page($post->ID)->post_content;
                                 <?php echo get_post_meta( $package->ID, 'wpcf-package-description', false)[0]; ?>
                             </div>
                             <div class="col-md-12 div-package-btn">
-                                <a class="btn btn-info datail-package" target="_blank" href="<?php echo get_post_meta($package->ID, 'wpcf-package-main-attachment', false)[0];  ?>">Read more</a>
+                                <a class="btn btn-info datail-package" href="<?php echo get_permalink($planner->ID); ?>">Read more</a>
                             </div>                            
                         </div>
                     </div>

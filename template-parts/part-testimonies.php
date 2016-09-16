@@ -3,6 +3,8 @@
 $testimonies = types_child_posts('testimonie');
 
 ?>
+
+<?php if(count($testimonies)==0) { ?>                   
 <div id="testimonies" class="container">
     <div class="row">
         <div class="col-md-12">
@@ -21,10 +23,6 @@ $testimonies = types_child_posts('testimonie');
                     </div>
             </div>                    
         <?php } ?> 
-        <?php if(count($testimonies)==0) { ?>                   
-            <div class="col-md-12">
-                There are no testimonies about this.
-            </div>                    
-        <?php } ?> 
     </div>
 </div>
+<?php } ?> 

@@ -693,7 +693,6 @@ add_action('admin_head', 'fix_svg_thumb_display');
 /* HIDDEN THE GRAVITY FORMS */
 add_filter( 'gform_enable_field_label_visibility_settings', '__return_true' );
 
-
-
+//require_once('classes/ClientTheme.options.php');
 
 ?>
