@@ -190,7 +190,7 @@ function html5blank_styles()
         wp_enqueue_style('plannerslistcss');        
     }
 
-    if (is_page('wedding-packages')){
+    if (is_page('wedding-packages') || is_tax('browse-package')){
         wp_register_style('packageslistcss', get_template_directory_uri() . '/css/packages-list.css', false, '1.1', 'all');
         wp_enqueue_style('packageslistcss');        
     }
