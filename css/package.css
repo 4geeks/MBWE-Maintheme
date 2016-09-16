@@ -1,6 +1,6 @@
 .package-section h1{text-align: center;}
 .package-section-content{padding: 30px;}
-.after-dinner-content{text-align: right;}
+.half-section-right .package-section-content{text-align: right;}
 
 .half-section-left, .half-section-right, .one-third-section-left, .one-third-section-right {
     position: relative;
@@ -26,12 +26,17 @@
     background-position: center center !important;
 }
 .pricing-form-content{
-    padding: 40px 10px 40px 10px;
-    background: #93D5D9;
+    padding: 20px 10px 20px 10px;
+    background: #182021;
+    color: white;
+}
+.pricing-form-content .tracking-phone-number{
+    color: #d6af76;
 }
 .entretainment-services{
     padding: 60px 10px 60px 10px;
-    background: #93D5D9;
+    background: #182021;
+    color: white;
 }
 .entretainment-services p{
     font-size: 34px;

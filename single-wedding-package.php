@@ -37,8 +37,10 @@ if(!$revslider or $revslider=='') $revslider = 'package-slider';
     <div id="primary" class="<?php echo $primary_class; ?>">
         <main id="main">
             <div class="row pricing-form-content">                
-                <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 container">
-                    <h2 class="text-center">Call now! <a href="tel:<?php echo $GLOBALS['BMW_PHONE_NUMBER']; ?>" class="tracking-phone-number"><?php echo $GLOBALS['BMW_PHONE_NUMBER']; ?></a> to request pricing <br /> or fill the following form:</h2>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <h3 class="text-right">Call now! <a href="tel:<?php echo $GLOBALS['BMW_PHONE_NUMBER']; ?>" class="tracking-phone-number"><?php echo $GLOBALS['BMW_PHONE_NUMBER']; ?></a> to request pricing <br /> or fill the following form:</h3>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-7">
                     <?php 
                         gravity_form( 'Package Pricing Request', false, false, true, array('planner-slug' => $post->slug), true ); 
                         ?>   
@@ -60,8 +62,8 @@ if(!$revslider or $revslider=='') $revslider = 'package-slider';
 	        <div class="row package-section">
 				<div class="section half-section-right">
 					<div class="container">
-						<div class="row after-dinner-content">
-							<div class="col-sm-6 col-xs-12">
+						<div class="row"> 
+							<div class="col-sm-6 col-xs-12 package-section-content">
 	        					<?php echo $beverage; ?>
 							</div>
 						</div>
@@ -74,7 +76,7 @@ if(!$revslider or $revslider=='') $revslider = 'package-slider';
 					<div class="section-bg hidden-xs img-bg" data-bg="<?php echo $afterdinnerImage; ?>" style="background: url(<?php echo $afterdinnerImage; ?>);">&nbsp;</div>
 					<div class="container ">
 						<div class="row">
-							<div class="col-sm-offset-6 col-sm-6 col-xs-12">
+							<div class="col-sm-offset-6 col-sm-6 col-xs-12 package-section-content">
 	        					<?php echo $afterdinner; ?>
 							</div>
 						</div>
@@ -84,8 +86,8 @@ if(!$revslider or $revslider=='') $revslider = 'package-slider';
 	        <div class="row package-section">
 				<div class="section half-section-right">
 					<div class="container">
-						<div class="row after-dinner-content">
-							<div class="col-sm-6 col-xs-12">
+						<div class="row">
+							<div class="col-sm-6 col-xs-12 package-section-content">
 	        					<?php echo $design; ?>
 							</div>
 						</div>
