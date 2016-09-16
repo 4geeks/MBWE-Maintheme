@@ -23,7 +23,7 @@ $designImage = types_render_field("package-design-image",array("url" => "true"))
 $beverage = types_render_field("package-beverage-experience");
 $beverageImage = types_render_field("package-beverage-image",array("url" => "true"));
 
-$revslider = types_render_field("package-revslider");
+$revslider = types_render_field("page-slider");
 if(!$revslider or $revslider=='') $revslider = 'package-slider';
 
 ?>  
