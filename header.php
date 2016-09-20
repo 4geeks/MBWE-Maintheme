@@ -97,7 +97,7 @@ $f = $GLOBALS['BMW_PHONE_NUMBER'];
 				<div id="my-sidebar-toggle">	        						
 					<i class="fa fa-navicon"></i> <span>Menu</span>			
 				</div>
-				<?php if (!is_front_page() and !is_singular('venue') and !is_page('venue-event') and !is_page('gallery-event') and !is_page('gallery')){ ?>
+				<?php if (!is_front_page() and !is_singular('church') and !is_singular('venue') and !is_page('venue-event') and !is_page('gallery-event') and !is_page('gallery')){ ?>
 					<p id="phone-number-header" class="not-for-mobile">Call now! <span class="tracking-phone-number"><?php echo $f; ?></span></p>
 				<?php } ?>
 			</header>
