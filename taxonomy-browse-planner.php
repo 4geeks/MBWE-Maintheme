@@ -42,7 +42,7 @@ function getYoutubeID($url = '')
 			<div class="container-fluid landing-with-form" style="background-image: url('http://new.bestmiamiweddings.com/wp-content/uploads/sites/3/2016/05/Vizcaya.png');">
 		<?php } ?>
 		        <div class="row">
-					<div class="col-md-12">
+					<div class="col-md-12 landing-headline-content">
 						<h1 class="with-font-title"><?php printf(single_cat_title( '', false ) . '' ); ?></h1>
 						<?php if($headline and $headline!=''){ ?>
 							<p class="landing-headline"><?php echo $headline; ?></p>

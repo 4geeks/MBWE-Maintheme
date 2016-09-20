@@ -334,7 +334,7 @@ Saved: Apr 18 2016 | 16:49:53 */
     padding: 0;
     margin: 40px 0px 0px;
     position: fixed;
-    right: 4px;
+    right: 32px;
     max-height: 500px;
     overflow-y: auto;
     opacity:0;
@@ -461,6 +461,7 @@ Saved: Apr 18 2016 | 16:49:53 */
   #menu-desplegable{
     font-size: 14px;
     float: right;
+    margin-right: -30px;
   }
   #menu-desplegable span{
   }
@@ -495,7 +496,7 @@ Saved: Apr 18 2016 | 16:49:53 */
         margin-top: 20px;
     }
     #sub-menu{
-        margin: 36px -2px 0px;
+        margin: 36px -32px 0px 0px;
         width: 100% !important;
     }
     #sub-menu li{
@@ -556,7 +557,7 @@ Saved: Apr 18 2016 | 16:49:53 */
       padding: 5px;
     }
     #menu-desplegable{
-        margin: 20px 0px 0px -30px;
+        margin: 0px 0px 0px -30px;
         font-size: 19px;
         right:-10px;
     }

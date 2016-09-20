@@ -81,7 +81,7 @@ a {
     font-weight: 500;
 }
 .btn a {
-    text-decoration:none;
+    text-decoration:none !important;
 }
 a:hover {
 	color:#444;
@@ -389,12 +389,17 @@ h4, h5, h6{font-size: 24px;}
     background-position: center center;
 }
 
-.landing-headline{
+.landing-headline-content{
     text-align: center;
+}
+
+.landing-headline{
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.6);
     font-weight: 900;
     font-size: 30px;
-    text-shadow: 1px 1px #ffffff;
-    color: #000000;
+    color: white;
+    padding: 5px;
 }
 
 .template-form{
@@ -665,7 +670,6 @@ h4, h5, h6{font-size: 24px;}
     font-family: content_font_light;
     max-width: 300px;
     position: relative;
-    left: -50px;
 }
 #divFooter1 .newsletter button{
     font-family: content_font_light;
@@ -686,7 +690,7 @@ h4, h5, h6{font-size: 24px;}
 #divFooter1 .newsletter ._form-title {
     padding-bottom: 5px;
     text-align: left;
-    padding-left: 8px;
+    padding-left: 17px;
 }
 
 ._below {
@@ -1223,7 +1227,6 @@ li.col1 {
     }
 	#divFooter1 .newsletter input{
 		position: relative;
-    	left: -12px;
         font-size: 18px;
 	}
 	#divFooter1 .newsletter button{
@@ -1284,11 +1287,7 @@ li.col1 {
         padding-bottom: 10px;
         text-align: center;
     }
-    #divFooter1 .newsletter input{
-        left: 30px;
-    } 
 	#divFooter1 .newsletter button{
-		left: -30px;
 		top: 0px;
 		height: 45px;
 	}
@@ -1323,7 +1322,6 @@ li.col1 {
 	#divFooter1 .newsletter input {
 		max-width: 207px;
 		position: relative;
-    	left: 20px;
 	}
 	#divFooter1 .newsletter button{
 		padding: 0px;
@@ -1344,12 +1342,6 @@ li.col1 {
 @media screen and (min-width: 1920px){
 	#divFooter1 .social{
 		left: -70px;
-	}
-	#divFooter1 .newsletter button{
-		left: -100px;
-	}
-	#divFooter1 .newsletter input{
-		left: -10px;
 	}
     .template-form{
         margin-top: 130px;

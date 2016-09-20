@@ -38,7 +38,7 @@ if(!$revslider or $revslider=='') $revslider = 'package-slider';
         <main id="main">
             <div class="row pricing-form-content">                
                 <div class="col-xs-12 col-sm-6 col-md-4">
-                    <h3 class="text-right">Call now! <a href="tel:<?php echo $GLOBALS['BMW_PHONE_NUMBER']; ?>" class="tracking-phone-number"><?php echo $GLOBALS['BMW_PHONE_NUMBER']; ?></a> to request pricing <br /> or fill the following form:</h3>
+                    <h3 class="text-right">Call now! <a href="tel:<?php echo $GLOBALS['BMW_PHONE_NUMBER']; ?>" class="tracking-phone-number"><?php echo $GLOBALS['BMW_PHONE_NUMBER']; ?></a> to request more information and pricing <br /> or fill the following form:</h3>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-7">
                     <?php 

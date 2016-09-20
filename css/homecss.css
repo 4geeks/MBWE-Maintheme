@@ -66,6 +66,9 @@ a:hover {
 .margin-top-ourServices{
     margin-top: 30px;
 }
+.margin-top-ourServices h1{
+    padding-bottom: 30px !important;
+}
 .img-i{
     background-image: url(../img/i.png);
     background-repeat: no-repeat;

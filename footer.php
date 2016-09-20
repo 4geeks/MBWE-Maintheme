@@ -2,6 +2,7 @@
 	$footerTitle1 = get_post_meta($post->ID, 'footer1_title', true);
 	$footerTitle2 = get_post_meta($post->ID, 'footer2_title', true);
 	$footerTitle3 = get_post_meta($post->ID, 'footer3_title', true);
+	$actualURL = "http://".$_SERVER["HTTP_HOST"].$_SERVER["REQUEST_URI"];
 ?>			
 
 			<!-- footer -->
@@ -45,19 +46,17 @@
 								    <input type="hidden" name="m" value="0" />
 								    <input type="hidden" name="act" value="sub" />
 								    <input type="hidden" name="v" value="2" />
+								    <input type="hidden" name="field[16]" value="<?php echo $actualURL; ?>" />
 								    <div class="_form-content">
-								      <div class="_form_element _x42816285 _inline-style _clear" >
-								        <div class="_form-title">
+								      <div class="_form_element _x42816285 _inline-style _clear">
+								        <div class="_form-title" style="text-align: center;">
 								          Sign up to our newsletter
 								        </div>
 								      </div>
-								      <div class="_form_element _field16 _inline-style " >
-								        <input type="hidden" name="field[16]" value="newsletter-website" />
-								      </div>
-								      <div class="_form_element _x12877897 _inline-style col-md-6 col-sm-6 col-sm-offset-1" >								        
+								      <div class="_form_element _x12877897 _inline-style col-sm-7" style="text-align: right; padding: 5px;">								        
 								        <input type="text" id="inputnewsletter" name="email" placeholder="Type your email" required/>
 								      </div>
-								      <div class="_button-wrapper _inline-style col-md-4 col-sm-4">
+								      <div class="_button-wrapper _inline-style col-md-4 col-sm-4" style="text-align: left; padding: 5px;">
 								        <button id="_form_20_submit" class="_submit" type="submit">
 								          Suscribe!
 								        </button>

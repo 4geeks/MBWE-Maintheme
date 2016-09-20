@@ -30,7 +30,7 @@ $bgImageURL = types_render_termmeta("tax-background-image",array("url" => "true"
 		<?php } else { ?>
 			<div class="container-fluid landing-with-form" style="background-image: url('http://new.bestmiamiweddings.com/wp-content/uploads/sites/3/2016/05/Vizcaya.png');">
 		<?php } ?>
-		        <div class="row">
+		        <div class="row landing-headline-content">
 					<div class="col-md-12">
 						<h1 class="with-font-title"><?php printf(single_cat_title( '', false ) . '' ); ?> </h1>
 						<?php if($headline and $headline!=''){ ?>
