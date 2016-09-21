@@ -42,6 +42,7 @@ $f = $GLOBALS['BMW_PHONE_NUMBER'];
 <?php
 	set_query_var('current_post_id', get_the_ID());
 ?>
+	<div class="blackspace-bar"></div>
 	<!-- wrapper -->
 	<div class="wrapper">
 		<nav id="my-sidebar">

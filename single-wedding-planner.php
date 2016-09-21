@@ -46,7 +46,6 @@ $weddings = types_render_field("venue-weddings",array("output" => "raw"));
     <!-- ========== MENU TOP ========== -->
     <?php get_template_part( 'template-parts/menu', 'top' ); ?>
 
-    <div class="blackspace-bar visible-xs"></div>
     <?php putRevSlider($revslider); ?>
 
     <!-- ========== MENU TOP ========== -->

@@ -10,12 +10,17 @@ $content = get_page($post->ID)->post_content;
 $args = array('post_type' => 'award','posts_per_page'=>-1);
 $awards = new WP_Query( $args );
 
+$revslider = types_render_field("page-slider");
+if(!$revslider or $revslider=='') $revslider = null;
+
 ?>
 
 <!-- ========== MENU TOP ========== -->
 <?php get_template_part( 'template-parts/menu', 'top' ); ?>
     
-<?php echo $content; ?>
+		<?php if(!$revslider) { ?>
+            <?php echo $content; ?>
+        <?php } else putRevSlider($revslider); ?>
 
 <div id="div-carousel" class="row">
 	<?php foreach ($awards->posts as $award) {		

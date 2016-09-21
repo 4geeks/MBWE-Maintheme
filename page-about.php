@@ -15,13 +15,19 @@ $args = array('post_type' => 'partner');
 $partners = new WP_Query( $args );
 $content = get_page($post->ID)->post_content;
 
+
+$revslider = types_render_field("page-slider");
+if(!$revslider or $revslider=='') $revslider = null;
+
 ?>
 
  <?php get_template_part( 'template-parts/menu', 'top' ); ?>
     <!-- ========== MENU TOP ========== -->
 	<div id="primary" class="full-width-page no-sidebar">
 		<main id="main">
+		<?php if(!$revslider) { ?>
             <?php echo $content; ?>
+        <?php } else putRevSlider($revslider); ?>
             <div id="section-story">
                 <div id="div-logo" class="col-md-12">
 					<center><img id="logo-header" width="200" height="200" src="<?php bloginfo('template_url'); ?>/img/logof&e.png" alt="Best Miami Weddings" class="img-responsive logo" /></center>

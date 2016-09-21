@@ -122,7 +122,7 @@ b, strong {
     left: 0;
     z-index: 999;
 }
-.blackspace-bar{height: 60px; background: #808080;}
+.blackspace-bar{min-height: 55px; background: #808080; padding-top: 55px;}
 /* logo */
 #logo-header{margin: 5px 0 5px 0; }
 #div-top-menu #logo-header{max-width: 73px; max-height: 50px;}
