@@ -82,11 +82,11 @@ $weddings = types_render_field("venue-weddings",array("output" => "raw"));
             </div>
             <div class="row planner-section" style="background: #474747; color: white; font-size: 30px;">
                 <div class="col-sm-4">
-                    <h2 class="planner-fact-data"><?php echo $number_weddings_year; ?></h2>
+                    <h2 class="planner-fact-data"><?php echo $number_weddings; ?></h2>
                     Weddings Planned Succesfully
                 </div>
                 <div class="col-sm-4">
-                    <h2 class="planner-fact-data"><?php echo $number_weddings; ?></h2>
+                    <h2 class="planner-fact-data"><?php echo $number_weddings_year; ?></h2>
                     Weddings each year
                 </div>
                 <div class="col-sm-4">
