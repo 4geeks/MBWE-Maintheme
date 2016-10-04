@@ -24,8 +24,8 @@ $plannerBlog = types_render_field("planner-blog-post");
 
 $funFacts = types_render_field("planner-fun-facts");
 $number_weddings = types_render_field("planner-total-weddings");
-$number_years = types_render_field("planner-weddings-a-year");
-$number_weddings_year = types_render_field("planner-years-of-experience");
+$number_weddings_year = types_render_field("planner-weddings-a-year");
+$number_years = types_render_field("planner-years-of-experience");
 
 $nickname = types_render_field("planner-nickname");
 if(!$nickname)
