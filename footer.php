@@ -174,10 +174,10 @@
 		<script>
 	        // conditionizr.com
 	        // configure environment tests
-	        conditionizr.config({
+	        window.onload=function(){conditionizr.config({
 	        	assets: '<?php echo get_template_directory_uri(); ?>',
 	        	tests: {}
-	        });
+	        })};
 	    </script>
 
 		<script async type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
