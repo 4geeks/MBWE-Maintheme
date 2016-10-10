@@ -704,7 +704,7 @@ function jquery_cdn() {
 }
 //add_action('init', 'jquery_cdn');
 
-add_filter( 'gform_cdata_open', 'wrap_gform_cdata_open' );
+/*add_filter( 'gform_cdata_open', 'wrap_gform_cdata_open' );
 function wrap_gform_cdata_open( $content = '' ) {
         $content = 'window.onload =  function() { ';
         return $content;
@@ -713,6 +713,6 @@ add_filter( 'gform_cdata_close', 'wrap_gform_cdata_close' );
 function wrap_gform_cdata_close( $content = '' ) {
         $content = ' };';
         return $content;
-}
+}*/
 
 ?>
