@@ -171,6 +171,16 @@
 		<!-- /wrapper -->
 
 		<?php wp_footer(); ?>
-		
+		<script>
+	        // conditionizr.com
+	        // configure environment tests
+	        window.onload=function(){conditionizr.config({
+	        	assets: '<?php echo get_template_directory_uri(); ?>',
+	        	tests: {}
+	        })};
+	    </script>
+
+		<script async type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+		<script type="text/javascript">window.onload=function(){stLight.options({publisher: "6bd32747-7619-46d4-b054-5aa58b166233-051c", doNotHash: false, doNotCopy: false, hashAddressBar: false})};</script>
 	</body>
 </html>

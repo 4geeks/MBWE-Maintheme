@@ -695,4 +695,24 @@ add_filter( 'gform_enable_field_label_visibility_settings', '__return_true' );
 
 //require_once('classes/ClientTheme.options.php');
 
+function jquery_cdn() {
+   if (!is_admin()) {
+      wp_deregister_script('jquery');
+      //wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js', false, '1.11.3', false);
+      //wp_enqueue_script('jquery');
+   }
+}
+//add_action('init', 'jquery_cdn');
+
+add_filter( 'gform_cdata_open', 'wrap_gform_cdata_open' );
+function wrap_gform_cdata_open( $content = '' ) {
+        $content = 'window.onload =  function() { ';
+        return $content;
+}
+add_filter( 'gform_cdata_close', 'wrap_gform_cdata_close' );
+function wrap_gform_cdata_close( $content = '' ) {
+        $content = ' };';
+        return $content;
+}
+
 ?>
