@@ -70,6 +70,7 @@ $content = get_page($post->ID)->post_content;
             <?php //get_template_part( 'template-parts/part', 'why-fetes-events' ); ?>
             <!-- ========== WHY FETES & EVENTS PART ========== -->
 		</main>
+        <?php get_template_part( 'template-parts/part', 'awards' ); ?>
 	</div>
 
 <?php get_footer(); ?>

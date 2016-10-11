@@ -567,6 +567,18 @@ h4, h5, h6{font-size: 24px;}
 }
 
 .services-content, #divTextAwards{ font-weight: 800; }
+.awards-template{text-align: center; background: #EFF6F2;
+    vertical-align: middle;
+    float: none;
+    padding: 60px 0;}
+.awards-template h2{
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.awards-template p{
+    margin-bottom: 40px;
+}
+.awards-template img{max-height: 150px;}
 
 .img-logo{
     background-image: url(img/logo.png);
@@ -921,6 +933,7 @@ h4, h5, h6{font-size: 24px;}
 #page-contact-us {
 	position: relative;
 	height: auto;
+    margin-top: 60px;
 }
 
 .fix-margin-row {
@@ -1195,6 +1208,8 @@ li.col1 {
     	height: 140px !important;
 	}
 
+    .awards-template img{max-height: 70px;}
+
 	body .gform_wrapper img.ui-datepicker-trigger {
 		display: none !important;
 	}
@@ -1263,6 +1278,8 @@ li.col1 {
 		font-size: 1em;
     }
 
+    .awards-template img{max-height: 100px;}
+
 	#why-fetes-events {
 		height: 680px;
 		background-size: 1458px;
@@ -1310,7 +1327,7 @@ li.col1 {
         font-size: 65px;
         line-height: 0.9em; 
     }
-
+    .awards-template img{max-height: 100px;}
 	#why-fetes-events {
 		height: 510px;
 	}

@@ -40,9 +40,11 @@ if(!$revslider or $revslider=='') $revslider = null;
 				</div>
             </div>
 
+            <?php get_template_part( 'template-parts/part', 'awards' ); ?>
+
             <div id="our-team" class="row">
                 
-				<center><h1>Our Team</h1></center>
+				<center><h2>Our Team</h2></center>
 				<?php foreach ($teams->posts as $team) {?>    
 					<div class="item-our-team col-md-3 col-xs-3" style="background-image: url('<?php echo get_post_meta( $team->ID, 'wpcf-teams-image', false)[0]; ?>')">	
 						<input type="hidden" class="imgNormal" value="<?php echo get_post_meta( $team->ID, 'wpcf-teams-image', false)[0]; ?>" />
@@ -59,7 +61,7 @@ if(!$revslider or $revslider=='') $revslider = null;
 			<?php get_template_part( 'template-parts/part', 'testimonies' ); ?>
             <div id="our-partners" class="row">               
 
-				<center><h1>Some of our partners</h1></center>				
+				<center><h2>Some of our partners</h2></center>				
 				<div id="" class="container">
 					<?php foreach ($partners->posts as $partner) {?>    
 						<div class="item-partner col-md-2 col-xs-5 col-xs-offset-1 col-sm-5 col-sm-offset-1" style="background-image: url('<?php echo get_post_meta( $partner->ID, 'wpcf-partner-image', false)[0]; ?>')">

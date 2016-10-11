@@ -75,6 +75,7 @@ if(!$revslider or $revslider=='') $revslider = 'home-slider';
 			
 	</div>
 </div>
+<?php get_template_part( 'template-parts/part', 'awards' ); ?>
 <div id="div-awards" class="row fix-margin-row">
 	<div class="img-logofe col-md-12"></div>
 	<div class="img-award-purple col-md-12 col-xs-12 fix-margin-row">
