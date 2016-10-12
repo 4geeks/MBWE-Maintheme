@@ -1,5 +1,14 @@
 <?php
-$args = array('post_type' => 'award','posts_per_page' => 8);
+$args = array(
+	'post_type' => 'award',
+	'posts_per_page' => 8,
+	'meta_query' => array(
+		array(
+			'key'     => 'wpcf-award-visibility',
+			'value'   => 'featured'
+		),
+	)
+);
 $awards = new WP_Query( $args );
 ?>
 <section class="awards-template">

@@ -578,7 +578,7 @@ h4, h5, h6{font-size: 24px;}
 .awards-template p{
     margin-bottom: 40px;
 }
-.awards-template img{max-height: 150px;}
+.awards-template img{max-height: 110px; margin: 5px;}
 
 .img-logo{
     background-image: url(img/logo.png);
@@ -1278,7 +1278,7 @@ li.col1 {
 		font-size: 1em;
     }
 
-    .awards-template img{max-height: 100px;}
+    .awards-template img{max-height: 80px;}
 
 	#why-fetes-events {
 		height: 680px;
