@@ -195,6 +195,11 @@ function html5blank_styles()
         wp_enqueue_style('packageslistcss');        
     }
 
+    if (is_page('wedding-catering') or get_post_type()=='catering-menu'){
+        wp_register_style('menulistcss', get_template_directory_uri() . '/css/menu-list.css', false, '1.1', 'all');
+        wp_enqueue_style('menulistcss');        
+    }
+
     if (is_page('about-us')){
         wp_register_style('aboutuscss', get_template_directory_uri() . '/css/about-us.css', false, '1.1', 'all');
         wp_enqueue_style('aboutuscss');        
