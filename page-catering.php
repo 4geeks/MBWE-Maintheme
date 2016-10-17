@@ -11,6 +11,7 @@ $args = array('post_type' => 'catering-menu');
 $menus = new WP_Query( $args );
 
 $pageContent = get_page($post->ID);
+$customPosts = get_post_meta($post->ID);
 $content = $pageContent->post_content;
 
 $revslider = types_render_field("page-slider");
@@ -22,6 +23,11 @@ $revslider = types_render_field("page-slider");
 		<main id="main">     
 		<?php if($revslider){ putRevSlider($revslider); ?>       
         <?php } else {echo $content; }?>
+			<div class="content-header-description">
+				<div class="container">
+					<h3><?php echo $customPosts['list-introductory-msg'][0]; ?></h3>
+				</div>
+			</div>
             <div id="list-content" class="row fix-margin-row">
                 <?php foreach ($menus->posts as $menu) {?>
                 	<?php //die(print_r($menu)); ?>
