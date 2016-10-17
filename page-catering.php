@@ -20,8 +20,8 @@ $revslider = types_render_field("page-slider");
     <!-- ========== MENU TOP ========== -->
     <div id="primary" class="full-width-page no-sidebar">
 		<main id="main">     
-		<?php if($revslider){ putRevSlider($revslider); }?>       
-            <?php else { echo $content; }?>
+		<?php if($revslider){ putRevSlider($revslider); ?>       
+        <?php } else {echo $content; }?>
             <div id="list-content" class="row fix-margin-row">
                 <?php foreach ($menus->posts as $menu) {?>
                 	<?php //die(print_r($menu)); ?>
