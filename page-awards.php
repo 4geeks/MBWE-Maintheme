@@ -31,7 +31,7 @@ if(!$revslider or $revslider=='') $revslider = null;
 			"<?php echo get_post_meta( $award->ID, 'wpcf-awards-description')[0]; ?>"
 		</p>
 		<span>
-			<?php echo get_post_meta( $award->ID, 'wpcf-awards-name')[0]; ?>, 2016
+			<?php echo get_post_meta( $award->ID, 'wpcf-awards-name')[0]; ?>
 		</span>
 	</div>	
 	<?php }	                
@@ -47,7 +47,7 @@ if(!$revslider or $revslider=='') $revslider = null;
 			</div>
 			<div class="col-md-10">
 				<p class="col-md-12 title with-subtitle">
-					<span><?php echo get_post_meta( $award->ID, 'wpcf-awards-name')[0]; ?> - 2016</span>
+					<span><?php echo get_post_meta( $award->ID, 'wpcf-awards-name')[0]; ?></span>
 				</p>
 				<p class="col-md-12 title">
 					<span><?php echo get_post_meta( $award->ID, 'wpcf-awards-description')[0]; ?></span>
