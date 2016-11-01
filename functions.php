@@ -200,9 +200,15 @@ function html5blank_styles()
         wp_enqueue_style('menulistcss');        
     }
 
+    if (is_page('testimonials')){
+        wp_register_style('testimonialscss', get_template_directory_uri() . '/css/testimonials.css', false, '1.1', 'all');
+        wp_enqueue_style('testimonialscss');  
+        wp_register_script('jqueryjs', get_template_directory_uri() . '/js/lib/bootstrap.min.js', array('jquery'), '1.0'); // Modernizr
+        wp_enqueue_script('jqueryjs'); // Enqueue it!     
+    }
     if (is_page('about-us')){
         wp_register_style('aboutuscss', get_template_directory_uri() . '/css/about-us.css', false, '1.1', 'all');
-        wp_enqueue_style('aboutuscss');        
+        wp_enqueue_style('aboutuscss');   
     }
 
     if (is_page('press-awards')){

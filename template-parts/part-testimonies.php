@@ -7,7 +7,7 @@ $testimonies = types_child_posts('testimonie');
 <div id="testimonies" class="container">
     <div class="row">
         <div class="col-md-12">
-            <h2>Some client's testimonies</h2>
+            <h2>Some client's testimonials</h2>
         </div>
     </div>
     <div class="row">
