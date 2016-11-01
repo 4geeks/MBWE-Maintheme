@@ -9,7 +9,14 @@ get_header();
 
 $args = array(
 	'post_type' => 'testimonie',
-	'posts_per_page' => 9
+	'posts_per_page' => 9,
+	'meta_query' => array(
+		array(
+			'key'     => 'wpcf-testimonies-photo',
+	        'value'   => array(''),
+	        'compare' => 'NOT IN'
+		)
+	)
 );
 $testimonies = new WP_Query( $args );
 $cont = 0;
