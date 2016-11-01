@@ -1,4 +1,6 @@
 
+.black-bar{background: black; height: 100px; text-align: center;}
+.black-bar img{padding-top: 20px;}
 .stars-container-title{
 	margin-top: 100px;
 	text-align: center;

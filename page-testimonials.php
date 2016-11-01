@@ -29,6 +29,9 @@ jQuery( document ).ready(function() {
 	jQuery('[data-toggle="popover"]').popover();
 });
 </script>
+<div class="black-bar">
+	<center><img width="90" height="90" src="<?php bloginfo('template_url'); ?>/img/logof&e.png" alt="Best Miami Weddings" class="img-responsive logo" /></center>
+</div>
 <div class="container">
 	<div class="row stars-container">
 		<div class="col-xs-12">
