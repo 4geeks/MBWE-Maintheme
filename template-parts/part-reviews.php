@@ -17,7 +17,7 @@
 				$reviewScore = getReviewAverage([$facebookScore, $googleScore, $yelpScore, $weddingwireScore, $theknotScore]); 
 				?>
 				<span><?php echo $reviewScore; ?></span>
-				<?php echo printStars(round($reviewScore,1)); ?>
+				<?php echo printStars($reviewScore); ?>
 			</div>
 		</div>
 		<span itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
@@ -135,7 +135,7 @@ function getReviewAverage($arrayOfReviews)
 		} 
 	}
 
-	return ($reviewSum / $cont);
+	return round($reviewSum / $cont,1);
 }
 
 ?>
