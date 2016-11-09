@@ -30,6 +30,19 @@ $tour = types_render_field("venue-360-tour");
 $galleryPostId = types_render_field("venue-gallery");
 $weddings = types_render_field("venue-weddings",array("output" => "raw"));
 
+
+$reviewScore = types_render_field("review-total-score");
+$facebookScore = types_render_field("review-facebook-score");
+$googleScore = types_render_field("review-google-score");
+$yelpScore = types_render_field("review-yelp-score");
+$weddingwireScore = types_render_field("review-weddingwire-score");
+$theknotScore = types_render_field("review-theknot-score");
+
+$thepros = types_render_field("review-thepros");
+$thecons = types_render_field("review-thecons");
+$reviewSummary = types_render_field("review-summary");
+
+
 $post = get_post();
 $isClubOfKnigth = ($post->post_name == 'club-of-knight');
 
@@ -64,8 +77,9 @@ function shrinkText($texto='', $maxsize = 20)
                 <ul class="ul-menu">
                     <li><a href="#primary">INFO & LOCATION</a></li>
                     <?php if($blueprint != ''){?>
-                        <li><a href="#div-venue-blueprint">AREAS</a></li>
+                        <li><a href="#div-venue-blueprint">LAYOUT</a></li>
                     <?php } ?>
+                    <li><a href="#reviewscontainer">REVIEWS</a></li>
                     <?php if($tour != ''){?>
                         <li><a id="a-360-tour" href="#animatedModal">360° TOUR</a></li>
                     <?php } ?>
@@ -197,6 +211,7 @@ function shrinkText($texto='', $maxsize = 20)
                     <?php } ?>
                 </div>
             <?php } ?>
+            <?php include( locate_template( 'template-parts/part-reviews.php', false, false ) ); ?>
             <?php if($tour != ''){ ?>
                 <div id="animatedModal">
                     <div class="col-md-12 modal-menu">

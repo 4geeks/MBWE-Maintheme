@@ -96,7 +96,7 @@ if(!$revslider or $revslider=='') $revslider = 'package-slider';
 				</div>
 	        </div>
 	        <div class="row entretainment-services">
-	        	<p>Entretainment Services available upon request</p>
+	        	<p>Entertainment Services available upon request</p>
 	        </div>
             <?php get_template_part( 'template-parts/part', 'testimonies' ); ?>
             <?php if($tour != ''){ ?>

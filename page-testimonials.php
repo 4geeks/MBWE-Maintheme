@@ -26,7 +26,10 @@ $cont = 0;
 
 jQuery( document ).ready(function() {
   // Handler for .ready() called.
-	jQuery('[data-toggle="popover"]').popover();
+	jQuery('[data-toggle="popover"]').popover({
+		"html": true,
+		"placement":"bottom"
+	});
 });
 </script>
 <div class="black-bar">
@@ -41,7 +44,7 @@ jQuery( document ).ready(function() {
 			<i class="fa fa-star" aria-hidden="true"></i>
 			<i class="fa fa-star" aria-hidden="true"></i>
 			<i class="fa fa-star-half-o" aria-hidden="true"></i>
-			<h3>Average 4.8 rating within all available review systems, <a tabindex="0" role="button" placement="bottom" data-toggle="popover" data-trigger="focus" title="Review score" data-content="The aggregated rating  was compiled from multiple sources (WeddingWire, Facebook, Yelp, Google, etc.), including merchants, third party aggregators, editorial sites and users. Collected from more than 250 reviews total across all sources.">learn more.</a></h3>
+			<h3>Average 4.8 rating within all available review systems, <a tabindex="0" role="button" html="true" placement="botom" data-toggle="popover" data-trigger="focus" title="Review score" data-content="<span class='popoverText'>The aggregated rating  was compiled from multiple sources (WeddingWire, Facebook, Yelp, Google, etc.), including merchants, third party aggregators, editorial sites and users. Collected from more than 250 reviews total across all sources.</span> <ul class='review-source-icons'><li><img src='<?php bloginfo('template_url'); ?>/img/icons/weddingwire-icon.png'><img src='<?php bloginfo('template_url'); ?>/img/icons/facebook-icon.png'><img src='<?php bloginfo('template_url'); ?>/img/icons/yelp-icon.png'><img src='<?php bloginfo('template_url'); ?>/img/icons/knot-icon.png'><img src='<?php bloginfo('template_url'); ?>/img/icons/google-icon.png'><img src='<?php bloginfo('template_url'); ?>/img/icons/bbb-icon.png'></li></ul>">learn more.</a></h3>
 		</div>
 	</div>
 	<div class="row">

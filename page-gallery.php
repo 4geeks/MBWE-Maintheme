@@ -56,6 +56,7 @@ $weddings = (isset(get_post_meta( $_GET['post_id'], 'venue-weddings', false)[0])
             <div class="top-venue-menu not-for-phone">
                 <ul class="ul-menu">
                     <?php echo "<li><a href='".get_home_url()."/".$postType."/".$post->post_name."'>INFO & LOCATION</a>"?>
+                    <?php echo "<li><a href='".get_home_url()."/".$postType."/".$post->post_name."#reviewscontainer'>REVIEWS</a>"?>
                     <?php if ($blueprint != null)
                             echo "<li><a href='".get_home_url()."/".$postType."/".$post->post_name."#div-venue-blueprint'>AREAS</a>"                        
                     ?>

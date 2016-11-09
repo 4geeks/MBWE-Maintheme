@@ -176,7 +176,6 @@ Saved: Apr 17 2016 | 20:42:27 */
     color: #ffffff;
     /*border: 1px solid #000000;*/
 }
-
 #div-venue-image {
     height: 690px;
     background-size: 100% 100%;
@@ -456,11 +455,38 @@ Saved: Apr 18 2016 | 16:49:53 */
     background-position: 50% 50%;
 }
 
+/* Reviews */
+
+.reviewscontainer{
+    background: white;
+    padding: 100px;
+}
+#review-title{background: #DFDFDF; border-bottom: 1px solid white; text-align: center;}
+.socialmedia-review{background: #e8e8e8;}
+.reviewscontainer .review-starts-container{
+    text-align: right;
+}
+.reviewscontainer .review-starts-container i{
+    font-size: 0.8em;
+}
+.firstreview{padding-top: 10px;}.lastreview{padding-bottom: 10px;}
+#agregated-score{margin-top: 30px; text-align: center;}
+#agregated-score i{ font-size: 1.2em; color: #ffbf00;}
+.aggregated-score-title{margin-top: 10px;}
+.reviewscontainer .socialmedia-review span{
+    font-size: 0.8em;
+}
+
+
+
 /* media query responsive for any mobiles */
 @media screen and (max-width: 767px) {
   .not-for-mobile{
         display: none;
     }   
+    .reviewscontainer{
+        padding: 30px;
+    }
   #menu-desplegable{
     font-size: 14px;
     float: right;

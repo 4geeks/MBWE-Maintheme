@@ -73,10 +73,10 @@
 
 #div-menu-logo {
   position: relative;
-  margin-right: 3px;
   padding: 15px;
-  width: 240px;
-  height: 157px;  
+  width: 150px;
+  height: 100px;
+  margin-left: 40px;
 }
 
 #my-sidebar ul li a {
