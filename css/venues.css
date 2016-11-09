@@ -470,12 +470,12 @@ Saved: Apr 18 2016 | 16:49:53 */
     font-size: 0.8em;
 }
 .firstreview{padding-top: 10px;}.lastreview{padding-bottom: 10px;}
-#agregated-score{margin-top: 30px; text-align: center;}
+#agregated-score{text-align: center;}
 #agregated-score i{ font-size: 1.2em; color: #ffbf00;}
-.aggregated-score-title{margin-top: 10px;}
 .reviewscontainer .socialmedia-review span{
     font-size: 0.8em;
 }
+.aggregated-score-title{border: 1px solid #BDBDBD; padding-bottom: 10px;}
 
 
 

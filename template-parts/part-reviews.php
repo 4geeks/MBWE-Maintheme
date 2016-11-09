@@ -8,16 +8,16 @@
 			</div>
 		</div>
 		<div class="row aggregated-score-title" itemprop="description">
-			<div class="col-sm-9">
-				<p><strong>Aggregated score</strong></p>
-				<p>The aggregated rating  was compiled from multiple sources (WeddingWire, Facebook, Yelp, Google, etc.), including merchants, third party aggregators, editorial sites and users. Collected from all reviews total across all sources.</p>
-			</div>
 			<div id="agregated-score" class="col-sm-3 review-starts-container">
+				<h5>Aggregated score</h5>
 				<?php 
 				$reviewScore = getReviewAverage([$facebookScore, $googleScore, $yelpScore, $weddingwireScore, $theknotScore]); 
 				?>
 				<span><?php echo $reviewScore; ?></span>
 				<?php echo printStars($reviewScore); ?>
+			</div>
+			<div class="col-sm-9">
+				<p style="font-size: 0.7em; margin-top: 20px;">The aggregated rating  was compiled from multiple sources (WeddingWire, Facebook, Yelp, Google, etc.), including merchants, third party aggregators, editorial sites and users. Collected from all reviews total across all sources. We strive for accuracy and fairness. If you see something that doesn't look right, contact us!</p>
 			</div>
 		</div>
 		<span itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
