@@ -464,7 +464,7 @@ Saved: Apr 18 2016 | 16:49:53 */
 #review-title{background: #DFDFDF; border-bottom: 1px solid white; text-align: center;}
 .socialmedia-review{background: #e8e8e8;}
 .reviewscontainer .review-starts-container{
-    text-align: right;
+    text-align: right; 
 }
 .reviewscontainer .review-starts-container i{
     font-size: 0.8em;

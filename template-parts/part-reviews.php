@@ -1,5 +1,5 @@
 <div id="reviewscontainer" class="container-fluid reviewscontainer">
-	<?php if($reviewScore and $facebookScore != '' and $reviewSummary and $reviewSummary != ''){ ?>
+	<?php if($reviewSummary and $reviewSummary != ''){ ?>
 	<div itemscope="" itemtype="http://schema.org/Review" id="review">
 		<div id="review-title" class="row">
 			<div class="col-sm-12">
