@@ -58,7 +58,7 @@ $weddings = (isset(get_post_meta( $_GET['post_id'], 'venue-weddings', false)[0])
                     <?php echo "<li><a href='".get_home_url()."/".$postType."/".$post->post_name."'>INFO & LOCATION</a>"?>
                     <?php echo "<li><a href='".get_home_url()."/".$postType."/".$post->post_name."#reviewscontainer'>REVIEWS</a>"?>
                     <?php if ($blueprint != null)
-                            echo "<li><a href='".get_home_url()."/".$postType."/".$post->post_name."#div-venue-blueprint'>AREAS</a>"                        
+                            echo "<li><a href='".get_home_url()."/".$postType."/".$post->post_name."#div-venue-blueprint'>LAYOUT</a>"                        
                     ?>
                     <?php if ($tour != null){ ?>
                        <li><a id="a-360-tour" href="#animatedModal">360° TOUR</a></li>

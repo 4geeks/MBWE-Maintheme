@@ -90,11 +90,11 @@ $bgImageURL = types_render_termmeta("tax-background-image",array("url" => "true"
             </div>
             <!-- <div class="blue-background"><h2>What our clients say about our venues</h2></div> -->
             <!-- ========== testimonies TOP ========== -->
-            <?php  //get_template_part( 'template-parts/part', 'testimonies' ); ?>
+            <?php  get_template_part( 'template-parts/part', 'testimonies' ); ?>
             <!-- ========== testimonies TOP ========== -->        
 
             <!-- ========== WHY FETES & EVENTS PART ========== -->
-            <?php //get_template_part( 'template-parts/part', 'why-fetes-events' ); ?>
+            <?php get_template_part( 'template-parts/part', 'why-fetes-events' ); ?>
             <!-- ========== WHY FETES & EVENTS PART ========== -->
 		</main>
 	</div>

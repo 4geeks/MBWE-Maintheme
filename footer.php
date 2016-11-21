@@ -85,9 +85,9 @@
 					<div id="divFooter2" class="col-md-12 col-sm-12">
 						<div id="div-angle-double" class="col-md-offset-5 col-md-2 fa fa-angle-double-up">
 						</div>
-						<div class="col-md-offset-1 col-md-7">
+						<div class="col-md-offset-1 col-md-10 col-lg-7">
 							<div class="links">
-								<div class="col-md-4">
+								<div class="col-sm-4">
 									<div id="div-links-content" class="col-md-12">
 										<span>The Company</span>
 									</div>
@@ -108,7 +108,7 @@
 										?>
 									</div>
 								</div>
-								<div class="col-md-4 margin-left-links">
+								<div class="col-sm-4 margin-left-links">
 									<div id="div-links-content" class="col-md-12">
 										<span>Wedding Gallery</span>
 									</div>
@@ -129,7 +129,7 @@
 										?>
 									</div>
 								</div>
-								<div class="col-md-4 margin-left-links">
+								<div class="col-sm-4 margin-left-links">
 									<div id="div-links-content" class="col-md-12">
 										<span>Our services</span>
 									</div>
@@ -152,12 +152,18 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-4">
-							<div class="logos">
-								<div class="col-md-6 img-logo"></div>
-								<div class="col-md-6 img-logofe"></div>
-								<div class="col-md-6 img-aw1"></div>
-								<div class="col-md-6 img-aw2"></div>
+						<div class="col-md-12 col-lg-4 footer-logo">
+							<div class="row">
+								<div class="col-xs-12 img-logo text-center">&nbsp;</div>
+								<div class="col-xs-12 text-center">
+									<p><strong>Work with the best, our reputation precede us </strong></p>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star-half-o" aria-hidden="true"></i>
+									<p>Average 4.8 rating within all available review systems, <a href="<?php echo get_home_url().'/testimonials' ?>">learn more.</a></p>
+								</div>
 							</div>
 						</div>
 					</div>

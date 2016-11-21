@@ -149,10 +149,10 @@ function shrinkText($texto='', $maxsize = 20)
                     </div>                
                 </div>
                 <div class="col-md-6 p-location" >
-                    <h2 class="with-font-sub-title">Address and location for <?php  echo $name;?></h2>
+                    <h2 class="with-font-sub-title address-title">Address and location for <?php  echo $name;?></h2>
                     <div>
-                        <p><?php echo $direction ?></p>
                         <?php echo $location ?>
+                        <?php if($direction and $direction!=$location) echo $direction; ?>
                     </div>    
                 </div>
             </div>
@@ -200,7 +200,7 @@ function shrinkText($texto='', $maxsize = 20)
                 <div id="div-venue-blueprint" class="row">
                     <?php if($blueprint != '') {?>
                     <div class="p-location hidden-xs">
-                        <h2>Areas and distribution of <?php  echo $name;?></h2>
+                        <h2>Layout for <?php  echo $name;?></h2>
                         <?php echo $blueprint?>
                     </div>
                     <?php } ?>
@@ -211,7 +211,7 @@ function shrinkText($texto='', $maxsize = 20)
                     <?php } ?>
                 </div>
             <?php } ?>
-            <?php include( locate_template( 'template-parts/part-reviews.php', false, false ) ); ?>
+            <?php include( locate_template( 'template-parts/venue-reviews.php', false, false ) ); ?>
             <?php if($tour != ''){ ?>
                 <div id="animatedModal">
                     <div class="col-md-12 modal-menu">

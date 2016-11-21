@@ -36,7 +36,6 @@ $content = get_page($post->ID)->post_content;
                <?php }?>
             </div>
             <?php get_template_part( 'template-parts/part', 'awards' ); ?>
-            <div class="blue-background"><h2>What our clients say about our packages</h2></div>
             <!-- ========== TESTIMONIES PART ========== -->
             <?php get_template_part( 'template-parts/part', 'testimonies' ); ?>
             <!-- ========== TESTIMONIES PART ========== -->

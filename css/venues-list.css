@@ -42,7 +42,7 @@
 
 
 .venue-element{
-	padding: 0px;
+	padding: 0;
 	height: 100%;
 	border-right: 1px solid #ffffff;
 	padding-bottom: 20px;
@@ -63,9 +63,10 @@
 .inner-venue-element{
 	position: relative;
 	background-color: grey;
-	padding: 0px;
+	padding: 0;
 	height: 100%;
 }
+.inner-venue-element small{color: white;}
 
 .div-description{
 	padding: 0px;

@@ -211,7 +211,7 @@ Saved: Apr 17 2016 | 20:42:27 */
 }
 
 .ul-menu li a{
-    font-size:21px;
+    font-size:17px;
     text-decoration: none;
     font-weight: normal;
     padding: 10px;
@@ -386,7 +386,7 @@ Saved: Apr 18 2016 | 16:49:53 */
     text-decoration: none;
     position: relative;
     top: 37%;
-    font-size: 40px;
+    font-size: 28px;
     font-weight: bold;
     text-shadow: 2px 2px black;
 }
@@ -441,7 +441,7 @@ Saved: Apr 18 2016 | 16:49:53 */
 .p-location{
     padding: 0px 25px 25px 25px !important;
 }
-
+.address-title{font-size: 1.6em;}
 #div-venue-description{
     margin-left: 0px;
 }
@@ -484,6 +484,9 @@ Saved: Apr 18 2016 | 16:49:53 */
   .not-for-mobile{
         display: none;
     }   
+    .reviewscontainer p{
+        font-size: 80%;
+    }
     .reviewscontainer{
         padding: 30px;
     }
@@ -563,6 +566,7 @@ Saved: Apr 18 2016 | 16:49:53 */
         padding-left: 0px;
         right: 0px;
     }
+    #sub-menu li a{font-size: 20px;}
     #sub-menu{
         width: 50% !important;
     }
@@ -584,7 +588,7 @@ Saved: Apr 18 2016 | 16:49:53 */
 
 @media screen and (orientation: landscape) and (min-width: 768px) and (max-width: 1024px){
     .ul-menu li a{
-      font-size: 20px;
+      font-size: 15px;
       padding: 5px;
     }
     #menu-desplegable{
@@ -624,6 +628,6 @@ Saved: Apr 18 2016 | 16:49:53 */
         height: 645px;
     }
     #sub-menu{
-        width: 40%;
+        width: 50%;
     }
 }

@@ -7,7 +7,7 @@ $testimonies = types_child_posts('testimonie');
 <div id="testimonies" class="container">
     <div class="row">
         <div class="col-md-12">
-            <h2>Some client's testimonials</h2>
+            <h2>Client's testimonials</h2>
         </div>
     </div>
     <div class="row">
@@ -26,6 +26,11 @@ $testimonies = types_child_posts('testimonie');
                         </div>
                 </div>                    
         <?php } ?> 
+    </div>
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <small>Read more testimonials by <a href="<?php echo get_home_url().'/testimonials' ?>">clicking here.</a></small>
+        </div>
     </div>
 </div>
 <?php } ?> 

@@ -93,7 +93,7 @@ if(!$revslider or $revslider=='') $revslider = 'home-slider';
 		</div>
 	</div>
 </div>
-<div class="blue-background"><h2>What our clients say about Fetes & Events</h2></div>
+<div class=""></div>
 <?php get_template_part( 'template-parts/part', 'testimonies' ); ?>
               
 <?php get_footer(); ?>

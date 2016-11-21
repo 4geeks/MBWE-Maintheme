@@ -17,7 +17,7 @@
 				<?php echo printStars($reviewScore); ?>
 			</div>
 			<div class="col-sm-9">
-				<p style="font-size: 0.7em; margin-top: 20px;">The aggregated rating  was compiled from multiple sources (WeddingWire, Facebook, Yelp, Google, etc.), including merchants, third party aggregators, editorial sites and users. Collected from all reviews total across all sources. We strive for accuracy and fairness. If you see something that doesn't look right, contact us!</p>
+				<p style="font-size: 0.7em; margin-top: 20px;">The aggregated rating  was compiled from multiple sources (WeddingWire, Facebook, Yelp, Google, etc.), including merchants, third party aggregators, editorial sites and users. Collected from all reviews total across all sources. We strive for accuracy and fairness. If you see something that doesn't look right, <a href="mailto:info@bestmiamiweddings.com">contact us</a>!</p>
 			</div>
 		</div>
 		<span itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">

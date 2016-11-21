@@ -43,7 +43,7 @@ $content = get_page($post->ID)->post_content;
                             <div class="col-sm-12 div-description">
                                 <center><h2><?php echo get_post_meta( $venue->ID, 'wpcf-venue-name', false)[0]; ?></h2></center>
                                 <div class="col-sm-12">
-                                    <h4><?php echo get_post_meta( $venue->ID, 'wpcf-venue-direction', false)[0]; ?></h4>
+                                    <h4><small><?php echo get_post_meta( $venue->ID, 'wpcf-venue-direction', false)[0]; ?></small></h4>
                                 </div>
                                 <div class="col-sm-12">
                                     <a href="<?php echo get_home_url()."/venue/".$venue->post_name ?>" class="btn btn-info btn-sm">Read more</a>

@@ -126,6 +126,8 @@ $weddings = types_render_field("venue-weddings",array("output" => "raw"));
                 </div>
             <?php } ?>
 
+            <?php include( locate_template( 'template-parts/planner-reviews.php', false, false ) ); ?>
+
         </main><!-- #main -->
     </div><!-- #primary -->
 <?php get_footer(); ?>
