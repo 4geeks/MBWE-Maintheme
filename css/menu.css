@@ -6,8 +6,9 @@
 
 #my-sidebar-toggle {
   position: fixed;
-  height: 60px;
-  padding-top:13px;
+  height: 100%;
+  width: 100%;
+  padding:13px;
   left: 15px;
   z-index: 101;
   color: #fff;
@@ -19,7 +20,7 @@
   -ms-user-select: none;
   user-select: none;
   text-shadow: 1px 1px grey;  
-  text-align: center;
+  text-align: left;
 }
 
 #my-sidebar-toggle.black-menu-icon{

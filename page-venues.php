@@ -54,7 +54,7 @@ $content = get_page($post->ID)->post_content;
                <?php }?>
 
                <?php if(!isset($_GET["vvisibility"])) { ?>
-               <div id="extra-venues" class="col-sm-12 venue-element">
+               <div id="extra-venues" class="col-sm-12">
                     <div class="col-sm-12 div-description">
                         <center><a href="/wedding-venues-locations/?vvisibility[]=3">Click here to review some additional venues</a></center>
                     </div>
