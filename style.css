@@ -860,7 +860,9 @@ a.btn{ text-decoration: none !important; }
 	font-size: 20px;
 	background-color: #94D6DB;
     border-color: #353535;
+    color: white !important;
 }
+.btn-warning:hover {background-color: #62afb5;}
 
 .btn-xs {
   font-size: 12px;
