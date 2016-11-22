@@ -44,13 +44,13 @@ if(!$revslider or $revslider=='') $revslider = 'home-slider';
 				<div class="col-md-12"><p class="services-title">Wedding Venues</p></div>
 			<div id="divServicesContent-venues" class="col-md-12 center">
 				<div class="col-md-12"><p class="services-content">Picking a date should be the first step of every wedding, that's why the first thing you should do is booking your venue on a specific date. We have a selection of more than 25 spectacular locations.</p></div>
-				<div class="col-md-12"><a class="btn btn-lg btn-warning" href="<?php echo get_home_url().'/wedding-venues-locations' ?>">Take a look at our venues</a></div>
+				<div class="col-md-12"><a class="btn btn-lg btn-warning" href="<?php echo get_home_url().'/wedding-venues-locations' ?>">Tour the venues</a></div>
 			</div>
 		</div>
 		<div class="col-md-6 col-xs-12 col-sm-6 img-decor highlight-element-services services-packages">
 				<div class="col-md-12"><p class="services-title">Wedding Packages</p></div>
 			<div id="divServicesContent-packages" class="col-md-12 center">
-				<div class="col-md-12"><p class="services-content">Choosing a wedding package is de best way to get an aproximate budget, once you have a buget you can start customizing everything to make it your way.</p></div>
+				<div class="col-md-12"><p class="services-content">Choosing a wedding package is the best way to get an aproximate budget, once you have a budget you can start customizing everything to make it your way.</p></div>
 				<div class="col-md-12"><a class="btn btn-lg btn-warning" href="<?php echo get_home_url().'/wedding-packages' ?>">Review our wedding packages</a></div>
 			</div>
 		</div>	

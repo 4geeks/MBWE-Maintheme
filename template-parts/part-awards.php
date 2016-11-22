@@ -12,7 +12,7 @@ $args = array(
 $awards = new WP_Query( $args );
 ?>
 <section class="awards-template">
-	<h2>Awards and recognition</h2>
+	<h2>Awards and Recognition</h2>
 	<p>Best Miami Weddings is proud to be recognized<br /> by some of the most important and influential publications <br />and organizations around the world. </p>
 	<ul class="list-unstyled list-inline">
 	<?php foreach ($awards->posts as $award) {		
