@@ -18,6 +18,8 @@
 	            sidebar.css('left', 0);
 	            $(this).css('background-color','rgba(0, 0, 0, 0.4)');
 	            jQuery('#my-sidebar-toggle span').html('Close');
+	            jQuery('#my-sidebar-toggle').css('width', '100%');
+	            jQuery('#my-sidebar-toggle').css('height', '100%');
 	            sidebarToggleButtonIcon
 	                .removeClass('fa-navicon')
 	              	  .addClass('fa-times')
@@ -28,6 +30,8 @@
 	        } else{
 	            jQuery('#my-sidebar-toggle span').html('Menu');
 	            $(this).css('background-color','');
+	            jQuery('#my-sidebar-toggle').css('width', '');
+	            jQuery('#my-sidebar-toggle').css('height', '');
 	            sidebar.css('left', - (sidebar.width()));
 	            sidebarToggleButtonIcon
 	                .removeClass('fa-times')
