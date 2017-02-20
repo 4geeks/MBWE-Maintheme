@@ -39,9 +39,9 @@ $post = get_post();
 			                if(empty($gravityForm)) $gravityForm = get_post_meta( $current_post_id, 'wpcf-downloadable-gravity-form', true );
 			            }
 
-			            if(!empty($gravityForm) and $gravityForm!="" and $gravityForm!=null) gravity_form( $gravityForm, false, false, true, "array('downloadable-slug' => '".$fileSlug."')", true ); 
+			            if(!empty($gravityForm) and $gravityForm!="" and $gravityForm!=null) gravity_form( $gravityForm, false, false, true, "array('downloadable-slug' => '".$fileSlug."')", false ); 
 			            else
-			                gravity_form( 9, false, false, true, array('downloadable-slug' => $fileSlug), true ); 
+			                gravity_form( 9, false, false, true, array('downloadable-slug' => $fileSlug), false ); 
 
 			            ?>  
 	        </div>

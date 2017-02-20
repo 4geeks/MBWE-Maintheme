@@ -16,9 +16,9 @@
                 if(empty($gravityForm)) $gravityForm = get_post_meta( $current_post_id, 'wpcf-special_gravity_form', true );
             }
 
-            if(!empty($gravityForm) and $gravityForm!="" and $gravityForm!=null) gravity_form( $gravityForm, false, false, false, '', true ); 
+            if(!empty($gravityForm) and $gravityForm!="" and $gravityForm!=null) gravity_form( $gravityForm, false, false, false, '', false ); 
             else
-                gravity_form( 3, false, false, false, '', true ); 
+                gravity_form( 3, false, false, false, '', false ); 
 
             ?>           
         </div>
