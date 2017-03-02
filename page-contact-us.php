@@ -21,7 +21,7 @@ get_header();
 		        <a href="tel:<?php echo $GLOBALS['BMW_PHONE_NUMBER']; ?>" class="highlight-p with-font-sub-title tracking-phone-number"><?php echo $GLOBALS['BMW_PHONE_NUMBER']; ?></a>
 		    </div>
 		    <div class="col-md-7 col-xs-12 div-form-contact-us highlight-p">
-		        <?php gravity_form( 4, false, false, false, '', false ); ?>           
+		        <?php gravity_form( 4, false, false, false, '', true ); ?>           
 		    </div>        
 		<!-- </div> -->
 		</div>     

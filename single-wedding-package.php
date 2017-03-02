@@ -42,7 +42,7 @@ if(!$revslider or $revslider=='') $revslider = 'package-slider';
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-7">
                     <?php 
-                        gravity_form( 'Package Pricing Request', false, false, true, array('planner-slug' => $post->slug), false ); 
+                        gravity_form( 'Package Pricing Request', false, false, true, array('planner-slug' => $post->slug), true ); 
                         ?>   
                 </div>
             </div>

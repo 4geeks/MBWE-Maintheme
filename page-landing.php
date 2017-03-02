@@ -23,6 +23,6 @@ get_header();
         <hr class="featurette-divider">
     </div>
 
-		        <?php gravity_form( 4, false, false, false, '', false ); ?>           
+		        <?php gravity_form( 4, false, false, false, '', true ); ?>           
 
 <?php get_footer(); ?>

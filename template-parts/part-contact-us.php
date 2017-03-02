@@ -16,9 +16,9 @@
                 if(empty($gravityForm)) $gravityForm = get_post_meta( $current_post_id, 'wpcf-special_gravity_form', true );
             }
 
-            if(!empty($gravityForm) and $gravityForm!="" and $gravityForm!=null) gravity_form( $gravityForm, false, false, false, '', false ); 
+            if(!empty($gravityForm) and $gravityForm!="" and $gravityForm!=null) gravity_form( $gravityForm, false, false, false, '', true ); 
             else
-                gravity_form( 3, false, false, false, '', false ); 
+                gravity_form( 'Default contact form', false, false, false, '', true ); 
 
             ?>           
         </div>

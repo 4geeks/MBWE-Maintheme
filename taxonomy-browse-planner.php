@@ -65,8 +65,8 @@ function getYoutubeID($url = '')
 					        </div>
 				            <div class="col-md-6">
 							        <?php 
-							        	if($gravity_form_id and $gravity_form_id!='') gravity_form( $gravity_form_id, false, false, true, null, false ); 
-							        	else gravity_form( 'Venue Simple Contact Us', false, false, true, null, false ); 
+							        	if($gravity_form_id and $gravity_form_id!='') gravity_form( $gravity_form_id, false, false, true, null, true ); 
+							        	else gravity_form( 'Venue Simple Contact Us', false, false, true, null, true ); 
 							            ?>  
 					        </div>
 				    	</div>
