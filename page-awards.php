@@ -59,7 +59,7 @@ if(!$revslider or $revslider=='') $revslider = null;
 </div>
 
 <div id="div-other" class="row">
-	<center><span>Other Awards</span></center>
+	<center><span><?php _e( 'Other Awards', 'bmw-website' ) ?></span></center>
 	<?php foreach ($awards->posts as $award) {		
 		 if (get_post_meta( $award->ID, 'wpcf-awards-type')[0] == '3'){
 		?>

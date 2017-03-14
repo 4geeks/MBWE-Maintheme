@@ -41,7 +41,7 @@ $revslider = types_render_field("page-slider");
                             </div>
                             <div class="col-md-12 div-menu-btn">
                                 
-                                <a class="btn btn-info datail-menu" target="_blank" href="<?php echo get_post_meta( $menu->ID, 'wpcf-catering-menu-pdf', true); ?>">Read more</a>
+                                <a class="btn btn-info datail-menu" target="_blank" href="<?php echo get_post_meta( $menu->ID, 'wpcf-catering-menu-pdf', true); ?>"><?php _e( 'Read more', 'bmw-website' ) ?></a>
                             </div>                            
                         </div>
                     </div>
@@ -49,7 +49,7 @@ $revslider = types_render_field("page-slider");
                <?php }?>
             </div>
             <?php get_template_part( 'template-parts/part', 'awards' ); ?>
-            <div class="blue-background"><h2>What our clients say about our menu</h2></div>
+            <div class="blue-background"><h2><?php _e( 'What our clients say about our menu', 'bmw-website' ) ?></h2></div>
             <!-- ========== TESTIMONIES PART ========== -->
             <?php get_template_part( 'template-parts/part', 'testimonies' ); ?>
             <!-- ========== TESTIMONIES PART ========== -->

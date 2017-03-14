@@ -38,7 +38,7 @@ if(!$revslider or $revslider=='') $revslider = 'package-slider';
         <main id="main">
             <div class="row pricing-form-content">                
                 <div class="col-xs-12 col-sm-6 col-md-4">
-                    <h3 class="text-right">Call now! <a href="tel:<?php echo $GLOBALS['BMW_PHONE_NUMBER']; ?>" class="tracking-phone-number"><?php echo $GLOBALS['BMW_PHONE_NUMBER']; ?></a> to request more information and pricing <br /> or fill the following form:</h3>
+                    <h3 class="text-right"><?php _e( 'Call now!', 'bmw-website' ) ?> <a href="tel:<?php echo $GLOBALS['BMW_PHONE_NUMBER']; ?>" class="tracking-phone-number"><?php echo $GLOBALS['BMW_PHONE_NUMBER']; ?></a> <?php _e( 'to request more information and pricing <br /> or fill the following form', 'bmw-website' ) ?>:</h3>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-7">
                     <?php 
@@ -52,7 +52,7 @@ if(!$revslider or $revslider=='') $revslider = 'package-slider';
 					<div class="container">
 						<div class="row">
 							<div class="col-sm-offset-6 col-sm-6 col-xs-12 package-section-content">
-				        		<h1>Catering Experience</h1>
+				        		<h1><?php _e( 'Catering Experience', 'bmw-website' ) ?></h1>
 	        					<?php echo $catering; ?>
 							</div>
 						</div>
@@ -96,33 +96,9 @@ if(!$revslider or $revslider=='') $revslider = 'package-slider';
 				</div>
 	        </div>
 	        <div class="row entretainment-services">
-	        	<p>Entertainment Services available upon request</p>
+	        	<p><?php _e( 'Entertainment Services available upon request', 'bmw-website' ) ?></p>
 	        </div>
             <?php get_template_part( 'template-parts/part', 'testimonies' ); ?>
-            <?php if($tour != ''){ ?>
-                <div id="animatedModal">
-                    <div class="col-md-12 modal-menu">
-                        <div class="top-venue-menu">
-                            <ul class="ul-menu">
-                                <li><a class="close-animatedModal" href="#primary">INFO & LOCATION</a></li>
-                                <?php if($blueprint != ''){?>
-                                    <li><a class="close-animatedModal" href="#div-venue-blueprint">AREAS</a></li>
-                                <?php } ?>
-                                <?php echo "<li><a href='".get_home_url()."/gallery/?post_id=".get_post()->ID."'>PHOTOS</a></li>";?>
-                                <?php if($weddings != ''){?>
-                                    <li><a href="<?php echo $weddings; ?>" target="_blank">WEDDINGS</a></li>
-                                <?php } ?>
-                            </ul>
-                            <div class="close-animatedModal btn-close"> 
-                                <span class="glyphicon glyphicon-remove" style="color:white"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-content">
-                        <?php echo "<iframe src=".$tour." width='100%' height='100%'></iframe>"; ?>
-                    </div>
-                </div>
-            <?php } ?>
 
         </main><!-- #main -->
     </div><!-- #primary -->

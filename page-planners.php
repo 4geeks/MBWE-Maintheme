@@ -77,15 +77,15 @@ function getNickname($plannerId = 0)
                         <small><?php echo $serviceArea; ?></small>
                         <div class="row">
                             <div class="col-xs-7"> 
-                                <h5><?php echo $total_weddings; ?> weddings successfully planned.</h5>
+                                <h5><?php echo $total_weddings; ?> <?php _e( 'weddings successfully planned', 'bmw-website' ) ?>.</h5>
                             </div>
                             <div class="col-xs-5"> 
-                                <h5><?php echo $number_years; ?> years in the industry.</h5>
+                                <h5><?php echo $number_years; ?> <?php _e( 'years in the industry', 'bmw-website' ) ?>.</h5>
                             </div>
                         </div>
                         <div class="div-planner-experience">
-                            <?php echo substr($plannerExperience,0,430); ?>
-                            <?php if($plannerExperience and strlen($plannerExperience)>450) echo "..."; ?> <a href="<?php echo get_permalink($planner->ID); ?>">Learn more about <?php echo getNickname($planner->ID); ?></a>
+                            <?php echo substr($plannerExperience,0,430); ?>..
+                            <p><a href="<?php echo get_permalink($planner->ID); ?>"><?php _e( 'Learn more about', 'bmw-website' ) ?> <?php echo getNickname($planner->ID); ?></a></p>
                         </div> 
                         <?php if($certified) { ?>  
                         <!--                             
@@ -102,7 +102,7 @@ function getNickname($plannerId = 0)
                     </div>
                <?php }?>
             </div>         
-            <div class="blue-background"><h2>What our clients say about our planners</h2></div>   
+            <div class="blue-background"><h2><?php _e( 'What our clients say about our planners', 'bmw-website' ) ?></h2></div>   
             <!-- ========== MENU TOP ========== -->
             <?php get_template_part( 'template-parts/part', 'testimonies' ); ?>
             <!-- ========== MENU TOP ========== -->        

@@ -73,26 +73,11 @@ function shrinkText($texto='', $maxsize = 20)
     <div id="div-top-menu" class="row">    
         <div class="col-sm-1"></div>
         <div class="hidden-xs col-sm-7">
-            <div class="top-venue-menu not-for-phone">
-                <ul class="ul-menu">
-                    <li><a href="#primary">INFO & LOCATION</a></li>
-                    <?php if($blueprint != ''){?>
-                        <li><a href="#div-venue-blueprint">LAYOUT</a></li>
-                    <?php } ?>
-                    <li><a href="#reviewscontainer">REVIEWS</a></li>
-                    <?php if($tour != ''){?>
-                        <li><a id="a-360-tour" href="#animatedModal">360° TOUR</a></li>
-                    <?php } ?>
-                    <?php echo "<li><a href='".get_home_url()."/gallery/?post_id=".get_post()->ID."&is_event=false'>PHOTOS</a></li>";?>
-                    <?php if($weddings != ''){?>
-                        <li><a href="<?php echo $weddings; ?>" target="_blank">WEDDINGS</a></li>
-                    <?php } ?>
-                </ul>
-            </div>
+            <?php get_template_part( 'template-parts/part', 'top-venue-nomobile' ); ?>
         </div>
         <div id="menu-desplegable" class="col-xs-8 col-sm-4">
-            <p class="pull-left hidden-xs">&nbsp;View other venues: &#8203; </p> 
-            <p class="pull-left visible-xs" style="font-size: 18px; text-align: right;">&nbsp;Other venues: &#8203; </p> 
+            <p class="pull-left hidden-xs">&nbsp;<?php _e( 'View other venues', 'bmw-website' ) ?>: &#8203; </p> 
+            <p class="pull-left visible-xs" style="font-size: 18px; text-align: right;">&nbsp;<?php _e( 'Other venues', 'bmw-website' ) ?>: &#8203; </p> 
             <span id="icon-dropdown" class="glyphicon glyphicon-collapse-down pull-right"></span>
             <ul id="sub-menu" class="style-scroll-1 scrollbar">
             <?php
@@ -100,7 +85,7 @@ function shrinkText($texto='', $maxsize = 20)
                 foreach ($venues->posts as $venue) {
                     if (get_post()->ID != $venue->ID) {
                         echo "<li class='mansonry-hover' style='background-image: url(". get_post_meta( $venue->ID, 'wpcf-venue-small-image', false)[0].")'>";
-                            echo "<a class='with-font-sub-title' href='".get_home_url()."/venue/".$venue->post_name."'>".$venue->post_title."</a>";
+                            echo "<a class='with-font-sub-title' href='".get_permalink($venue->ID)."'>".$venue->post_title."</a>";
                         echo "</li>";
                     }
                 }
@@ -122,8 +107,8 @@ function shrinkText($texto='', $maxsize = 20)
                     <span id="direction" > <?php echo $direction ?></span>
                 </div>
                 <div id="div-venue-button">
-                    <a class="btn btn-warning modalContact" href="#animatedModalContact">Request a quote</a>
-                    <p class="highlight-p">or call now! <a href="tel:<?php echo $GLOBALS['BMW_PHONE_NUMBER']; ?>" class="tracking-phone-number"><?php echo $GLOBALS['BMW_PHONE_NUMBER']; ?></a></p> 
+                    <a class="btn btn-warning modalContact" href="#animatedModalContact"><?php _e( 'Request a quote', 'bmw-website' ) ?></a>
+                    <p class="highlight-p"><?php _e( 'or call now!', 'bmw-website' ) ?> <a href="tel:<?php echo $GLOBALS['BMW_PHONE_NUMBER']; ?>" class="tracking-phone-number"><?php echo $GLOBALS['BMW_PHONE_NUMBER']; ?></a></p> 
                 </div>
                 <div id="arrow-down" class="not-for-mobile"><span class="glyphicon glyphicon-chevron-down"></span></div>     
             </div>
@@ -134,12 +119,12 @@ function shrinkText($texto='', $maxsize = 20)
                     <div class="col-md-1 col-xs-1">
                         <span class="important glyphicon glyphicon-user"></span>
                     </div>
-                    <div class="col-md-11 col-xs-10"><p><?php echo $maxCapacity ?> people capacity</p></div>
+                    <div class="col-md-11 col-xs-10"><p><?php echo $maxCapacity ?> <?php _e( 'people capacity', 'bmw-website' ) ?></p></div>
 
                     <div class="col-md-1 col-xs-1 margin-top20">
                         <span class="important glyphicon glyphicon-time"></span>
                     </div>
-                    <div class="col-md-11 col-xs-10 margin-top20"><p>The event must end by <?php echo $curfew ?></p></div>
+                    <div class="col-md-11 col-xs-10 margin-top20"><p><?php _e( 'The event must end by', 'bmw-website' ) ?> <?php echo $curfew ?></p></div>
                 </div>
             </div>
             <div id="div-venue-location" class="row">
@@ -149,7 +134,7 @@ function shrinkText($texto='', $maxsize = 20)
                     </div>                
                 </div>
                 <div class="col-md-6 p-location" >
-                    <h2 class="with-font-sub-title address-title">Address and location for <?php  echo $name;?></h2>
+                    <h2 class="with-font-sub-title address-title"><?php _e( 'Address and location for', 'bmw-website' ) ?> <?php  echo $name;?></h2>
                     <div>
                         <?php echo $location ?>
                         <?php if($direction and $direction!=$location) echo $direction; ?>
@@ -165,7 +150,7 @@ function shrinkText($texto='', $maxsize = 20)
             <div id="div-venue-nerby">
                 <div class="container">
                     <div class="col-md-4 col-sm-4" id="div-venue-acommodations">
-                        <h2>Acommodations</h2>
+                        <h2><?php _e( 'Acommodations', 'bmw-website' ) ?></h2>
                         <div class="style-scroll-1 scrollbar">
                             <div id="div-acommodations" class="force-overflow">
                             <?php
@@ -184,13 +169,13 @@ function shrinkText($texto='', $maxsize = 20)
                     </div>
                     <div class="col-md-4 col-sm-4" id="div-venue-parking">
                         <div>
-                            <h2>Parking</h2>
+                            <h2><?php _e( 'Parking', 'bmw-website' ) ?></h2>
                             <?php echo $parking ?>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-4" id="div-venue-transportation">
                         <div>
-                            <h2>Transportation</h2>
+                            <h2><?php _e( 'Transportation', 'bmw-website' ) ?></h2>
                             <?php echo $transportation ?>
                         </div>
                     </div>
@@ -200,7 +185,7 @@ function shrinkText($texto='', $maxsize = 20)
                 <div id="div-venue-blueprint" class="row">
                     <?php if($blueprint != '') {?>
                     <div class="p-location hidden-xs">
-                        <h2>Layout for <?php  echo $name;?></h2>
+                        <h2><?php _e( 'Layout for ', 'bmw-website' ) ?><?php  echo $name;?></h2>
                         <?php echo $blueprint?>
                     </div>
                     <?php } ?>
@@ -213,28 +198,7 @@ function shrinkText($texto='', $maxsize = 20)
             <?php } ?>
             <?php include( locate_template( 'template-parts/venue-reviews.php', false, false ) ); ?>
             <?php if($tour != ''){ ?>
-                <div id="animatedModal">
-                    <div class="col-md-12 modal-menu">
-                        <div class="top-venue-menu">
-                            <ul class="ul-menu">
-                                <li><a class="close-animatedModal" href="#primary">INFO & LOCATION</a></li>
-                                <?php if($blueprint != ''){?>
-                                    <li><a class="close-animatedModal" href="#div-venue-blueprint">AREAS</a></li>
-                                <?php } ?>
-                                <?php echo "<li><a href='".get_home_url()."/gallery/?post_id=".get_post()->ID."'>PHOTOS</a></li>";?>
-                                <?php if($weddings != ''){?>
-                                    <li><a href="<?php echo $weddings; ?>" target="_blank">WEDDINGS</a></li>
-                                <?php } ?>
-                            </ul>
-                            <div class="close-animatedModal btn-close"> 
-                                <span class="glyphicon glyphicon-remove" style="color:white"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-content">
-                        <?php echo "<iframe src=".$tour." width='100%' height='100%'></iframe>"; ?>
-                    </div>
-                </div>
+                <?php get_template_part( 'template-parts/part', 'animated-venue-menu' ); ?>
             <?php } ?>
 
         </main><!-- #main -->

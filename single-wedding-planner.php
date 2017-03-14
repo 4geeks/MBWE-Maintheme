@@ -53,7 +53,7 @@ $weddings = types_render_field("venue-weddings",array("output" => "raw"));
         <main id="main">
             <div id="div-venue-description" class="row">                
                 <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 container">
-                    <h2 class="text-center">Call now! <a href="tel:<?php echo $GLOBALS['BMW_PHONE_NUMBER']; ?>" class="tracking-phone-number"><?php echo $GLOBALS['BMW_PHONE_NUMBER']; ?></a> to schedule an appointment with <?php echo $nickname; ?>,<br /> or fill the following form and we will email you with availability:</h2>
+                    <h2 class="text-center"><?php _e( 'Call now!', 'bmw-website' ) ?> <a href="tel:<?php echo $GLOBALS['BMW_PHONE_NUMBER']; ?>" class="tracking-phone-number"><?php echo $GLOBALS['BMW_PHONE_NUMBER']; ?></a> <?php _e( 'to schedule an appointment with <?php echo $nickname; ?>,<br /> or fill the following form and we will email you with availability', 'bmw-website' ) ?>:</h2>
                     <?php 
                         gravity_form( 'Planner Appointment', false, false, true, array('planner-slug' => $post->slug), true ); 
                         ?>   
@@ -63,10 +63,10 @@ $weddings = types_render_field("venue-weddings",array("output" => "raw"));
                 <div class="col-md-6 col-sm-12">
                     <div class="row text-center">
                         <div class="col-xs-12">
-                            <h2>What makes <?php echo $nickname; ?> unique?</h2>
+                            <h2><?php printf(( 'What makes %s unique', 'bmw-website' ),$nickname); ?></h2>
                             <?php echo $uniqueness; ?>
                             <?php if($plannerBlog){ ?>
-                                <a href="<?php echo $plannerBlog; ?>">Read more about <?php echo $nickname ?> here.</a>
+                                <a href="<?php echo $plannerBlog; ?>"><?php printf(( 'Read more about %s here', 'bmw-website' ),$nickname); ?>.</a>
                             <?php } ?>
                         </div>
                     </div>
@@ -74,7 +74,7 @@ $weddings = types_render_field("venue-weddings",array("output" => "raw"));
                 <div class="col-md-6 col-sm-12  text-center">
                     <div class="row planner-fact">
                         <div>
-                            <h2>Fun Facts about <?php echo $nickname; ?></h2>
+                            <h2><?php printf(( 'Fun Facts about %s', 'bmw-website' ),$nickname); ?></h2>
                             <?php echo $funFacts; ?>
                         </div>
                     </div>
@@ -101,31 +101,6 @@ $weddings = types_render_field("venue-weddings",array("output" => "raw"));
                 </div>
             </div>
             <?php get_template_part( 'template-parts/part', 'testimonies' ); ?>
-            <?php if($tour != ''){ ?>
-                <div id="animatedModal">
-                    <div class="col-md-12 modal-menu">
-                        <div class="top-venue-menu">
-                            <ul class="ul-menu">
-                                <li><a class="close-animatedModal" href="#primary">INFO & LOCATION</a></li>
-                                <?php if($blueprint != ''){?>
-                                    <li><a class="close-animatedModal" href="#div-venue-blueprint">AREAS</a></li>
-                                <?php } ?>
-                                <?php echo "<li><a href='".get_home_url()."/gallery/?post_id=".get_post()->ID."'>PHOTOS</a></li>";?>
-                                <?php if($weddings != ''){?>
-                                    <li><a href="<?php echo $weddings; ?>" target="_blank">WEDDINGS</a></li>
-                                <?php } ?>
-                            </ul>
-                            <div class="close-animatedModal btn-close"> 
-                                <span class="glyphicon glyphicon-remove" style="color:white"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-content">
-                        <?php echo "<iframe src=".$tour." width='100%' height='100%'></iframe>"; ?>
-                    </div>
-                </div>
-            <?php } ?>
-
             <?php include( locate_template( 'template-parts/planner-reviews.php', false, false ) ); ?>
 
         </main><!-- #main -->

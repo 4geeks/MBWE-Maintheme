@@ -64,7 +64,7 @@ $bgImageURL = types_render_termmeta("tax-background-image",array("url" => "true"
 			</div>
 			<div class="content-header-description">
 				<div class="container">
-					<h3>Click on any of the following venues for more details: Photos, Capacity, Blueprints, Map Address, 360° Tour and more.</h3>
+					<h3><?php _e( 'Click on any of the following venues for more details: Photos, Capacity, Blueprints, Map Address, 360° Tour and more.', 'bmw-website' ) ?></h3>
 				</div>
 			</div>
             <div id="list-content" class="row">   
@@ -83,7 +83,7 @@ $bgImageURL = types_render_termmeta("tax-background-image",array("url" => "true"
                                     <h4><?php echo get_post_meta( $venueId, 'wpcf-venue-direction', true); ?></h4>
                                 </div>
                                 <div class="col-sm-12">
-                                    <a href="<?php echo get_permalink(); ?>" class="btn btn-info btn-sm">Read more</a>
+                                    <a href="<?php echo get_permalink(); ?>" class="btn btn-info btn-sm"><?php _e( 'Read more', 'bmw-website' ) ?></a>
                                 </div>
                             </div>
                         </div>

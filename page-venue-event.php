@@ -56,19 +56,7 @@ $venues = new WP_Query( $args );
     <div id="div-top-menu" class="row">    
         <div class="col-md-1"></div>
         <div class="col-md-7">
-            <div class="top-venue-menu not-for-phone">
-                <ul class="ul-menu">
-                    <li><a href="#primary">GENERAL INFO</a></li>
-                    <?php if($blueprint != ''){?>
-                        <li><a href="#div-venue-blueprint">AREAS</a></li>
-                    <?php } ?>
-                    <?php if($tour != ''){?>
-                        <li><a id="a-360-tour" href="#animatedModal">360° TOUR</a></li>
-                    <?php } ?>
-                    <?php echo "<li><a href='".get_home_url()."/gallery-event/?post_id=".get_post()->ID."'>GALLERY</a></li>";?>
-                    <li><a href="#div-venue-location">LOCATION</a></li>
-                </ul>
-            </div>
+            <?php get_template_part( 'template-parts/part', 'top-venue-nomobile' ); ?>
         </div>
         <div id="menu-desplegable" class="col-md-4">
             <span class="col-md-11"><?php echo $name ?> &#8203; </span> <span id="icon-dropdown" class="glyphicon glyphicon-collapse-down"></span>
@@ -185,26 +173,7 @@ $venues = new WP_Query( $args );
                 </div>
             <?php } ?>
             <?php if($tour != ''){ ?>
-                <div id="animatedModal">
-                    <div class="col-md-12 modal-menu">
-                        <div class="top-venue-menu">
-                            <ul class="ul-menu">
-                                <li><a class="close-animatedModal" href="#primary">GENERAL INFO</a></li>
-                                <?php if($blueprint != ''){?>
-                                    <li><a class="close-animatedModal" href="#div-venue-blueprint">AREAS</a></li>
-                                <?php } ?>
-                                <?php echo "<li><a href='".get_home_url()."/gallery-event/?post_id=".get_post()->ID."'>GALLERY</a></li>";?>
-                                <li><a class="close-animatedModal" href="#div-venue-location">LOCATION</a></li>
-                            </ul>
-                            <div class="close-animatedModal btn-close"> 
-                                <span class="glyphicon glyphicon-remove" style="color:white"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-content">
-                        <?php echo "<iframe src=".$tour." width='100%' height='100%'></iframe>"; ?>
-                    </div>
-                </div>
+                <?php get_template_part( 'template-parts/part', 'animated-venue-menu' ); ?>
             <?php } ?>
 
         </main><!-- #main -->

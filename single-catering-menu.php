@@ -31,7 +31,7 @@ if(!$revslider or $revslider=='') $revslider = 'catering-slider';
         <main id="main">
             <div class="row pricing-form-content">                
                 <div class="col-xs-12 col-sm-6 col-md-4">
-                    <h3 class="text-right">Call now! <a href="tel:<?php echo $GLOBALS['BMW_PHONE_NUMBER']; ?>" class="tracking-phone-number"><?php echo $GLOBALS['BMW_PHONE_NUMBER']; ?></a> to request more information and pricing <br /> or fill the following form:</h3>
+                    <h3 class="text-right"><?php _e( 'Call now!', 'bmw-website' ) ?> <a href="tel:<?php echo $GLOBALS['BMW_PHONE_NUMBER']; ?>" class="tracking-phone-number"><?php echo $GLOBALS['BMW_PHONE_NUMBER']; ?></a> <?php _e( 'to request more information and pricing <br /> or fill the following form', 'bmw-website' ) ?>:</h3>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-7">
                     <?php 
@@ -41,16 +41,16 @@ if(!$revslider or $revslider=='') $revslider = 'catering-slider';
             </div>
 	        <div class="row text-center">
 				<div class="col-sm-12">
-	        		<h2>Hors d'oeuvre</h2>
+	        		<h2><?php _e( "Hors d'oeuvre", 'bmw-website' ) ?></h2>
 					<?php echo $appetisers; ?>
-	        		<h2>Entree</h2>
+	        		<h2><?php _e( 'Entree', 'bmw-website' ) ?></h2>
 					<?php echo $entree; ?>
-	        		<h2>Sides</h2>
+	        		<h2><?php _e( 'Sides', 'bmw-website' ) ?></h2>
 					<?php echo $sides; ?>
 				</div>
 	        </div>
 	        <div class="row entretainment-services">
-	        	<p>Entretainment Services available upon request</p>
+	        	<p><?php _e( 'Entretainment Services available upon request', 'bmw-website' ) ?></p>
 	        </div>
             <?php get_template_part( 'template-parts/part', 'testimonies' ); ?>
             <?php if($tour != ''){ ?>
@@ -58,13 +58,13 @@ if(!$revslider or $revslider=='') $revslider = 'catering-slider';
                     <div class="col-md-12 modal-menu">
                         <div class="top-venue-menu">
                             <ul class="ul-menu">
-                                <li><a class="close-animatedModal" href="#primary">INFO & LOCATION</a></li>
+                                <li><a class="close-animatedModal" href="#primary"><?php _e( 'INFO & LOCATION', 'bmw-website' ) ?></a></li>
                                 <?php if($blueprint != ''){?>
-                                    <li><a class="close-animatedModal" href="#div-venue-blueprint">AREAS</a></li>
+                                    <li><a class="close-animatedModal" href="#div-venue-blueprint"><?php _e( 'AREAS', 'bmw-website' ) ?></a></li>
                                 <?php } ?>
-                                <?php echo "<li><a href='".get_home_url()."/gallery/?post_id=".get_post()->ID."'>PHOTOS</a></li>";?>
+                                <li><a href='<?php echo get_home_url()."/gallery/?post_id=".get_post()->ID; ?>'><?php _e( 'PHOTOS', 'bmw-website' ) ?></a></li>
                                 <?php if($weddings != ''){?>
-                                    <li><a href="<?php echo $weddings; ?>" target="_blank">WEDDINGS</a></li>
+                                    <li><a href="<?php echo $weddings; ?>" target="_blank"><?php _e( 'WEDDINGS', 'bmw-website' ) ?></a></li>
                                 <?php } ?>
                             </ul>
                             <div class="close-animatedModal btn-close"> 

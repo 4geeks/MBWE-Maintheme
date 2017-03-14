@@ -46,7 +46,7 @@ $content = get_page($post->ID)->post_content;
                                     <h4><small><?php echo get_post_meta( $venue->ID, 'wpcf-venue-direction', false)[0]; ?></small></h4>
                                 </div>
                                 <div class="col-sm-12">
-                                    <a href="<?php echo get_home_url()."/venue/".$venue->post_name ?>" class="btn btn-info btn-sm">Read more</a>
+                                    <a href="<?php echo get_permalink($venue->ID); ?>" class="btn btn-info btn-sm"><?php _e( 'Read more', 'bmw-website' ) ?></a>
                                 </div>
                             </div>
                         </div>
@@ -56,7 +56,7 @@ $content = get_page($post->ID)->post_content;
                <?php if(!isset($_GET["vvisibility"])) { ?>
                <div id="extra-venues" class="col-sm-12">
                     <div class="col-sm-12 div-description">
-                        <center><a href="/wedding-venues-locations/?vvisibility[]=3">Click here to review some additional venues</a></center>
+                        <center><a href="/wedding-venues-locations/?vvisibility[]=3"><?php _e( 'Click here to review some additional venues', 'bmw-website' ) ?></a></center>
                     </div>
                </div>
                <?php } ?>

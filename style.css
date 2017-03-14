@@ -1,14 +1,10 @@
 /*
-	Theme Name: HTML5 Blank
-	Theme URI: http://html5blank.com
-	Description: HTML5 Blank WordPress Theme
-	Version: 1.4.3
-	Author: Todd Motto (@toddmotto)
-	Author URI: http://toddmotto.com
-	Tags: Blank, HTML5, CSS3
-
-	License: MIT
-	License URI: http://opensource.org/licenses/mit-license.php
+	Description: Best Miami Weddings Website
+    Text Domain: bmw-website
+	Version: 0.1
+	Author: Alejandro Sanchez (@alesanchezr)
+	Author URI: http://alesanchezr.com
+	Tags: Weddings, Catering, Special Events, Hospitality
 */
 @import url("css/font-awesome.min.css");
 
@@ -742,8 +738,7 @@ h4, h5, h6{font-size: 24px;}
     margin-top: 10px;
 }
 #divFooter2 .links #div-links-content span{
-    font-size: 22px;
-    margin-left: 15px;
+    font-size: 18px;
 }
 #divFooter2 #div-angle-double{
 	font-size: 40px;
@@ -773,7 +768,7 @@ h4, h5, h6{font-size: 24px;}
 }
 .margin-left-links{
 	position: relative;
-	left: 20px;
+	left: 0px;
 }
 
 /* END FOOTER */
@@ -797,6 +792,9 @@ h4, h5, h6{font-size: 24px;}
   top: 8px;
 }
 
+.ul-menu{
+    padding-left: 0px;
+}
 .menu-small .bmwe-menu .ul-menu > li > a{
   position: relative;
   top:10px;
@@ -1225,8 +1223,8 @@ li.col1 {
 	body .gform_wrapper img.ui-datepicker-trigger {
 		display: none !important;
 	}
-	footer #divFooter2{
-		display: none;
+	footer .newsletter{
+        display: none;
 	}
 	#divFooter1 .social{
 		left: 0px;

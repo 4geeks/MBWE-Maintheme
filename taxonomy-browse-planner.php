@@ -75,7 +75,7 @@ function getYoutubeID($url = '')
 			</div>
 			<div class="content-header-description">
 				<div class="container">
-					<h3>Click on any of the following planners for more details: Experience, Weddings, Prices and more.</h3>
+					<h3><?php _e( 'Click on any of the following planners for more details: Experience, Weddings, Prices and more.', 'bmw-website' ) ?></h3>
 				</div>
 			</div>
             <div id="list-content" class="container-fluid">
@@ -121,16 +121,16 @@ function getYoutubeID($url = '')
                         <small><?php echo $serviceArea; ?></small>
                         <div class="row">
                             <div class="col-xs-7"> 
-                            	<h5><?php echo $total_weddings; ?> weddings successfully planned.</h5>
+                            	<h5><?php echo $total_weddings; ?> <?php _e( 'weddings successfully planned', 'bmw-website' ); ?>.</h5>
                             </div>
                             <div class="col-xs-5"> 
-                            	<h5><?php echo $number_years; ?> years in the industry.</h5>
+                            	<h5><?php echo $number_years; ?> <?php _e( 'years in the industry', 'bmw-website' ); ?>.</h5>
                             </div>
                         </div>
                         <div class="div-planner-experience">
                             <?php echo substr($plannerExperience,0,250); ?>
                             <?php if($plannerExperience and strlen($plannerExperience)>250) echo "..."; ?>
-                            <a href="<?php echo get_permalink(); ?>">Learn more about <?php echo $nickname; ?></a>
+                            <a href="<?php echo get_permalink(); ?>"><?php _e( 'Learn more about', 'bmw-website' ); ?> <?php echo $nickname; ?></a>
                         </div> 
                     </div>
                <?php }?>

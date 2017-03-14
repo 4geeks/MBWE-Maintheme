@@ -64,7 +64,7 @@ $bgImageURL = types_render_termmeta("tax-background-image",array("url" => "true"
 			</div>
 			<div class="content-header-description">
 				<div class="container">
-					<h3>Click on any of the following packages for more deatils: Catering, Beverages, Design, Entretainment, Cake and more.</h3>
+					<h3><?php _e( 'Click on any of the following packages for more deatils: Catering, Beverages, Design, Entretainment, Cake and more', 'bmw-website' ); ?>.</h3>
 				</div>
 			</div>
             <div id="list-content" class="row">   
@@ -82,7 +82,7 @@ $bgImageURL = types_render_termmeta("tax-background-image",array("url" => "true"
                                 <?php echo get_post_meta( $packageId, 'wpcf-package-description', false)[0]; ?>
                             </div>
                             <div class="col-md-12 div-package-btn">
-                                <a class="btn btn-info datail-package" href="<?php echo get_permalink($packageId); ?>">Read more</a>
+                                <a class="btn btn-info datail-package" href="<?php echo get_permalink($packageId); ?>"><?php _e( 'Read more', 'bmw-website' ); ?></a>
                             </div>                            
                         </div>
                     </div>

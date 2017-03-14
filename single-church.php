@@ -58,28 +58,28 @@ $venues = new WP_Query( $args );
         <div class="col-md-7">
             <div class="top-venue-menu not-for-phone">
                 <ul class="ul-menu">
-                    <li><a href="#primary">INFO & LOCATION</a></li>
+                    <li><a href="#primary"><?php _e( 'INFO & LOCATION', 'bmw-website' ) ?></a></li>
                     <?php if($blueprint != ''){?>
-                        <li><a href="#div-venue-blueprint">AREAS</a></li>
+                        <li><a href="#div-venue-blueprint"><?php _e( 'AREAS', 'bmw-website' ) ?></a></li>
                     <?php } ?>
                     <?php if($tour != ''){?>
-                        <li><a id="a-360-tour" href="#animatedModal">360° TOUR</a></li>
+                        <li><a id="a-360-tour" href="#animatedModal"><?php _e( '360° TOUR', 'bmw-website' ) ?></a></li>
                     <?php } ?>
-                    <?php echo "<li><a href='".get_home_url()."/gallery/?post_id=".get_post()->ID."&is_event=false'>PHOTOS</a></li>";?>
+                    <li><a href='<?php echo get_home_url()."/gallery/?post_id=".get_post()->ID; ?>&is_event=false'><?php _e( 'PHOTOS', 'bmw-website' ) ?></a></li>
                     <?php if($weddings != ''){?>
-                        <li><a href="<?php echo $weddings; ?>" target="_blank">WEDDINGS</a></li>
+                        <li><a href="<?php echo $weddings; ?>" target="_blank"><?php _e( 'WEDDINGS', 'bmw-website' ) ?></a></li>
                     <?php } ?>
                 </ul>
             </div>
         </div>
         <div id="menu-desplegable" class="col-md-4">
-            <span class="col-md-11">&nbsp;View other churches &#8203; </span> <span id="icon-dropdown" class="glyphicon glyphicon-collapse-down"></span>
+            <span class="col-md-11">&nbsp;<?php _e( 'View other churches', 'bmw-website' ) ?>&#8203; </span> <span id="icon-dropdown" class="glyphicon glyphicon-collapse-down"></span>
             <ul id="sub-menu" class="style-scroll-1 scrollbar">
             <?php
                 //list all venues in post types
                 foreach ($venues->posts as $venue) {
                     if (get_post()->ID != $venue->ID) {
-                        echo "<li style='background-image: url(". get_post_meta( $venue->ID, 'wpcf-venue-small-image', false)[0].")'><a class='with-font-sub-title' href='".get_home_url()."/".$postType."/".$venue->post_name."'>".$venue->post_title."</a></li>";
+                        echo "<li style='background-image: url(". get_post_meta( $venue->ID, 'wpcf-venue-small-image', false)[0].")'><a class='with-font-sub-title' href='".get_permalink($venue->ID)."'>".$venue->post_title."</a></li>";
                     }
                 }
             ?>
@@ -100,8 +100,8 @@ $venues = new WP_Query( $args );
                     <span id="direction" > <?php echo $direction ?></span>
                 </div>
                 <div id="div-venue-button">
-                    <a class="btn btn-warning modalContact" href="#animatedModalContact">Request to book</a>
-                    <p class="highlight-p">or call now! <span class="tracking-phone-number"><?php echo $GLOBALS['BMW_PHONE_NUMBER']; ?></span></p> 
+                    <a class="btn btn-warning modalContact" href="#animatedModalContact"><?php _e( 'Request to book', 'bmw-website' ) ?></a>
+                    <p class="highlight-p"><?php _e( 'or call now!', 'bmw-website' ) ?> <span class="tracking-phone-number"><?php echo $GLOBALS['BMW_PHONE_NUMBER']; ?></span></p> 
                 </div>
                 <div id="arrow-down" class="not-for-mobile"><span class="glyphicon glyphicon-chevron-down"></span></div>     
             </div>
@@ -112,12 +112,12 @@ $venues = new WP_Query( $args );
                     <div class="col-md-1 col-xs-1">
                         <span class="important glyphicon glyphicon-user"></span>
                     </div>
-                    <div class="col-md-11 col-xs-10"><p><?php echo $maxCapacity ?> people capacity</p></div>
+                    <div class="col-md-11 col-xs-10"><p><?php echo $maxCapacity ?> <?php _e( 'people capacity', 'bmw-website' ) ?></p></div>
 
                     <div class="col-md-1 col-xs-1 margin-top20">
                         <span class="important glyphicon glyphicon-time"></span>
                     </div>
-                    <div class="col-md-11 col-xs-10 margin-top20"><p>Available slots: <?php echo $curfew ?></p></div>
+                    <div class="col-md-11 col-xs-10 margin-top20"><p><?php _e( 'Available slots', 'bmw-website' ) ?>: <?php echo $curfew ?></p></div>
                 </div>
             </div>
             <div id="div-venue-location" class="row">
@@ -127,7 +127,7 @@ $venues = new WP_Query( $args );
                     </div>                
                 </div>
                 <div class="col-md-6 p-location" >
-                    <h2 class="with-font-sub-title">Address and location for <?php  echo $name;?></h2>
+                    <h2 class="with-font-sub-title"><?php _e( 'Address and location for', 'bmw-website' ) ?> <?php  echo $name;?></h2>
                     <div>
                         <p><?php echo $direction ?></p>
                         <?php echo $location ?>
@@ -143,7 +143,7 @@ $venues = new WP_Query( $args );
             <div id="div-venue-nerby">
                 <div class="container">
                     <div class="col-md-4 col-sm-4" id="div-venue-acommodations">
-                        <h2>Acommodations</h2>
+                        <h2><?php _e( 'Acommodations', 'bmw-website' ) ?></h2>
                         <div class="style-scroll-1 scrollbar">
                             <div id="div-acommodations" class="force-overflow">
                             <?php
@@ -162,13 +162,13 @@ $venues = new WP_Query( $args );
                     </div>
                     <div class="col-md-4 col-sm-4" id="div-venue-parking">
                         <div>
-                            <h2>Parking</h2>
+                            <h2><?php _e( 'Parking', 'bmw-website' ) ?></h2>
                             <?php echo $parking ?>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-4" id="div-venue-transportation">
                         <div>
-                            <h2>Transportation</h2>
+                            <h2><?php _e( 'Transportation', 'bmw-website' ) ?></h2>
                             <?php echo $transportation ?>
                         </div>
                     </div>
@@ -177,7 +177,7 @@ $venues = new WP_Query( $args );
             <?php if($blueprint != ''){ ?>
                 <div id="div-venue-blueprint" class="row">
                     <div class="p-location">
-                        <h2>Areas and distribution of <?php  echo $name;?></h2>
+                        <h2><?php _e( 'Areas and distribution of', 'bmw-website' ) ?> <?php echo $name;?></h2>
                         <?php echo $blueprint?>
                     </div>
                     <?php if($blueprintImage != '') {?>
@@ -188,28 +188,7 @@ $venues = new WP_Query( $args );
                 </div>
             <?php } ?>
             <?php if($tour != ''){ ?>
-                <div id="animatedModal">
-                    <div class="col-md-12 modal-menu">
-                        <div class="top-venue-menu">
-                            <ul class="ul-menu">
-                                <li><a class="close-animatedModal" href="#primary">INFO & LOCATION</a></li>
-                                <?php if($blueprint != ''){?>
-                                    <li><a class="close-animatedModal" href="#div-venue-blueprint">AREAS</a></li>
-                                <?php } ?>
-                                <?php echo "<li><a href='".get_home_url()."/gallery/?post_id=".get_post()->ID."'>PHOTOS</a></li>";?>
-                                <?php if($weddings != ''){?>
-                                    <li><a href="<?php echo $weddings; ?>" target="_blank">WEDDINGS</a></li>
-                                <?php } ?>
-                            </ul>
-                            <div class="close-animatedModal btn-close"> 
-                                <span class="glyphicon glyphicon-remove" style="color:white"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-content">
-                        <?php echo "<iframe src=".$tour." width='100%' height='100%'></iframe>"; ?>
-                    </div>
-                </div>
+                <?php get_template_part( 'template-parts/part', 'animated-venue-menu' ); ?>
             <?php } ?>
 
         </main><!-- #main -->

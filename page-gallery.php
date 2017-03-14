@@ -53,22 +53,7 @@ $weddings = (isset(get_post_meta( $_GET['post_id'], 'venue-weddings', false)[0])
     <div id="div-top-menu" class="row" style="background: #474747;">
         <div class="col-md-1"></div>
         <div class="col-md-7">
-            <div class="top-venue-menu not-for-phone">
-                <ul class="ul-menu">
-                    <?php echo "<li><a href='".get_home_url()."/".$postType."/".$post->post_name."'>INFO & LOCATION</a>"?>
-                    <?php echo "<li><a href='".get_home_url()."/".$postType."/".$post->post_name."#reviewscontainer'>REVIEWS</a>"?>
-                    <?php if ($blueprint != null)
-                            echo "<li><a href='".get_home_url()."/".$postType."/".$post->post_name."#div-venue-blueprint'>LAYOUT</a>"                        
-                    ?>
-                    <?php if ($tour != null){ ?>
-                       <li><a id="a-360-tour" href="#animatedModal">360° TOUR</a></li>
-                    <?php } ?>
-                    <?php echo "<li><a href='#'>PHOTO GALLERY</a></li>";?>
-                    <?php if($weddings != ''){?>
-                        <li><a href="<?php echo $weddings; ?>" target="_blank">WEDDINGS</a></li>
-                    <?php } ?>
-                </ul>
-            </div>
+            <?php get_template_part( 'template-parts/part', 'top-venue-nomobile' ); ?>
         </div>
         <div id="menu-desplegable" class="col-md-4">
             <span class="col-md-11"><?php echo $name ?> &#8203; </span> <span id="icon-dropdown" class="glyphicon glyphicon-collapse-down"></span>
@@ -94,33 +79,6 @@ $weddings = (isset(get_post_meta( $_GET['post_id'], 'venue-weddings', false)[0])
 					}
 				?>
 			</div>
-			<div id="animatedModal">
-                <div class="col-md-12 modal-menu">
-                    <div class="top-venue-menu">
-                        <ul class="ul-menu">
-	                        <?php echo "<li><a href='".get_home_url()."/".$postType."/".$post->post_name."'>GENERAL INFO</a>"?>
-			                <?php if ($blueprint != null)
-                                echo "<li><a href='".get_home_url()."/".$postType."/".$post->post_name."#div-venue-blueprint'>AREAS</a>"                        
-                            ?>
-                            <?php if ($tour != null){ ?>
-                                <li><a id="a-360-tour" href="#animatedModal">360° Tour</a></li>
-                            <?php } ?>
-			                 <?php echo "<li><a href='".get_home_url()."/gallery/?post_id=".get_post()->ID."'>PHOTO GALLERY</a></li>";?>
-			                <?php echo "<li><a href='".get_home_url()."/".$postType."/".$post->post_name."#div-venue-location'>LOCATION</a>"?>
-                        </ul>
-                    </div>
-                    <div class="close-animatedModal btn-close"> 
-                        <span class="glyphicon glyphicon-remove" style="color:white"></span>
-                    </div>                    
-                </div>
-                <div class="modal-content">
-                    <?php 
-                        if ($tour != null){
-                            echo "<iframe src=".$tour." width='100%' height='100%'></iframe>"; 
-                        }
-                        ?>
-                </div>
-            </div>
-
+			<?php get_template_part( 'template-parts/part', 'animated-venue-menu' ); ?>
 		</main>
 	</div>

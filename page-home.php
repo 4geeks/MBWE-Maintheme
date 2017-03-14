@@ -12,21 +12,8 @@ $img = array_pop($img);
 $video = get_attached_media( 'video' , $post->ID); 
 $video = array_pop($video);
 
-
-
-//print_r($img);
-/*echo "<pre>";
-print_r($video);
-echo"</pre>";
-*/
-
 $content = get_page($post->ID)->post_content;
 
-// echo "<pre>";
-// print_r($content);
-// echo"</pre>";
-
-//print_r($content);
 $revslider = types_render_field("page-slider");
 if(!$revslider or $revslider=='') $revslider = 'home-slider';
 
@@ -37,21 +24,21 @@ if(!$revslider or $revslider=='') $revslider = 'home-slider';
 </div>
 <div id="div-ourServices" class="row margin-top-ourServices">
 	<div class="col-md-12">
-		<center><h1>Our services</h1></center>
+		<center><h1><?php _e( 'Our services', 'bmw-website' ) ?></h1></center>
 	</div>
 	<div class="col-md-12 col-xs-12 clear center padding-right0">
 		<div class="col-md-6 col-xs-12 col-sm-6 img-venues highlight-element-services services-venues">
-				<div class="col-md-12"><p class="services-title">Wedding Venues</p></div>
+				<div class="col-md-12"><p class="services-title"><?php _e( 'Wedding Venues', 'bmw-website' ) ?></p></div>
 			<div id="divServicesContent-venues" class="col-md-12 center">
-				<div class="col-md-12"><p class="services-content">Picking a date should be the first step of every wedding, that's why the first thing you should do is booking your venue on a specific date. We have a selection of more than 25 spectacular locations.</p></div>
-				<div class="col-md-12"><a class="btn btn-lg btn-warning" href="<?php echo get_home_url().'/wedding-venues-locations' ?>">Tour the venues</a></div>
+				<div class="col-md-12"><p class="services-content"><?php _e( "Picking a date should be the first step of every wedding, that's why the first thing you should do is booking your venue on a specific date. We have a selection of more than 25 spectacular locations", 'bmw-website' ) ?>.</p></div>
+				<div class="col-md-12"><a class="btn btn-lg btn-warning" href="<?php echo get_home_url().'/wedding-venues-locations' ?>"><?php _e( 'Tour the venues', 'bmw-website' ) ?></a></div>
 			</div>
 		</div>
 		<div class="col-md-6 col-xs-12 col-sm-6 img-decor highlight-element-services services-packages">
-				<div class="col-md-12"><p class="services-title">Wedding Packages</p></div>
+				<div class="col-md-12"><p class="services-title"><?php _e( 'Wedding Packages', 'bmw-website' ) ?></p></div>
 			<div id="divServicesContent-packages" class="col-md-12 center">
-				<div class="col-md-12"><p class="services-content">Choosing a wedding package is the best way to get an aproximate budget, once you have a budget you can start customizing everything to make it your way.</p></div>
-				<div class="col-md-12"><a class="btn btn-lg btn-warning" href="<?php echo get_home_url().'/wedding-packages' ?>">Review our wedding packages</a></div>
+				<div class="col-md-12"><p class="services-content"><?php _e( 'Choosing a wedding package is the best way to get an aproximate budget, once you have a budget you can start customizing everything to make it your way', 'bmw-website' ) ?>.</p></div>
+				<div class="col-md-12"><a class="btn btn-lg btn-warning" href="<?php echo get_home_url().'/wedding-packages' ?>"><?php _e( 'Review our wedding packages', 'bmw-website' ) ?></a></div>
 			</div>
 		</div>	
 

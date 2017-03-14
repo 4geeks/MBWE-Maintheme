@@ -52,7 +52,7 @@ $post = get_post();
         <hr class="featurette-divider">
         <?php if($post_content and $post_content!=""){ ?>
 	        <div class="row text-center">
-	        	<h2>WHAT YOU WILL FIND INSIDE OF THIS DOCUMENT</h2>
+	        	<h2><?php _e( 'WHAT YOU WILL FIND INSIDE OF THIS DOCUMENT', 'bmw-website' ); ?></h2>
 	    	</div>
 	        <div class="row text-center">
 	        	<div class="col-md-12">
@@ -63,7 +63,7 @@ $post = get_post();
         <?php } ?>
         <div class="row text-center">
         	<div class="col-md-12">
-        		<h2>SHARE THIS ON YOUR SOCIAL MEDIA</h2>
+        		<h2><?php _e( 'SHARE THIS ON YOUR SOCIAL MEDIA', 'bmw-website' ); ?></h2>
     		</div>
     	</div>
         <div class="row text-center">
@@ -78,16 +78,16 @@ $post = get_post();
         </div>
         <hr class="featurette-divider">
         <div class="row text-center">
-        	<h2>FREQUENTLY ASKED QUESTIONS</h2>
+        	<h2><?php _e( 'FREQUENTLY ASKED QUESTIONS', 'bmw-website' ); ?></h2>
     	</div>
         <div class="row text-center">
         	<div class="col-md-6">
-        		<h4>Why do I need to fill out the information requested?</h4>
-        		<p>We will always keep your personal information safe. We ask for your information in exchange for a valuable resource in order to (a) improve your browsing experience by personalizing the site to your needs; (b) send information to you that we think may be of interest to you by email or other means; (c) send you marketing communications that we think may be of value to you. </p>
+        		<h4><?php _e( 'Why do I need to fill out the information requested?', 'bmw-website' ); ?></h4>
+        		<p><?php _e( 'We will always keep your personal information safe. We ask for your information in exchange for a valuable resource in order to (a) improve your browsing experience by personalizing the site to your needs; (b) send information to you that we think may be of interest to you by email or other means; (c) send you marketing communications that we think may be of value to you.', 'bmw-website' ); ?></p>
         	</div>
         	<div class="col-md-6">
-        		<h4>Is this really free?</h4>
-        		<p>Absolutely. Just sharing some free knowledge that we hope you’ll find useful. Keep us in mind next time you have marketing questions!</p>
+        		<h4><?php _e( 'Is this really free?', 'bmw-website' ); ?></h4>
+        		<p><?php _e( 'Absolutely. Just sharing some free knowledge that we hope you’ll find useful. Keep us in mind next time you have marketing questions!', 'bmw-website' ); ?></p>
         	</div>
         </div>
     </div>
