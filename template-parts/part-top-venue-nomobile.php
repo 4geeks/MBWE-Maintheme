@@ -12,7 +12,7 @@ $tour = get_post_meta( $postId, 'wpcf-venue-360-tour', false);
 		            <?php if($tour != ''){?>
 		                <li><a id="a-360-tour" href="#animatedModal"><?php _e( '360° TOUR', 'bmw-website' ) ?></a></li>
 		            <?php } ?>
-		            <li><a href='<?php echo get_permalink($postId); ?>'><?php _e( 'GALLERY', 'bmw-website' ) ?></a></li>
+		            <li><a href='<?php echo get_home_url()."/gallery/?post_id=".$postId."&is_event=false"; ?>'><?php _e( 'GALLERY', 'bmw-website' ) ?></a></li>
 		            <li><a href="#div-venue-location"><?php _e( 'LOCATION', 'bmw-website' ) ?></a></li>
 		        </ul>
 		    </div>
