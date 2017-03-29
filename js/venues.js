@@ -105,16 +105,19 @@
 
 		});
 
-
+	  	let numberOfSlides = 5;
+	  	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+		 	numberOfSlides = 2;
+		}
 	  	$("#lightSlider").lightSlider({
-	  		item: 5,
+	  		item: numberOfSlides,
         	autoWidth: false,
         	pager: false,
         	slideMargin: 0,
         	thumbMargin: 1,
         	controls: true
 	  	}); 
-	  	
+
 		$('#lightSlider').lightGallery({
 		    thumbnail:true,
 		    selector:'.div-image'
