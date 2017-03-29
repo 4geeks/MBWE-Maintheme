@@ -114,6 +114,10 @@
         	thumbMargin: 1,
         	controls: true
 	  	}); 
-		
+	  	
+		$('#lightSlider').lightGallery({
+		    thumbnail:true,
+		    selector:'.div-image'
+		}); 
 	});	
 })(jQuery, this);
