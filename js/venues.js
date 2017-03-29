@@ -105,6 +105,15 @@
 
 		});
 
+
+	  	$("#lightSlider").lightSlider({
+	  		item: 5,
+        	autoWidth: false,
+        	pager: false,
+        	slideMargin: 0,
+        	thumbMargin: 1,
+        	controls: true
+	  	}); 
 		
 	});	
 })(jQuery, this);

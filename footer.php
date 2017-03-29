@@ -1,7 +1,7 @@
 <?php
-	$footerTitle1 = get_post_meta($post->ID, 'footer1_title', true);
-	$footerTitle2 = get_post_meta($post->ID, 'footer2_title', true);
-	$footerTitle3 = get_post_meta($post->ID, 'footer3_title', true);
+	//$footerTitle1 = get_post_meta($post->ID, 'footer1_title', true);
+	//$footerTitle2 = get_post_meta($post->ID, 'footer2_title', true);
+	//$footerTitle3 = get_post_meta($post->ID, 'footer3_title', true);
 	$actualURL = "http://".$_SERVER["HTTP_HOST"].$_SERVER["REQUEST_URI"];
 ?>			
 

@@ -30,7 +30,6 @@ $tour = types_render_field("venue-360-tour");
 $galleryPostId = types_render_field("venue-gallery");
 $weddings = types_render_field("venue-weddings",array("output" => "raw"));
 
-
 $reviewScore = types_render_field("review-total-score");
 $facebookScore = types_render_field("review-facebook-score");
 $googleScore = types_render_field("review-google-score");
@@ -44,6 +43,18 @@ $reviewSummary = types_render_field("review-summary");
 
 
 $post = get_post();
+//Get the images from the gallery
+$gallery = get_post_gallery($post->ID,false);
+$ids = explode( ",", $gallery['ids'] );
+foreach( $ids as $id ) {
+    $newImg = array(
+        'id' => $id, 
+        'thumbnail' => wp_get_attachment_image_src( $id ,'large'), 
+        'default' => wp_get_attachment_image_src( $id, 'full'), 
+        );
+    $imgs[] = $newImg;
+} 
+
 $isClubOfKnigth = ($post->post_name == 'club-of-knight');
 
 //Get venue post types to list in dropdown list 
@@ -125,6 +136,16 @@ function shrinkText($texto='', $maxsize = 20)
                         <span class="important glyphicon glyphicon-time"></span>
                     </div>
                     <div class="col-md-11 col-xs-10 margin-top20"><p><?php _e( 'The event must end by', 'bmw-website' ) ?> <?php echo $curfew ?></p></div>
+                </div>
+            </div>
+            <div id="div-venue-img-gallery" class="row">                
+                <div id="lightSlider">
+                    <?php foreach( $imgs as $img ) {
+                        echo "<div class='div-image' data-imgid='".$img['id']."' data-src='".$img['default'][0]."' data-img='".$img['thumbnail'][0]."' data-width='".$img['thumbnail'][1]."' data-height='".$img['thumbnail'][2]."'>";
+                            echo "<img src='".$img['thumbnail'][0]."' />";
+                        echo "</div>";
+                    }
+                    ?>
                 </div>
             </div>
             <div id="div-venue-location" class="row">
