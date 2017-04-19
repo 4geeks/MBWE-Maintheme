@@ -14,7 +14,6 @@ get_header();
     	<div class="contact-us">
 		<div class="col-md-12 contact-title">
 		   <center>
-		   		<img class="navbar-logo" src="<?php bloginfo('template_url'); ?>/img/logo_bmw_new.png" />
 		   		<h3><?php _e( 'Responsiveness is one of our main values, <br /> we guarantee you a response in less than 10min', 'bmw-website' ) ?></h3>
 		   </center>       
 		</div>

@@ -3,7 +3,7 @@
     background-position-x: 50%;
     background-position-y: 60%;
     background-attachment: fixed;
-    height: 600px;
+    height: 400px;
     margin-top: -20px;
 }
 .div-news {
@@ -38,7 +38,7 @@
     line-height: 1;
 }
 #div-header h1{
-    margin-top: 120px;
+    padding-top: 240px;
     text-align: center;
 }
 #div-general-description{
@@ -132,7 +132,7 @@
 @media screen and (max-width: 767px) {
     .img-header-award{
         background-position-x: 48%;
-        background-position-y: 10px;
+        background-position-y: 0px;
         background-size: 737px;
     }
     .div-news{
@@ -153,7 +153,7 @@
         padding: 10px 30px 10px 30px;
     }
     #div-header h1{
-        font-size: 55px;
+        font-size: 30px;
     }
 }
 
@@ -200,7 +200,7 @@
 /* UNTIL SCREEN RESOLUTION 1025PX */
 @media screen and (min-width: 1025px) {
     .img-header-award{
-        background-position-y: -187px;
+        background-position-y: -60px;
         height: 600px;
     }
 }
