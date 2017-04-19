@@ -65,7 +65,7 @@ $isClubOfKnigth = ($post->post_name == 'club-of-knight');
         <main id="main" class="container-fluid">
             <div id='div-venue-image'>                
                 <div class="fullscreen-bg">  
-                    <div id="div-only-for-mobile" class="fullscreen-bg__video not-for-pc" style="background-image: url(<?php echo $mainImage; ?>); " data-adaptive-background="1" data-ab-css-background="1"></div>                  
+                    <div id="div-only-for-mobile" class="fullscreen-bg__video not-for-pc" style="background-image: url(<?php echo $mainImage; ?>); height: 100vh;" data-adaptive-background="1" data-ab-css-background="1"></div>                  
                     <?php if($mainVideo and $mainVideo!=''){ ?>
                     <video id="videoVenue" loop="" muted="" autoplay="" class="fullscreen-bg__video" style="background-image: url(<?php echo $mainImage; ?>); background-size: cover; background-position: center center;">
                         <source src="<?php echo $mainVideo; ?>">
