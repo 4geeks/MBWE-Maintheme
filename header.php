@@ -32,7 +32,7 @@ $f = $GLOBALS['BMW_PHONE_NUMBER'];
 ?>
 	<div class="blackspace-bar"></div>
 	<!-- wrapper -->
-	<div class="wrapper">
+	<div class="wrapper" class="for-phone">
 		<nav id="my-sidebar">
 			<div id="div-menu-logo">
 				<a href="<?php echo home_url(); ?>">
@@ -45,7 +45,7 @@ $f = $GLOBALS['BMW_PHONE_NUMBER'];
 			<div class="scroll">
 				<div class="min-height">
 						<?php if (is_singular('venue') || is_page("gallery")) { ?>
-						<div class="for-phone">
+						<div>
 							<ul>
 								<li><a href="#primary">VENUE INFO</a></li>
 								<li><a href="#div-venue-location">VENUE LOCATION</a></li>
@@ -82,26 +82,15 @@ $f = $GLOBALS['BMW_PHONE_NUMBER'];
 					</div>
 				</div>
 			</nav>
-			<header class="header clear" role="banner">
+
+			<header class="header clear for-phone" role="banner">
 				<div id="my-sidebar-toggle">	        						
 					<i class="fa fa-navicon"></i> <span>Menu</span>			
 				</div>
 				<?php if (!is_front_page() and !is_singular('church') and !is_singular('venue') and !is_page('venue-event') and !is_page('gallery-event') and !is_page('gallery')){ ?>
-					<p id="phone-number-header" class="not-for-mobile">Call now! <span class="tracking-phone-number"><?php echo $f; ?></span></p>
+					<p id="phone-number-header" class="not-for-mobile"><i class="fa fa-phone" aria-hidden="true"></i> <span class="tracking-phone-number"><?php echo $f; ?></span></p>
 				<?php } ?>
 			</header>
-
-			<?php if (is_front_page()){ ?>
-				<div class="menu-small">
-			      <div class="row">  
-			        <div class="col-md-12">
-			          <div class="bmwe-menu not-for-mobile">
-						<?php wp_nav_menu(array('menu' => 'sub-menu', 'menu_class' => 'ul-menu')); ?>
-					</div>
-			        </div>
-			      </div>    
-			    </div>
-		    <?php } ?>
 		    <div id="animatedModalContact" style="display:none">
                 <div class="col-md-12 modal-contact-menu">                                             
                     <div class="close-animatedModalContact btn-close"> 

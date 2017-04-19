@@ -82,6 +82,9 @@ function html5blank_header_scripts()
 {
     if ($GLOBALS['pagenow'] != 'wp-login.php' && !is_admin()) {
 
+        $prependversion = "";
+        if(WP_DEBUG) $prependversion = time();
+
         wp_register_script('animatedmodaljs',get_template_directory_uri() . '/js/lib/animatedModal.min.js',array('jquery'), '1.0.0');
         wp_enqueue_script('animatedmodaljs');
 
@@ -91,10 +94,10 @@ function html5blank_header_scripts()
         wp_register_script('modernizr', get_template_directory_uri() . '/js/lib/modernizr-2.7.1.min.js', array(), '2.7.1'); // Modernizr
         wp_enqueue_script('modernizr'); // Enqueue it!        
         
-        wp_register_script('scriptsjs',get_template_directory_uri() . '/js/scripts.js',array('jquery'), '1.0.0');
+        wp_register_script('scriptsjs',get_template_directory_uri() . '/js/scripts.js',array('jquery'), $prependversion.'1.0.0');
         wp_enqueue_script('scriptsjs');
 
-        wp_register_script('menu', get_template_directory_uri() . '/js/menu.js', array('jquery'), '1.0');
+        wp_register_script('menu', get_template_directory_uri() . '/js/menu.js', array('jquery'), $prependversion.'1.1');
         wp_enqueue_script('menu');
 
         wp_register_script('adaptative-background', get_template_directory_uri() . '/js/jquery.adaptive-backgrounds.js', array('jquery'), '1.0');
@@ -115,9 +118,11 @@ function html5blank_conditional_scripts()
     }
 
 
-    if (is_page("gallery") || is_page("gallery-event")){
+    if (is_page("gallery") || is_page("gallery-event") || is_tax( 'idea-type' )){
         wp_register_script('masonryjs', 'http://masonry.desandro.com/masonry.pkgd.js', array(), '2.7.1'); // Modernizr
         wp_enqueue_script('masonryjs'); // Enqueue it!        
+    }
+    if (is_page("gallery") || is_page("gallery-event")){
         wp_register_script('galleryjs', get_template_directory_uri() . '/js/gallery.js', array('jquery'), '1.0'); // Modernizr
         wp_enqueue_script('galleryjs'); // Enqueue it!      
 
@@ -145,11 +150,19 @@ function html5blank_conditional_scripts()
         wp_register_script('packagejs', get_template_directory_uri() . '/js/package.js', array('jquery'), '1.0'); // Modernizr
         wp_enqueue_script('packagejs'); // Enqueue it!
     }
+
+    if (is_tax( 'idea-type' )){
+        wp_register_script('weddingidea', get_template_directory_uri() . '/js/wedding-idea.js', array('jquery'), '1.0'); // Modernizr
+        wp_enqueue_script('weddingidea'); // Enqueue it!
+    }
 }
 
 // Load HTML5 Blank styles
 function html5blank_styles()
 {
+    $prependversion = "";
+    if(WP_DEBUG) $prependversion = time();
+
     wp_register_style('normalize', get_template_directory_uri() . '/normalize.css', array(), '1.0', 'all');
     wp_enqueue_style('normalize'); // Enqueue it!
 
@@ -157,21 +170,21 @@ function html5blank_styles()
     wp_enqueue_style('bootstrapcss', get_template_directory_uri() . '/bootstrap-3.3.6-dist/css/bootstrap.min.css', false, '1.1', 'all');
     wp_enqueue_style('bootstrapcss');
 
-    wp_register_style('html5blank', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
+    wp_register_style('html5blank', get_template_directory_uri() . '/style.css', array(), $prependversion.'1.0', 'all');
     wp_enqueue_style('html5blank'); // Enqueue it!
     
     wp_register_style('animatedmodalcss', get_template_directory_uri() . '/css/lib/animate.min.css', false, '1.1', 'all');
     wp_enqueue_style('animatedmodalcss');
 
-    wp_register_style('menucss', get_template_directory_uri() . '/css/menu.css', array(), '1.0', 'all');
+    wp_register_style('menucss', get_template_directory_uri() . '/css/menu.css', array(), $prependversion.'1.5', 'all');
     wp_enqueue_style('menucss');
 
     if (is_front_page()) {
-        wp_register_style('homecss', get_template_directory_uri() . '/css/homecss.css', array(), '1.0', 'all');
+        wp_register_style('homecss', get_template_directory_uri() . '/css/homecss.css', array(), $prependversion.'1.0', 'all');
         wp_enqueue_style('homecss');
     }
 
-    wp_enqueue_style('venuescss', get_template_directory_uri() . '/css/venues.css', false, '1.1', 'all');
+    wp_enqueue_style('venuescss', get_template_directory_uri() . '/css/venues.css', false, $prependversion.'1.1', 'all');
     wp_enqueue_style('venuescss');  
 
     if (get_post_type() == "venue"){
@@ -182,76 +195,73 @@ function html5blank_styles()
         wp_enqueue_style('lightgallerycss'); 
     }
 
-    wp_enqueue_style('custommodalcss', get_template_directory_uri() . '/css/custom-modal.css', false, '1.1', 'all');
+    wp_enqueue_style('custommodalcss', get_template_directory_uri() . '/css/custom-modal.css', false, $prependversion.'1.1', 'all');
     wp_enqueue_style('custommodalcss');    
 
-    if (is_page('gallery') || is_page('gallery-event')){
+    if (is_page('gallery') || is_page('gallery-event') || is_tax( 'idea-type' )){
         wp_register_style('masonrycss', get_template_directory_uri() . '/css/masonrygallery.css', false, '1.1', 'all');
         wp_enqueue_style('masonrycss'); 
+    }
+    if (is_page('gallery') || is_page('gallery-event')){
 
         wp_register_style('lightgallerycss', get_template_directory_uri() . '/css/lightgallery.min.css', false, '1.1', 'all');
         wp_enqueue_style('lightgallerycss');        
     }
 
     if (is_page('wedding-venues-locations') || is_page('wedding-churches-in-miami') || is_tax('venue-address') || is_tax('venue-type')){
-        wp_register_style('venueslistcss', get_template_directory_uri() . '/css/venues-list.css', false, '1.1', 'all');
+        wp_register_style('venueslistcss', get_template_directory_uri() . '/css/venues-list.css', false, $prependversion.'1.1', 'all');
         wp_enqueue_style('venueslistcss');        
     }
 
     if (is_page('wedding-planners') || is_page('miami-wedding-planners') || is_tax('browse-planner')){
-        wp_register_style('plannerslistcss', get_template_directory_uri() . '/css/planners-list.css', false, '1.1', 'all');
+        wp_register_style('plannerslistcss', get_template_directory_uri() . '/css/planners-list.css', false, $prependversion.'1.1', 'all');
         wp_enqueue_style('plannerslistcss');        
     }
 
     if (is_page('wedding-packages') || is_tax('browse-package')){
-        wp_register_style('packageslistcss', get_template_directory_uri() . '/css/packages-list.css', false, '1.1', 'all');
+        wp_register_style('packageslistcss', get_template_directory_uri() . '/css/packages-list.css', false, $prependversion.'1.1', 'all');
         wp_enqueue_style('packageslistcss');        
     }
 
     if (is_page('wedding-catering') or get_post_type()=='catering-menu'){
-        wp_register_style('menulistcss', get_template_directory_uri() . '/css/menu-list.css', false, '1.1', 'all');
+        wp_register_style('menulistcss', get_template_directory_uri() . '/css/menu-list.css', false, $prependversion.'1.1', 'all');
         wp_enqueue_style('menulistcss');        
     }
 
     if (is_page('testimonials')){
-        wp_register_style('testimonialscss', get_template_directory_uri() . '/css/testimonials.css', false, '1.1', 'all');
+        wp_register_style('testimonialscss', get_template_directory_uri() . '/css/testimonials.css', false, $prependversion.'1.1', 'all');
         wp_enqueue_style('testimonialscss');  
         wp_register_script('jqueryjs', get_template_directory_uri() . '/js/lib/bootstrap.min.js', array('jquery'), '1.0'); // Modernizr
         wp_enqueue_script('jqueryjs'); // Enqueue it!     
     }
     if (is_page('about-us')){
-        wp_register_style('aboutuscss', get_template_directory_uri() . '/css/about-us.css', false, '1.1', 'all');
+        wp_register_style('aboutuscss', get_template_directory_uri() . '/css/about-us.css', false, $prependversion.'1.1', 'all');
         wp_enqueue_style('aboutuscss');   
     }
 
     if (is_page('press-awards')){
-        wp_register_style('awardscss', get_template_directory_uri() . '/css/awards.css', false, '1.1', 'all');
+        wp_register_style('awardscss', get_template_directory_uri() . '/css/awards.css', false, $prependversion.'1.1', 'all');
         wp_enqueue_style('awardscss');        
     }
 
     if (get_post_type()=='wedding-planner'){
-        wp_register_style('plannercss', get_template_directory_uri() . '/css/planner.css', false, '1.1', 'all');
+        wp_register_style('plannercss', get_template_directory_uri() . '/css/planner.css', false, $prependversion.'1.1', 'all');
         wp_enqueue_style('plannercss');        
     }
     if (get_post_type()=='wedding-package'){
-        wp_register_style('packagecss', get_template_directory_uri() . '/css/package.css', false, '1.1', 'all');
+        wp_register_style('packagecss', get_template_directory_uri() . '/css/package.css', false, $prependversion.'1.1', 'all');
         wp_enqueue_style('packagecss');        
     }
 
     if (is_page('venue-event') || is_page('gallery-event')){
-        wp_register_style('venueeventcss', get_template_directory_uri() . '/css/venue-event.css', false, '1.1', 'all');
+        wp_register_style('venueeventcss', get_template_directory_uri() . '/css/venue-event.css', false, $prependversion.'1.1', 'all');
         wp_enqueue_style('venueeventcss');        
     }
 
-    /*if (is_page('gallery-event')){
-        wp_register_style('galleryeventcss', get_template_directory_uri() . '/css/gallery-event.css', false, '1.1', 'all');
-        wp_enqueue_style('galleryeventcss');        
-    }*/
-
-    wp_register_style('menutopcss', get_template_directory_uri() . '/css/menu-top.css', false, '1.1', 'all');
-    wp_enqueue_style('menutopcss');           
-
-
+    if (is_tax( 'idea-type' )){
+        wp_register_style('ideatypecss', get_template_directory_uri() . '/css/wedding-idea.css', false, $prependversion.'1.1', 'all');
+        wp_enqueue_style('ideatypecss');        
+    }
 }
 
 // Register HTML5 Blank Navigation
@@ -472,10 +482,13 @@ function ownScript() {
     
     if (is_singular('church') || is_singular('venue') || is_page('venue-event')) {
 
+        $prependversion = "";
+        if(WP_DEBUG) $prependversion = time();
+
         wp_enqueue_script('googlemap','https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true&libraries=places');
         wp_enqueue_script('googlemap');
 
-        wp_register_script('html5blankscripts', get_template_directory_uri() . '/js/venues.js', array('jquery'), '1.0'); // Custom scripts
+        wp_register_script('html5blankscripts', get_template_directory_uri() . '/js/venues.js', array('jquery'), $prependversion.'1.0'); // Custom scripts
         wp_enqueue_script('html5blankscripts'); // Enqueue it!
     }
 }

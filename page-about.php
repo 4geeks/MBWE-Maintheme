@@ -29,8 +29,19 @@ if(!$revslider or $revslider=='') $revslider = null;
             <?php echo $content; ?>
         <?php } else putRevSlider($revslider); ?>
             <div id="section-story">
+				<div id="div-hits" class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+					<div class="col-sm-4 hit">
+						<h3>1500+</h3> Events Planned
+					</div>
+					<div class="col-sm-4 hit">
+						<h3>1300</h3> Satisfied Brides
+					</div>
+					<div class="col-sm-4 hit">
+						<h3>16 years</h3> Of experience
+					</div>
+				</div>
                 <div id="div-logo" class="col-md-12">
-					<center><img id="logo-header" width="200" height="200" src="<?php bloginfo('template_url'); ?>/img/logof&e.png" alt="Best Miami Weddings" class="img-responsive logo" /></center>
+					<center><img id="logo-header" width="200" height="200" src="<?php bloginfo('template_url'); ?>/img/logo_bmw_new.png" alt="Best Miami Weddings" class="img-responsive logo" /></center>
 				</div>
 				<div id="div-story" class="container">
 					<div class="col-md-6 col-md-offset-3">

@@ -41,7 +41,7 @@ $content = get_page($post->ID)->post_content;
                             <div class="col-sm-12 div-venue-image linkeable highlight-element" style="background-image: url('<?php echo get_post_meta( $venue->ID, 'wpcf-venue-small-image', false)[0]; ?>')">
                             </div>
                             <div class="col-sm-12 div-description">
-                                <center><h2><?php echo get_post_meta( $venue->ID, 'wpcf-venue-name', false)[0]; ?></h2></center>
+                                <center><h3><?php echo get_post_meta( $venue->ID, 'wpcf-venue-name', false)[0]; ?></h3></center>
                                 <div class="col-sm-12">
                                     <h4><small><?php echo get_post_meta( $venue->ID, 'wpcf-venue-direction', false)[0]; ?></small></h4>
                                 </div>

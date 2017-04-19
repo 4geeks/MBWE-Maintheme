@@ -57,69 +57,28 @@ foreach( $ids as $id ) {
 
 $isClubOfKnigth = ($post->post_name == 'club-of-knight');
 
-//Get venue post types to list in dropdown list 
-$args = array(
-    'post_type' => 'venue',
-    'meta_query' => array(
-        array(
-            'key' => 'wpcf-venue-visibility',
-            'value' => array('1', '2'),
-            'compare' => 'IN'
-        )
-    ),
-    'posts_per_page'=>-1
-    ); 
-$venues = new WP_Query( $args );
-
-function shrinkText($texto='', $maxsize = 20)
-{
-    if(strlen($texto)>$maxsize) return substr($texto,0,20) . '...';
-    else return $texto;
-}
-
 ?>  
-    <div id="div-blur-background">
-        <img src="<?php echo $mainImage; ?>" id="img-fondo" data-adaptive-background='1'>
-    </div>
-    <div id="div-top-menu" class="row">    
-        <div class="col-sm-1"></div>
-        <div class="hidden-xs col-sm-7">
-            <?php get_template_part( 'template-parts/part', 'top-venue-nomobile' ); ?>
-        </div>
-        <div id="menu-desplegable" class="col-xs-8 col-sm-4">
-            <p class="pull-left hidden-xs">&nbsp;<?php _e( 'View other venues', 'bmw-website' ) ?>: &#8203; </p> 
-            <p class="pull-left visible-xs" style="font-size: 18px; text-align: right;">&nbsp;<?php _e( 'Other venues', 'bmw-website' ) ?>: &#8203; </p> 
-            <span id="icon-dropdown" class="glyphicon glyphicon-collapse-down pull-right"></span>
-            <ul id="sub-menu" class="style-scroll-1 scrollbar">
-            <?php
-                //list all venues in post types
-                foreach ($venues->posts as $venue) {
-                    if (get_post()->ID != $venue->ID) {
-                        echo "<li class='mansonry-hover' style='background-image: url(". get_post_meta( $venue->ID, 'wpcf-venue-small-image', false)[0].")'>";
-                            echo "<a class='with-font-sub-title' href='".get_permalink($venue->ID)."'>".$venue->post_title."</a>";
-                        echo "</li>";
-                    }
-                }
-            ?>
-            </ul>
-        </div>
-    </div>
+    <!-- ========== MENU TOP ========== -->
+    <?php get_template_part( 'template-parts/menu', 'top' ); ?>
+    <!-- ========== MENU TOP ========== -->
     <div id="primary" class="<?php echo $primary_class; ?>">
-        <main id="main">
+        <main id="main" class="container-fluid">
             <div id='div-venue-image'>                
                 <div class="fullscreen-bg">  
-                    <div id="div-only-for-mobile" class="fullscreen-bg__video not-for-pc" style="background-image: url(<?php echo $mainImage; ?>); "></div>                  
+                    <div id="div-only-for-mobile" class="fullscreen-bg__video not-for-pc" style="background-image: url(<?php echo $mainImage; ?>); " data-adaptive-background="1" data-ab-css-background="1"></div>                  
+                    <?php if($mainVideo and $mainVideo!=''){ ?>
                     <video id="videoVenue" loop="" muted="" autoplay="" class="fullscreen-bg__video" style="background-image: url(<?php echo $mainImage; ?>); background-size: cover; background-position: center center;">
                         <source src="<?php echo $mainVideo; ?>">
-                    </video>
+                    </video  data-adaptive-background="1" data-ab-css-background="1">
+                    <?php } ?>
                 </div>            
                 <div id="div-venue-name">
-                    <h1 class="with-font-sub-title" ><?php  echo $name;?></h1> <br />
+                    <h1 class="with-font-sub-title" ><?php  echo $name;?></h1>
                     <span id="direction" > <?php echo $direction ?></span>
                 </div>
                 <div id="div-venue-button">
                     <a class="btn btn-warning modalContact" href="#animatedModalContact"><?php _e( 'Request a quote', 'bmw-website' ) ?></a>
-                    <p class="highlight-p"><?php _e( 'or call now!', 'bmw-website' ) ?> <a href="tel:<?php echo $GLOBALS['BMW_PHONE_NUMBER']; ?>" class="tracking-phone-number"><?php echo $GLOBALS['BMW_PHONE_NUMBER']; ?></a></p> 
+                    <?php _e( 'or call now!', 'bmw-website' ) ?> <a href="tel:<?php echo $GLOBALS['BMW_PHONE_NUMBER']; ?>" class="tracking-phone-number"><?php echo $GLOBALS['BMW_PHONE_NUMBER']; ?></a>
                 </div>
                 <div id="arrow-down" class="not-for-mobile"><span class="glyphicon glyphicon-chevron-down"></span></div>     
             </div>

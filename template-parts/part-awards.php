@@ -24,5 +24,5 @@ $awards = new WP_Query( $args );
     	<?php }	                
     	}?>	
 	</ul>
-	<a href="<?php echo get_home_url(); ?>/press-awards"><small>Click here to learn more about our awards.</small></a>
+	<a href="<?php echo get_permalink( get_page_by_path( 'press-awards' ) ); ?>"><small>Click here to learn more about our awards.</small></a>
 </section>

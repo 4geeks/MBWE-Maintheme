@@ -32,9 +32,8 @@ jQuery( document ).ready(function() {
 	});
 });
 </script>
-<div class="black-bar">
-	<center><img width="90" height="90" src="<?php bloginfo('template_url'); ?>/img/logof&e.png" alt="Best Miami Weddings" class="img-responsive logo" /></center>
-</div>
+
+<?php get_template_part( 'template-parts/menu', 'top' ); ?>
 <div class="container">
 	<div class="row stars-container">
 		<div class="col-xs-12">

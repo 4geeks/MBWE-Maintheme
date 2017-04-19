@@ -12,9 +12,9 @@ $queried_object = get_queried_object();
 $taxonomy = $queried_object->taxonomy;
 $term_id = $queried_object->term_id;  
 
-$headline = types_render_termmeta( "tax-sub-headline");
-$gravity_form_id = types_render_termmeta( "tax-gravity-form-slug");
-$bgvalignment = types_render_termmeta( "tax-background-image-valign");
+$headline = types_render_termmeta( "tax-sub-headline", array( "term_id" => $term_id));
+$gravity_form_id = types_render_termmeta( "tax-gravity-form-slug", array( "term_id" => $term_id));
+$bgvalignment = types_render_termmeta( "tax-background-image-valign", array( "term_id" => $term_id));
 $bgImageURL = types_render_termmeta("tax-background-image",array("url" => "true"));
 //$bgVideoURL = types_render_termmeta('wpcf-tax-background-video',array("url" => "true"));
 

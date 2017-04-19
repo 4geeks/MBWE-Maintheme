@@ -1,54 +1,19 @@
-#div-top-menu-background{
-    position: relative;
-    width: 102%;
-    height: 55px;
-}
-
 #my-sidebar-toggle {
-  position: fixed;
-  padding:13px;
-  left: 15px;
-  z-index: 101;
-  color: #fff;
-  cursor: pointer;
-  font-size: 30px;
-  transition: left .4s;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  text-shadow: 1px 1px grey;  
-  text-align: left;
+    position: fixed;
+    padding: 13px;
+    left: 15px;
+    z-index: 101;
+    color: #fff;
+    cursor: pointer;
+    font-size: 30px;
+    transition: left .4s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-shadow: 1px 1px grey;
+    text-align: left;
 }
-
-#my-sidebar-toggle.black-menu-icon{
-  color: black;
-}
-#my-sidebar-toggle .fa {
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: -webkit-transform 0.4s;
-  -moz-transition: -moz-transform 0.4s;
-  -o-transition: -o-transform 0.4s;
-  transition: -webkit-transform 0.4s,-moz-transform 0.4s,-o-transform 0.4s,transform 0.4s;
-}
-#my-sidebar-toggle.foldOut {
-  -webkit-animation: fold 0.4s linear forwards;
-  -moz-animation: fold 0.4s linear forwards;
-  -o-animation: fold 0.4s linear forwards;
-  animation: fold 0.4s linear forwards;
-}
-#my-sidebar-toggle.foldIn {
-  -webkit-animation: fold 0.6s linear forwards;
-  -moz-animation: fold 0.6s linear forwards;
-  -o-animation: fold 0.6s linear forwards;
-  animation: fold 0.6s linear forwards;
-}
-
-
 #my-sidebar {
   -webkit-transform: perspective(300px) rotateY(90deg);
   -moz-transform: perspective(300px) rotateY(90deg);
@@ -176,6 +141,155 @@
 }
 #phone-number-header .tracking-phone-number{ color: #d6af76; }
 
+/**
+ * TOP PERMANENT MENU
+ */
+.logo-title{
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  display: block;
+}
+
+.navbar-collapse{
+  width: 80%;
+  margin: auto;
+}
+
+#top-menu-general{
+  margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    background-image: url('../img/gradient-black.png');
+    background-position-y: -115px;
+}
+#top-menu-general a{
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+}
+#top-menu-general #main-navbar
+{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#top-menu-general #navbar-logo
+{
+  max-height: 75px;
+  margin-bottom: 20px;
+}
+.mega-dropdown {
+  position: static !important;
+}
+.mega-dropdown.open {
+  z-index: 300;
+}
+.mega-dropdown h3{font-size: 16px;}
+.mega-dropdown-menu {
+    padding: 20px 0px;
+    width: 100%;
+    top: 65px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+#top-menu-general .mega-dropdown-menu a{
+  color: black;
+}
+.dropdown.mega-dropdown.open a:hover{
+  background: #aaaaaa;
+}
+#top-menu-general .dropdown-company .dropdown-menu a{color: black;}
+.dropdown.dropdown-company .dropdown-menu{
+  width: 400px;
+  left: -100px;
+}
+.mega-dropdown .dropdown-intro-message{
+  margin-bottom: 20px;
+}
+.mega-dropdown .dropdown-box{
+  border-left: 1px #BDBDBD solid;
+}
+.mega-dropdown .plan-your-wedding .dropdown-box{border: none;}
+.mega-dropdown .plan-your-wedding .dropdown-box li{overflow: hidden; margin-bottom: 10px;}
+.mega-dropdown .plan-your-wedding .dropdown-box .article-title{ margin: 0px 0px; height: 40px;}
+.mega-dropdown .plan-your-wedding .dropdown-box .article-img{width: 60px; height: 40px; float: left; margin-right: 5px; }
+.mega-dropdown-menu > li > ul {
+  padding: 0;
+  margin: 0;
+}
+.mega-dropdown-menu li {
+  list-style: none;
+}
+.mega-dropdown-menu > li > ul > li > a {
+  display: block;
+  color: #222;
+  padding: 3px 5px;
+}
+.mega-dropdown-menu > li ul > li > a:hover,
+.mega-dropdown-menu > li ul > li > a:focus {
+  text-decoration: none;
+}
+.mega-dropdown-menu .dropdown-header {
+  font-size: 18px;
+  color: #f49e42;
+  padding: 5px 60px 5px 5px;
+  line-height: 30px;
+}
+
+.carousel-control {
+  width: 30px;
+  height: 30px;
+  top: -35px;
+
+}
+.left.carousel-control {
+  right: 30px;
+  left: inherit;
+}
+.carousel-control .glyphicon-chevron-left, 
+.carousel-control .glyphicon-chevron-right {
+  font-size: 12px;
+  background-color: #fff;
+  line-height: 30px;
+  text-shadow: none;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+#secondary-menu{
+    display: inline-block;
+    float: left;
+    text-align: left;
+    margin-left: 140px;
+    padding: 10px;
+    background: rgba(0,0,0,0.4);
+    font-size: 16px;
+    width: 100%;
+}
+#secondary-menu a{
+  color: white;
+}
+#empty-menu{height: 50px;}
+.black-linear-bg {
+  /* fallback */
+  background-color: #1a82f7;
+  background: url(images/linear_bg_2.png);
+  background-repeat: repeat-x;
+
+  /* Safari 4-5, Chrome 1-9 */
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,0)), rgba(0,0,0,1));
+  /* Safari 5.1, Chrome 10+ */
+  background: -webkit-linear-gradient(top, rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,0));
+  /* Firefox 3.6+ */
+  background: -moz-linear-gradient(top, rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,0));
+  /* IE 10 */
+  background: -ms-linear-gradient(top, rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,0));
+  /* Opera 11.10+ */
+  background: -o-linear-gradient(top, rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,0));
+}
 /*ONLY FOR MOBILE*/
 @media screen and (max-width: 767px) {
   .not-for-phone {

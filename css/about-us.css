@@ -23,20 +23,18 @@
 }
 #div-hits {
 	position: relative;
-    top: 100px;
     font-size: 18px;
     z-index: 1;
-
+    top: -50px;
 }
 .hit {
 	text-align: center;
     background-color: #94D6DB;
     color: #454545;
-    height: 90px;
-    padding-top: 0px;
+    padding: 0px 0px 20px 0px;
     border-right: 1px solid #ffffff;
     word-wrap: break-word;
-    font-size: 22px;
+    font-size: 14px;
 }
 .hit:last-child {
 	border-right: 0px;	
@@ -46,18 +44,22 @@
 	position: relative;
 	width: 100%;
 	min-height: 400px;
-	background-color: #EFF6F2;
+	background-color: #fbfbfb;
 }
 
 #div-logo {
 	position: relative;
-	padding-top: 120px;
+	padding-top: 20px;
+}
+#div-logo #logo-header{
+	max-height: 120px;	
+	max-width: 100px;
 }
 
 #div-story {
 	position: relative;
 	top: 30px;
-	font-size: 20px;
+	font-size: 14px;
 	text-align: center;
 	padding-bottom: 70px;
 }
@@ -118,11 +120,6 @@
 
 /* ONLY FOR MOBILES */
 @media screen and (max-width: 767px) {
-	#div-hits {
-		padding-left: 0px;
-	    padding-right: 0px;		
-	    top: 55px;
-	}    
 	.hit {
 		font-size: 14px;
 	}	
@@ -157,7 +154,7 @@
 /* ONLY FOR TABLETS IN PORTRAIT */
 @media screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1024px) {
 	.hit {
-		font-size: 18px;
+		font-size: 14px;
 	}
 	.w-wrap {
 		position: relative;
@@ -171,10 +168,6 @@
 		background-size: 1273px;
     	background-position-x: 62%;
     	background-position-y: -85px;
-	}
-
-	#div-hits{
-		top: 325px;
 	}
 
 	.item-our-team-info {
@@ -202,9 +195,6 @@
 
 /* ONLY FOR TABLETS IN LANDSCAPE */
 @media screen and (orientation: landscape) and (min-width: 768px) and (max-width: 1024px) {
-    #div-hits{
-    	top: 160px;
-    }
     #div-logo{
 		padding-top: 80px;
 	}
@@ -224,9 +214,6 @@
 		background-size: 1355px;
     	background-position-y: 100%;
 	}
-	#div-hits {
-	    top: 125px;
-	}
 
 }
 
@@ -236,8 +223,5 @@
 		height: 600px;
 		background-size: cover;
     	background-position-y: -155px;
-	}
-	#div-hits{
-		top: 290px;
 	}
 }

@@ -6,6 +6,8 @@
     cursor: pointer;
     height: 70px;
     padding: 10px;
+    color: white;
+    font-size: 38px;
 }
 
 .modal-menu {
@@ -30,15 +32,9 @@
     border-radius: 0px;
     background-color: transparent;
 }
-
-.glyphicon.glyphicon-remove {
-    font-size: 38px;
-}
-
 /*
 * Contact modal
 */
-
 .modal-contact-menu {    
     z-index: 999;
     background-color: rgba(0,0,0,0.3);

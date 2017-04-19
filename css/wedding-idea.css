@@ -1,0 +1,33 @@
+#list-content{overflow: hidden;}
+.landing-headline-content{margin-top: 60px; margin-bottom: 20px;}
+.wedding-idea{
+	padding: 10px;
+	background: white;
+	border-radius: 5px;
+}
+.wedding-idea h3{ margin-top: 0px;}
+.wedding-idea img{
+	width: 100%;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+.wedding-idea a{
+	text-decoration: none;
+	color: black;
+}
+.grid{background: white; min-height: 500px;}
+.grid-sizer,
+.grid-item {
+  width: 31%;
+}
+
+.gutter-sizer {
+  width: 2%;
+}
+
+.grid-item {
+  float: left;
+}
+.grid-item:hover {
+	background-color: #e7e7e7;
+}

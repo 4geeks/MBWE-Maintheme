@@ -16,13 +16,15 @@ Saved: Apr 17 2016 | 20:42:27 */
     margin: 0 auto;
     text-align: center;
     color: #ffffff;
-    /*border: 1px solid #000000;*/
 }
 
 .top-venue-menu {
     z-index: 1;
-    padding-top:15px;
-    text-align: center;
+    text-align: left;
+}
+.top-venue-menu ul{
+    padding-left: 0;
+    margin-bottom: 0px;
 }
 
 .scrollingMenu {
@@ -58,13 +60,8 @@ Saved: Apr 17 2016 | 20:42:27 */
 
 
 #div-venue-name {
-    position: absolute;
-    height:100px;
     font-size:90px;
-    font-weight: bold;
-    text-align: left;
-    top:25%;
-    left: 15%;
+    margin-top:120px;
 }
 
 #div-venue-name h1 {
@@ -97,28 +94,24 @@ Saved: Apr 17 2016 | 20:42:27 */
 
 #direction p {
     background-color: rgba(0,0,0,0.5);
+    display: inline-block;
     padding-top: 5px;
     padding-left: 5px;
     padding-right: 5px;
     padding-bottom: 5px;
-    font-size: 26px;
     font-weight: bold;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: auto;
 }
 
 #div-venue-button{
-    position: absolute;
     height:100px;
-    font-size:20px;
-    text-align: left;
-    top:50%;
-    left: 15%;
+    margin-top: 20px;
+}
+#div-venue-button .btn.modalContact{
+    margin: 0;
 }
 
 #div-venue-button p{
-    font-size: 25px;
-    margin-top: 14px;
     padding-bottom: 5px;
     min-width: 280px;
 }
@@ -137,12 +130,11 @@ Saved: Apr 17 2016 | 20:42:27 */
 }
 
 #div-venue-description{
-    position: relative;
     width: 100%;
     min-height: 150px;
     text-align: left;
     font-size: 17px;
-    background-color: #93D5D9;
+    background-color: rgba(255,255,255,0.7);
     color: #636363;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -313,98 +305,6 @@ Saved: Apr 18 2016 | 16:49:53 */
     z-index: 3;
 }
 
-/* Se contfigura la capa principal*/
-#menu-desplegable{
-    position: relative;
-    background: transparent;
-    color: white;
-    cursor: pointer;
-    top: 0;
-    right: 15px;
-    padding: 15px 10px 10px 10px;
-    text-shadow: 1px 1px #333333;
-    font-weight: bolder;
-    font-size: 25px;
-}
-#menu-desplegable:hover{
-    background: black;
-}
-/* Se contfigura el submenu de opciones*/
-#sub-menu{    
-    cursor: pointer;
-    display: none;
-    font-weight: lighter;
-    padding: 0;
-    margin: 40px 0px 0px;
-    position: fixed;
-    right: 32px;
-    max-height: 500px;
-    overflow-y: auto;
-    opacity:0;
-    border-top: 2px solid black;
-    border-left: 2px solid black;
-    border-right: 2px solid black;
-    border-bottom: 2px solid black;
-    background:rgba(0,0,0, 0.7);
-}
-
-.venue-selected {
-    background: rgba(255,255,255,0);
-    background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(246,246,246,0.48) 68%, rgba(173,173,173,0.71) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,0)), color-stop(68%, rgba(246,246,246,0.48)), color-stop(100%, rgba(173,173,173,0.71)));
-    background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(246,246,246,0.48) 68%, rgba(173,173,173,0.71) 100%);
-    background: -o-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(246,246,246,0.48) 68%, rgba(173,173,173,0.71) 100%);
-    background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(246,246,246,0.48) 68%, rgba(173,173,173,0.71) 100%);
-    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(246,246,246,0.48) 68%, rgba(173,173,173,0.71) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#adadad', GradientType=1 );
-}
-/* clase que se usa para mostrar el submenu*/
-.activo{
-    display: block !important;
-    opacity: 1 !important;
-    transition:opacity 0.5s linear;
-
-}
-
-/* Se contfigura cada elemento del submenu*/
-#sub-menu li{
-    position: relative;
-    color: #656565;
-    cursor: pointer;
-    padding: 10px;
-    padding-left: 10px;
-    margin: 0;
-    list-style: none;
-    height: 135px;
-    background-position: center center;
-    background-size: cover;
-    -webkit-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-    padding-left: 25px; 
-}
-
-#sub-menu li a{
-    color: #ffffff;
-    text-decoration: none;
-    position: relative;
-    top: 37%;
-    font-size: 28px;
-    font-weight: bold;
-    text-shadow: 2px 2px black;
-}
-/* Se contfigura cada elemento cuando se activa el estado hover*/
-#sub-menu li{
-    -webkit-box-shadow: inset 0px -53px 81px 5px rgba(0,0,0,0.47);
-    -moz-box-shadow: inset 0px -53px 81px 5px rgba(0,0,0,0.47);
-    box-shadow: inset 0px -53px 81px 5px rgba(0,0,0,0.47);
-}
-
-#sub-menu li:hover{
-    margin-left:-15px;
-    -webkit-box-shadow: inset 0px -53px 81px 5px rgba(0,0,0,0.1);
-    -moz-box-shadow: inset 0px -53px 81px 5px rgba(0,0,0,0.1);
-    box-shadow: inset 0px -53px 81px 5px rgba(0,0,0,0.1);
-}
-
 .scrollbar
 {
     margin-left: 30px;  
@@ -437,12 +337,11 @@ Saved: Apr 18 2016 | 16:49:53 */
     text-align: justify;
     letter-spacing: 1px;
     line-height: 1;
-    font-size: 21px;
 }
 .p-location{
     padding: 0px 25px 25px 25px !important;
 }
-.address-title{font-size: 1.6em;}
+.address-title{font-size: 1.2em;}
 #div-venue-description{
     margin-left: 0px;
 }
@@ -499,7 +398,7 @@ Saved: Apr 18 2016 | 16:49:53 */
   #menu-desplegable span{
   }
   .with-font-sub-title{
-        font-size: 46px;
+        font-size: 36px;
     }
     #div-venue-name{
         font-size: 0px;
@@ -508,7 +407,7 @@ Saved: Apr 18 2016 | 16:49:53 */
         top: -30px
     }
     #direction p{
-        font-size: 18px;
+        font-size: 14px;
     }
 
     #div-venue-button{

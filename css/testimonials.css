@@ -11,6 +11,7 @@
 }
 .stars-container{
 	text-align: center;
+  padding: 80px 0px;
 }
 .stars-container i{
 	font-size: 60px;

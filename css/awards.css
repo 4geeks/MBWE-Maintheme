@@ -38,12 +38,8 @@
     line-height: 1;
 }
 #div-header h1{
-	font-family: content_font_bold;
-    font-size: 100px;
-    color: #fff;
-    text-shadow: 2px -2px 7px grey;
-    position: relative;
-    top: 180px;
+    margin-top: 120px;
+    text-align: center;
 }
 #div-general-description{
 	background-color: #6DD6DA;

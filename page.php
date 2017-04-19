@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Thanks
+Template Name: Empty Canvas
 */
 
 get_header(); 
@@ -10,6 +10,11 @@ $content = get_page($post->ID)->post_content;
 
 $revslider = types_render_field("page-slider");
 ?>
+
+<?php get_template_part( 'template-parts/menu', 'top' ); ?>
+
 <?php if($revslider and $revslider!='') putRevSlider($revslider); ?>
-<?php echo $content; ?>
+
+<?php echo do_shortcode($content); ?>
+
 <?php get_footer(); ?>

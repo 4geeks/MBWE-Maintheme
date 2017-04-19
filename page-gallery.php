@@ -47,27 +47,11 @@ $weddings = (isset(get_post_meta( $_GET['post_id'], 'venue-weddings', false)[0])
 
 
 ?>
-	<div id="div-blur-background">
-        <img src="<?php echo $mainImage; ?>" id="img-fondo" data-adaptive-background='1'>
-    </div>
-    <div id="div-top-menu" class="row" style="background: #474747;">
-        <div class="col-md-1"></div>
-        <div class="col-md-7">
-            <?php get_template_part( 'template-parts/part', 'top-venue-nomobile' ); ?>
-        </div>
-        <div id="menu-desplegable" class="col-md-4">
-            <span class="col-md-11"><?php echo $name ?> &#8203; </span> <span id="icon-dropdown" class="glyphicon glyphicon-collapse-down"></span>
-            <ul id="sub-menu" class="style-scroll-1 scrollbar">
-            <?php
-                //list all venues in post types
-                foreach ($venues->posts as $venue) {
-                    echo "<li style='background-image: url(". get_post_meta( $venue->ID, 'wpcf-venue-main-image', false)[0].")'><a class='with-font-title' href='".get_home_url()."/".$postType."/".$venue->post_name."'>".$venue->post_title."</a></li>";
-                }
-            ?>
-            </ul>
-        </div>
-    </div>
-	<div id="primary" class="full-width-page no-sidebar">
+    <!-- ========== MENU TOP ========== -->
+    <?php get_template_part( 'template-parts/menu', 'top' ); ?>
+    <!-- ========== MENU TOP ========== -->
+	<div id="primary" class="full-width-page no-sidebar venue-gallery">
+        <h1 class="with-font-sub-title" ><?php  echo $name;?> Photos</h1>
 		<main id="main">
 			<div class="grid" id="venuegallery">
 				<?php 
@@ -82,3 +66,5 @@ $weddings = (isset(get_post_meta( $_GET['post_id'], 'venue-weddings', false)[0])
 			<?php get_template_part( 'template-parts/part', 'animated-venue-menu' ); ?>
 		</main>
 	</div>
+
+<?php get_footer(); ?>

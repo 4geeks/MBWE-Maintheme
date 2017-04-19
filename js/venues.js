@@ -121,6 +121,32 @@
 		$('#lightSlider').lightGallery({
 		    thumbnail:true,
 		    selector:'.div-image'
-		}); 
+		});
+
+		$.adaptiveBackground.run({
+			normalizeTextColor:   true,
+			normalizedTextColors:  {
+			    light:      "#fff",
+			    dark:       "#000"
+			  },
+			success: function(img, data) {
+			    //console.log('Success!', img, data);
+			}
+		});
+
+		$("#div-only-for-mobile").on('ab-color-found', function(ev,payload){
+		  		var rgb = payload.color.substring(4, payload.color.length-1).replace(/ /g, '').split(',');
+				var o = Math.round(((parseInt(rgb[0]) * 299) + (parseInt(rgb[1]) * 587) + (parseInt(rgb[2]) * 114)) / 1000);
+
+				if(o > 125){
+					console.log("negro");
+					$('.mega-dropdown-header').css('color',"black");
+				}
+				else
+				{
+					console.log("blanco");
+					$('.mega-dropdown-header').css('color',"white");
+				}
+		});
 	});	
 })(jQuery, this);
