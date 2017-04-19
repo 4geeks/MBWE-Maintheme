@@ -397,13 +397,14 @@ h4, h5, h6{font-size: 16px;}
 
 .landing-headline-content{
     text-align: center;
+    padding-top: 100px;
 }
 
 .landing-headline{
     display: inline-block;
     background: rgba(0, 0, 0, 0.6);
     font-weight: 900;
-    font-size: 30px;
+    font-size: 18px;
     color: white;
     padding: 5px;
 }
