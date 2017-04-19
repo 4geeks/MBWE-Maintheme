@@ -124,7 +124,7 @@ $otherIdeas = get_terms( 'idea-type', array(
                               <!-- Controls -->
                             </div><!-- /.carousel -->
                             <li class="divider"></li>
-                            <li><a href="<?php echo get_permalink( get_page_by_path( 'wedding-catering' ) ); ?>">View menu <span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
+                            <li><a href="<?php echo get_permalink( get_page_by_path( 'wedding-catering-menu' ) ); ?>">View menu <span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
                         </ul>
                     </li>
                     <li class="col-sm-9">
@@ -136,10 +136,10 @@ $otherIdeas = get_terms( 'idea-type', array(
                         <div class="row">
                             <ul class="col-sm-4 dropdown-box">
                                 <li class="dropdown-header">Food & Beverage</li>
-                                <li><a href="<?php echo get_permalink( get_page_by_path( 'wedding-catering' ) ); ?>#starters">Starters</a></li>
-                                <li><a href="<?php echo get_permalink( get_page_by_path( 'wedding-catering' ) ); ?>#main">Main</a></li>
-                                <li><a href="<?php echo get_permalink( get_page_by_path( 'wedding-catering' ) ); ?>#sides">Sides</a></li>
-                                <li><a href="<?php echo get_permalink( get_page_by_path( 'wedding-catering' ) ); ?>#thebar">The Bar</a></li>
+                                <li><a href="<?php echo get_permalink( get_page_by_path( 'wedding-catering-menu' ) ); ?>#starters">Starters</a></li>
+                                <li><a href="<?php echo get_permalink( get_page_by_path( 'wedding-catering-menu' ) ); ?>#main">Main</a></li>
+                                <li><a href="<?php echo get_permalink( get_page_by_path( 'wedding-catering-menu' ) ); ?>#sides">Sides</a></li>
+                                <li><a href="<?php echo get_permalink( get_page_by_path( 'wedding-catering-menu' ) ); ?>#thebar">The Bar</a></li>
                             </ul>
                             <ul class="col-sm-4 dropdown-box">
                                 <li class="dropdown-header">Browse Decorations</li>
