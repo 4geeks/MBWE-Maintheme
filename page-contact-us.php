@@ -13,7 +13,10 @@ get_header();
     <div id="page-contact-us">
     	<div class="contact-us">
 		<div class="col-md-12 contact-title">
-		   <center><h2><?php _e( 'Responsiveness is one of our main values, <br /> we guarantee you a response in less than 10min', 'bmw-website' ) ?></h2></center>       
+		   <center>
+		   		<img class="navbar-logo" src="<?php bloginfo('template_url'); ?>/img/logo_bmw_new.png" />
+		   		<h3><?php _e( 'Responsiveness is one of our main values, <br /> we guarantee you a response in less than 10min', 'bmw-website' ) ?></h3>
+		   </center>       
 		</div>
 		<!-- <div class="row"> -->
 		    <div class="col-md-5 col-xs-12 contact-call-us">
