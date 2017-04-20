@@ -40,11 +40,13 @@
 	height: 430px;
 	line-height: 430px;
 	z-index: 1;
-	color: #ffffff;
 	padding-top: 45%;	
 	background-position: center;
 	background-size: cover;
 	
+}
+.div-package-name h3{
+	color: #ffffff;
 }
 
 .inner-package-element{
