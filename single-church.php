@@ -50,42 +50,9 @@ $args = array(
 $venues = new WP_Query( $args );
 
 ?>  
-    <div id="div-blur-background">
-        <img src="<?php echo $mainImage; ?>" id="img-fondo" data-adaptive-background='1'>
-    </div>
-    <div id="div-top-menu" class="row">    
-        <div class="col-md-1"></div>
-        <div class="col-md-7">
-            <div class="top-venue-menu not-for-phone">
-                <ul class="ul-menu">
-                    <li><a href="#primary"><?php _e( 'INFO & LOCATION', 'bmw-website' ) ?></a></li>
-                    <?php if($blueprint != ''){?>
-                        <li><a href="#div-venue-blueprint"><?php _e( 'AREAS', 'bmw-website' ) ?></a></li>
-                    <?php } ?>
-                    <?php if($tour != ''){?>
-                        <li><a id="a-360-tour" href="#animatedModal"><?php _e( '360° TOUR', 'bmw-website' ) ?></a></li>
-                    <?php } ?>
-                    <li><a href='<?php echo get_home_url()."/gallery/?post_id=".get_post()->ID; ?>&is_event=false'><?php _e( 'PHOTOS', 'bmw-website' ) ?></a></li>
-                    <?php if($weddings != ''){?>
-                        <li><a href="<?php echo $weddings; ?>" target="_blank"><?php _e( 'WEDDINGS', 'bmw-website' ) ?></a></li>
-                    <?php } ?>
-                </ul>
-            </div>
-        </div>
-        <div id="menu-desplegable" class="col-md-4">
-            <span class="col-md-11">&nbsp;<?php _e( 'View other churches', 'bmw-website' ) ?>&#8203; </span> <span id="icon-dropdown" class="glyphicon glyphicon-collapse-down"></span>
-            <ul id="sub-menu" class="style-scroll-1 scrollbar">
-            <?php
-                //list all venues in post types
-                foreach ($venues->posts as $venue) {
-                    if (get_post()->ID != $venue->ID) {
-                        echo "<li style='background-image: url(". get_post_meta( $venue->ID, 'wpcf-venue-small-image', false)[0].")'><a class='with-font-sub-title' href='".get_permalink($venue->ID)."'>".$venue->post_title."</a></li>";
-                    }
-                }
-            ?>
-            </ul>
-        </div>
-    </div>
+    <!-- ========== MENU TOP ========== -->
+    <?php get_template_part( 'template-parts/menu', 'top' ); ?>
+    <!-- ========== MENU TOP ========== -->
     <div id="primary" class="<?php echo $primary_class; ?>">
         <main id="main">
             <div id='div-venue-image'>                
@@ -96,12 +63,12 @@ $venues = new WP_Query( $args );
                     </video>
                 </div>            
                 <div id="div-venue-name">
-                    <h1 class="with-font-sub-title" ><?php  echo $name;?></h1> <br />
+                    <h1 class="with-font-sub-title" ><?php  echo $name;?></h1>
                     <span id="direction" > <?php echo $direction ?></span>
                 </div>
                 <div id="div-venue-button">
                     <a class="btn btn-warning modalContact" href="#animatedModalContact"><?php _e( 'Request to book', 'bmw-website' ) ?></a>
-                    <p class="highlight-p"><?php _e( 'or call now!', 'bmw-website' ) ?> <span class="tracking-phone-number"><?php echo $GLOBALS['BMW_PHONE_NUMBER']; ?></span></p> 
+                    <span><?php _e( 'or call now!', 'bmw-website' ) ?> <span class="tracking-phone-number"><?php echo $GLOBALS['BMW_PHONE_NUMBER']; ?></span></span> 
                 </div>
                 <div id="arrow-down" class="not-for-mobile"><span class="glyphicon glyphicon-chevron-down"></span></div>     
             </div>
