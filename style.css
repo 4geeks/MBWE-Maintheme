@@ -919,6 +919,8 @@ a.btn{ text-decoration: none !important; }
     padding-right: 0px;
 }
 .plannersAppointmentForm{margin-top: 0;}
+#div-planner-description{background: #f0f0f0; padding: 10px 0px;}
+#div-planner-description .tracking-phone-number{color: black;}
 .gformHiddenLabels label{display: none !important;}
 .gform_hidden{display: none;}
 .ginput_counter{color: white;}

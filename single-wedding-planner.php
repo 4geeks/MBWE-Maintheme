@@ -51,9 +51,9 @@ $weddings = types_render_field("venue-weddings",array("output" => "raw"));
     <!-- ========== MENU TOP ========== -->
     <div id="primary" class="<?php echo $primary_class; ?>">
         <main id="main">
-            <div id="div-venue-description" class="row">                
+            <div id="div-planner-description" class="row">                
                 <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 container">
-                    <h2 class="text-center"><?php _e( 'Call now!', 'bmw-website' ) ?> <a href="tel:<?php echo $GLOBALS['BMW_PHONE_NUMBER']; ?>" class="tracking-phone-number"><?php echo $GLOBALS['BMW_PHONE_NUMBER']; ?></a> <?php _e( 'to schedule an appointment with <?php echo $nickname; ?>,<br /> or fill the following form and we will email you with availability', 'bmw-website' ) ?>:</h2>
+                    <h4 class="text-center"><?php _e( 'Call now!', 'bmw-website' ) ?> <a href="tel:<?php echo $GLOBALS['BMW_PHONE_NUMBER']; ?>" class="tracking-phone-number"><?php echo $GLOBALS['BMW_PHONE_NUMBER']; ?></a> <?php _e( 'to schedule an appointment with ', 'bmw-website');echo $nickname; _e(',<br /> or fill the following form and we will email you with availability', 'bmw-website' ) ?>:</h4>
                     <?php 
                         gravity_form( 'Planner Appointment', false, false, true, array('planner-slug' => $post->slug), true ); 
                         ?>   
