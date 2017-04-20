@@ -870,7 +870,9 @@ a.btn{ text-decoration: none !important; }
     height: 100%;
 }
 
-.modal-content .navbar-logo{max-height: 70px;}
+.modal-content .navbar-logo, .contact-us .navbar-logo{max-height: 70px;}
+.contact-us .navbar-logo{margin-bottom: 40px;}
+
 
 .contact-title {
     font-weight: bold;

@@ -12,7 +12,7 @@ get_header();
     <!-- ========== MENU TOP ========== -->
     <div id="page-contact-us">
     	<div class="contact-us">
-		<div class="col-md-12 contact-title visible-sm">
+		<div class="col-md-12 contact-title visible-sm visible-lg visible-md">
 		   <center>
 		   		<h3><?php _e( 'Responsiveness is one of our main values, <br /> we guarantee you a response in less than 10min', 'bmw-website' ) ?></h3>
 		   </center>       
