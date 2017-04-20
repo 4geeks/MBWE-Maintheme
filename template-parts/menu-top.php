@@ -277,7 +277,7 @@ $otherIdeas = get_terms( 'idea-type', array(
                     </li>
                 </ul>               
             </li>
-        <?php if (is_page('gallery') || is_page('gallery-event') || is_singular("venue")){ ?>
+        <?php if (is_page('gallery') || is_page('gallery-event') || is_singular("venue") || is_singular("church")){ ?>
             <li id="secondary-menu">
                 <?php get_template_part( 'template-parts/part', 'top-venue-nomobile' ); ?>
             </li>
