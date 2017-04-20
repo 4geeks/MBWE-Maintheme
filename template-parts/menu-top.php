@@ -141,15 +141,17 @@ $otherIdeas = get_terms( 'idea-type', array(
                                 <li><a href="<?php echo get_permalink( get_page_by_path( 'wedding-catering-menu' ) ); ?>#sides">Sides</a></li>
                                 <li><a href="<?php echo get_permalink( get_page_by_path( 'wedding-catering-menu' ) ); ?>#thebar">The Bar</a></li>
                             </ul>
+                            <?php if(count($decorations)>0){ ?>
                             <ul class="col-sm-4 dropdown-box">
                                 <li class="dropdown-header">Browse Decorations</li>
                                 <?php foreach ($decorations as $deco) { ?>
                                     <li><a href="<?php echo esc_url( get_term_link( $deco ) ); ?>"><?php echo $deco->name; ?></a></li>
                                 <?php } ?>
                             </ul>
+                            <?php } ?>
                             <ul class="col-sm-4 dropdown-box">
                                 <li class="dropdown-header">Much more</li>
-                                <li><a href="<?php echo get_permalink( get_page_by_path( 'wedding-churches-in-miami' ) ); ?>">Top Church to get married</a></li>
+                                <li><a href="<?php echo get_permalink( get_page_by_path( 'wedding-churches-in-miami' ) ); ?>">Top Wedding Churches</a></li>
                                 <li><a href="<?php echo get_permalink( get_page_by_path( 'miami-wedding-planners' ) ); ?>">Amazing Wedding Planners</a></li>
                                 <?php foreach ($otherIdeas as $idea) { ?>
                                     <li><a href="<?php echo esc_url( get_term_link( $idea ) ); ?>"><?php echo $idea->name; ?></a></li>
