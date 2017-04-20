@@ -48,16 +48,16 @@ function getNickname($plannerId = 0)
             <?php echo $content; ?>
             <div id="list-content" class="container-fluid">
                 <?php foreach ($planners->posts as $planner) {
-                    $serviceArea = get_post_meta( $planner->ID, 'wpcf-planner-service-area', false)[0];
+                    $serviceArea = get_post_meta( $planner->ID, 'wpcf-planner-service-area', true);
                     if(!$serviceArea or $serviceArea=='') $serviceArea = "Miami / Fort Lauderdale area.";
 
-                    $certified = get_post_meta( $planner->ID, 'wpcf-planner-certified', false)[0];
+                    $certified = get_post_meta( $planner->ID, 'wpcf-planner-certified', true);
                     if(!$certified or $certified=='') $certified = null;
 
                     $plannerExperience = null;
-                    $plannerExperience = get_post_meta( $planner->ID, 'wpcf-planner-experience', false)[0];
+                    $plannerExperience = get_post_meta( $planner->ID, 'wpcf-planner-experience', true);
                     
-                    $plannerVideo = get_post_meta( $planner->ID, 'wpcf-planner-video', false)[0];
+                    $plannerVideo = get_post_meta( $planner->ID, 'wpcf-planner-video', true);
                     if($plannerVideo and $plannerVideo!='') $plannerVideo = getYoutubeID($plannerVideo);  
                     else $plannerVideo = null;
 
@@ -67,7 +67,7 @@ function getNickname($plannerId = 0)
                     if(!$number_years or $number_years=="") $number_years = "0";
                 ?>                        
                     <div class="col-sm-6 col-md-4 planner-element">
-                        <div class="div-planner-image" style="background-image: url('<?php echo get_post_meta( $planner->ID, 'wpcf-planner-photo', false)[0]; ?>')">                                
+                        <div class="div-planner-image" style="background-image: url('<?php echo get_post_meta( $planner->ID, 'wpcf-planner-photo', true); ?>')">                                
                             <?php if($plannerVideo){ 
                                 if(function_exists('lyte_preparse')) { echo lyte_preparse($plannerVideo); }
                                 else echo '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/'.$plannerVideo.'?rel=0&amp;&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>';

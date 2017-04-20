@@ -134,7 +134,7 @@ $otherIdeas = get_terms( 'idea-type', array(
                             </div>
                         </div>
                         <div class="row">
-                            <ul class="col-sm-4 dropdown-box">
+                            <ul class="col-sm-3 dropdown-box">
                                 <li class="dropdown-header">Food & Beverage</li>
                                 <li><a href="<?php echo get_permalink( get_page_by_path( 'wedding-catering-menu' ) ); ?>#starters">Starters</a></li>
                                 <li><a href="<?php echo get_permalink( get_page_by_path( 'wedding-catering-menu' ) ); ?>#main">Main</a></li>
@@ -149,6 +149,8 @@ $otherIdeas = get_terms( 'idea-type', array(
                             </ul>
                             <ul class="col-sm-4 dropdown-box">
                                 <li class="dropdown-header">Much more</li>
+                                <li><a href="<?php echo get_permalink( get_page_by_path( 'wedding-churches-in-miami' ) ); ?>">Top Church to get married</a></li>
+                                <li><a href="<?php echo get_permalink( get_page_by_path( 'miami-wedding-planners' ) ); ?>">Amazing Wedding Planners</a></li>
                                 <?php foreach ($otherIdeas as $idea) { ?>
                                     <li><a href="<?php echo esc_url( get_term_link( $idea ) ); ?>"><?php echo $idea->name; ?></a></li>
                                 <?php } ?>
