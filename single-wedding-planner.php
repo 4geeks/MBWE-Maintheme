@@ -63,10 +63,10 @@ $weddings = types_render_field("venue-weddings",array("output" => "raw"));
                 <div class="col-md-6 col-sm-12">
                     <div class="row text-center">
                         <div class="col-xs-12">
-                            <h2><?php printf(( 'What makes %s unique', 'bmw-website' ),$nickname); ?></h2>
+                            <h2><?php echo $nickname."'s"; _e( 'uniqueness', 'bmw-website' ) ?></h2>
                             <?php echo $uniqueness; ?>
                             <?php if($plannerBlog){ ?>
-                                <a href="<?php echo $plannerBlog; ?>"><?php printf(( 'Read more about %s here', 'bmw-website' ),$nickname); ?>.</a>
+                                <a href="<?php echo $plannerBlog; ?>"><?php _e( 'More about ', 'bmw-website').$nickname; ?>.</a>
                             <?php } ?>
                         </div>
                     </div>
@@ -74,7 +74,7 @@ $weddings = types_render_field("venue-weddings",array("output" => "raw"));
                 <div class="col-md-6 col-sm-12  text-center">
                     <div class="row planner-fact">
                         <div>
-                            <h2><?php printf(( 'Fun Facts about %s', 'bmw-website' ),$nickname); ?></h2>
+                            <h2><?php _e( 'Fun Facts about ', 'bmw-website' ); echo $nickname; ?></h2>
                             <?php echo $funFacts; ?>
                         </div>
                     </div>
