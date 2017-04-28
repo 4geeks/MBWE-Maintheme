@@ -1,7 +1,7 @@
 <?php 
 
 $testimonies = types_child_posts('testimonie');
-
+ 
 ?>
 <?php if(count($testimonies)>0) { ?>                   
 <div id="testimonies" class="container">
