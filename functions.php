@@ -752,4 +752,5 @@ function wrap_gform_cdata_close( $content = '' ) {
         return $content;
 }*/
 
-?>
+require "classes/VisualComposerSettings.class.php";
+$VisualComposerSettings = new VisualComposerSettings();
